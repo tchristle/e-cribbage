@@ -16,71 +16,71 @@ $EndDescr
 $Comp
 L MCU_Texas_MSP430:MSP430F2012IPW U2
 U 1 1 5F600DAF
-P 2750 3100
-F 0 "U2" H 2000 3800 50  0000 C CNN
-F 1 "MSP430F2012IPW" H 2250 3700 50  0000 C CNN
-F 2 "digikey-footprints:TSSOP-14_W4.4mm" H 2200 2450 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/msp430f2012.pdf" H 2750 3100 50  0001 C CNN
-	1    2750 3100
+P 2750 10200
+F 0 "U2" H 2000 10900 50  0000 C CNN
+F 1 "MSP430F2012IPW" H 2250 10800 50  0000 C CNN
+F 2 "digikey-footprints:TSSOP-14_W4.4mm" H 2200 9550 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/msp430f2012.pdf" H 2750 10200 50  0001 C CNN
+	1    2750 10200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5F9DD00B
-P 2750 4000
-F 0 "#PWR014" H 2750 3750 50  0001 C CNN
-F 1 "GND" H 2755 3827 50  0000 C CNN
-F 2 "" H 2750 4000 50  0001 C CNN
-F 3 "" H 2750 4000 50  0001 C CNN
-	1    2750 4000
+P 2750 11100
+F 0 "#PWR014" H 2750 10850 50  0001 C CNN
+F 1 "GND" H 2755 10927 50  0000 C CNN
+F 2 "" H 2750 11100 50  0001 C CNN
+F 3 "" H 2750 11100 50  0001 C CNN
+	1    2750 11100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 3850 2750 4000
+	2750 10950 2750 11100
 $Comp
 L power:+3.3V #PWR06
 U 1 1 5F9DD8E3
-P 2750 1850
-F 0 "#PWR06" H 2750 1700 50  0001 C CNN
-F 1 "+3.3V" H 2765 2023 50  0000 C CNN
-F 2 "" H 2750 1850 50  0001 C CNN
-F 3 "" H 2750 1850 50  0001 C CNN
-	1    2750 1850
+P 2750 8950
+F 0 "#PWR06" H 2750 8800 50  0001 C CNN
+F 1 "+3.3V" H 2765 9123 50  0000 C CNN
+F 2 "" H 2750 8950 50  0001 C CNN
+F 3 "" H 2750 8950 50  0001 C CNN
+	1    2750 8950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1850 2750 1900
+	2750 8950 2750 9000
 $Comp
 L Device:C C2
 U 1 1 5F9DE9B9
-P 3150 2100
-F 0 "C2" H 3265 2146 50  0000 L CNN
-F 1 "1.0uF" H 3265 2055 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3188 1950 50  0001 C CNN
-F 3 "~" H 3150 2100 50  0001 C CNN
-	1    3150 2100
+P 3150 9200
+F 0 "C2" H 3265 9246 50  0000 L CNN
+F 1 "1.0uF" H 3265 9155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3188 9050 50  0001 C CNN
+F 3 "~" H 3150 9200 50  0001 C CNN
+	1    3150 9200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5F9DF230
-P 3150 2300
-F 0 "#PWR08" H 3150 2050 50  0001 C CNN
-F 1 "GND" H 3155 2127 50  0000 C CNN
-F 2 "" H 3150 2300 50  0001 C CNN
-F 3 "" H 3150 2300 50  0001 C CNN
-	1    3150 2300
+P 3150 9400
+F 0 "#PWR08" H 3150 9150 50  0001 C CNN
+F 1 "GND" H 3155 9227 50  0000 C CNN
+F 2 "" H 3150 9400 50  0001 C CNN
+F 3 "" H 3150 9400 50  0001 C CNN
+	1    3150 9400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 1950 3150 1900
+	3150 9050 3150 9000
 Wire Wire Line
-	3150 1900 2750 1900
-Connection ~ 2750 1900
+	3150 9000 2750 9000
+Connection ~ 2750 9000
 Wire Wire Line
-	2750 1900 2750 2400
+	2750 9000 2750 9100
 Wire Wire Line
-	3150 2250 3150 2300
+	3150 9350 3150 9400
 $Comp
 L Device:R R1
 U 1 1 5F9E3723
@@ -13011,26 +13011,20 @@ F 12 "Active" H 29650 8850 60  0001 L CNN "Status"
 	1    29450 7650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4450 3200 2    50   Input ~ 0
+Text GLabel 4800 10400 2    50   Input ~ 0
 CLK
-Text GLabel 4450 3400 2    50   Input ~ 0
+Text GLabel 4800 10500 2    50   Input ~ 0
 DATA
-Text GLabel 1350 3300 0    50   Input ~ 0
+Text GLabel 1350 10400 0    50   Input ~ 0
 LE1
-Text GLabel 1350 3500 0    50   Input ~ 0
+Text GLabel 1350 10600 0    50   Input ~ 0
 LE2
 Wire Wire Line
-	1750 3300 1350 3300
+	1750 10400 1350 10400
 Wire Wire Line
-	1350 3500 1750 3500
+	1350 10600 1750 10600
 Wire Wire Line
-	3700 3300 4100 3300
-Wire Wire Line
-	4100 3300 4100 3200
-Wire Wire Line
-	4100 3200 4450 3200
-Wire Wire Line
-	3700 3400 4450 3400
+	3700 10500 4800 10500
 $Comp
 L Device:R R241
 U 1 1 66577B82
@@ -13482,171 +13476,438 @@ $EndComp
 $Comp
 L dk_Pushbutton-Switches:GPTS203211B S1
 U 1 1 6DCE5AF6
-P 4500 7400
-F 0 "S1" H 4500 7675 50  0000 C CNN
-F 1 "GPTS203211B" H 4500 7584 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 4700 7600 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4700 7700 60  0001 L CNN
-F 4 "CW181-ND" H 4700 7800 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 4700 7900 60  0001 L CNN "MPN"
-F 6 "Switches" H 4700 8000 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 4700 8100 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4700 8200 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 4700 8300 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 4700 8400 60  0001 L CNN "Description"
-F 11 "CW Industries" H 4700 8500 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4700 8600 60  0001 L CNN "Status"
-	1    4500 7400
+P 5750 8500
+F 0 "S1" H 5750 8775 50  0000 C CNN
+F 1 "GPTS203211B" H 5750 8684 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 8700 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 8800 60  0001 L CNN
+F 4 "CW181-ND" H 5950 8900 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 5950 9000 60  0001 L CNN "MPN"
+F 6 "Switches" H 5950 9100 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 5950 9200 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 9300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 9400 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 9500 60  0001 L CNN "Description"
+F 11 "CW Industries" H 5950 9600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5950 9700 60  0001 L CNN "Status"
+	1    5750 8500
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Pushbutton-Switches:GPTS203211B S2
 U 1 1 6DCE704D
-P 4550 8000
-F 0 "S2" H 4550 8275 50  0000 C CNN
-F 1 "GPTS203211B" H 4550 8184 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 4750 8200 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4750 8300 60  0001 L CNN
-F 4 "CW181-ND" H 4750 8400 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 4750 8500 60  0001 L CNN "MPN"
-F 6 "Switches" H 4750 8600 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 4750 8700 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4750 8800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 4750 8900 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 4750 9000 60  0001 L CNN "Description"
-F 11 "CW Industries" H 4750 9100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4750 9200 60  0001 L CNN "Status"
-	1    4550 8000
+P 5750 8950
+F 0 "S2" H 5750 9225 50  0000 C CNN
+F 1 "GPTS203211B" H 5750 9134 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 9150 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 9250 60  0001 L CNN
+F 4 "CW181-ND" H 5950 9350 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 5950 9450 60  0001 L CNN "MPN"
+F 6 "Switches" H 5950 9550 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 5950 9650 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 9750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 9850 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 9950 60  0001 L CNN "Description"
+F 11 "CW Industries" H 5950 10050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5950 10150 60  0001 L CNN "Status"
+	1    5750 8950
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Pushbutton-Switches:GPTS203211B S3
 U 1 1 6DCE774E
-P 4550 8500
-F 0 "S3" H 4550 8775 50  0000 C CNN
-F 1 "GPTS203211B" H 4550 8684 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 4750 8700 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4750 8800 60  0001 L CNN
-F 4 "CW181-ND" H 4750 8900 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 4750 9000 60  0001 L CNN "MPN"
-F 6 "Switches" H 4750 9100 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 4750 9200 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4750 9300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 4750 9400 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 4750 9500 60  0001 L CNN "Description"
-F 11 "CW Industries" H 4750 9600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4750 9700 60  0001 L CNN "Status"
-	1    4550 8500
+P 5750 9400
+F 0 "S3" H 5750 9675 50  0000 C CNN
+F 1 "GPTS203211B" H 5750 9584 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 9600 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 9700 60  0001 L CNN
+F 4 "CW181-ND" H 5950 9800 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 5950 9900 60  0001 L CNN "MPN"
+F 6 "Switches" H 5950 10000 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 5950 10100 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 10200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 10300 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 10400 60  0001 L CNN "Description"
+F 11 "CW Industries" H 5950 10500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5950 10600 60  0001 L CNN "Status"
+	1    5750 9400
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Pushbutton-Switches:GPTS203211B S4
 U 1 1 6DCE7E95
-P 4550 9000
-F 0 "S4" H 4550 9275 50  0000 C CNN
-F 1 "GPTS203211B" H 4550 9184 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 4750 9200 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4750 9300 60  0001 L CNN
-F 4 "CW181-ND" H 4750 9400 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 4750 9500 60  0001 L CNN "MPN"
-F 6 "Switches" H 4750 9600 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 4750 9700 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4750 9800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 4750 9900 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 4750 10000 60  0001 L CNN "Description"
-F 11 "CW Industries" H 4750 10100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4750 10200 60  0001 L CNN "Status"
-	1    4550 9000
+P 5750 9850
+F 0 "S4" H 5750 10125 50  0000 C CNN
+F 1 "GPTS203211B" H 5750 10034 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 10050 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 10150 60  0001 L CNN
+F 4 "CW181-ND" H 5950 10250 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 5950 10350 60  0001 L CNN "MPN"
+F 6 "Switches" H 5950 10450 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 5950 10550 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 10650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 10750 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 10850 60  0001 L CNN "Description"
+F 11 "CW Industries" H 5950 10950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5950 11050 60  0001 L CNN "Status"
+	1    5750 9850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R243
 U 1 1 6DCE852B
-P 3950 7100
-F 0 "R243" V 3743 7100 50  0000 C CNN
-F 1 "10k" V 3834 7100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3880 7100 50  0001 C CNN
-F 3 "~" H 3950 7100 50  0001 C CNN
-	1    3950 7100
+P 4300 8250
+F 0 "R243" V 4093 8250 50  0000 C CNN
+F 1 "10k" V 4184 8250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 8250 50  0001 C CNN
+F 3 "~" H 4300 8250 50  0001 C CNN
+	1    4300 8250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R244
 U 1 1 6DCE8CE9
-P 4050 7750
-F 0 "R244" V 3843 7750 50  0000 C CNN
-F 1 "10k" V 3934 7750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3980 7750 50  0001 C CNN
-F 3 "~" H 4050 7750 50  0001 C CNN
-	1    4050 7750
+P 5200 8250
+F 0 "R244" V 4993 8250 50  0000 C CNN
+F 1 "10k" V 5084 8250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5130 8250 50  0001 C CNN
+F 3 "~" H 5200 8250 50  0001 C CNN
+	1    5200 8250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R246
 U 1 1 6DCE8FDE
-P 3900 8300
-F 0 "R246" V 3693 8300 50  0000 C CNN
-F 1 "10k" V 3784 8300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3830 8300 50  0001 C CNN
-F 3 "~" H 3900 8300 50  0001 C CNN
-	1    3900 8300
+P 4900 8250
+F 0 "R246" V 4693 8250 50  0000 C CNN
+F 1 "10k" V 4784 8250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4830 8250 50  0001 C CNN
+F 3 "~" H 4900 8250 50  0001 C CNN
+	1    4900 8250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R247
 U 1 1 6DCE92BF
-P 3900 8850
-F 0 "R247" V 3693 8850 50  0000 C CNN
-F 1 "10k" V 3784 8850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3830 8850 50  0001 C CNN
-F 3 "~" H 3900 8850 50  0001 C CNN
-	1    3900 8850
+P 4600 8250
+F 0 "R247" V 4393 8250 50  0000 C CNN
+F 1 "10k" V 4484 8250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4530 8250 50  0001 C CNN
+F 3 "~" H 4600 8250 50  0001 C CNN
+	1    4600 8250
 	-1   0    0    1   
 $EndComp
 $Comp
 L dk_Battery-Holders-Clips-Contacts:BS-7 BAT1
 U 1 1 6DDA013A
-P 1200 1550
-F 0 "BAT1" H 1328 1603 60  0000 L CNN
-F 1 "BS-7" H 1328 1497 60  0000 L CNN
-F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" H 1400 1750 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1400 1850 60  0001 L CNN
-F 4 "BS-7-ND" H 1400 1950 60  0001 L CNN "Digi-Key_PN"
-F 5 "BS-7" H 1400 2050 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 1400 2150 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 1400 2250 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1400 2350 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1400 2450 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1400 2550 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 1400 2650 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1400 2750 60  0001 L CNN "Status"
-	1    1200 1550
+P 1250 7150
+F 0 "BAT1" H 1378 7203 60  0000 L CNN
+F 1 "BS-7" H 1378 7097 60  0000 L CNN
+F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" H 1450 7350 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1450 7450 60  0001 L CNN
+F 4 "BS-7-ND" H 1450 7550 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 1450 7650 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1450 7750 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1450 7850 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1450 7950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1450 8050 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1450 8150 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1450 8250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1450 8350 60  0001 L CNN "Status"
+	1    1250 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0334
 U 1 1 6DDA1AA0
-P 1200 1850
-F 0 "#PWR0334" H 1200 1600 50  0001 C CNN
-F 1 "GND" H 1205 1677 50  0000 C CNN
-F 2 "" H 1200 1850 50  0001 C CNN
-F 3 "" H 1200 1850 50  0001 C CNN
-	1    1200 1850
+P 1250 7450
+F 0 "#PWR0334" H 1250 7200 50  0001 C CNN
+F 1 "GND" H 1255 7277 50  0000 C CNN
+F 2 "" H 1250 7450 50  0001 C CNN
+F 3 "" H 1250 7450 50  0001 C CNN
+	1    1250 7450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0335
 U 1 1 6DDA1D80
-P 1200 1200
-F 0 "#PWR0335" H 1200 1050 50  0001 C CNN
-F 1 "+3.3V" H 1215 1373 50  0000 C CNN
-F 2 "" H 1200 1200 50  0001 C CNN
-F 3 "" H 1200 1200 50  0001 C CNN
-	1    1200 1200
+P 1250 6800
+F 0 "#PWR0335" H 1250 6650 50  0001 C CNN
+F 1 "+3.3V" H 1265 6973 50  0000 C CNN
+F 2 "" H 1250 6800 50  0001 C CNN
+F 3 "" H 1250 6800 50  0001 C CNN
+	1    1250 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 1200 1200 1350
+	1250 6800 1250 6950
 Wire Wire Line
-	1200 1750 1200 1850
+	1250 7350 1250 7450
+$Comp
+L power:GND #PWR0341
+U 1 1 5FA2DFC2
+P 5400 10300
+F 0 "#PWR0341" H 5400 10050 50  0001 C CNN
+F 1 "GND" H 5405 10127 50  0000 C CNN
+F 2 "" H 5400 10300 50  0001 C CNN
+F 3 "" H 5400 10300 50  0001 C CNN
+	1    5400 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 10000 6150 9850
+Wire Wire Line
+	6150 8500 5950 8500
+Wire Wire Line
+	5950 8950 6150 8950
+Connection ~ 6150 8950
+Wire Wire Line
+	6150 8950 6150 8500
+Wire Wire Line
+	5950 9400 6150 9400
+Connection ~ 6150 9400
+Wire Wire Line
+	6150 9400 6150 8950
+Wire Wire Line
+	5950 9850 6150 9850
+Connection ~ 6150 9850
+Wire Wire Line
+	6150 9850 6150 9400
+$Comp
+L Device:C C35
+U 1 1 604D9BE3
+P 5400 10150
+F 0 "C35" H 5515 10196 50  0000 L CNN
+F 1 "1.0uF" H 5515 10105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 10000 50  0001 C CNN
+F 3 "~" H 5400 10150 50  0001 C CNN
+	1    5400 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 604DA6BA
+P 4900 9650
+F 0 "C34" H 5015 9696 50  0000 L CNN
+F 1 "1.0uF" H 5015 9605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4938 9500 50  0001 C CNN
+F 3 "~" H 4900 9650 50  0001 C CNN
+	1    4900 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0340
+U 1 1 604DBE88
+P 6150 10000
+F 0 "#PWR0340" H 6150 9750 50  0001 C CNN
+F 1 "GND" H 6155 9827 50  0000 C CNN
+F 2 "" H 6150 10000 50  0001 C CNN
+F 3 "" H 6150 10000 50  0001 C CNN
+	1    6150 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0339
+U 1 1 604DC18B
+P 4900 9800
+F 0 "#PWR0339" H 4900 9550 50  0001 C CNN
+F 1 "GND" H 4905 9627 50  0000 C CNN
+F 2 "" H 4900 9800 50  0001 C CNN
+F 3 "" H 4900 9800 50  0001 C CNN
+	1    4900 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0338
+U 1 1 604DC3C6
+P 4600 9250
+F 0 "#PWR0338" H 4600 9000 50  0001 C CNN
+F 1 "GND" H 4605 9077 50  0000 C CNN
+F 2 "" H 4600 9250 50  0001 C CNN
+F 3 "" H 4600 9250 50  0001 C CNN
+	1    4600 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C33
+U 1 1 604DC859
+P 4600 9100
+F 0 "C33" H 4715 9146 50  0000 L CNN
+F 1 "1.0uF" H 4715 9055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4638 8950 50  0001 C CNN
+F 3 "~" H 4600 9100 50  0001 C CNN
+	1    4600 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C32
+U 1 1 604DCBE2
+P 4100 8750
+F 0 "C32" H 4215 8796 50  0000 L CNN
+F 1 "1.0uF" H 4215 8705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4138 8600 50  0001 C CNN
+F 3 "~" H 4100 8750 50  0001 C CNN
+	1    4100 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0337
+U 1 1 604DD28B
+P 4100 8900
+F 0 "#PWR0337" H 4100 8650 50  0001 C CNN
+F 1 "GND" H 4105 8727 50  0000 C CNN
+F 2 "" H 4100 8900 50  0001 C CNN
+F 3 "" H 4100 8900 50  0001 C CNN
+	1    4100 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 9500 4900 9400
+Wire Wire Line
+	3700 10400 4800 10400
+$Comp
+L power:+3.3V #PWR0336
+U 1 1 62294B87
+P 4300 7950
+F 0 "#PWR0336" H 4300 7800 50  0001 C CNN
+F 1 "+3.3V" H 4315 8123 50  0000 C CNN
+F 2 "" H 4300 7950 50  0001 C CNN
+F 3 "" H 4300 7950 50  0001 C CNN
+	1    4300 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7950 4300 8000
+Wire Wire Line
+	4300 8000 4600 8000
+Wire Wire Line
+	5200 8000 5200 8100
+Connection ~ 4300 8000
+Wire Wire Line
+	4300 8000 4300 8100
+Wire Wire Line
+	4900 8100 4900 8000
+Connection ~ 4900 8000
+Wire Wire Line
+	4900 8000 5200 8000
+Wire Wire Line
+	4600 8100 4600 8000
+Connection ~ 4600 8000
+Wire Wire Line
+	4600 8000 4900 8000
+Wire Wire Line
+	4300 8400 4300 8500
+Connection ~ 4300 8500
+Wire Wire Line
+	4300 8500 4450 8500
+Wire Wire Line
+	5350 9850 5400 9850
+Wire Wire Line
+	4900 9400 5100 9400
+Wire Wire Line
+	4600 8950 4950 8950
+Wire Wire Line
+	5200 8400 5200 9200
+Wire Wire Line
+	5200 9200 5350 9200
+Wire Wire Line
+	5350 9200 5350 9850
+Connection ~ 5350 9850
+Wire Wire Line
+	4900 8400 4900 8800
+Wire Wire Line
+	4900 8800 5100 8800
+Wire Wire Line
+	5100 8800 5100 9400
+Connection ~ 5100 9400
+Wire Wire Line
+	5100 9400 5250 9400
+Wire Wire Line
+	4600 8400 4600 8950
+Connection ~ 4600 8950
+Wire Wire Line
+	4450 9900 4450 8500
+Connection ~ 4450 8500
+Wire Wire Line
+	4450 8500 5550 8500
+Wire Wire Line
+	3700 9900 4450 9900
+Wire Wire Line
+	3700 10000 4750 10000
+Wire Wire Line
+	4750 10000 4750 9250
+Wire Wire Line
+	4750 9250 4950 9250
+Wire Wire Line
+	4950 9250 4950 8950
+Connection ~ 4950 8950
+Wire Wire Line
+	4950 8950 5550 8950
+Wire Wire Line
+	3700 10100 5100 10100
+Wire Wire Line
+	5100 10100 5100 9800
+Wire Wire Line
+	5100 9800 5250 9800
+Wire Wire Line
+	5250 9800 5250 9400
+Connection ~ 5250 9400
+Wire Wire Line
+	5250 9400 5550 9400
+Wire Wire Line
+	3700 10200 5200 10200
+Wire Wire Line
+	5200 10200 5200 9850
+Wire Wire Line
+	5200 9850 5350 9850
+Wire Wire Line
+	5400 9850 5400 10000
+Connection ~ 5400 9850
+Wire Wire Line
+	5400 9850 5550 9850
+$Comp
+L Device:R R251
+U 1 1 662AA3F1
+P 1600 9400
+F 0 "R251" V 1393 9400 50  0000 C CNN
+F 1 "47k" V 1484 9400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1530 9400 50  0001 C CNN
+F 3 "~" H 1600 9400 50  0001 C CNN
+	1    1600 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 9550 1600 9700
+Wire Wire Line
+	1600 9750 1750 9750
+Wire Wire Line
+	1600 9250 1600 9100
+Wire Wire Line
+	1600 9100 2750 9100
+Connection ~ 2750 9100
+Wire Wire Line
+	2750 9100 2750 9500
+Text GLabel 950  9700 0    50   Input ~ 0
+RST
+Text GLabel 950  9550 0    50   Input ~ 0
+TEST
+Wire Wire Line
+	950  9550 1200 9550
+Wire Wire Line
+	1200 9550 1200 8600
+Wire Wire Line
+	1200 8600 3750 8600
+Wire Wire Line
+	3750 9750 3700 9750
+Wire Wire Line
+	950  9700 1600 9700
+Connection ~ 1600 9700
+Wire Wire Line
+	1600 9700 1600 9750
+Wire Wire Line
+	4100 8600 4100 8500
+Wire Wire Line
+	4100 8500 4300 8500
+Wire Wire Line
+	3750 8600 3750 9750
 $EndSCHEMATC
