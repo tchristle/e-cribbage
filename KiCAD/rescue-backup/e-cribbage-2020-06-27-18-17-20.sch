@@ -1,0 +1,12674 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dk_Addressable-Specialty
+LIBS:dk_Alarms-Buzzers-and-Sirens
+LIBS:dk_Automotive-Relays
+LIBS:dk_Balun
+LIBS:dk_Banana-and-Tip-Connectors-Jacks-Plugs
+LIBS:dk_Barrel-Audio-Connectors
+LIBS:dk_Barrel-Power-Connectors
+LIBS:dk_Battery-Holders-Clips-Contacts
+LIBS:dk_Clock-Timing-Clock-Generators-PLLs-Frequency-Synthesizers
+LIBS:dk_Clock-Timing-Programmable-Timers-and-Oscillators
+LIBS:dk_Clock-Timing-Real-Time-Clocks
+LIBS:dk_Coaxial-Connectors-RF
+LIBS:dk_Crystals
+LIBS:dk_Current-Sensors
+LIBS:dk_Data-Acquisition-ADCs-DACs-Special-Purpose
+LIBS:dk_Data-Acquisition-Analog-to-Digital-Converters-ADC
+LIBS:dk_Data-Acquisition-Digital-Potentiometers
+LIBS:dk_Data-Acquisition-Digital-to-Analog-Converters-DAC
+LIBS:dk_Data-Acquisition-Touch-Screen-Controllers
+LIBS:dk_DC-DC-Converters
+LIBS:dk_Digital-Isolators
+LIBS:dk_Diodes-Bridge-Rectifiers
+LIBS:dk_Diodes-Rectifiers-Arrays
+LIBS:dk_Diodes-Rectifiers-Single
+LIBS:dk_Diodes-Zener-Single
+LIBS:dk_Display-Modules-LCD-OLED-Graphic
+LIBS:dk_Display-Modules-LED-Character-and-Numeric
+LIBS:dk_D-Sub-Connectors
+LIBS:dk_Embedded-Microcontrollers
+LIBS:dk_Encoders
+LIBS:dk_Evaluation-Boards-Sensors
+LIBS:dk_Ferrite-Beads-and-Chips
+LIBS:dk_Fixed-Inductors
+LIBS:dk_Fuses
+LIBS:dk_Gas-Sensors
+LIBS:dk_Humidity-Moisture-Sensors
+LIBS:dk_Image-Sensors-Camera
+LIBS:dk_Infrared-UV-Visible-Emitters
+LIBS:dk_Inrush-Current-Limiters-ICL
+LIBS:dk_Interface-Analog-Switches-Multiplexers-Demultiplexers
+LIBS:dk_Interface-Analog-Switches-Special-Purpose
+LIBS:dk_Interface-Controllers
+LIBS:dk_Interface-Drivers-Receivers-Transceivers
+LIBS:dk_Interface-I-O-Expanders
+LIBS:dk_Interface-Modules
+LIBS:dk_Interface-Sensor-and-Detector-Interfaces
+LIBS:dk_Interface-Sensor-Capacitive-Touch
+LIBS:dk_Interface-Specialized
+LIBS:dk_LED-Indication-Discrete
+LIBS:dk_LEDs-Circuit-Board-Indicators-Arrays-Light-Bars-Bar-Graphs
+LIBS:dk_Linear-Amplifiers-Audio
+LIBS:dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps
+LIBS:dk_Linear-Comparators
+LIBS:dk_Logic-Buffers-Drivers-Receivers-Transceivers
+LIBS:dk_Logic-Flip-Flops
+LIBS:dk_Logic-Gates-and-Inverters
+LIBS:dk_Logic-Multivibrators
+LIBS:dk_Logic-Shift-Registers
+LIBS:dk_Logic-Signal-Switches-Multiplexers-Decoders
+LIBS:dk_Logic-Translators-Level-Shifters
+LIBS:dk_Magnetic-Sensors-Compass-Magnetic-Field-Modules
+LIBS:dk_Magnetic-Sensors-Linear-Compass-ICs
+LIBS:dk_Magnetic-Sensors-Switches-Solid-State
+LIBS:dk_Memory
+LIBS:dk_Memory-Connectors-PC-Card-Sockets
+LIBS:dk_Microphones
+LIBS:dk_Modular-Connectors-Jacks
+LIBS:dk_Modular-Connectors-Jacks-With-Magnetics
+LIBS:dk_Motion-Sensors-Accelerometers
+LIBS:dk_Motion-Sensors-IMUs-Inertial-Measurement-Units
+LIBS:dk_Motion-Sensors-Tilt-Switches
+LIBS:dk_Navigation-Switches-Joystick
+LIBS:dk_Optical-Sensors-Ambient-Light-IR-UV-Sensors
+LIBS:dk_Optical-Sensors-Distance-Measuring
+LIBS:dk_Optical-Sensors-Photo-Detectors-Remote-Receiver
+LIBS:dk_Optical-Sensors-Photodiodes
+LIBS:dk_Optical-Sensors-Phototransistors
+LIBS:dk_Optical-Sensors-Reflective-Analog-Output
+LIBS:dk_Optoisolators-Logic-Output
+LIBS:dk_Optoisolators-Transistor-Photovoltaic-Output
+LIBS:dk_Optoisolators-Triac-SCR-Output
+LIBS:dk_Oscillators
+LIBS:dk_PMIC-AC-DC-Converters-Offline-Switchers
+LIBS:dk_PMIC-Battery-Chargers
+LIBS:dk_PMIC-Battery-Management
+LIBS:dk_PMIC-Current-Regulation-Management
+LIBS:dk_PMIC-Full-Half-Bridge-Drivers
+LIBS:dk_PMIC-Gate-Drivers
+LIBS:dk_PMIC-LED-Drivers
+LIBS:dk_PMIC-Motor-Drivers-Controllers
+LIBS:dk_PMIC-OR-Controllers-Ideal-Diodes
+LIBS:dk_PMIC-Power-Distribution-Switches-Load-Drivers
+LIBS:dk_PMIC-Power-Management-Specialized
+LIBS:dk_PMIC-RMS-to-DC-Converters
+LIBS:dk_PMIC-Supervisors
+LIBS:dk_PMIC-Thermal-Management
+LIBS:dk_PMIC-V-F-and-F-V-Converters
+LIBS:dk_PMIC-Voltage-Reference
+LIBS:dk_PMIC-Voltage-Regulators-DC-DC-Switching-Controllers
+LIBS:dk_PMIC-Voltage-Regulators-DC-DC-Switching-Regulators
+LIBS:dk_PMIC-Voltage-Regulators-Linear
+LIBS:dk_PMIC-Voltage-Regulators-Special-Purpose
+LIBS:dk_Power-Relays-Over-2-Amps
+LIBS:dk_Pressure-Sensors-Transducers
+LIBS:dk_Pushbutton-Switches
+LIBS:dk_Rectangular-Connectors-Headers-Male-Pins
+LIBS:dk_Reed-Relays
+LIBS:dk_Resistor-Networks-Arrays
+LIBS:dk_RF-Amplifiers
+LIBS:dk_RF-Antennas
+LIBS:dk_RF-Demodulators
+LIBS:dk_RF-Detectors
+LIBS:dk_RF-Evaluation-and-Development-Kits-Boards
+LIBS:dk_RFID-RF-Access-Monitoring-ICs
+LIBS:dk_RF-Receivers
+LIBS:dk_RF-Switches
+LIBS:dk_RF-Transceiver-ICs
+LIBS:dk_RF-Transceiver-Modules
+LIBS:dk_RF-Transmitters
+LIBS:dk_Rotary-Potentiometers-Rheostats
+LIBS:dk_Sensors-Transducers_Accessories
+LIBS:dk_Shunts-Jumpers
+LIBS:dk_Signal-Relays-Up-to-2-Amps
+LIBS:dk_Slide-Switches
+LIBS:dk_Sockets-for-ICs-Transistors
+LIBS:dk_Solid-State-Relays
+LIBS:dk_Specialized-ICs
+LIBS:dk_Specialized-Sensors
+LIBS:dk_Surge-Suppression-ICs
+LIBS:dk_Tactile-Switches
+LIBS:dk_Temperature-Sensors-Analog-and-Digital-Output
+LIBS:dk_Terminal-Blocks-Wire-to-Board
+LIBS:dk_Test-Points
+LIBS:dk_Thermal-Cutoffs-Thermal-Fuses
+LIBS:dk_Thyristors-DIACs-SIDACs
+LIBS:dk_Thyristors-SCRs
+LIBS:dk_Thyristors-TRIACs
+LIBS:dk_Toggle-Switches
+LIBS:dk_Transistors-Bipolar-BJT-Arrays
+LIBS:dk_Transistors-Bipolar-BJT-RF
+LIBS:dk_Transistors-Bipolar-BJT-Single
+LIBS:dk_Transistors-Bipolar-BJT-Single-Pre-Biased
+LIBS:dk_Transistors-FETs-MOSFETs-Arrays
+LIBS:dk_Transistors-FETs-MOSFETs-RF
+LIBS:dk_Transistors-FETs-MOSFETs-Single
+LIBS:dk_Transistors-JFETs
+LIBS:dk_Trimmer-Potentiometers
+LIBS:dk_TVS-Diodes
+LIBS:dk_TVS-Mixed-Technology
+LIBS:dk_USB-DVI-HDMI-Connectors
+LIBS:MCU_Texas_MSP430
+LIBS:e-cribbage-cache
+EELAYER 25 0
+EELAYER END
+$Descr D 34000 22000
+encoding utf-8
+Sheet 1 1
+Title "e-Cribbage"
+Date "2020-06-27"
+Rev "1"
+Comp "Fart Butt Technologies"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R28
+U 1 1 5EF7A0E7
+P 13500 1750
+F 0 "R28" V 13580 1750 50  0000 C CNN
+F 1 "1k" V 13500 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13430 1750 50  0001 C CNN
+F 3 "" H 13500 1750 50  0001 C CNN
+	1    13500 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13150 1750 13350 1750
+$Comp
+L GND #PWR01
+U 1 1 5EF7A171
+P 13800 1900
+F 0 "#PWR01" H 13800 1650 50  0001 C CNN
+F 1 "GND" H 13800 1750 50  0000 C CNN
+F 2 "" H 13800 1900 50  0001 C CNN
+F 3 "" H 13800 1900 50  0001 C CNN
+	1    13800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 1750 13800 1750
+Wire Wire Line
+	13800 1750 13800 1900
+Wire Wire Line
+	10700 1750 12850 1750
+$Comp
+L R R25
+U 1 1 5EF7A377
+P 13350 2000
+F 0 "R25" V 13430 2000 50  0000 C CNN
+F 1 "1k" V 13350 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13280 2000 50  0001 C CNN
+F 3 "" H 13350 2000 50  0001 C CNN
+	1    13350 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 2000 13200 2000
+$Comp
+L GND #PWR02
+U 1 1 5EF7A37E
+P 13650 2150
+F 0 "#PWR02" H 13650 1900 50  0001 C CNN
+F 1 "GND" H 13650 2000 50  0000 C CNN
+F 2 "" H 13650 2150 50  0001 C CNN
+F 3 "" H 13650 2150 50  0001 C CNN
+	1    13650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 2000 13650 2000
+Wire Wire Line
+	13650 2000 13650 2150
+Wire Wire Line
+	12200 2000 12700 2000
+$Comp
+L R R21
+U 1 1 5EF7A3EE
+P 13150 2250
+F 0 "R21" V 13230 2250 50  0000 C CNN
+F 1 "1k" V 13150 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13080 2250 50  0001 C CNN
+F 3 "" H 13150 2250 50  0001 C CNN
+	1    13150 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12800 2250 13000 2250
+$Comp
+L GND #PWR03
+U 1 1 5EF7A3F5
+P 13450 2400
+F 0 "#PWR03" H 13450 2150 50  0001 C CNN
+F 1 "GND" H 13450 2250 50  0000 C CNN
+F 2 "" H 13450 2400 50  0001 C CNN
+F 3 "" H 13450 2400 50  0001 C CNN
+	1    13450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 2250 13450 2250
+Wire Wire Line
+	13450 2250 13450 2400
+Wire Wire Line
+	12000 2250 12500 2250
+$Comp
+L R R17
+U 1 1 5EF7A527
+P 12950 2500
+F 0 "R17" V 13030 2500 50  0000 C CNN
+F 1 "1k" V 12950 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12880 2500 50  0001 C CNN
+F 3 "" H 12950 2500 50  0001 C CNN
+	1    12950 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12600 2500 12800 2500
+$Comp
+L GND #PWR04
+U 1 1 5EF7A52E
+P 13250 2650
+F 0 "#PWR04" H 13250 2400 50  0001 C CNN
+F 1 "GND" H 13250 2500 50  0000 C CNN
+F 2 "" H 13250 2650 50  0001 C CNN
+F 3 "" H 13250 2650 50  0001 C CNN
+	1    13250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 2500 13250 2500
+Wire Wire Line
+	13250 2500 13250 2650
+Wire Wire Line
+	11800 2500 12300 2500
+$Comp
+L R R13
+U 1 1 5EF7A53D
+P 12750 2750
+F 0 "R13" V 12830 2750 50  0000 C CNN
+F 1 "1k" V 12750 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12680 2750 50  0001 C CNN
+F 3 "" H 12750 2750 50  0001 C CNN
+	1    12750 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 2750 12600 2750
+$Comp
+L GND #PWR05
+U 1 1 5EF7A544
+P 13050 2900
+F 0 "#PWR05" H 13050 2650 50  0001 C CNN
+F 1 "GND" H 13050 2750 50  0000 C CNN
+F 2 "" H 13050 2900 50  0001 C CNN
+F 3 "" H 13050 2900 50  0001 C CNN
+	1    13050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 2750 13050 2750
+Wire Wire Line
+	13050 2750 13050 2900
+Wire Wire Line
+	11600 2750 12100 2750
+$Comp
+L R R9
+U 1 1 5EF7A8E9
+P 12500 3000
+F 0 "R9" V 12580 3000 50  0000 C CNN
+F 1 "1k" V 12500 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12430 3000 50  0001 C CNN
+F 3 "" H 12500 3000 50  0001 C CNN
+	1    12500 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12150 3000 12350 3000
+$Comp
+L GND #PWR06
+U 1 1 5EF7A8F0
+P 12800 3150
+F 0 "#PWR06" H 12800 2900 50  0001 C CNN
+F 1 "GND" H 12800 3000 50  0000 C CNN
+F 2 "" H 12800 3150 50  0001 C CNN
+F 3 "" H 12800 3150 50  0001 C CNN
+	1    12800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 3000 12800 3000
+Wire Wire Line
+	12800 3000 12800 3150
+Wire Wire Line
+	11350 3000 11850 3000
+$Comp
+L R R5
+U 1 1 5EF7A8FF
+P 12250 3300
+F 0 "R5" V 12330 3300 50  0000 C CNN
+F 1 "1k" V 12250 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12180 3300 50  0001 C CNN
+F 3 "" H 12250 3300 50  0001 C CNN
+	1    12250 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11900 3300 12100 3300
+$Comp
+L GND #PWR07
+U 1 1 5EF7A906
+P 12550 3450
+F 0 "#PWR07" H 12550 3200 50  0001 C CNN
+F 1 "GND" H 12550 3300 50  0000 C CNN
+F 2 "" H 12550 3450 50  0001 C CNN
+F 3 "" H 12550 3450 50  0001 C CNN
+	1    12550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 3300 12550 3300
+Wire Wire Line
+	12550 3300 12550 3450
+Wire Wire Line
+	11050 3300 11600 3300
+$Comp
+L R R1
+U 1 1 5EF7A915
+P 12000 3600
+F 0 "R1" V 12080 3600 50  0000 C CNN
+F 1 "1k" V 12000 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 11930 3600 50  0001 C CNN
+F 3 "" H 12000 3600 50  0001 C CNN
+	1    12000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11650 3600 11850 3600
+$Comp
+L GND #PWR08
+U 1 1 5EF7A91C
+P 12300 3750
+F 0 "#PWR08" H 12300 3500 50  0001 C CNN
+F 1 "GND" H 12300 3600 50  0000 C CNN
+F 2 "" H 12300 3750 50  0001 C CNN
+F 3 "" H 12300 3750 50  0001 C CNN
+	1    12300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 3600 12300 3600
+Wire Wire Line
+	12300 3600 12300 3750
+Wire Wire Line
+	10850 3600 11350 3600
+Wire Wire Line
+	10700 1850 12200 1850
+Wire Wire Line
+	12200 1850 12200 2000
+Wire Wire Line
+	10700 1950 12000 1950
+Wire Wire Line
+	12000 1950 12000 2250
+Wire Wire Line
+	10700 2050 11800 2050
+Wire Wire Line
+	11800 2050 11800 2500
+Wire Wire Line
+	10700 2150 11600 2150
+Wire Wire Line
+	11600 2150 11600 2750
+Wire Wire Line
+	10700 2250 11350 2250
+Wire Wire Line
+	11350 2250 11350 3000
+Wire Wire Line
+	11050 3300 11050 2350
+Wire Wire Line
+	11050 2350 10700 2350
+Wire Wire Line
+	10850 2450 10850 3600
+Wire Wire Line
+	10850 2450 10700 2450
+$Comp
+L LED D30
+U 1 1 5EF7D2FB
+P 13050 4150
+F 0 "D30" H 13050 4250 50  0000 C CNN
+F 1 "LED" H 13050 4050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13050 4150 50  0001 C CNN
+F 3 "" H 13050 4150 50  0001 C CNN
+	1    13050 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R30
+U 1 1 5EF7D301
+P 13550 4150
+F 0 "R30" V 13630 4150 50  0000 C CNN
+F 1 "1k" V 13550 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13480 4150 50  0001 C CNN
+F 3 "" H 13550 4150 50  0001 C CNN
+	1    13550 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13200 4150 13400 4150
+$Comp
+L GND #PWR09
+U 1 1 5EF7D308
+P 13850 4300
+F 0 "#PWR09" H 13850 4050 50  0001 C CNN
+F 1 "GND" H 13850 4150 50  0000 C CNN
+F 2 "" H 13850 4300 50  0001 C CNN
+F 3 "" H 13850 4300 50  0001 C CNN
+	1    13850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 4150 13850 4150
+Wire Wire Line
+	13850 4150 13850 4300
+Wire Wire Line
+	10750 4150 12900 4150
+$Comp
+L LED D26
+U 1 1 5EF7D311
+P 12900 4400
+F 0 "D26" H 12900 4500 50  0000 C CNN
+F 1 "LED" H 12900 4300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12900 4400 50  0001 C CNN
+F 3 "" H 12900 4400 50  0001 C CNN
+	1    12900 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 5EF7D317
+P 13400 4400
+F 0 "R26" V 13480 4400 50  0000 C CNN
+F 1 "1k" V 13400 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13330 4400 50  0001 C CNN
+F 3 "" H 13400 4400 50  0001 C CNN
+	1    13400 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13050 4400 13250 4400
+$Comp
+L GND #PWR010
+U 1 1 5EF7D31E
+P 13700 4550
+F 0 "#PWR010" H 13700 4300 50  0001 C CNN
+F 1 "GND" H 13700 4400 50  0000 C CNN
+F 2 "" H 13700 4550 50  0001 C CNN
+F 3 "" H 13700 4550 50  0001 C CNN
+	1    13700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 4400 13700 4400
+Wire Wire Line
+	13700 4400 13700 4550
+Wire Wire Line
+	12250 4400 12750 4400
+$Comp
+L LED D22
+U 1 1 5EF7D327
+P 12700 4650
+F 0 "D22" H 12700 4750 50  0000 C CNN
+F 1 "LED" H 12700 4550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12700 4650 50  0001 C CNN
+F 3 "" H 12700 4650 50  0001 C CNN
+	1    12700 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 5EF7D32D
+P 13200 4650
+F 0 "R22" V 13280 4650 50  0000 C CNN
+F 1 "1k" V 13200 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13130 4650 50  0001 C CNN
+F 3 "" H 13200 4650 50  0001 C CNN
+	1    13200 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12850 4650 13050 4650
+$Comp
+L GND #PWR011
+U 1 1 5EF7D334
+P 13500 4800
+F 0 "#PWR011" H 13500 4550 50  0001 C CNN
+F 1 "GND" H 13500 4650 50  0000 C CNN
+F 2 "" H 13500 4800 50  0001 C CNN
+F 3 "" H 13500 4800 50  0001 C CNN
+	1    13500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 4650 13500 4650
+Wire Wire Line
+	13500 4650 13500 4800
+Wire Wire Line
+	12050 4650 12550 4650
+$Comp
+L LED D18
+U 1 1 5EF7D33D
+P 12500 4900
+F 0 "D18" H 12500 5000 50  0000 C CNN
+F 1 "LED" H 12500 4800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12500 4900 50  0001 C CNN
+F 3 "" H 12500 4900 50  0001 C CNN
+	1    12500 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 5EF7D343
+P 13000 4900
+F 0 "R18" V 13080 4900 50  0000 C CNN
+F 1 "1k" V 13000 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12930 4900 50  0001 C CNN
+F 3 "" H 13000 4900 50  0001 C CNN
+	1    13000 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12650 4900 12850 4900
+$Comp
+L GND #PWR012
+U 1 1 5EF7D34A
+P 13300 5050
+F 0 "#PWR012" H 13300 4800 50  0001 C CNN
+F 1 "GND" H 13300 4900 50  0000 C CNN
+F 2 "" H 13300 5050 50  0001 C CNN
+F 3 "" H 13300 5050 50  0001 C CNN
+	1    13300 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13150 4900 13300 4900
+Wire Wire Line
+	13300 4900 13300 5050
+Wire Wire Line
+	11850 4900 12350 4900
+$Comp
+L LED D14
+U 1 1 5EF7D353
+P 12300 5150
+F 0 "D14" H 12300 5250 50  0000 C CNN
+F 1 "LED" H 12300 5050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12300 5150 50  0001 C CNN
+F 3 "" H 12300 5150 50  0001 C CNN
+	1    12300 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 5EF7D359
+P 12800 5150
+F 0 "R14" V 12880 5150 50  0000 C CNN
+F 1 "1k" V 12800 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12730 5150 50  0001 C CNN
+F 3 "" H 12800 5150 50  0001 C CNN
+	1    12800 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12450 5150 12650 5150
+$Comp
+L GND #PWR013
+U 1 1 5EF7D360
+P 13100 5300
+F 0 "#PWR013" H 13100 5050 50  0001 C CNN
+F 1 "GND" H 13100 5150 50  0000 C CNN
+F 2 "" H 13100 5300 50  0001 C CNN
+F 3 "" H 13100 5300 50  0001 C CNN
+	1    13100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12950 5150 13100 5150
+Wire Wire Line
+	13100 5150 13100 5300
+Wire Wire Line
+	11650 5150 12150 5150
+$Comp
+L LED D10
+U 1 1 5EF7D369
+P 12050 5400
+F 0 "D10" H 12050 5500 50  0000 C CNN
+F 1 "LED" H 12050 5300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12050 5400 50  0001 C CNN
+F 3 "" H 12050 5400 50  0001 C CNN
+	1    12050 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5EF7D36F
+P 12550 5400
+F 0 "R10" V 12630 5400 50  0000 C CNN
+F 1 "1k" V 12550 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12480 5400 50  0001 C CNN
+F 3 "" H 12550 5400 50  0001 C CNN
+	1    12550 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12200 5400 12400 5400
+$Comp
+L GND #PWR014
+U 1 1 5EF7D376
+P 12850 5550
+F 0 "#PWR014" H 12850 5300 50  0001 C CNN
+F 1 "GND" H 12850 5400 50  0000 C CNN
+F 2 "" H 12850 5550 50  0001 C CNN
+F 3 "" H 12850 5550 50  0001 C CNN
+	1    12850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 5400 12850 5400
+Wire Wire Line
+	12850 5400 12850 5550
+Wire Wire Line
+	11400 5400 11900 5400
+$Comp
+L LED D6
+U 1 1 5EF7D37F
+P 11800 5700
+F 0 "D6" H 11800 5800 50  0000 C CNN
+F 1 "LED" H 11800 5600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11800 5700 50  0001 C CNN
+F 3 "" H 11800 5700 50  0001 C CNN
+	1    11800 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5EF7D385
+P 12300 5700
+F 0 "R6" V 12380 5700 50  0000 C CNN
+F 1 "1k" V 12300 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12230 5700 50  0001 C CNN
+F 3 "" H 12300 5700 50  0001 C CNN
+	1    12300 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11950 5700 12150 5700
+$Comp
+L GND #PWR015
+U 1 1 5EF7D38C
+P 12600 5850
+F 0 "#PWR015" H 12600 5600 50  0001 C CNN
+F 1 "GND" H 12600 5700 50  0000 C CNN
+F 2 "" H 12600 5850 50  0001 C CNN
+F 3 "" H 12600 5850 50  0001 C CNN
+	1    12600 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 5700 12600 5700
+Wire Wire Line
+	12600 5700 12600 5850
+Wire Wire Line
+	11100 5700 11650 5700
+$Comp
+L LED D2
+U 1 1 5EF7D395
+P 11550 6000
+F 0 "D2" H 11550 6100 50  0000 C CNN
+F 1 "LED" H 11550 5900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11550 6000 50  0001 C CNN
+F 3 "" H 11550 6000 50  0001 C CNN
+	1    11550 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5EF7D39B
+P 12050 6000
+F 0 "R2" V 12130 6000 50  0000 C CNN
+F 1 "1k" V 12050 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 11980 6000 50  0001 C CNN
+F 3 "" H 12050 6000 50  0001 C CNN
+	1    12050 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11700 6000 11900 6000
+$Comp
+L GND #PWR016
+U 1 1 5EF7D3A2
+P 12350 6150
+F 0 "#PWR016" H 12350 5900 50  0001 C CNN
+F 1 "GND" H 12350 6000 50  0000 C CNN
+F 2 "" H 12350 6150 50  0001 C CNN
+F 3 "" H 12350 6150 50  0001 C CNN
+	1    12350 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 6000 12350 6000
+Wire Wire Line
+	12350 6000 12350 6150
+Wire Wire Line
+	10900 6000 11400 6000
+Wire Wire Line
+	10750 4250 12250 4250
+Wire Wire Line
+	12250 4250 12250 4400
+Wire Wire Line
+	10750 4350 12050 4350
+Wire Wire Line
+	12050 4350 12050 4650
+Wire Wire Line
+	10750 4450 11850 4450
+Wire Wire Line
+	11850 4450 11850 4900
+Wire Wire Line
+	10750 4550 11650 4550
+Wire Wire Line
+	11650 4550 11650 5150
+Wire Wire Line
+	10750 4650 11400 4650
+Wire Wire Line
+	11400 4650 11400 5400
+Wire Wire Line
+	11100 5700 11100 4750
+Wire Wire Line
+	11100 4750 10750 4750
+Wire Wire Line
+	10900 4850 10900 6000
+Wire Wire Line
+	10900 4850 10750 4850
+$Comp
+L LED D31
+U 1 1 5EF7DD4F
+P 13100 6700
+F 0 "D31" H 13100 6800 50  0000 C CNN
+F 1 "LED" H 13100 6600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13100 6700 50  0001 C CNN
+F 3 "" H 13100 6700 50  0001 C CNN
+	1    13100 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R31
+U 1 1 5EF7DD55
+P 13600 6700
+F 0 "R31" V 13680 6700 50  0000 C CNN
+F 1 "1k" V 13600 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13530 6700 50  0001 C CNN
+F 3 "" H 13600 6700 50  0001 C CNN
+	1    13600 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13250 6700 13450 6700
+$Comp
+L GND #PWR017
+U 1 1 5EF7DD5C
+P 13900 6850
+F 0 "#PWR017" H 13900 6600 50  0001 C CNN
+F 1 "GND" H 13900 6700 50  0000 C CNN
+F 2 "" H 13900 6850 50  0001 C CNN
+F 3 "" H 13900 6850 50  0001 C CNN
+	1    13900 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 6700 13900 6700
+Wire Wire Line
+	13900 6700 13900 6850
+Wire Wire Line
+	10800 6700 12950 6700
+$Comp
+L LED D27
+U 1 1 5EF7DD65
+P 12950 6950
+F 0 "D27" H 12950 7050 50  0000 C CNN
+F 1 "LED" H 12950 6850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12950 6950 50  0001 C CNN
+F 3 "" H 12950 6950 50  0001 C CNN
+	1    12950 6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 5EF7DD6B
+P 13450 6950
+F 0 "R27" V 13530 6950 50  0000 C CNN
+F 1 "1k" V 13450 6950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13380 6950 50  0001 C CNN
+F 3 "" H 13450 6950 50  0001 C CNN
+	1    13450 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13100 6950 13300 6950
+$Comp
+L GND #PWR018
+U 1 1 5EF7DD72
+P 13750 7100
+F 0 "#PWR018" H 13750 6850 50  0001 C CNN
+F 1 "GND" H 13750 6950 50  0000 C CNN
+F 2 "" H 13750 7100 50  0001 C CNN
+F 3 "" H 13750 7100 50  0001 C CNN
+	1    13750 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 6950 13750 6950
+Wire Wire Line
+	13750 6950 13750 7100
+Wire Wire Line
+	12300 6950 12800 6950
+$Comp
+L LED D23
+U 1 1 5EF7DD7B
+P 12750 7200
+F 0 "D23" H 12750 7300 50  0000 C CNN
+F 1 "LED" H 12750 7100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12750 7200 50  0001 C CNN
+F 3 "" H 12750 7200 50  0001 C CNN
+	1    12750 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 5EF7DD81
+P 13250 7200
+F 0 "R23" V 13330 7200 50  0000 C CNN
+F 1 "1k" V 13250 7200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13180 7200 50  0001 C CNN
+F 3 "" H 13250 7200 50  0001 C CNN
+	1    13250 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12900 7200 13100 7200
+$Comp
+L GND #PWR019
+U 1 1 5EF7DD88
+P 13550 7350
+F 0 "#PWR019" H 13550 7100 50  0001 C CNN
+F 1 "GND" H 13550 7200 50  0000 C CNN
+F 2 "" H 13550 7350 50  0001 C CNN
+F 3 "" H 13550 7350 50  0001 C CNN
+	1    13550 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 7200 13550 7200
+Wire Wire Line
+	13550 7200 13550 7350
+Wire Wire Line
+	12100 7200 12600 7200
+$Comp
+L LED D19
+U 1 1 5EF7DD91
+P 12550 7450
+F 0 "D19" H 12550 7550 50  0000 C CNN
+F 1 "LED" H 12550 7350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12550 7450 50  0001 C CNN
+F 3 "" H 12550 7450 50  0001 C CNN
+	1    12550 7450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 5EF7DD97
+P 13050 7450
+F 0 "R19" V 13130 7450 50  0000 C CNN
+F 1 "1k" V 13050 7450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12980 7450 50  0001 C CNN
+F 3 "" H 13050 7450 50  0001 C CNN
+	1    13050 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 7450 12900 7450
+$Comp
+L GND #PWR020
+U 1 1 5EF7DD9E
+P 13350 7600
+F 0 "#PWR020" H 13350 7350 50  0001 C CNN
+F 1 "GND" H 13350 7450 50  0000 C CNN
+F 2 "" H 13350 7600 50  0001 C CNN
+F 3 "" H 13350 7600 50  0001 C CNN
+	1    13350 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13200 7450 13350 7450
+Wire Wire Line
+	13350 7450 13350 7600
+Wire Wire Line
+	11900 7450 12400 7450
+$Comp
+L LED D15
+U 1 1 5EF7DDA7
+P 12350 7700
+F 0 "D15" H 12350 7800 50  0000 C CNN
+F 1 "LED" H 12350 7600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12350 7700 50  0001 C CNN
+F 3 "" H 12350 7700 50  0001 C CNN
+	1    12350 7700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 5EF7DDAD
+P 12850 7700
+F 0 "R15" V 12930 7700 50  0000 C CNN
+F 1 "1k" V 12850 7700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12780 7700 50  0001 C CNN
+F 3 "" H 12850 7700 50  0001 C CNN
+	1    12850 7700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12500 7700 12700 7700
+$Comp
+L GND #PWR021
+U 1 1 5EF7DDB4
+P 13150 7850
+F 0 "#PWR021" H 13150 7600 50  0001 C CNN
+F 1 "GND" H 13150 7700 50  0000 C CNN
+F 2 "" H 13150 7850 50  0001 C CNN
+F 3 "" H 13150 7850 50  0001 C CNN
+	1    13150 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 7700 13150 7700
+Wire Wire Line
+	13150 7700 13150 7850
+Wire Wire Line
+	11700 7700 12200 7700
+$Comp
+L LED D11
+U 1 1 5EF7DDBD
+P 12100 7950
+F 0 "D11" H 12100 8050 50  0000 C CNN
+F 1 "LED" H 12100 7850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12100 7950 50  0001 C CNN
+F 3 "" H 12100 7950 50  0001 C CNN
+	1    12100 7950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5EF7DDC3
+P 12600 7950
+F 0 "R11" V 12680 7950 50  0000 C CNN
+F 1 "1k" V 12600 7950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12530 7950 50  0001 C CNN
+F 3 "" H 12600 7950 50  0001 C CNN
+	1    12600 7950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12250 7950 12450 7950
+$Comp
+L GND #PWR022
+U 1 1 5EF7DDCA
+P 12900 8100
+F 0 "#PWR022" H 12900 7850 50  0001 C CNN
+F 1 "GND" H 12900 7950 50  0000 C CNN
+F 2 "" H 12900 8100 50  0001 C CNN
+F 3 "" H 12900 8100 50  0001 C CNN
+	1    12900 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 7950 12900 7950
+Wire Wire Line
+	12900 7950 12900 8100
+Wire Wire Line
+	11450 7950 11950 7950
+$Comp
+L LED D7
+U 1 1 5EF7DDD3
+P 11850 8250
+F 0 "D7" H 11850 8350 50  0000 C CNN
+F 1 "LED" H 11850 8150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11850 8250 50  0001 C CNN
+F 3 "" H 11850 8250 50  0001 C CNN
+	1    11850 8250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5EF7DDD9
+P 12350 8250
+F 0 "R7" V 12430 8250 50  0000 C CNN
+F 1 "1k" V 12350 8250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12280 8250 50  0001 C CNN
+F 3 "" H 12350 8250 50  0001 C CNN
+	1    12350 8250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12000 8250 12200 8250
+$Comp
+L GND #PWR023
+U 1 1 5EF7DDE0
+P 12650 8400
+F 0 "#PWR023" H 12650 8150 50  0001 C CNN
+F 1 "GND" H 12650 8250 50  0000 C CNN
+F 2 "" H 12650 8400 50  0001 C CNN
+F 3 "" H 12650 8400 50  0001 C CNN
+	1    12650 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 8250 12650 8250
+Wire Wire Line
+	12650 8250 12650 8400
+Wire Wire Line
+	11150 8250 11700 8250
+$Comp
+L LED D3
+U 1 1 5EF7DDE9
+P 11600 8550
+F 0 "D3" H 11600 8650 50  0000 C CNN
+F 1 "LED" H 11600 8450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11600 8550 50  0001 C CNN
+F 3 "" H 11600 8550 50  0001 C CNN
+	1    11600 8550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5EF7DDEF
+P 12100 8550
+F 0 "R3" V 12180 8550 50  0000 C CNN
+F 1 "1k" V 12100 8550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12030 8550 50  0001 C CNN
+F 3 "" H 12100 8550 50  0001 C CNN
+	1    12100 8550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 8550 11950 8550
+$Comp
+L GND #PWR024
+U 1 1 5EF7DDF6
+P 12450 8550
+F 0 "#PWR024" H 12450 8300 50  0001 C CNN
+F 1 "GND" H 12450 8400 50  0000 C CNN
+F 2 "" H 12450 8550 50  0001 C CNN
+F 3 "" H 12450 8550 50  0001 C CNN
+	1    12450 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 8550 12400 8550
+Wire Wire Line
+	12400 8550 12400 8700
+Wire Wire Line
+	10950 8550 11450 8550
+Wire Wire Line
+	10800 6800 12300 6800
+Wire Wire Line
+	12300 6800 12300 6950
+Wire Wire Line
+	10800 6900 12100 6900
+Wire Wire Line
+	12100 6900 12100 7200
+Wire Wire Line
+	10800 7000 11900 7000
+Wire Wire Line
+	11900 7000 11900 7450
+Wire Wire Line
+	10800 7100 11700 7100
+Wire Wire Line
+	11700 7100 11700 7700
+Wire Wire Line
+	10800 7200 11450 7200
+Wire Wire Line
+	11450 7200 11450 7950
+Wire Wire Line
+	11150 8250 11150 7300
+Wire Wire Line
+	11150 7300 10800 7300
+Wire Wire Line
+	10950 7400 10950 8550
+Wire Wire Line
+	10950 7400 10800 7400
+$Comp
+L LED D32
+U 1 1 5EF7DE13
+P 13250 9000
+F 0 "D32" H 13250 9100 50  0000 C CNN
+F 1 "LED" H 13250 8900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13250 9000 50  0001 C CNN
+F 3 "" H 13250 9000 50  0001 C CNN
+	1    13250 9000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R32
+U 1 1 5EF7DE19
+P 13750 9000
+F 0 "R32" V 13830 9000 50  0000 C CNN
+F 1 "1k" V 13750 9000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13680 9000 50  0001 C CNN
+F 3 "" H 13750 9000 50  0001 C CNN
+	1    13750 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13400 9000 13600 9000
+$Comp
+L GND #PWR025
+U 1 1 5EF7DE20
+P 14050 9150
+F 0 "#PWR025" H 14050 8900 50  0001 C CNN
+F 1 "GND" H 14050 9000 50  0000 C CNN
+F 2 "" H 14050 9150 50  0001 C CNN
+F 3 "" H 14050 9150 50  0001 C CNN
+	1    14050 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 9000 14050 9000
+Wire Wire Line
+	14050 9000 14050 9150
+Wire Wire Line
+	10950 9000 13100 9000
+$Comp
+L LED D29
+U 1 1 5EF7DE29
+P 13100 9250
+F 0 "D29" H 13100 9350 50  0000 C CNN
+F 1 "LED" H 13100 9150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13100 9250 50  0001 C CNN
+F 3 "" H 13100 9250 50  0001 C CNN
+	1    13100 9250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R29
+U 1 1 5EF7DE2F
+P 13600 9250
+F 0 "R29" V 13680 9250 50  0000 C CNN
+F 1 "1k" V 13600 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13530 9250 50  0001 C CNN
+F 3 "" H 13600 9250 50  0001 C CNN
+	1    13600 9250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13250 9250 13450 9250
+$Comp
+L GND #PWR026
+U 1 1 5EF7DE36
+P 13900 9400
+F 0 "#PWR026" H 13900 9150 50  0001 C CNN
+F 1 "GND" H 13900 9250 50  0000 C CNN
+F 2 "" H 13900 9400 50  0001 C CNN
+F 3 "" H 13900 9400 50  0001 C CNN
+	1    13900 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 9250 13900 9250
+Wire Wire Line
+	13900 9250 13900 9400
+Wire Wire Line
+	12450 9250 12950 9250
+$Comp
+L LED D24
+U 1 1 5EF7DE3F
+P 12900 9500
+F 0 "D24" H 12900 9600 50  0000 C CNN
+F 1 "LED" H 12900 9400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12900 9500 50  0001 C CNN
+F 3 "" H 12900 9500 50  0001 C CNN
+	1    12900 9500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 5EF7DE45
+P 13400 9500
+F 0 "R24" V 13480 9500 50  0000 C CNN
+F 1 "1k" V 13400 9500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13330 9500 50  0001 C CNN
+F 3 "" H 13400 9500 50  0001 C CNN
+	1    13400 9500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13050 9500 13250 9500
+$Comp
+L GND #PWR027
+U 1 1 5EF7DE4C
+P 13700 9650
+F 0 "#PWR027" H 13700 9400 50  0001 C CNN
+F 1 "GND" H 13700 9500 50  0000 C CNN
+F 2 "" H 13700 9650 50  0001 C CNN
+F 3 "" H 13700 9650 50  0001 C CNN
+	1    13700 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 9500 13700 9500
+Wire Wire Line
+	13700 9500 13700 9650
+Wire Wire Line
+	12250 9500 12750 9500
+$Comp
+L LED D20
+U 1 1 5EF7DE55
+P 12700 9750
+F 0 "D20" H 12700 9850 50  0000 C CNN
+F 1 "LED" H 12700 9650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12700 9750 50  0001 C CNN
+F 3 "" H 12700 9750 50  0001 C CNN
+	1    12700 9750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 5EF7DE5B
+P 13200 9750
+F 0 "R20" V 13280 9750 50  0000 C CNN
+F 1 "1k" V 13200 9750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13130 9750 50  0001 C CNN
+F 3 "" H 13200 9750 50  0001 C CNN
+	1    13200 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12850 9750 13050 9750
+$Comp
+L GND #PWR028
+U 1 1 5EF7DE62
+P 13500 9900
+F 0 "#PWR028" H 13500 9650 50  0001 C CNN
+F 1 "GND" H 13500 9750 50  0000 C CNN
+F 2 "" H 13500 9900 50  0001 C CNN
+F 3 "" H 13500 9900 50  0001 C CNN
+	1    13500 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 9750 13500 9750
+Wire Wire Line
+	13500 9750 13500 9900
+Wire Wire Line
+	12050 9750 12550 9750
+$Comp
+L LED D16
+U 1 1 5EF7DE6B
+P 12500 10000
+F 0 "D16" H 12500 10100 50  0000 C CNN
+F 1 "LED" H 12500 9900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12500 10000 50  0001 C CNN
+F 3 "" H 12500 10000 50  0001 C CNN
+	1    12500 10000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 5EF7DE71
+P 13000 10000
+F 0 "R16" V 13080 10000 50  0000 C CNN
+F 1 "1k" V 13000 10000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12930 10000 50  0001 C CNN
+F 3 "" H 13000 10000 50  0001 C CNN
+	1    13000 10000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12650 10000 12850 10000
+$Comp
+L GND #PWR029
+U 1 1 5EF7DE78
+P 13300 10150
+F 0 "#PWR029" H 13300 9900 50  0001 C CNN
+F 1 "GND" H 13300 10000 50  0000 C CNN
+F 2 "" H 13300 10150 50  0001 C CNN
+F 3 "" H 13300 10150 50  0001 C CNN
+	1    13300 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13150 10000 13300 10000
+Wire Wire Line
+	13300 10000 13300 10150
+Wire Wire Line
+	11850 10000 12350 10000
+$Comp
+L LED D12
+U 1 1 5EF7DE81
+P 12250 10250
+F 0 "D12" H 12250 10350 50  0000 C CNN
+F 1 "LED" H 12250 10150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12250 10250 50  0001 C CNN
+F 3 "" H 12250 10250 50  0001 C CNN
+	1    12250 10250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5EF7DE87
+P 12750 10250
+F 0 "R12" V 12830 10250 50  0000 C CNN
+F 1 "1k" V 12750 10250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12680 10250 50  0001 C CNN
+F 3 "" H 12750 10250 50  0001 C CNN
+	1    12750 10250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 10250 12600 10250
+$Comp
+L GND #PWR030
+U 1 1 5EF7DE8E
+P 13050 10400
+F 0 "#PWR030" H 13050 10150 50  0001 C CNN
+F 1 "GND" H 13050 10250 50  0000 C CNN
+F 2 "" H 13050 10400 50  0001 C CNN
+F 3 "" H 13050 10400 50  0001 C CNN
+	1    13050 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 10250 13050 10250
+Wire Wire Line
+	13050 10250 13050 10400
+Wire Wire Line
+	11600 10250 12100 10250
+$Comp
+L LED D8
+U 1 1 5EF7DE97
+P 12000 10550
+F 0 "D8" H 12000 10650 50  0000 C CNN
+F 1 "LED" H 12000 10450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12000 10550 50  0001 C CNN
+F 3 "" H 12000 10550 50  0001 C CNN
+	1    12000 10550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5EF7DE9D
+P 12500 10550
+F 0 "R8" V 12580 10550 50  0000 C CNN
+F 1 "1k" V 12500 10550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12430 10550 50  0001 C CNN
+F 3 "" H 12500 10550 50  0001 C CNN
+	1    12500 10550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12150 10550 12350 10550
+$Comp
+L GND #PWR031
+U 1 1 5EF7DEA4
+P 12800 10700
+F 0 "#PWR031" H 12800 10450 50  0001 C CNN
+F 1 "GND" H 12800 10550 50  0000 C CNN
+F 2 "" H 12800 10700 50  0001 C CNN
+F 3 "" H 12800 10700 50  0001 C CNN
+	1    12800 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 10550 12800 10550
+Wire Wire Line
+	12800 10550 12800 10700
+Wire Wire Line
+	11300 10550 11850 10550
+$Comp
+L LED D4
+U 1 1 5EF7DEAD
+P 11750 10850
+F 0 "D4" H 11750 10950 50  0000 C CNN
+F 1 "LED" H 11750 10750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11750 10850 50  0001 C CNN
+F 3 "" H 11750 10850 50  0001 C CNN
+	1    11750 10850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5EF7DEB3
+P 12250 10850
+F 0 "R4" V 12330 10850 50  0000 C CNN
+F 1 "1k" V 12250 10850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12180 10850 50  0001 C CNN
+F 3 "" H 12250 10850 50  0001 C CNN
+	1    12250 10850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11900 10850 12100 10850
+$Comp
+L GND #PWR032
+U 1 1 5EF7DEBA
+P 12550 11000
+F 0 "#PWR032" H 12550 10750 50  0001 C CNN
+F 1 "GND" H 12550 10850 50  0000 C CNN
+F 2 "" H 12550 11000 50  0001 C CNN
+F 3 "" H 12550 11000 50  0001 C CNN
+	1    12550 11000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 10850 12550 10850
+Wire Wire Line
+	12550 10850 12550 11000
+Wire Wire Line
+	11100 10850 11600 10850
+Wire Wire Line
+	10950 9100 12450 9100
+Wire Wire Line
+	12450 9100 12450 9250
+Wire Wire Line
+	10950 9200 12250 9200
+Wire Wire Line
+	12250 9200 12250 9500
+Wire Wire Line
+	10950 9300 12050 9300
+Wire Wire Line
+	12050 9300 12050 9750
+Wire Wire Line
+	10950 9400 11850 9400
+Wire Wire Line
+	11850 9400 11850 10000
+Wire Wire Line
+	10950 9500 11600 9500
+Wire Wire Line
+	11600 9500 11600 10250
+Wire Wire Line
+	11300 10550 11300 9600
+Wire Wire Line
+	11300 9600 10950 9600
+Wire Wire Line
+	11100 9700 11100 10850
+Wire Wire Line
+	11100 9700 10950 9700
+Text GLabel 5050 3400 2    60   Input ~ 0
+DATA
+$Comp
+L 74HC595D_118 U4
+U 1 1 5EF7EF50
+P 10200 1650
+F 0 "U4" H 9903 1688 60  0000 L CNN
+F 1 "74HC595D_118" V 10300 1150 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10400 1850 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10400 1950 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10400 2050 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10400 2150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10400 2250 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10400 2350 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10400 2450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10400 2550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10400 2650 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10400 2750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10400 2850 60  0001 L CNN "Status"
+	1    10200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D33
+U 1 1 5EF7FCC8
+P 13050 1750
+F 0 "D33" H 12850 1900 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 13050 1600 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 13250 1950 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13250 2050 60  0001 L CNN
+F 4 "475-2709-1-ND" H 13250 2150 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 13250 2250 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 13250 2350 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 13250 2450 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13250 2550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 13250 2650 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 13250 2750 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 13250 2850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13250 2950 60  0001 L CNN "Status"
+	1    13050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U2
+U 1 1 5EF832B4
+P 10250 4050
+F 0 "U2" H 9953 4088 60  0000 L CNN
+F 1 "74HC595D_118" V 10350 3550 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10450 4250 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10450 4350 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10450 4450 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10450 4550 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10450 4650 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10450 4750 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10450 4850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10450 4950 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10450 5050 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10450 5150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10450 5250 60  0001 L CNN "Status"
+	1    10250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U3
+U 1 1 5EF835E7
+P 10300 6600
+F 0 "U3" H 10003 6638 60  0000 L CNN
+F 1 "74HC595D_118" V 10400 6100 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10500 6800 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10500 6900 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10500 7000 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10500 7100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10500 7200 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10500 7300 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10500 7400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10500 7500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10500 7600 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10500 7700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10500 7800 60  0001 L CNN "Status"
+	1    10300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U5
+U 1 1 5EF83C59
+P 10450 8900
+F 0 "U5" H 10153 8938 60  0000 L CNN
+F 1 "74HC595D_118" V 10550 8400 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10650 9100 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10650 9200 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10650 9300 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10650 9400 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10650 9500 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10650 9600 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10650 9700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10650 9800 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10650 9900 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10650 10000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10650 10100 60  0001 L CNN "Status"
+	1    10450 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D51
+U 1 1 5EF84755
+P 12900 2000
+F 0 "D51" H 12700 2150 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12900 1850 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 13100 2200 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13100 2300 60  0001 L CNN
+F 4 "475-2709-1-ND" H 13100 2400 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 13100 2500 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 13100 2600 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 13100 2700 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13100 2800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 13100 2900 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 13100 3000 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 13100 3100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13100 3200 60  0001 L CNN "Status"
+	1    12900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D46
+U 1 1 5EF84839
+P 12700 2250
+F 0 "D46" H 12500 2400 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12700 2100 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12900 2450 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12900 2550 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12900 2650 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12900 2750 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12900 2850 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12900 2950 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12900 3050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12900 3150 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12900 3250 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12900 3350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12900 3450 60  0001 L CNN "Status"
+	1    12700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D41
+U 1 1 5EF849A0
+P 12500 2500
+F 0 "D41" H 12300 2650 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12500 2350 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12700 2700 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12700 2800 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12700 2900 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12700 3000 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12700 3100 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12700 3200 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12700 3300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12700 3400 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12700 3500 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12700 3600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12700 3700 60  0001 L CNN "Status"
+	1    12500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D36
+U 1 1 5EF84A8A
+P 12300 2750
+F 0 "D36" H 12100 2900 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12300 2600 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12500 2950 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12500 3050 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12500 3150 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12500 3250 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12500 3350 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12500 3450 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12500 3550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12500 3650 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12500 3750 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12500 3850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12500 3950 60  0001 L CNN "Status"
+	1    12300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D21
+U 1 1 5EF84B7D
+P 12050 3000
+F 0 "D21" H 11850 3150 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12050 2850 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12250 3200 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12250 3300 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12250 3400 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12250 3500 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12250 3600 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12250 3700 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12250 3800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12250 3900 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12250 4000 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12250 4100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12250 4200 60  0001 L CNN "Status"
+	1    12050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D5
+U 1 1 5EF84C6B
+P 11800 3300
+F 0 "D5" H 11600 3450 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 11800 3150 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12000 3500 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12000 3600 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12000 3700 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12000 3800 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12000 3900 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12000 4000 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12000 4100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12000 4200 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12000 4300 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12000 4400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12000 4500 60  0001 L CNN "Status"
+	1    11800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D1
+U 1 1 5EF84D60
+P 11550 3600
+F 0 "D1" H 11350 3750 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 11550 3450 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 11750 3800 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 11750 3900 60  0001 L CNN
+F 4 "475-2709-1-ND" H 11750 4000 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 11750 4100 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 11750 4200 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 11750 4300 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 11750 4400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 11750 4500 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 11750 4600 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 11750 4700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11750 4800 60  0001 L CNN "Status"
+	1    11550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R66
+U 1 1 5EF875A5
+P 13800 11850
+F 0 "R66" V 13880 11850 50  0000 C CNN
+F 1 "1k" V 13800 11850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13730 11850 50  0001 C CNN
+F 3 "" H 13800 11850 50  0001 C CNN
+	1    13800 11850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13450 11850 13650 11850
+$Comp
+L GND #PWR033
+U 1 1 5EF875AC
+P 14100 12000
+F 0 "#PWR033" H 14100 11750 50  0001 C CNN
+F 1 "GND" H 14100 11850 50  0000 C CNN
+F 2 "" H 14100 12000 50  0001 C CNN
+F 3 "" H 14100 12000 50  0001 C CNN
+	1    14100 12000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 11850 14100 11850
+Wire Wire Line
+	14100 11850 14100 12000
+Wire Wire Line
+	11000 11850 13150 11850
+$Comp
+L R R62
+U 1 1 5EF875B5
+P 13650 12100
+F 0 "R62" V 13730 12100 50  0000 C CNN
+F 1 "1k" V 13650 12100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13580 12100 50  0001 C CNN
+F 3 "" H 13650 12100 50  0001 C CNN
+	1    13650 12100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13300 12100 13500 12100
+$Comp
+L GND #PWR034
+U 1 1 5EF875BC
+P 13950 12250
+F 0 "#PWR034" H 13950 12000 50  0001 C CNN
+F 1 "GND" H 13950 12100 50  0000 C CNN
+F 2 "" H 13950 12250 50  0001 C CNN
+F 3 "" H 13950 12250 50  0001 C CNN
+	1    13950 12250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 12100 13950 12100
+Wire Wire Line
+	13950 12100 13950 12250
+Wire Wire Line
+	12500 12100 13000 12100
+$Comp
+L R R58
+U 1 1 5EF875C5
+P 13450 12350
+F 0 "R58" V 13530 12350 50  0000 C CNN
+F 1 "1k" V 13450 12350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13380 12350 50  0001 C CNN
+F 3 "" H 13450 12350 50  0001 C CNN
+	1    13450 12350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13100 12350 13300 12350
+$Comp
+L GND #PWR035
+U 1 1 5EF875CC
+P 13750 12500
+F 0 "#PWR035" H 13750 12250 50  0001 C CNN
+F 1 "GND" H 13750 12350 50  0000 C CNN
+F 2 "" H 13750 12500 50  0001 C CNN
+F 3 "" H 13750 12500 50  0001 C CNN
+	1    13750 12500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 12350 13750 12350
+Wire Wire Line
+	13750 12350 13750 12500
+Wire Wire Line
+	12300 12350 12800 12350
+$Comp
+L R R54
+U 1 1 5EF875D5
+P 13250 12600
+F 0 "R54" V 13330 12600 50  0000 C CNN
+F 1 "1k" V 13250 12600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13180 12600 50  0001 C CNN
+F 3 "" H 13250 12600 50  0001 C CNN
+	1    13250 12600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12900 12600 13100 12600
+$Comp
+L GND #PWR036
+U 1 1 5EF875DC
+P 13550 12750
+F 0 "#PWR036" H 13550 12500 50  0001 C CNN
+F 1 "GND" H 13550 12600 50  0000 C CNN
+F 2 "" H 13550 12750 50  0001 C CNN
+F 3 "" H 13550 12750 50  0001 C CNN
+	1    13550 12750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 12600 13550 12600
+Wire Wire Line
+	13550 12600 13550 12750
+Wire Wire Line
+	12100 12600 12600 12600
+$Comp
+L R R50
+U 1 1 5EF875E5
+P 13050 12850
+F 0 "R50" V 13130 12850 50  0000 C CNN
+F 1 "1k" V 13050 12850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12980 12850 50  0001 C CNN
+F 3 "" H 13050 12850 50  0001 C CNN
+	1    13050 12850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 12850 12900 12850
+$Comp
+L GND #PWR037
+U 1 1 5EF875EC
+P 13350 13000
+F 0 "#PWR037" H 13350 12750 50  0001 C CNN
+F 1 "GND" H 13350 12850 50  0000 C CNN
+F 2 "" H 13350 13000 50  0001 C CNN
+F 3 "" H 13350 13000 50  0001 C CNN
+	1    13350 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13200 12850 13350 12850
+Wire Wire Line
+	13350 12850 13350 13000
+Wire Wire Line
+	11900 12850 12400 12850
+$Comp
+L R R46
+U 1 1 5EF875F5
+P 12800 13100
+F 0 "R46" V 12880 13100 50  0000 C CNN
+F 1 "1k" V 12800 13100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12730 13100 50  0001 C CNN
+F 3 "" H 12800 13100 50  0001 C CNN
+	1    12800 13100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12450 13100 12650 13100
+$Comp
+L GND #PWR038
+U 1 1 5EF875FC
+P 13100 13250
+F 0 "#PWR038" H 13100 13000 50  0001 C CNN
+F 1 "GND" H 13100 13100 50  0000 C CNN
+F 2 "" H 13100 13250 50  0001 C CNN
+F 3 "" H 13100 13250 50  0001 C CNN
+	1    13100 13250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12950 13100 13100 13100
+Wire Wire Line
+	13100 13100 13100 13250
+Wire Wire Line
+	11650 13100 12150 13100
+$Comp
+L R R42
+U 1 1 5EF87605
+P 12550 13400
+F 0 "R42" V 12630 13400 50  0000 C CNN
+F 1 "1k" V 12550 13400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12480 13400 50  0001 C CNN
+F 3 "" H 12550 13400 50  0001 C CNN
+	1    12550 13400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12200 13400 12400 13400
+$Comp
+L GND #PWR039
+U 1 1 5EF8760C
+P 12850 13550
+F 0 "#PWR039" H 12850 13300 50  0001 C CNN
+F 1 "GND" H 12850 13400 50  0000 C CNN
+F 2 "" H 12850 13550 50  0001 C CNN
+F 3 "" H 12850 13550 50  0001 C CNN
+	1    12850 13550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 13400 12850 13400
+Wire Wire Line
+	12850 13400 12850 13550
+Wire Wire Line
+	11350 13400 11900 13400
+$Comp
+L R R39
+U 1 1 5EF87615
+P 12300 13700
+F 0 "R39" V 12380 13700 50  0000 C CNN
+F 1 "1k" V 12300 13700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12230 13700 50  0001 C CNN
+F 3 "" H 12300 13700 50  0001 C CNN
+	1    12300 13700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11950 13700 12150 13700
+$Comp
+L GND #PWR040
+U 1 1 5EF8761C
+P 12600 13850
+F 0 "#PWR040" H 12600 13600 50  0001 C CNN
+F 1 "GND" H 12600 13700 50  0000 C CNN
+F 2 "" H 12600 13850 50  0001 C CNN
+F 3 "" H 12600 13850 50  0001 C CNN
+	1    12600 13850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 13700 12600 13700
+Wire Wire Line
+	12600 13700 12600 13850
+Wire Wire Line
+	11150 13700 11650 13700
+Wire Wire Line
+	11000 11950 12500 11950
+Wire Wire Line
+	12500 11950 12500 12100
+Wire Wire Line
+	11000 12050 12300 12050
+Wire Wire Line
+	12300 12050 12300 12350
+Wire Wire Line
+	11000 12150 12100 12150
+Wire Wire Line
+	12100 12150 12100 12600
+Wire Wire Line
+	11000 12250 11900 12250
+Wire Wire Line
+	11900 12250 11900 12850
+Wire Wire Line
+	11000 12350 11650 12350
+Wire Wire Line
+	11650 12350 11650 13100
+Wire Wire Line
+	11350 13400 11350 12450
+Wire Wire Line
+	11350 12450 11000 12450
+Wire Wire Line
+	11150 12550 11150 13700
+Wire Wire Line
+	11150 12550 11000 12550
+$Comp
+L LED D61
+U 1 1 5EF87633
+P 13350 14250
+F 0 "D61" H 13350 14350 50  0000 C CNN
+F 1 "LED" H 13350 14150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13350 14250 50  0001 C CNN
+F 3 "" H 13350 14250 50  0001 C CNN
+	1    13350 14250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R67
+U 1 1 5EF87639
+P 13850 14250
+F 0 "R67" V 13930 14250 50  0000 C CNN
+F 1 "1k" V 13850 14250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13780 14250 50  0001 C CNN
+F 3 "" H 13850 14250 50  0001 C CNN
+	1    13850 14250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13500 14250 13700 14250
+$Comp
+L GND #PWR041
+U 1 1 5EF87640
+P 14150 14400
+F 0 "#PWR041" H 14150 14150 50  0001 C CNN
+F 1 "GND" H 14150 14250 50  0000 C CNN
+F 2 "" H 14150 14400 50  0001 C CNN
+F 3 "" H 14150 14400 50  0001 C CNN
+	1    14150 14400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 14250 14150 14250
+Wire Wire Line
+	14150 14250 14150 14400
+Wire Wire Line
+	11050 14250 13200 14250
+$Comp
+L LED D57
+U 1 1 5EF87649
+P 13200 14500
+F 0 "D57" H 13200 14600 50  0000 C CNN
+F 1 "LED" H 13200 14400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13200 14500 50  0001 C CNN
+F 3 "" H 13200 14500 50  0001 C CNN
+	1    13200 14500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R63
+U 1 1 5EF8764F
+P 13700 14500
+F 0 "R63" V 13780 14500 50  0000 C CNN
+F 1 "1k" V 13700 14500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13630 14500 50  0001 C CNN
+F 3 "" H 13700 14500 50  0001 C CNN
+	1    13700 14500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13350 14500 13550 14500
+$Comp
+L GND #PWR042
+U 1 1 5EF87656
+P 14000 14650
+F 0 "#PWR042" H 14000 14400 50  0001 C CNN
+F 1 "GND" H 14000 14500 50  0000 C CNN
+F 2 "" H 14000 14650 50  0001 C CNN
+F 3 "" H 14000 14650 50  0001 C CNN
+	1    14000 14650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 14500 14000 14500
+Wire Wire Line
+	14000 14500 14000 14650
+Wire Wire Line
+	12550 14500 13050 14500
+$Comp
+L LED D53
+U 1 1 5EF8765F
+P 13000 14750
+F 0 "D53" H 13000 14850 50  0000 C CNN
+F 1 "LED" H 13000 14650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13000 14750 50  0001 C CNN
+F 3 "" H 13000 14750 50  0001 C CNN
+	1    13000 14750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R59
+U 1 1 5EF87665
+P 13500 14750
+F 0 "R59" V 13580 14750 50  0000 C CNN
+F 1 "1k" V 13500 14750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13430 14750 50  0001 C CNN
+F 3 "" H 13500 14750 50  0001 C CNN
+	1    13500 14750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13150 14750 13350 14750
+$Comp
+L GND #PWR043
+U 1 1 5EF8766C
+P 13800 14900
+F 0 "#PWR043" H 13800 14650 50  0001 C CNN
+F 1 "GND" H 13800 14750 50  0000 C CNN
+F 2 "" H 13800 14900 50  0001 C CNN
+F 3 "" H 13800 14900 50  0001 C CNN
+	1    13800 14900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 14750 13800 14750
+Wire Wire Line
+	13800 14750 13800 14900
+Wire Wire Line
+	12350 14750 12850 14750
+$Comp
+L LED D48
+U 1 1 5EF87675
+P 12800 15000
+F 0 "D48" H 12800 15100 50  0000 C CNN
+F 1 "LED" H 12800 14900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12800 15000 50  0001 C CNN
+F 3 "" H 12800 15000 50  0001 C CNN
+	1    12800 15000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R55
+U 1 1 5EF8767B
+P 13300 15000
+F 0 "R55" V 13380 15000 50  0000 C CNN
+F 1 "1k" V 13300 15000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13230 15000 50  0001 C CNN
+F 3 "" H 13300 15000 50  0001 C CNN
+	1    13300 15000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12950 15000 13150 15000
+$Comp
+L GND #PWR044
+U 1 1 5EF87682
+P 13600 15150
+F 0 "#PWR044" H 13600 14900 50  0001 C CNN
+F 1 "GND" H 13600 15000 50  0000 C CNN
+F 2 "" H 13600 15150 50  0001 C CNN
+F 3 "" H 13600 15150 50  0001 C CNN
+	1    13600 15150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 15000 13600 15000
+Wire Wire Line
+	13600 15000 13600 15150
+Wire Wire Line
+	12150 15000 12650 15000
+$Comp
+L LED D44
+U 1 1 5EF8768B
+P 12600 15250
+F 0 "D44" H 12600 15350 50  0000 C CNN
+F 1 "LED" H 12600 15150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12600 15250 50  0001 C CNN
+F 3 "" H 12600 15250 50  0001 C CNN
+	1    12600 15250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R52
+U 1 1 5EF87691
+P 13100 15250
+F 0 "R52" V 13180 15250 50  0000 C CNN
+F 1 "1k" V 13100 15250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13030 15250 50  0001 C CNN
+F 3 "" H 13100 15250 50  0001 C CNN
+	1    13100 15250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12750 15250 12950 15250
+$Comp
+L GND #PWR045
+U 1 1 5EF87698
+P 13400 15400
+F 0 "#PWR045" H 13400 15150 50  0001 C CNN
+F 1 "GND" H 13400 15250 50  0000 C CNN
+F 2 "" H 13400 15400 50  0001 C CNN
+F 3 "" H 13400 15400 50  0001 C CNN
+	1    13400 15400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 15250 13400 15250
+Wire Wire Line
+	13400 15250 13400 15400
+Wire Wire Line
+	11950 15250 12450 15250
+$Comp
+L LED D39
+U 1 1 5EF876A1
+P 12350 15500
+F 0 "D39" H 12350 15600 50  0000 C CNN
+F 1 "LED" H 12350 15400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12350 15500 50  0001 C CNN
+F 3 "" H 12350 15500 50  0001 C CNN
+	1    12350 15500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R48
+U 1 1 5EF876A7
+P 12850 15500
+F 0 "R48" V 12930 15500 50  0000 C CNN
+F 1 "1k" V 12850 15500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12780 15500 50  0001 C CNN
+F 3 "" H 12850 15500 50  0001 C CNN
+	1    12850 15500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12500 15500 12700 15500
+$Comp
+L GND #PWR046
+U 1 1 5EF876AE
+P 13150 15650
+F 0 "#PWR046" H 13150 15400 50  0001 C CNN
+F 1 "GND" H 13150 15500 50  0000 C CNN
+F 2 "" H 13150 15650 50  0001 C CNN
+F 3 "" H 13150 15650 50  0001 C CNN
+	1    13150 15650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 15500 13150 15500
+Wire Wire Line
+	13150 15500 13150 15650
+Wire Wire Line
+	11700 15500 12200 15500
+$Comp
+L LED D34
+U 1 1 5EF876B7
+P 12100 15800
+F 0 "D34" H 12100 15900 50  0000 C CNN
+F 1 "LED" H 12100 15700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12100 15800 50  0001 C CNN
+F 3 "" H 12100 15800 50  0001 C CNN
+	1    12100 15800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R44
+U 1 1 5EF876BD
+P 12600 15800
+F 0 "R44" V 12680 15800 50  0000 C CNN
+F 1 "1k" V 12600 15800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12530 15800 50  0001 C CNN
+F 3 "" H 12600 15800 50  0001 C CNN
+	1    12600 15800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12250 15800 12450 15800
+$Comp
+L GND #PWR047
+U 1 1 5EF876C4
+P 12900 15950
+F 0 "#PWR047" H 12900 15700 50  0001 C CNN
+F 1 "GND" H 12900 15800 50  0000 C CNN
+F 2 "" H 12900 15950 50  0001 C CNN
+F 3 "" H 12900 15950 50  0001 C CNN
+	1    12900 15950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 15800 12900 15800
+Wire Wire Line
+	12900 15800 12900 15950
+Wire Wire Line
+	11400 15800 11950 15800
+$Comp
+L LED D13
+U 1 1 5EF876CD
+P 11850 16100
+F 0 "D13" H 11850 16200 50  0000 C CNN
+F 1 "LED" H 11850 16000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11850 16100 50  0001 C CNN
+F 3 "" H 11850 16100 50  0001 C CNN
+	1    11850 16100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R40
+U 1 1 5EF876D3
+P 12350 16100
+F 0 "R40" V 12430 16100 50  0000 C CNN
+F 1 "1k" V 12350 16100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12280 16100 50  0001 C CNN
+F 3 "" H 12350 16100 50  0001 C CNN
+	1    12350 16100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12000 16100 12200 16100
+$Comp
+L GND #PWR048
+U 1 1 5EF876DA
+P 12650 16250
+F 0 "#PWR048" H 12650 16000 50  0001 C CNN
+F 1 "GND" H 12650 16100 50  0000 C CNN
+F 2 "" H 12650 16250 50  0001 C CNN
+F 3 "" H 12650 16250 50  0001 C CNN
+	1    12650 16250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 16100 12650 16100
+Wire Wire Line
+	12650 16100 12650 16250
+Wire Wire Line
+	11200 16100 11700 16100
+Wire Wire Line
+	11050 14350 12550 14350
+Wire Wire Line
+	12550 14350 12550 14500
+Wire Wire Line
+	11050 14450 12350 14450
+Wire Wire Line
+	12350 14450 12350 14750
+Wire Wire Line
+	11050 14550 12150 14550
+Wire Wire Line
+	12150 14550 12150 15000
+Wire Wire Line
+	11050 14650 11950 14650
+Wire Wire Line
+	11950 14650 11950 15250
+Wire Wire Line
+	11050 14750 11700 14750
+Wire Wire Line
+	11700 14750 11700 15500
+Wire Wire Line
+	11400 15800 11400 14850
+Wire Wire Line
+	11400 14850 11050 14850
+Wire Wire Line
+	11200 14950 11200 16100
+Wire Wire Line
+	11200 14950 11050 14950
+$Comp
+L LED D62
+U 1 1 5EF876F1
+P 13400 16800
+F 0 "D62" H 13400 16900 50  0000 C CNN
+F 1 "LED" H 13400 16700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13400 16800 50  0001 C CNN
+F 3 "" H 13400 16800 50  0001 C CNN
+	1    13400 16800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R68
+U 1 1 5EF876F7
+P 13900 16800
+F 0 "R68" V 13980 16800 50  0000 C CNN
+F 1 "1k" V 13900 16800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13830 16800 50  0001 C CNN
+F 3 "" H 13900 16800 50  0001 C CNN
+	1    13900 16800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13550 16800 13750 16800
+$Comp
+L GND #PWR049
+U 1 1 5EF876FE
+P 14200 16950
+F 0 "#PWR049" H 14200 16700 50  0001 C CNN
+F 1 "GND" H 14200 16800 50  0000 C CNN
+F 2 "" H 14200 16950 50  0001 C CNN
+F 3 "" H 14200 16950 50  0001 C CNN
+	1    14200 16950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 16800 14200 16800
+Wire Wire Line
+	14200 16800 14200 16950
+Wire Wire Line
+	11100 16800 13250 16800
+$Comp
+L LED D59
+U 1 1 5EF87707
+P 13250 17050
+F 0 "D59" H 13250 17150 50  0000 C CNN
+F 1 "LED" H 13250 16950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13250 17050 50  0001 C CNN
+F 3 "" H 13250 17050 50  0001 C CNN
+	1    13250 17050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R65
+U 1 1 5EF8770D
+P 13750 17050
+F 0 "R65" V 13830 17050 50  0000 C CNN
+F 1 "1k" V 13750 17050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13680 17050 50  0001 C CNN
+F 3 "" H 13750 17050 50  0001 C CNN
+	1    13750 17050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13400 17050 13600 17050
+$Comp
+L GND #PWR050
+U 1 1 5EF87714
+P 14050 17200
+F 0 "#PWR050" H 14050 16950 50  0001 C CNN
+F 1 "GND" H 14050 17050 50  0000 C CNN
+F 2 "" H 14050 17200 50  0001 C CNN
+F 3 "" H 14050 17200 50  0001 C CNN
+	1    14050 17200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 17050 14050 17050
+Wire Wire Line
+	14050 17050 14050 17200
+Wire Wire Line
+	12600 17050 13100 17050
+$Comp
+L LED D55
+U 1 1 5EF8771D
+P 13050 17300
+F 0 "D55" H 13050 17400 50  0000 C CNN
+F 1 "LED" H 13050 17200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13050 17300 50  0001 C CNN
+F 3 "" H 13050 17300 50  0001 C CNN
+	1    13050 17300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R61
+U 1 1 5EF87723
+P 13550 17300
+F 0 "R61" V 13630 17300 50  0000 C CNN
+F 1 "1k" V 13550 17300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13480 17300 50  0001 C CNN
+F 3 "" H 13550 17300 50  0001 C CNN
+	1    13550 17300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13200 17300 13400 17300
+$Comp
+L GND #PWR051
+U 1 1 5EF8772A
+P 13850 17450
+F 0 "#PWR051" H 13850 17200 50  0001 C CNN
+F 1 "GND" H 13850 17300 50  0000 C CNN
+F 2 "" H 13850 17450 50  0001 C CNN
+F 3 "" H 13850 17450 50  0001 C CNN
+	1    13850 17450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 17300 13850 17300
+Wire Wire Line
+	13850 17300 13850 17450
+Wire Wire Line
+	12400 17300 12900 17300
+$Comp
+L LED D50
+U 1 1 5EF87733
+P 12850 17550
+F 0 "D50" H 12850 17650 50  0000 C CNN
+F 1 "LED" H 12850 17450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12850 17550 50  0001 C CNN
+F 3 "" H 12850 17550 50  0001 C CNN
+	1    12850 17550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R57
+U 1 1 5EF87739
+P 13350 17550
+F 0 "R57" V 13430 17550 50  0000 C CNN
+F 1 "1k" V 13350 17550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13280 17550 50  0001 C CNN
+F 3 "" H 13350 17550 50  0001 C CNN
+	1    13350 17550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 17550 13200 17550
+$Comp
+L GND #PWR052
+U 1 1 5EF87740
+P 13650 17700
+F 0 "#PWR052" H 13650 17450 50  0001 C CNN
+F 1 "GND" H 13650 17550 50  0000 C CNN
+F 2 "" H 13650 17700 50  0001 C CNN
+F 3 "" H 13650 17700 50  0001 C CNN
+	1    13650 17700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 17550 13650 17550
+Wire Wire Line
+	13650 17550 13650 17700
+Wire Wire Line
+	12200 17550 12700 17550
+$Comp
+L LED D45
+U 1 1 5EF87749
+P 12650 17800
+F 0 "D45" H 12650 17900 50  0000 C CNN
+F 1 "LED" H 12650 17700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12650 17800 50  0001 C CNN
+F 3 "" H 12650 17800 50  0001 C CNN
+	1    12650 17800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R53
+U 1 1 5EF8774F
+P 13150 17800
+F 0 "R53" V 13230 17800 50  0000 C CNN
+F 1 "1k" V 13150 17800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13080 17800 50  0001 C CNN
+F 3 "" H 13150 17800 50  0001 C CNN
+	1    13150 17800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12800 17800 13000 17800
+$Comp
+L GND #PWR053
+U 1 1 5EF87756
+P 13450 17950
+F 0 "#PWR053" H 13450 17700 50  0001 C CNN
+F 1 "GND" H 13450 17800 50  0000 C CNN
+F 2 "" H 13450 17950 50  0001 C CNN
+F 3 "" H 13450 17950 50  0001 C CNN
+	1    13450 17950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 17800 13450 17800
+Wire Wire Line
+	13450 17800 13450 17950
+Wire Wire Line
+	12000 17800 12500 17800
+$Comp
+L LED D40
+U 1 1 5EF8775F
+P 12400 18050
+F 0 "D40" H 12400 18150 50  0000 C CNN
+F 1 "LED" H 12400 17950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12400 18050 50  0001 C CNN
+F 3 "" H 12400 18050 50  0001 C CNN
+	1    12400 18050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R49
+U 1 1 5EF87765
+P 12900 18050
+F 0 "R49" V 12980 18050 50  0000 C CNN
+F 1 "1k" V 12900 18050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12830 18050 50  0001 C CNN
+F 3 "" H 12900 18050 50  0001 C CNN
+	1    12900 18050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12550 18050 12750 18050
+$Comp
+L GND #PWR054
+U 1 1 5EF8776C
+P 13200 18200
+F 0 "#PWR054" H 13200 17950 50  0001 C CNN
+F 1 "GND" H 13200 18050 50  0000 C CNN
+F 2 "" H 13200 18200 50  0001 C CNN
+F 3 "" H 13200 18200 50  0001 C CNN
+	1    13200 18200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 18050 13200 18050
+Wire Wire Line
+	13200 18050 13200 18200
+Wire Wire Line
+	11750 18050 12250 18050
+$Comp
+L LED D35
+U 1 1 5EF87775
+P 12150 18350
+F 0 "D35" H 12150 18450 50  0000 C CNN
+F 1 "LED" H 12150 18250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12150 18350 50  0001 C CNN
+F 3 "" H 12150 18350 50  0001 C CNN
+	1    12150 18350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R45
+U 1 1 5EF8777B
+P 12650 18350
+F 0 "R45" V 12730 18350 50  0000 C CNN
+F 1 "1k" V 12650 18350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12580 18350 50  0001 C CNN
+F 3 "" H 12650 18350 50  0001 C CNN
+	1    12650 18350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12300 18350 12500 18350
+$Comp
+L GND #PWR055
+U 1 1 5EF87782
+P 12950 18500
+F 0 "#PWR055" H 12950 18250 50  0001 C CNN
+F 1 "GND" H 12950 18350 50  0000 C CNN
+F 2 "" H 12950 18500 50  0001 C CNN
+F 3 "" H 12950 18500 50  0001 C CNN
+	1    12950 18500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 18350 12950 18350
+Wire Wire Line
+	12950 18350 12950 18500
+Wire Wire Line
+	11450 18350 12000 18350
+$Comp
+L LED D17
+U 1 1 5EF8778B
+P 11900 18650
+F 0 "D17" H 11900 18750 50  0000 C CNN
+F 1 "LED" H 11900 18550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 11900 18650 50  0001 C CNN
+F 3 "" H 11900 18650 50  0001 C CNN
+	1    11900 18650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R41
+U 1 1 5EF87791
+P 12400 18650
+F 0 "R41" V 12480 18650 50  0000 C CNN
+F 1 "1k" V 12400 18650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12330 18650 50  0001 C CNN
+F 3 "" H 12400 18650 50  0001 C CNN
+	1    12400 18650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12050 18650 12250 18650
+$Comp
+L GND #PWR056
+U 1 1 5EF87798
+P 12750 18650
+F 0 "#PWR056" H 12750 18400 50  0001 C CNN
+F 1 "GND" H 12750 18500 50  0000 C CNN
+F 2 "" H 12750 18650 50  0001 C CNN
+F 3 "" H 12750 18650 50  0001 C CNN
+	1    12750 18650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 18650 12700 18650
+Wire Wire Line
+	12700 18650 12700 18800
+Wire Wire Line
+	11250 18650 11750 18650
+Wire Wire Line
+	11100 16900 12600 16900
+Wire Wire Line
+	12600 16900 12600 17050
+Wire Wire Line
+	11100 17000 12400 17000
+Wire Wire Line
+	12400 17000 12400 17300
+Wire Wire Line
+	11100 17100 12200 17100
+Wire Wire Line
+	12200 17100 12200 17550
+Wire Wire Line
+	11100 17200 12000 17200
+Wire Wire Line
+	12000 17200 12000 17800
+Wire Wire Line
+	11100 17300 11750 17300
+Wire Wire Line
+	11750 17300 11750 18050
+Wire Wire Line
+	11450 18350 11450 17400
+Wire Wire Line
+	11450 17400 11100 17400
+Wire Wire Line
+	11250 17500 11250 18650
+Wire Wire Line
+	11250 17500 11100 17500
+$Comp
+L LED D64
+U 1 1 5EF877AF
+P 13550 19100
+F 0 "D64" H 13550 19200 50  0000 C CNN
+F 1 "LED" H 13550 19000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13550 19100 50  0001 C CNN
+F 3 "" H 13550 19100 50  0001 C CNN
+	1    13550 19100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R70
+U 1 1 5EF877B5
+P 14050 19100
+F 0 "R70" V 14130 19100 50  0000 C CNN
+F 1 "1k" V 14050 19100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13980 19100 50  0001 C CNN
+F 3 "" H 14050 19100 50  0001 C CNN
+	1    14050 19100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13700 19100 13900 19100
+$Comp
+L GND #PWR057
+U 1 1 5EF877BC
+P 14350 19250
+F 0 "#PWR057" H 14350 19000 50  0001 C CNN
+F 1 "GND" H 14350 19100 50  0000 C CNN
+F 2 "" H 14350 19250 50  0001 C CNN
+F 3 "" H 14350 19250 50  0001 C CNN
+	1    14350 19250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 19100 14350 19100
+Wire Wire Line
+	14350 19100 14350 19250
+Wire Wire Line
+	11250 19100 13400 19100
+$Comp
+L LED D63
+U 1 1 5EF877C5
+P 13400 19350
+F 0 "D63" H 13400 19450 50  0000 C CNN
+F 1 "LED" H 13400 19250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13400 19350 50  0001 C CNN
+F 3 "" H 13400 19350 50  0001 C CNN
+	1    13400 19350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R69
+U 1 1 5EF877CB
+P 13900 19350
+F 0 "R69" V 13980 19350 50  0000 C CNN
+F 1 "1k" V 13900 19350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13830 19350 50  0001 C CNN
+F 3 "" H 13900 19350 50  0001 C CNN
+	1    13900 19350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13550 19350 13750 19350
+$Comp
+L GND #PWR058
+U 1 1 5EF877D2
+P 14200 19500
+F 0 "#PWR058" H 14200 19250 50  0001 C CNN
+F 1 "GND" H 14200 19350 50  0000 C CNN
+F 2 "" H 14200 19500 50  0001 C CNN
+F 3 "" H 14200 19500 50  0001 C CNN
+	1    14200 19500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 19350 14200 19350
+Wire Wire Line
+	14200 19350 14200 19500
+Wire Wire Line
+	12750 19350 13250 19350
+$Comp
+L LED D58
+U 1 1 5EF877DB
+P 13200 19600
+F 0 "D58" H 13200 19700 50  0000 C CNN
+F 1 "LED" H 13200 19500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13200 19600 50  0001 C CNN
+F 3 "" H 13200 19600 50  0001 C CNN
+	1    13200 19600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R64
+U 1 1 5EF877E1
+P 13700 19600
+F 0 "R64" V 13780 19600 50  0000 C CNN
+F 1 "1k" V 13700 19600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13630 19600 50  0001 C CNN
+F 3 "" H 13700 19600 50  0001 C CNN
+	1    13700 19600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13350 19600 13550 19600
+$Comp
+L GND #PWR059
+U 1 1 5EF877E8
+P 14000 19750
+F 0 "#PWR059" H 14000 19500 50  0001 C CNN
+F 1 "GND" H 14000 19600 50  0000 C CNN
+F 2 "" H 14000 19750 50  0001 C CNN
+F 3 "" H 14000 19750 50  0001 C CNN
+	1    14000 19750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 19600 14000 19600
+Wire Wire Line
+	14000 19600 14000 19750
+Wire Wire Line
+	12550 19600 13050 19600
+$Comp
+L LED D54
+U 1 1 5EF877F1
+P 13000 19850
+F 0 "D54" H 13000 19950 50  0000 C CNN
+F 1 "LED" H 13000 19750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13000 19850 50  0001 C CNN
+F 3 "" H 13000 19850 50  0001 C CNN
+	1    13000 19850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R60
+U 1 1 5EF877F7
+P 13500 19850
+F 0 "R60" V 13580 19850 50  0000 C CNN
+F 1 "1k" V 13500 19850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13430 19850 50  0001 C CNN
+F 3 "" H 13500 19850 50  0001 C CNN
+	1    13500 19850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13150 19850 13350 19850
+$Comp
+L GND #PWR060
+U 1 1 5EF877FE
+P 13800 20000
+F 0 "#PWR060" H 13800 19750 50  0001 C CNN
+F 1 "GND" H 13800 19850 50  0000 C CNN
+F 2 "" H 13800 20000 50  0001 C CNN
+F 3 "" H 13800 20000 50  0001 C CNN
+	1    13800 20000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 19850 13800 19850
+Wire Wire Line
+	13800 19850 13800 20000
+Wire Wire Line
+	12350 19850 12850 19850
+$Comp
+L LED D49
+U 1 1 5EF87807
+P 12800 20100
+F 0 "D49" H 12800 20200 50  0000 C CNN
+F 1 "LED" H 12800 20000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12800 20100 50  0001 C CNN
+F 3 "" H 12800 20100 50  0001 C CNN
+	1    12800 20100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R56
+U 1 1 5EF8780D
+P 13300 20100
+F 0 "R56" V 13380 20100 50  0000 C CNN
+F 1 "1k" V 13300 20100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13230 20100 50  0001 C CNN
+F 3 "" H 13300 20100 50  0001 C CNN
+	1    13300 20100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12950 20100 13150 20100
+$Comp
+L GND #PWR061
+U 1 1 5EF87814
+P 13600 20250
+F 0 "#PWR061" H 13600 20000 50  0001 C CNN
+F 1 "GND" H 13600 20100 50  0000 C CNN
+F 2 "" H 13600 20250 50  0001 C CNN
+F 3 "" H 13600 20250 50  0001 C CNN
+	1    13600 20250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 20100 13600 20100
+Wire Wire Line
+	13600 20100 13600 20250
+Wire Wire Line
+	12150 20100 12650 20100
+$Comp
+L LED D42
+U 1 1 5EF8781D
+P 12550 20350
+F 0 "D42" H 12550 20450 50  0000 C CNN
+F 1 "LED" H 12550 20250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12550 20350 50  0001 C CNN
+F 3 "" H 12550 20350 50  0001 C CNN
+	1    12550 20350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 5EF87823
+P 13050 20350
+F 0 "R51" V 13130 20350 50  0000 C CNN
+F 1 "1k" V 13050 20350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12980 20350 50  0001 C CNN
+F 3 "" H 13050 20350 50  0001 C CNN
+	1    13050 20350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 20350 12900 20350
+$Comp
+L GND #PWR062
+U 1 1 5EF8782A
+P 13350 20500
+F 0 "#PWR062" H 13350 20250 50  0001 C CNN
+F 1 "GND" H 13350 20350 50  0000 C CNN
+F 2 "" H 13350 20500 50  0001 C CNN
+F 3 "" H 13350 20500 50  0001 C CNN
+	1    13350 20500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13200 20350 13350 20350
+Wire Wire Line
+	13350 20350 13350 20500
+Wire Wire Line
+	11900 20350 12400 20350
+$Comp
+L LED D37
+U 1 1 5EF87833
+P 12300 20650
+F 0 "D37" H 12300 20750 50  0000 C CNN
+F 1 "LED" H 12300 20550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12300 20650 50  0001 C CNN
+F 3 "" H 12300 20650 50  0001 C CNN
+	1    12300 20650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R47
+U 1 1 5EF87839
+P 12800 20650
+F 0 "R47" V 12880 20650 50  0000 C CNN
+F 1 "1k" V 12800 20650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12730 20650 50  0001 C CNN
+F 3 "" H 12800 20650 50  0001 C CNN
+	1    12800 20650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12450 20650 12650 20650
+$Comp
+L GND #PWR063
+U 1 1 5EF87840
+P 13100 20800
+F 0 "#PWR063" H 13100 20550 50  0001 C CNN
+F 1 "GND" H 13100 20650 50  0000 C CNN
+F 2 "" H 13100 20800 50  0001 C CNN
+F 3 "" H 13100 20800 50  0001 C CNN
+	1    13100 20800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12950 20650 13100 20650
+Wire Wire Line
+	13100 20650 13100 20800
+Wire Wire Line
+	11600 20650 12150 20650
+$Comp
+L LED D25
+U 1 1 5EF87849
+P 12050 20950
+F 0 "D25" H 12050 21050 50  0000 C CNN
+F 1 "LED" H 12050 20850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12050 20950 50  0001 C CNN
+F 3 "" H 12050 20950 50  0001 C CNN
+	1    12050 20950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R43
+U 1 1 5EF8784F
+P 12550 20950
+F 0 "R43" V 12630 20950 50  0000 C CNN
+F 1 "1k" V 12550 20950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12480 20950 50  0001 C CNN
+F 3 "" H 12550 20950 50  0001 C CNN
+	1    12550 20950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12200 20950 12400 20950
+$Comp
+L GND #PWR064
+U 1 1 5EF87856
+P 12850 21100
+F 0 "#PWR064" H 12850 20850 50  0001 C CNN
+F 1 "GND" H 12850 20950 50  0000 C CNN
+F 2 "" H 12850 21100 50  0001 C CNN
+F 3 "" H 12850 21100 50  0001 C CNN
+	1    12850 21100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 20950 12850 20950
+Wire Wire Line
+	12850 20950 12850 21100
+Wire Wire Line
+	11400 20950 11900 20950
+Wire Wire Line
+	11250 19200 12750 19200
+Wire Wire Line
+	12750 19200 12750 19350
+Wire Wire Line
+	11250 19300 12550 19300
+Wire Wire Line
+	12550 19300 12550 19600
+Wire Wire Line
+	11250 19400 12350 19400
+Wire Wire Line
+	12350 19400 12350 19850
+Wire Wire Line
+	11250 19500 12150 19500
+Wire Wire Line
+	12150 19500 12150 20100
+Wire Wire Line
+	11250 19600 11900 19600
+Wire Wire Line
+	11900 19600 11900 20350
+Wire Wire Line
+	11600 20650 11600 19700
+Wire Wire Line
+	11600 19700 11250 19700
+Wire Wire Line
+	11400 19800 11400 20950
+Wire Wire Line
+	11400 19800 11250 19800
+$Comp
+L 74HC595D_118 U6
+U 1 1 5EF87876
+P 10500 11750
+F 0 "U6" H 10203 11788 60  0000 L CNN
+F 1 "74HC595D_118" V 10600 11250 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10700 11950 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10700 12050 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10700 12150 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10700 12250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10700 12350 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10700 12450 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10700 12550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10700 12650 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10700 12750 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10700 12850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10700 12950 60  0001 L CNN "Status"
+	1    10500 11750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D60
+U 1 1 5EF87885
+P 13350 11850
+F 0 "D60" H 13150 12000 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 13350 11700 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 13550 12050 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13550 12150 60  0001 L CNN
+F 4 "475-2709-1-ND" H 13550 12250 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 13550 12350 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 13550 12450 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 13550 12550 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13550 12650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 13550 12750 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 13550 12850 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 13550 12950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13550 13050 60  0001 L CNN "Status"
+	1    13350 11850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U7
+U 1 1 5EF87894
+P 10550 14150
+F 0 "U7" H 10253 14188 60  0000 L CNN
+F 1 "74HC595D_118" V 10650 13650 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10750 14350 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10750 14450 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10750 14550 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10750 14650 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10750 14750 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10750 14850 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10750 14950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10750 15050 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10750 15150 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10750 15250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10750 15350 60  0001 L CNN "Status"
+	1    10550 14150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U8
+U 1 1 5EF878A3
+P 10600 16700
+F 0 "U8" H 10303 16738 60  0000 L CNN
+F 1 "74HC595D_118" V 10700 16200 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10800 16900 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10800 17000 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10800 17100 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10800 17200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10800 17300 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10800 17400 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10800 17500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10800 17600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10800 17700 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10800 17800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10800 17900 60  0001 L CNN "Status"
+	1    10600 16700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U9
+U 1 1 5EF878B2
+P 10750 19000
+F 0 "U9" H 10453 19038 60  0000 L CNN
+F 1 "74HC595D_118" V 10850 18500 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 10950 19200 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10950 19300 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 10950 19400 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 10950 19500 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 10950 19600 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 10950 19700 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 10950 19800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 10950 19900 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 10950 20000 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10950 20100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10950 20200 60  0001 L CNN "Status"
+	1    10750 19000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D56
+U 1 1 5EF878C1
+P 13200 12100
+F 0 "D56" H 13000 12250 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 13200 11950 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 13400 12300 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13400 12400 60  0001 L CNN
+F 4 "475-2709-1-ND" H 13400 12500 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 13400 12600 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 13400 12700 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 13400 12800 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13400 12900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 13400 13000 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 13400 13100 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 13400 13200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13400 13300 60  0001 L CNN "Status"
+	1    13200 12100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D52
+U 1 1 5EF878D0
+P 13000 12350
+F 0 "D52" H 12800 12500 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 13000 12200 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 13200 12550 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13200 12650 60  0001 L CNN
+F 4 "475-2709-1-ND" H 13200 12750 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 13200 12850 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 13200 12950 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 13200 13050 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13200 13150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 13200 13250 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 13200 13350 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 13200 13450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13200 13550 60  0001 L CNN "Status"
+	1    13000 12350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D47
+U 1 1 5EF878DF
+P 12800 12600
+F 0 "D47" H 12600 12750 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12800 12450 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 13000 12800 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13000 12900 60  0001 L CNN
+F 4 "475-2709-1-ND" H 13000 13000 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 13000 13100 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 13000 13200 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 13000 13300 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 13000 13400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 13000 13500 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 13000 13600 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 13000 13700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13000 13800 60  0001 L CNN "Status"
+	1    12800 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D43
+U 1 1 5EF878EE
+P 12600 12850
+F 0 "D43" H 12400 13000 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12600 12700 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12800 13050 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12800 13150 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12800 13250 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12800 13350 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12800 13450 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12800 13550 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12800 13650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12800 13750 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12800 13850 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12800 13950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12800 14050 60  0001 L CNN "Status"
+	1    12600 12850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D38
+U 1 1 5EF878FD
+P 12350 13100
+F 0 "D38" H 12150 13250 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12350 12950 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12550 13300 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12550 13400 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12550 13500 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12550 13600 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12550 13700 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12550 13800 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12550 13900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12550 14000 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12550 14100 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12550 14200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12550 14300 60  0001 L CNN "Status"
+	1    12350 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D28
+U 1 1 5EF8790C
+P 12100 13400
+F 0 "D28" H 11900 13550 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 12100 13250 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12300 13600 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12300 13700 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12300 13800 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12300 13900 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12300 14000 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12300 14100 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12300 14200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12300 14300 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12300 14400 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12300 14500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12300 14600 60  0001 L CNN "Status"
+	1    12100 13400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D9
+U 1 1 5EF8791B
+P 11850 13700
+F 0 "D9" H 11650 13850 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 11850 13550 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 12050 13900 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12050 14000 60  0001 L CNN
+F 4 "475-2709-1-ND" H 12050 14100 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 12050 14200 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 12050 14300 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 12050 14400 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 12050 14500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 12050 14600 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 12050 14700 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 12050 14800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12050 14900 60  0001 L CNN "Status"
+	1    11850 13700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R114
+U 1 1 5EF89219
+P 18750 1800
+F 0 "R114" V 18830 1800 50  0000 C CNN
+F 1 "1k" V 18750 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18680 1800 50  0001 C CNN
+F 3 "" H 18750 1800 50  0001 C CNN
+	1    18750 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18400 1800 18600 1800
+$Comp
+L GND #PWR065
+U 1 1 5EF89220
+P 19050 1950
+F 0 "#PWR065" H 19050 1700 50  0001 C CNN
+F 1 "GND" H 19050 1800 50  0000 C CNN
+F 2 "" H 19050 1950 50  0001 C CNN
+F 3 "" H 19050 1950 50  0001 C CNN
+	1    19050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18900 1800 19050 1800
+Wire Wire Line
+	19050 1800 19050 1950
+Wire Wire Line
+	15950 1800 18100 1800
+$Comp
+L R R108
+U 1 1 5EF89229
+P 18600 2050
+F 0 "R108" V 18680 2050 50  0000 C CNN
+F 1 "1k" V 18600 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18530 2050 50  0001 C CNN
+F 3 "" H 18600 2050 50  0001 C CNN
+	1    18600 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18250 2050 18450 2050
+$Comp
+L GND #PWR066
+U 1 1 5EF89230
+P 18900 2200
+F 0 "#PWR066" H 18900 1950 50  0001 C CNN
+F 1 "GND" H 18900 2050 50  0000 C CNN
+F 2 "" H 18900 2200 50  0001 C CNN
+F 3 "" H 18900 2200 50  0001 C CNN
+	1    18900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18750 2050 18900 2050
+Wire Wire Line
+	18900 2050 18900 2200
+Wire Wire Line
+	17450 2050 17950 2050
+$Comp
+L R R101
+U 1 1 5EF89239
+P 18400 2300
+F 0 "R101" V 18480 2300 50  0000 C CNN
+F 1 "1k" V 18400 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18330 2300 50  0001 C CNN
+F 3 "" H 18400 2300 50  0001 C CNN
+	1    18400 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18050 2300 18250 2300
+$Comp
+L GND #PWR067
+U 1 1 5EF89240
+P 18700 2450
+F 0 "#PWR067" H 18700 2200 50  0001 C CNN
+F 1 "GND" H 18700 2300 50  0000 C CNN
+F 2 "" H 18700 2450 50  0001 C CNN
+F 3 "" H 18700 2450 50  0001 C CNN
+	1    18700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 2300 18700 2300
+Wire Wire Line
+	18700 2300 18700 2450
+Wire Wire Line
+	17250 2300 17750 2300
+$Comp
+L R R95
+U 1 1 5EF89249
+P 18200 2550
+F 0 "R95" V 18280 2550 50  0000 C CNN
+F 1 "1k" V 18200 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18130 2550 50  0001 C CNN
+F 3 "" H 18200 2550 50  0001 C CNN
+	1    18200 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17850 2550 18050 2550
+$Comp
+L GND #PWR068
+U 1 1 5EF89250
+P 18500 2700
+F 0 "#PWR068" H 18500 2450 50  0001 C CNN
+F 1 "GND" H 18500 2550 50  0000 C CNN
+F 2 "" H 18500 2700 50  0001 C CNN
+F 3 "" H 18500 2700 50  0001 C CNN
+	1    18500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18350 2550 18500 2550
+Wire Wire Line
+	18500 2550 18500 2700
+Wire Wire Line
+	17050 2550 17550 2550
+$Comp
+L R R88
+U 1 1 5EF89259
+P 18000 2800
+F 0 "R88" V 18080 2800 50  0000 C CNN
+F 1 "1k" V 18000 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17930 2800 50  0001 C CNN
+F 3 "" H 18000 2800 50  0001 C CNN
+	1    18000 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17650 2800 17850 2800
+$Comp
+L GND #PWR069
+U 1 1 5EF89260
+P 18300 2950
+F 0 "#PWR069" H 18300 2700 50  0001 C CNN
+F 1 "GND" H 18300 2800 50  0000 C CNN
+F 2 "" H 18300 2950 50  0001 C CNN
+F 3 "" H 18300 2950 50  0001 C CNN
+	1    18300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18150 2800 18300 2800
+Wire Wire Line
+	18300 2800 18300 2950
+Wire Wire Line
+	16850 2800 17350 2800
+$Comp
+L R R81
+U 1 1 5EF89269
+P 17750 3050
+F 0 "R81" V 17830 3050 50  0000 C CNN
+F 1 "1k" V 17750 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17680 3050 50  0001 C CNN
+F 3 "" H 17750 3050 50  0001 C CNN
+	1    17750 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17400 3050 17600 3050
+$Comp
+L GND #PWR070
+U 1 1 5EF89270
+P 18050 3200
+F 0 "#PWR070" H 18050 2950 50  0001 C CNN
+F 1 "GND" H 18050 3050 50  0000 C CNN
+F 2 "" H 18050 3200 50  0001 C CNN
+F 3 "" H 18050 3200 50  0001 C CNN
+	1    18050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17900 3050 18050 3050
+Wire Wire Line
+	18050 3050 18050 3200
+Wire Wire Line
+	16600 3050 17100 3050
+$Comp
+L R R74
+U 1 1 5EF89279
+P 17500 3350
+F 0 "R74" V 17580 3350 50  0000 C CNN
+F 1 "1k" V 17500 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17430 3350 50  0001 C CNN
+F 3 "" H 17500 3350 50  0001 C CNN
+	1    17500 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17150 3350 17350 3350
+$Comp
+L GND #PWR071
+U 1 1 5EF89280
+P 17800 3500
+F 0 "#PWR071" H 17800 3250 50  0001 C CNN
+F 1 "GND" H 17800 3350 50  0000 C CNN
+F 2 "" H 17800 3500 50  0001 C CNN
+F 3 "" H 17800 3500 50  0001 C CNN
+	1    17800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17650 3350 17800 3350
+Wire Wire Line
+	17800 3350 17800 3500
+Wire Wire Line
+	16300 3350 16850 3350
+$Comp
+L R R71
+U 1 1 5EF89289
+P 17250 3650
+F 0 "R71" V 17330 3650 50  0000 C CNN
+F 1 "1k" V 17250 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17180 3650 50  0001 C CNN
+F 3 "" H 17250 3650 50  0001 C CNN
+	1    17250 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16900 3650 17100 3650
+$Comp
+L GND #PWR072
+U 1 1 5EF89290
+P 17550 3800
+F 0 "#PWR072" H 17550 3550 50  0001 C CNN
+F 1 "GND" H 17550 3650 50  0000 C CNN
+F 2 "" H 17550 3800 50  0001 C CNN
+F 3 "" H 17550 3800 50  0001 C CNN
+	1    17550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17400 3650 17550 3650
+Wire Wire Line
+	17550 3650 17550 3800
+Wire Wire Line
+	16100 3650 16600 3650
+Wire Wire Line
+	15950 1900 17450 1900
+Wire Wire Line
+	17450 1900 17450 2050
+Wire Wire Line
+	15950 2000 17250 2000
+Wire Wire Line
+	17250 2000 17250 2300
+Wire Wire Line
+	15950 2100 17050 2100
+Wire Wire Line
+	17050 2100 17050 2550
+Wire Wire Line
+	15950 2200 16850 2200
+Wire Wire Line
+	16850 2200 16850 2800
+Wire Wire Line
+	15950 2300 16600 2300
+Wire Wire Line
+	16600 2300 16600 3050
+Wire Wire Line
+	16300 3350 16300 2400
+Wire Wire Line
+	16300 2400 15950 2400
+Wire Wire Line
+	16100 2500 16100 3650
+Wire Wire Line
+	16100 2500 15950 2500
+$Comp
+L LED D110
+U 1 1 5EF892A7
+P 18300 4200
+F 0 "D110" H 18300 4300 50  0000 C CNN
+F 1 "LED" H 18300 4100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18300 4200 50  0001 C CNN
+F 3 "" H 18300 4200 50  0001 C CNN
+	1    18300 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R116
+U 1 1 5EF892AD
+P 18800 4200
+F 0 "R116" V 18880 4200 50  0000 C CNN
+F 1 "1k" V 18800 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18730 4200 50  0001 C CNN
+F 3 "" H 18800 4200 50  0001 C CNN
+	1    18800 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18450 4200 18650 4200
+$Comp
+L GND #PWR073
+U 1 1 5EF892B4
+P 19100 4350
+F 0 "#PWR073" H 19100 4100 50  0001 C CNN
+F 1 "GND" H 19100 4200 50  0000 C CNN
+F 2 "" H 19100 4350 50  0001 C CNN
+F 3 "" H 19100 4350 50  0001 C CNN
+	1    19100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18950 4200 19100 4200
+Wire Wire Line
+	19100 4200 19100 4350
+Wire Wire Line
+	16000 4200 18150 4200
+$Comp
+L LED D104
+U 1 1 5EF892BD
+P 18150 4450
+F 0 "D104" H 18150 4550 50  0000 C CNN
+F 1 "LED" H 18150 4350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18150 4450 50  0001 C CNN
+F 3 "" H 18150 4450 50  0001 C CNN
+	1    18150 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R110
+U 1 1 5EF892C3
+P 18650 4450
+F 0 "R110" V 18730 4450 50  0000 C CNN
+F 1 "1k" V 18650 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18580 4450 50  0001 C CNN
+F 3 "" H 18650 4450 50  0001 C CNN
+	1    18650 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18300 4450 18500 4450
+$Comp
+L GND #PWR074
+U 1 1 5EF892CA
+P 18950 4600
+F 0 "#PWR074" H 18950 4350 50  0001 C CNN
+F 1 "GND" H 18950 4450 50  0000 C CNN
+F 2 "" H 18950 4600 50  0001 C CNN
+F 3 "" H 18950 4600 50  0001 C CNN
+	1    18950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18800 4450 18950 4450
+Wire Wire Line
+	18950 4450 18950 4600
+Wire Wire Line
+	17500 4450 18000 4450
+$Comp
+L LED D97
+U 1 1 5EF892D3
+P 17950 4700
+F 0 "D97" H 17950 4800 50  0000 C CNN
+F 1 "LED" H 17950 4600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17950 4700 50  0001 C CNN
+F 3 "" H 17950 4700 50  0001 C CNN
+	1    17950 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R103
+U 1 1 5EF892D9
+P 18450 4700
+F 0 "R103" V 18530 4700 50  0000 C CNN
+F 1 "1k" V 18450 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18380 4700 50  0001 C CNN
+F 3 "" H 18450 4700 50  0001 C CNN
+	1    18450 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18100 4700 18300 4700
+$Comp
+L GND #PWR075
+U 1 1 5EF892E0
+P 18750 4850
+F 0 "#PWR075" H 18750 4600 50  0001 C CNN
+F 1 "GND" H 18750 4700 50  0000 C CNN
+F 2 "" H 18750 4850 50  0001 C CNN
+F 3 "" H 18750 4850 50  0001 C CNN
+	1    18750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18600 4700 18750 4700
+Wire Wire Line
+	18750 4700 18750 4850
+Wire Wire Line
+	17300 4700 17800 4700
+$Comp
+L LED D90
+U 1 1 5EF892E9
+P 17750 4950
+F 0 "D90" H 17750 5050 50  0000 C CNN
+F 1 "LED" H 17750 4850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17750 4950 50  0001 C CNN
+F 3 "" H 17750 4950 50  0001 C CNN
+	1    17750 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R96
+U 1 1 5EF892EF
+P 18250 4950
+F 0 "R96" V 18330 4950 50  0000 C CNN
+F 1 "1k" V 18250 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18180 4950 50  0001 C CNN
+F 3 "" H 18250 4950 50  0001 C CNN
+	1    18250 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17900 4950 18100 4950
+$Comp
+L GND #PWR076
+U 1 1 5EF892F6
+P 18550 5100
+F 0 "#PWR076" H 18550 4850 50  0001 C CNN
+F 1 "GND" H 18550 4950 50  0000 C CNN
+F 2 "" H 18550 5100 50  0001 C CNN
+F 3 "" H 18550 5100 50  0001 C CNN
+	1    18550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18400 4950 18550 4950
+Wire Wire Line
+	18550 4950 18550 5100
+Wire Wire Line
+	17100 4950 17600 4950
+$Comp
+L LED D84
+U 1 1 5EF892FF
+P 17550 5200
+F 0 "D84" H 17550 5300 50  0000 C CNN
+F 1 "LED" H 17550 5100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17550 5200 50  0001 C CNN
+F 3 "" H 17550 5200 50  0001 C CNN
+	1    17550 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R90
+U 1 1 5EF89305
+P 18050 5200
+F 0 "R90" V 18130 5200 50  0000 C CNN
+F 1 "1k" V 18050 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17980 5200 50  0001 C CNN
+F 3 "" H 18050 5200 50  0001 C CNN
+	1    18050 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17700 5200 17900 5200
+$Comp
+L GND #PWR077
+U 1 1 5EF8930C
+P 18350 5350
+F 0 "#PWR077" H 18350 5100 50  0001 C CNN
+F 1 "GND" H 18350 5200 50  0000 C CNN
+F 2 "" H 18350 5350 50  0001 C CNN
+F 3 "" H 18350 5350 50  0001 C CNN
+	1    18350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18200 5200 18350 5200
+Wire Wire Line
+	18350 5200 18350 5350
+Wire Wire Line
+	16900 5200 17400 5200
+$Comp
+L LED D77
+U 1 1 5EF89315
+P 17300 5450
+F 0 "D77" H 17300 5550 50  0000 C CNN
+F 1 "LED" H 17300 5350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17300 5450 50  0001 C CNN
+F 3 "" H 17300 5450 50  0001 C CNN
+	1    17300 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R83
+U 1 1 5EF8931B
+P 17800 5450
+F 0 "R83" V 17880 5450 50  0000 C CNN
+F 1 "1k" V 17800 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17730 5450 50  0001 C CNN
+F 3 "" H 17800 5450 50  0001 C CNN
+	1    17800 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17450 5450 17650 5450
+$Comp
+L GND #PWR078
+U 1 1 5EF89322
+P 18100 5600
+F 0 "#PWR078" H 18100 5350 50  0001 C CNN
+F 1 "GND" H 18100 5450 50  0000 C CNN
+F 2 "" H 18100 5600 50  0001 C CNN
+F 3 "" H 18100 5600 50  0001 C CNN
+	1    18100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17950 5450 18100 5450
+Wire Wire Line
+	18100 5450 18100 5600
+Wire Wire Line
+	16650 5450 17150 5450
+$Comp
+L LED D70
+U 1 1 5EF8932B
+P 17050 5750
+F 0 "D70" H 17050 5850 50  0000 C CNN
+F 1 "LED" H 17050 5650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17050 5750 50  0001 C CNN
+F 3 "" H 17050 5750 50  0001 C CNN
+	1    17050 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R76
+U 1 1 5EF89331
+P 17550 5750
+F 0 "R76" V 17630 5750 50  0000 C CNN
+F 1 "1k" V 17550 5750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17480 5750 50  0001 C CNN
+F 3 "" H 17550 5750 50  0001 C CNN
+	1    17550 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17200 5750 17400 5750
+$Comp
+L GND #PWR079
+U 1 1 5EF89338
+P 17850 5900
+F 0 "#PWR079" H 17850 5650 50  0001 C CNN
+F 1 "GND" H 17850 5750 50  0000 C CNN
+F 2 "" H 17850 5900 50  0001 C CNN
+F 3 "" H 17850 5900 50  0001 C CNN
+	1    17850 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17700 5750 17850 5750
+Wire Wire Line
+	17850 5750 17850 5900
+Wire Wire Line
+	16350 5750 16900 5750
+$Comp
+L LED D66
+U 1 1 5EF89341
+P 16800 6050
+F 0 "D66" H 16800 6150 50  0000 C CNN
+F 1 "LED" H 16800 5950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 16800 6050 50  0001 C CNN
+F 3 "" H 16800 6050 50  0001 C CNN
+	1    16800 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R72
+U 1 1 5EF89347
+P 17300 6050
+F 0 "R72" V 17380 6050 50  0000 C CNN
+F 1 "1k" V 17300 6050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17230 6050 50  0001 C CNN
+F 3 "" H 17300 6050 50  0001 C CNN
+	1    17300 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16950 6050 17150 6050
+$Comp
+L GND #PWR080
+U 1 1 5EF8934E
+P 17600 6200
+F 0 "#PWR080" H 17600 5950 50  0001 C CNN
+F 1 "GND" H 17600 6050 50  0000 C CNN
+F 2 "" H 17600 6200 50  0001 C CNN
+F 3 "" H 17600 6200 50  0001 C CNN
+	1    17600 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17450 6050 17600 6050
+Wire Wire Line
+	17600 6050 17600 6200
+Wire Wire Line
+	16150 6050 16650 6050
+Wire Wire Line
+	16000 4300 17500 4300
+Wire Wire Line
+	17500 4300 17500 4450
+Wire Wire Line
+	16000 4400 17300 4400
+Wire Wire Line
+	17300 4400 17300 4700
+Wire Wire Line
+	16000 4500 17100 4500
+Wire Wire Line
+	17100 4500 17100 4950
+Wire Wire Line
+	16000 4600 16900 4600
+Wire Wire Line
+	16900 4600 16900 5200
+Wire Wire Line
+	16000 4700 16650 4700
+Wire Wire Line
+	16650 4700 16650 5450
+Wire Wire Line
+	16350 5750 16350 4800
+Wire Wire Line
+	16350 4800 16000 4800
+Wire Wire Line
+	16150 4900 16150 6050
+Wire Wire Line
+	16150 4900 16000 4900
+$Comp
+L LED D112
+U 1 1 5EF89365
+P 18350 6750
+F 0 "D112" H 18350 6850 50  0000 C CNN
+F 1 "LED" H 18350 6650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18350 6750 50  0001 C CNN
+F 3 "" H 18350 6750 50  0001 C CNN
+	1    18350 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R118
+U 1 1 5EF8936B
+P 18850 6750
+F 0 "R118" V 18930 6750 50  0000 C CNN
+F 1 "1k" V 18850 6750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18780 6750 50  0001 C CNN
+F 3 "" H 18850 6750 50  0001 C CNN
+	1    18850 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18500 6750 18700 6750
+$Comp
+L GND #PWR081
+U 1 1 5EF89372
+P 19150 6900
+F 0 "#PWR081" H 19150 6650 50  0001 C CNN
+F 1 "GND" H 19150 6750 50  0000 C CNN
+F 2 "" H 19150 6900 50  0001 C CNN
+F 3 "" H 19150 6900 50  0001 C CNN
+	1    19150 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19000 6750 19150 6750
+Wire Wire Line
+	19150 6750 19150 6900
+Wire Wire Line
+	16050 6750 18200 6750
+$Comp
+L LED D106
+U 1 1 5EF8937B
+P 18200 7000
+F 0 "D106" H 18200 7100 50  0000 C CNN
+F 1 "LED" H 18200 6900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18200 7000 50  0001 C CNN
+F 3 "" H 18200 7000 50  0001 C CNN
+	1    18200 7000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R112
+U 1 1 5EF89381
+P 18700 7000
+F 0 "R112" V 18780 7000 50  0000 C CNN
+F 1 "1k" V 18700 7000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18630 7000 50  0001 C CNN
+F 3 "" H 18700 7000 50  0001 C CNN
+	1    18700 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18350 7000 18550 7000
+$Comp
+L GND #PWR082
+U 1 1 5EF89388
+P 19000 7150
+F 0 "#PWR082" H 19000 6900 50  0001 C CNN
+F 1 "GND" H 19000 7000 50  0000 C CNN
+F 2 "" H 19000 7150 50  0001 C CNN
+F 3 "" H 19000 7150 50  0001 C CNN
+	1    19000 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18850 7000 19000 7000
+Wire Wire Line
+	19000 7000 19000 7150
+Wire Wire Line
+	17550 7000 18050 7000
+$Comp
+L LED D99
+U 1 1 5EF89391
+P 18000 7250
+F 0 "D99" H 18000 7350 50  0000 C CNN
+F 1 "LED" H 18000 7150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18000 7250 50  0001 C CNN
+F 3 "" H 18000 7250 50  0001 C CNN
+	1    18000 7250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R105
+U 1 1 5EF89397
+P 18500 7250
+F 0 "R105" V 18580 7250 50  0000 C CNN
+F 1 "1k" V 18500 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18430 7250 50  0001 C CNN
+F 3 "" H 18500 7250 50  0001 C CNN
+	1    18500 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18150 7250 18350 7250
+$Comp
+L GND #PWR083
+U 1 1 5EF8939E
+P 18800 7400
+F 0 "#PWR083" H 18800 7150 50  0001 C CNN
+F 1 "GND" H 18800 7250 50  0000 C CNN
+F 2 "" H 18800 7400 50  0001 C CNN
+F 3 "" H 18800 7400 50  0001 C CNN
+	1    18800 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18650 7250 18800 7250
+Wire Wire Line
+	18800 7250 18800 7400
+Wire Wire Line
+	17350 7250 17850 7250
+$Comp
+L LED D92
+U 1 1 5EF893A7
+P 17800 7500
+F 0 "D92" H 17800 7600 50  0000 C CNN
+F 1 "LED" H 17800 7400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17800 7500 50  0001 C CNN
+F 3 "" H 17800 7500 50  0001 C CNN
+	1    17800 7500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R98
+U 1 1 5EF893AD
+P 18300 7500
+F 0 "R98" V 18380 7500 50  0000 C CNN
+F 1 "1k" V 18300 7500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18230 7500 50  0001 C CNN
+F 3 "" H 18300 7500 50  0001 C CNN
+	1    18300 7500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17950 7500 18150 7500
+$Comp
+L GND #PWR084
+U 1 1 5EF893B4
+P 18600 7650
+F 0 "#PWR084" H 18600 7400 50  0001 C CNN
+F 1 "GND" H 18600 7500 50  0000 C CNN
+F 2 "" H 18600 7650 50  0001 C CNN
+F 3 "" H 18600 7650 50  0001 C CNN
+	1    18600 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 7500 18600 7500
+Wire Wire Line
+	18600 7500 18600 7650
+Wire Wire Line
+	17150 7500 17650 7500
+$Comp
+L LED D85
+U 1 1 5EF893BD
+P 17600 7750
+F 0 "D85" H 17600 7850 50  0000 C CNN
+F 1 "LED" H 17600 7650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17600 7750 50  0001 C CNN
+F 3 "" H 17600 7750 50  0001 C CNN
+	1    17600 7750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R92
+U 1 1 5EF893C3
+P 18100 7750
+F 0 "R92" V 18180 7750 50  0000 C CNN
+F 1 "1k" V 18100 7750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18030 7750 50  0001 C CNN
+F 3 "" H 18100 7750 50  0001 C CNN
+	1    18100 7750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17750 7750 17950 7750
+$Comp
+L GND #PWR085
+U 1 1 5EF893CA
+P 18400 7900
+F 0 "#PWR085" H 18400 7650 50  0001 C CNN
+F 1 "GND" H 18400 7750 50  0000 C CNN
+F 2 "" H 18400 7900 50  0001 C CNN
+F 3 "" H 18400 7900 50  0001 C CNN
+	1    18400 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18250 7750 18400 7750
+Wire Wire Line
+	18400 7750 18400 7900
+Wire Wire Line
+	16950 7750 17450 7750
+$Comp
+L LED D78
+U 1 1 5EF893D3
+P 17350 8000
+F 0 "D78" H 17350 8100 50  0000 C CNN
+F 1 "LED" H 17350 7900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17350 8000 50  0001 C CNN
+F 3 "" H 17350 8000 50  0001 C CNN
+	1    17350 8000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R85
+U 1 1 5EF893D9
+P 17850 8000
+F 0 "R85" V 17930 8000 50  0000 C CNN
+F 1 "1k" V 17850 8000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17780 8000 50  0001 C CNN
+F 3 "" H 17850 8000 50  0001 C CNN
+	1    17850 8000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17500 8000 17700 8000
+$Comp
+L GND #PWR086
+U 1 1 5EF893E0
+P 18150 8150
+F 0 "#PWR086" H 18150 7900 50  0001 C CNN
+F 1 "GND" H 18150 8000 50  0000 C CNN
+F 2 "" H 18150 8150 50  0001 C CNN
+F 3 "" H 18150 8150 50  0001 C CNN
+	1    18150 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 8000 18150 8000
+Wire Wire Line
+	18150 8000 18150 8150
+Wire Wire Line
+	16700 8000 17200 8000
+$Comp
+L LED D71
+U 1 1 5EF893E9
+P 17100 8300
+F 0 "D71" H 17100 8400 50  0000 C CNN
+F 1 "LED" H 17100 8200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17100 8300 50  0001 C CNN
+F 3 "" H 17100 8300 50  0001 C CNN
+	1    17100 8300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R78
+U 1 1 5EF893EF
+P 17600 8300
+F 0 "R78" V 17680 8300 50  0000 C CNN
+F 1 "1k" V 17600 8300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17530 8300 50  0001 C CNN
+F 3 "" H 17600 8300 50  0001 C CNN
+	1    17600 8300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17250 8300 17450 8300
+$Comp
+L GND #PWR087
+U 1 1 5EF893F6
+P 17900 8450
+F 0 "#PWR087" H 17900 8200 50  0001 C CNN
+F 1 "GND" H 17900 8300 50  0000 C CNN
+F 2 "" H 17900 8450 50  0001 C CNN
+F 3 "" H 17900 8450 50  0001 C CNN
+	1    17900 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17750 8300 17900 8300
+Wire Wire Line
+	17900 8300 17900 8450
+Wire Wire Line
+	16400 8300 16950 8300
+$Comp
+L LED D67
+U 1 1 5EF893FF
+P 16850 8600
+F 0 "D67" H 16850 8700 50  0000 C CNN
+F 1 "LED" H 16850 8500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 16850 8600 50  0001 C CNN
+F 3 "" H 16850 8600 50  0001 C CNN
+	1    16850 8600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R73
+U 1 1 5EF89405
+P 17350 8600
+F 0 "R73" V 17430 8600 50  0000 C CNN
+F 1 "1k" V 17350 8600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17280 8600 50  0001 C CNN
+F 3 "" H 17350 8600 50  0001 C CNN
+	1    17350 8600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17000 8600 17200 8600
+$Comp
+L GND #PWR088
+U 1 1 5EF8940C
+P 17700 8600
+F 0 "#PWR088" H 17700 8350 50  0001 C CNN
+F 1 "GND" H 17700 8450 50  0000 C CNN
+F 2 "" H 17700 8600 50  0001 C CNN
+F 3 "" H 17700 8600 50  0001 C CNN
+	1    17700 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17500 8600 17650 8600
+Wire Wire Line
+	17650 8600 17650 8750
+Wire Wire Line
+	16200 8600 16700 8600
+Wire Wire Line
+	16050 6850 17550 6850
+Wire Wire Line
+	17550 6850 17550 7000
+Wire Wire Line
+	16050 6950 17350 6950
+Wire Wire Line
+	17350 6950 17350 7250
+Wire Wire Line
+	16050 7050 17150 7050
+Wire Wire Line
+	17150 7050 17150 7500
+Wire Wire Line
+	16050 7150 16950 7150
+Wire Wire Line
+	16950 7150 16950 7750
+Wire Wire Line
+	16050 7250 16700 7250
+Wire Wire Line
+	16700 7250 16700 8000
+Wire Wire Line
+	16400 8300 16400 7350
+Wire Wire Line
+	16400 7350 16050 7350
+Wire Wire Line
+	16200 7450 16200 8600
+Wire Wire Line
+	16200 7450 16050 7450
+$Comp
+L LED D116
+U 1 1 5EF89423
+P 18500 9050
+F 0 "D116" H 18500 9150 50  0000 C CNN
+F 1 "LED" H 18500 8950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18500 9050 50  0001 C CNN
+F 3 "" H 18500 9050 50  0001 C CNN
+	1    18500 9050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R122
+U 1 1 5EF89429
+P 19000 9050
+F 0 "R122" V 19080 9050 50  0000 C CNN
+F 1 "1k" V 19000 9050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18930 9050 50  0001 C CNN
+F 3 "" H 19000 9050 50  0001 C CNN
+	1    19000 9050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 9050 18850 9050
+$Comp
+L GND #PWR089
+U 1 1 5EF89430
+P 19300 9200
+F 0 "#PWR089" H 19300 8950 50  0001 C CNN
+F 1 "GND" H 19300 9050 50  0000 C CNN
+F 2 "" H 19300 9200 50  0001 C CNN
+F 3 "" H 19300 9200 50  0001 C CNN
+	1    19300 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19150 9050 19300 9050
+Wire Wire Line
+	19300 9050 19300 9200
+Wire Wire Line
+	16200 9050 18350 9050
+$Comp
+L LED D113
+U 1 1 5EF89439
+P 18350 9300
+F 0 "D113" H 18350 9400 50  0000 C CNN
+F 1 "LED" H 18350 9200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18350 9300 50  0001 C CNN
+F 3 "" H 18350 9300 50  0001 C CNN
+	1    18350 9300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R119
+U 1 1 5EF8943F
+P 18850 9300
+F 0 "R119" V 18930 9300 50  0000 C CNN
+F 1 "1k" V 18850 9300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18780 9300 50  0001 C CNN
+F 3 "" H 18850 9300 50  0001 C CNN
+	1    18850 9300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18500 9300 18700 9300
+$Comp
+L GND #PWR090
+U 1 1 5EF89446
+P 19150 9450
+F 0 "#PWR090" H 19150 9200 50  0001 C CNN
+F 1 "GND" H 19150 9300 50  0000 C CNN
+F 2 "" H 19150 9450 50  0001 C CNN
+F 3 "" H 19150 9450 50  0001 C CNN
+	1    19150 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19000 9300 19150 9300
+Wire Wire Line
+	19150 9300 19150 9450
+Wire Wire Line
+	17700 9300 18200 9300
+$Comp
+L LED D105
+U 1 1 5EF8944F
+P 18150 9550
+F 0 "D105" H 18150 9650 50  0000 C CNN
+F 1 "LED" H 18150 9450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18150 9550 50  0001 C CNN
+F 3 "" H 18150 9550 50  0001 C CNN
+	1    18150 9550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R111
+U 1 1 5EF89455
+P 18650 9550
+F 0 "R111" V 18730 9550 50  0000 C CNN
+F 1 "1k" V 18650 9550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18580 9550 50  0001 C CNN
+F 3 "" H 18650 9550 50  0001 C CNN
+	1    18650 9550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18300 9550 18500 9550
+$Comp
+L GND #PWR091
+U 1 1 5EF8945C
+P 18950 9700
+F 0 "#PWR091" H 18950 9450 50  0001 C CNN
+F 1 "GND" H 18950 9550 50  0000 C CNN
+F 2 "" H 18950 9700 50  0001 C CNN
+F 3 "" H 18950 9700 50  0001 C CNN
+	1    18950 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18800 9550 18950 9550
+Wire Wire Line
+	18950 9550 18950 9700
+Wire Wire Line
+	17500 9550 18000 9550
+$Comp
+L LED D98
+U 1 1 5EF89465
+P 17950 9800
+F 0 "D98" H 17950 9900 50  0000 C CNN
+F 1 "LED" H 17950 9700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17950 9800 50  0001 C CNN
+F 3 "" H 17950 9800 50  0001 C CNN
+	1    17950 9800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R104
+U 1 1 5EF8946B
+P 18450 9800
+F 0 "R104" V 18530 9800 50  0000 C CNN
+F 1 "1k" V 18450 9800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18380 9800 50  0001 C CNN
+F 3 "" H 18450 9800 50  0001 C CNN
+	1    18450 9800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18100 9800 18300 9800
+$Comp
+L GND #PWR092
+U 1 1 5EF89472
+P 18750 9950
+F 0 "#PWR092" H 18750 9700 50  0001 C CNN
+F 1 "GND" H 18750 9800 50  0000 C CNN
+F 2 "" H 18750 9950 50  0001 C CNN
+F 3 "" H 18750 9950 50  0001 C CNN
+	1    18750 9950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18600 9800 18750 9800
+Wire Wire Line
+	18750 9800 18750 9950
+Wire Wire Line
+	17300 9800 17800 9800
+$Comp
+L LED D91
+U 1 1 5EF8947B
+P 17750 10050
+F 0 "D91" H 17750 10150 50  0000 C CNN
+F 1 "LED" H 17750 9950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17750 10050 50  0001 C CNN
+F 3 "" H 17750 10050 50  0001 C CNN
+	1    17750 10050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R97
+U 1 1 5EF89481
+P 18250 10050
+F 0 "R97" V 18330 10050 50  0000 C CNN
+F 1 "1k" V 18250 10050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18180 10050 50  0001 C CNN
+F 3 "" H 18250 10050 50  0001 C CNN
+	1    18250 10050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17900 10050 18100 10050
+$Comp
+L GND #PWR093
+U 1 1 5EF89488
+P 18550 10200
+F 0 "#PWR093" H 18550 9950 50  0001 C CNN
+F 1 "GND" H 18550 10050 50  0000 C CNN
+F 2 "" H 18550 10200 50  0001 C CNN
+F 3 "" H 18550 10200 50  0001 C CNN
+	1    18550 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18400 10050 18550 10050
+Wire Wire Line
+	18550 10050 18550 10200
+Wire Wire Line
+	17100 10050 17600 10050
+$Comp
+L LED D82
+U 1 1 5EF89491
+P 17500 10300
+F 0 "D82" H 17500 10400 50  0000 C CNN
+F 1 "LED" H 17500 10200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17500 10300 50  0001 C CNN
+F 3 "" H 17500 10300 50  0001 C CNN
+	1    17500 10300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R89
+U 1 1 5EF89497
+P 18000 10300
+F 0 "R89" V 18080 10300 50  0000 C CNN
+F 1 "1k" V 18000 10300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17930 10300 50  0001 C CNN
+F 3 "" H 18000 10300 50  0001 C CNN
+	1    18000 10300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17650 10300 17850 10300
+$Comp
+L GND #PWR094
+U 1 1 5EF8949E
+P 18300 10450
+F 0 "#PWR094" H 18300 10200 50  0001 C CNN
+F 1 "GND" H 18300 10300 50  0000 C CNN
+F 2 "" H 18300 10450 50  0001 C CNN
+F 3 "" H 18300 10450 50  0001 C CNN
+	1    18300 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18150 10300 18300 10300
+Wire Wire Line
+	18300 10300 18300 10450
+Wire Wire Line
+	16850 10300 17350 10300
+$Comp
+L LED D75
+U 1 1 5EF894A7
+P 17250 10600
+F 0 "D75" H 17250 10700 50  0000 C CNN
+F 1 "LED" H 17250 10500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17250 10600 50  0001 C CNN
+F 3 "" H 17250 10600 50  0001 C CNN
+	1    17250 10600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R82
+U 1 1 5EF894AD
+P 17750 10600
+F 0 "R82" V 17830 10600 50  0000 C CNN
+F 1 "1k" V 17750 10600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17680 10600 50  0001 C CNN
+F 3 "" H 17750 10600 50  0001 C CNN
+	1    17750 10600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17400 10600 17600 10600
+$Comp
+L GND #PWR095
+U 1 1 5EF894B4
+P 18050 10750
+F 0 "#PWR095" H 18050 10500 50  0001 C CNN
+F 1 "GND" H 18050 10600 50  0000 C CNN
+F 2 "" H 18050 10750 50  0001 C CNN
+F 3 "" H 18050 10750 50  0001 C CNN
+	1    18050 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17900 10600 18050 10600
+Wire Wire Line
+	18050 10600 18050 10750
+Wire Wire Line
+	16550 10600 17100 10600
+$Comp
+L LED D68
+U 1 1 5EF894BD
+P 17000 10900
+F 0 "D68" H 17000 11000 50  0000 C CNN
+F 1 "LED" H 17000 10800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17000 10900 50  0001 C CNN
+F 3 "" H 17000 10900 50  0001 C CNN
+	1    17000 10900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R75
+U 1 1 5EF894C3
+P 17500 10900
+F 0 "R75" V 17580 10900 50  0000 C CNN
+F 1 "1k" V 17500 10900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17430 10900 50  0001 C CNN
+F 3 "" H 17500 10900 50  0001 C CNN
+	1    17500 10900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17150 10900 17350 10900
+$Comp
+L GND #PWR096
+U 1 1 5EF894CA
+P 17800 11050
+F 0 "#PWR096" H 17800 10800 50  0001 C CNN
+F 1 "GND" H 17800 10900 50  0000 C CNN
+F 2 "" H 17800 11050 50  0001 C CNN
+F 3 "" H 17800 11050 50  0001 C CNN
+	1    17800 11050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17650 10900 17800 10900
+Wire Wire Line
+	17800 10900 17800 11050
+Wire Wire Line
+	16350 10900 16850 10900
+Wire Wire Line
+	16200 9150 17700 9150
+Wire Wire Line
+	17700 9150 17700 9300
+Wire Wire Line
+	16200 9250 17500 9250
+Wire Wire Line
+	17500 9250 17500 9550
+Wire Wire Line
+	16200 9350 17300 9350
+Wire Wire Line
+	17300 9350 17300 9800
+Wire Wire Line
+	16200 9450 17100 9450
+Wire Wire Line
+	17100 9450 17100 10050
+Wire Wire Line
+	16200 9550 16850 9550
+Wire Wire Line
+	16850 9550 16850 10300
+Wire Wire Line
+	16550 10600 16550 9650
+Wire Wire Line
+	16550 9650 16200 9650
+Wire Wire Line
+	16350 9750 16350 10900
+Wire Wire Line
+	16350 9750 16200 9750
+$Comp
+L 74HC595D_118 U10
+U 1 1 5EF894EA
+P 15450 1700
+F 0 "U10" H 15153 1738 60  0000 L CNN
+F 1 "74HC595D_118" V 15550 1200 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 15650 1900 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15650 2000 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 15650 2100 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 15650 2200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 15650 2300 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 15650 2400 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15650 2500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 15650 2600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 15650 2700 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 15650 2800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15650 2900 60  0001 L CNN "Status"
+	1    15450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D109
+U 1 1 5EF894F9
+P 18300 1800
+F 0 "D109" H 18100 1950 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 18300 1650 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18500 2000 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18500 2100 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18500 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18500 2300 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18500 2400 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18500 2500 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18500 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18500 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18500 2800 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18500 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18500 3000 60  0001 L CNN "Status"
+	1    18300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U11
+U 1 1 5EF89508
+P 15500 4100
+F 0 "U11" H 15203 4138 60  0000 L CNN
+F 1 "74HC595D_118" V 15600 3600 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 15700 4300 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15700 4400 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 15700 4500 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 15700 4600 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 15700 4700 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 15700 4800 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15700 4900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 15700 5000 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 15700 5100 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 15700 5200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15700 5300 60  0001 L CNN "Status"
+	1    15500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U12
+U 1 1 5EF89517
+P 15550 6650
+F 0 "U12" H 15253 6688 60  0000 L CNN
+F 1 "74HC595D_118" V 15650 6150 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 15750 6850 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15750 6950 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 15750 7050 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 15750 7150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 15750 7250 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 15750 7350 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15750 7450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 15750 7550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 15750 7650 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 15750 7750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15750 7850 60  0001 L CNN "Status"
+	1    15550 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U13
+U 1 1 5EF89526
+P 15700 8950
+F 0 "U13" H 15403 8988 60  0000 L CNN
+F 1 "74HC595D_118" V 15800 8450 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 15900 9150 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15900 9250 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 15900 9350 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 15900 9450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 15900 9550 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 15900 9650 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15900 9750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 15900 9850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 15900 9950 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 15900 10050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15900 10150 60  0001 L CNN "Status"
+	1    15700 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D103
+U 1 1 5EF89535
+P 18150 2050
+F 0 "D103" H 17950 2200 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 18150 1900 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18350 2250 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18350 2350 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18350 2450 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18350 2550 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18350 2650 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18350 2750 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18350 2850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18350 2950 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18350 3050 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18350 3150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18350 3250 60  0001 L CNN "Status"
+	1    18150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D96
+U 1 1 5EF89544
+P 17950 2300
+F 0 "D96" H 17750 2450 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17950 2150 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18150 2500 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18150 2600 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18150 2700 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18150 2800 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18150 2900 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18150 3000 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18150 3100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18150 3200 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18150 3300 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18150 3400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18150 3500 60  0001 L CNN "Status"
+	1    17950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D89
+U 1 1 5EF89553
+P 17750 2550
+F 0 "D89" H 17550 2700 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17750 2400 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17950 2750 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17950 2850 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17950 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17950 3050 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17950 3150 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17950 3250 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17950 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17950 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17950 3550 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17950 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17950 3750 60  0001 L CNN "Status"
+	1    17750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D83
+U 1 1 5EF89562
+P 17550 2800
+F 0 "D83" H 17350 2950 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17550 2650 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17750 3000 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17750 3100 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17750 3200 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17750 3300 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17750 3400 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17750 3500 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17750 3600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17750 3700 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17750 3800 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17750 3900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17750 4000 60  0001 L CNN "Status"
+	1    17550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D76
+U 1 1 5EF89571
+P 17300 3050
+F 0 "D76" H 17100 3200 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17300 2900 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17500 3250 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17500 3350 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17500 3450 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17500 3550 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17500 3650 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17500 3750 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17500 3850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17500 3950 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17500 4050 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17500 4150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17500 4250 60  0001 L CNN "Status"
+	1    17300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D69
+U 1 1 5EF89580
+P 17050 3350
+F 0 "D69" H 16850 3500 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17050 3200 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17250 3550 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17250 3650 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17250 3750 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17250 3850 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17250 3950 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17250 4050 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17250 4150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17250 4250 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17250 4350 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17250 4450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17250 4550 60  0001 L CNN "Status"
+	1    17050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D65
+U 1 1 5EF8958F
+P 16800 3650
+F 0 "D65" H 16600 3800 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 16800 3500 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17000 3850 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17000 3950 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17000 4050 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17000 4150 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17000 4250 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17000 4350 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17000 4450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17000 4550 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17000 4650 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17000 4750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17000 4850 60  0001 L CNN "Status"
+	1    16800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R124
+U 1 1 5EF89595
+P 19050 11900
+F 0 "R124" V 19130 11900 50  0000 C CNN
+F 1 "1k" V 19050 11900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18980 11900 50  0001 C CNN
+F 3 "" H 19050 11900 50  0001 C CNN
+	1    19050 11900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18700 11900 18900 11900
+$Comp
+L GND #PWR097
+U 1 1 5EF8959C
+P 19350 12050
+F 0 "#PWR097" H 19350 11800 50  0001 C CNN
+F 1 "GND" H 19350 11900 50  0000 C CNN
+F 2 "" H 19350 12050 50  0001 C CNN
+F 3 "" H 19350 12050 50  0001 C CNN
+	1    19350 12050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19200 11900 19350 11900
+Wire Wire Line
+	19350 11900 19350 12050
+Wire Wire Line
+	16250 11900 18400 11900
+$Comp
+L R R120
+U 1 1 5EF895A5
+P 18900 12150
+F 0 "R120" V 18980 12150 50  0000 C CNN
+F 1 "1k" V 18900 12150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18830 12150 50  0001 C CNN
+F 3 "" H 18900 12150 50  0001 C CNN
+	1    18900 12150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18550 12150 18750 12150
+$Comp
+L GND #PWR098
+U 1 1 5EF895AC
+P 19200 12300
+F 0 "#PWR098" H 19200 12050 50  0001 C CNN
+F 1 "GND" H 19200 12150 50  0000 C CNN
+F 2 "" H 19200 12300 50  0001 C CNN
+F 3 "" H 19200 12300 50  0001 C CNN
+	1    19200 12300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19050 12150 19200 12150
+Wire Wire Line
+	19200 12150 19200 12300
+Wire Wire Line
+	17750 12150 18250 12150
+$Comp
+L R R113
+U 1 1 5EF895B5
+P 18700 12400
+F 0 "R113" V 18780 12400 50  0000 C CNN
+F 1 "1k" V 18700 12400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18630 12400 50  0001 C CNN
+F 3 "" H 18700 12400 50  0001 C CNN
+	1    18700 12400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18350 12400 18550 12400
+$Comp
+L GND #PWR099
+U 1 1 5EF895BC
+P 19000 12550
+F 0 "#PWR099" H 19000 12300 50  0001 C CNN
+F 1 "GND" H 19000 12400 50  0000 C CNN
+F 2 "" H 19000 12550 50  0001 C CNN
+F 3 "" H 19000 12550 50  0001 C CNN
+	1    19000 12550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18850 12400 19000 12400
+Wire Wire Line
+	19000 12400 19000 12550
+Wire Wire Line
+	17550 12400 18050 12400
+$Comp
+L R R106
+U 1 1 5EF895C5
+P 18500 12650
+F 0 "R106" V 18580 12650 50  0000 C CNN
+F 1 "1k" V 18500 12650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18430 12650 50  0001 C CNN
+F 3 "" H 18500 12650 50  0001 C CNN
+	1    18500 12650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18150 12650 18350 12650
+$Comp
+L GND #PWR0100
+U 1 1 5EF895CC
+P 18800 12800
+F 0 "#PWR0100" H 18800 12550 50  0001 C CNN
+F 1 "GND" H 18800 12650 50  0000 C CNN
+F 2 "" H 18800 12800 50  0001 C CNN
+F 3 "" H 18800 12800 50  0001 C CNN
+	1    18800 12800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18650 12650 18800 12650
+Wire Wire Line
+	18800 12650 18800 12800
+Wire Wire Line
+	17350 12650 17850 12650
+$Comp
+L R R99
+U 1 1 5EF895D5
+P 18300 12900
+F 0 "R99" V 18380 12900 50  0000 C CNN
+F 1 "1k" V 18300 12900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18230 12900 50  0001 C CNN
+F 3 "" H 18300 12900 50  0001 C CNN
+	1    18300 12900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17950 12900 18150 12900
+$Comp
+L GND #PWR0101
+U 1 1 5EF895DC
+P 18600 13050
+F 0 "#PWR0101" H 18600 12800 50  0001 C CNN
+F 1 "GND" H 18600 12900 50  0000 C CNN
+F 2 "" H 18600 13050 50  0001 C CNN
+F 3 "" H 18600 13050 50  0001 C CNN
+	1    18600 13050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 12900 18600 12900
+Wire Wire Line
+	18600 12900 18600 13050
+Wire Wire Line
+	17150 12900 17650 12900
+$Comp
+L R R91
+U 1 1 5EF895E5
+P 18050 13150
+F 0 "R91" V 18130 13150 50  0000 C CNN
+F 1 "1k" V 18050 13150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17980 13150 50  0001 C CNN
+F 3 "" H 18050 13150 50  0001 C CNN
+	1    18050 13150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17700 13150 17900 13150
+$Comp
+L GND #PWR0102
+U 1 1 5EF895EC
+P 18350 13300
+F 0 "#PWR0102" H 18350 13050 50  0001 C CNN
+F 1 "GND" H 18350 13150 50  0000 C CNN
+F 2 "" H 18350 13300 50  0001 C CNN
+F 3 "" H 18350 13300 50  0001 C CNN
+	1    18350 13300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18200 13150 18350 13150
+Wire Wire Line
+	18350 13150 18350 13300
+Wire Wire Line
+	16900 13150 17400 13150
+$Comp
+L R R84
+U 1 1 5EF895F5
+P 17800 13450
+F 0 "R84" V 17880 13450 50  0000 C CNN
+F 1 "1k" V 17800 13450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17730 13450 50  0001 C CNN
+F 3 "" H 17800 13450 50  0001 C CNN
+	1    17800 13450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17450 13450 17650 13450
+$Comp
+L GND #PWR0103
+U 1 1 5EF895FC
+P 18100 13600
+F 0 "#PWR0103" H 18100 13350 50  0001 C CNN
+F 1 "GND" H 18100 13450 50  0000 C CNN
+F 2 "" H 18100 13600 50  0001 C CNN
+F 3 "" H 18100 13600 50  0001 C CNN
+	1    18100 13600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17950 13450 18100 13450
+Wire Wire Line
+	18100 13450 18100 13600
+Wire Wire Line
+	16600 13450 17150 13450
+$Comp
+L R R77
+U 1 1 5EF89605
+P 17550 13750
+F 0 "R77" V 17630 13750 50  0000 C CNN
+F 1 "1k" V 17550 13750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17480 13750 50  0001 C CNN
+F 3 "" H 17550 13750 50  0001 C CNN
+	1    17550 13750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17200 13750 17400 13750
+$Comp
+L GND #PWR0104
+U 1 1 5EF8960C
+P 17850 13900
+F 0 "#PWR0104" H 17850 13650 50  0001 C CNN
+F 1 "GND" H 17850 13750 50  0000 C CNN
+F 2 "" H 17850 13900 50  0001 C CNN
+F 3 "" H 17850 13900 50  0001 C CNN
+	1    17850 13900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17700 13750 17850 13750
+Wire Wire Line
+	17850 13750 17850 13900
+Wire Wire Line
+	16400 13750 16900 13750
+Wire Wire Line
+	16250 12000 17750 12000
+Wire Wire Line
+	17750 12000 17750 12150
+Wire Wire Line
+	16250 12100 17550 12100
+Wire Wire Line
+	17550 12100 17550 12400
+Wire Wire Line
+	16250 12200 17350 12200
+Wire Wire Line
+	17350 12200 17350 12650
+Wire Wire Line
+	16250 12300 17150 12300
+Wire Wire Line
+	17150 12300 17150 12900
+Wire Wire Line
+	16250 12400 16900 12400
+Wire Wire Line
+	16900 12400 16900 13150
+Wire Wire Line
+	16600 13450 16600 12500
+Wire Wire Line
+	16600 12500 16250 12500
+Wire Wire Line
+	16400 12600 16400 13750
+Wire Wire Line
+	16400 12600 16250 12600
+$Comp
+L LED D119
+U 1 1 5EF89623
+P 18600 14300
+F 0 "D119" H 18600 14400 50  0000 C CNN
+F 1 "LED" H 18600 14200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18600 14300 50  0001 C CNN
+F 3 "" H 18600 14300 50  0001 C CNN
+	1    18600 14300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R125
+U 1 1 5EF89629
+P 19100 14300
+F 0 "R125" V 19180 14300 50  0000 C CNN
+F 1 "1k" V 19100 14300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 19030 14300 50  0001 C CNN
+F 3 "" H 19100 14300 50  0001 C CNN
+	1    19100 14300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18750 14300 18950 14300
+$Comp
+L GND #PWR0105
+U 1 1 5EF89630
+P 19400 14450
+F 0 "#PWR0105" H 19400 14200 50  0001 C CNN
+F 1 "GND" H 19400 14300 50  0000 C CNN
+F 2 "" H 19400 14450 50  0001 C CNN
+F 3 "" H 19400 14450 50  0001 C CNN
+	1    19400 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19250 14300 19400 14300
+Wire Wire Line
+	19400 14300 19400 14450
+Wire Wire Line
+	16300 14300 18450 14300
+$Comp
+L LED D115
+U 1 1 5EF89639
+P 18450 14550
+F 0 "D115" H 18450 14650 50  0000 C CNN
+F 1 "LED" H 18450 14450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18450 14550 50  0001 C CNN
+F 3 "" H 18450 14550 50  0001 C CNN
+	1    18450 14550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R121
+U 1 1 5EF8963F
+P 18950 14550
+F 0 "R121" V 19030 14550 50  0000 C CNN
+F 1 "1k" V 18950 14550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18880 14550 50  0001 C CNN
+F 3 "" H 18950 14550 50  0001 C CNN
+	1    18950 14550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18600 14550 18800 14550
+$Comp
+L GND #PWR0106
+U 1 1 5EF89646
+P 19250 14700
+F 0 "#PWR0106" H 19250 14450 50  0001 C CNN
+F 1 "GND" H 19250 14550 50  0000 C CNN
+F 2 "" H 19250 14700 50  0001 C CNN
+F 3 "" H 19250 14700 50  0001 C CNN
+	1    19250 14700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19100 14550 19250 14550
+Wire Wire Line
+	19250 14550 19250 14700
+Wire Wire Line
+	17800 14550 18300 14550
+$Comp
+L LED D108
+U 1 1 5EF8964F
+P 18250 14800
+F 0 "D108" H 18250 14900 50  0000 C CNN
+F 1 "LED" H 18250 14700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18250 14800 50  0001 C CNN
+F 3 "" H 18250 14800 50  0001 C CNN
+	1    18250 14800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R115
+U 1 1 5EF89655
+P 18750 14800
+F 0 "R115" V 18830 14800 50  0000 C CNN
+F 1 "1k" V 18750 14800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18680 14800 50  0001 C CNN
+F 3 "" H 18750 14800 50  0001 C CNN
+	1    18750 14800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18400 14800 18600 14800
+$Comp
+L GND #PWR0107
+U 1 1 5EF8965C
+P 19050 14950
+F 0 "#PWR0107" H 19050 14700 50  0001 C CNN
+F 1 "GND" H 19050 14800 50  0000 C CNN
+F 2 "" H 19050 14950 50  0001 C CNN
+F 3 "" H 19050 14950 50  0001 C CNN
+	1    19050 14950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18900 14800 19050 14800
+Wire Wire Line
+	19050 14800 19050 14950
+Wire Wire Line
+	17600 14800 18100 14800
+$Comp
+L LED D101
+U 1 1 5EF89665
+P 18050 15050
+F 0 "D101" H 18050 15150 50  0000 C CNN
+F 1 "LED" H 18050 14950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18050 15050 50  0001 C CNN
+F 3 "" H 18050 15050 50  0001 C CNN
+	1    18050 15050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R107
+U 1 1 5EF8966B
+P 18550 15050
+F 0 "R107" V 18630 15050 50  0000 C CNN
+F 1 "1k" V 18550 15050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18480 15050 50  0001 C CNN
+F 3 "" H 18550 15050 50  0001 C CNN
+	1    18550 15050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18200 15050 18400 15050
+$Comp
+L GND #PWR0108
+U 1 1 5EF89672
+P 18850 15200
+F 0 "#PWR0108" H 18850 14950 50  0001 C CNN
+F 1 "GND" H 18850 15050 50  0000 C CNN
+F 2 "" H 18850 15200 50  0001 C CNN
+F 3 "" H 18850 15200 50  0001 C CNN
+	1    18850 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18700 15050 18850 15050
+Wire Wire Line
+	18850 15050 18850 15200
+Wire Wire Line
+	17400 15050 17900 15050
+$Comp
+L LED D94
+U 1 1 5EF8967B
+P 17850 15300
+F 0 "D94" H 17850 15400 50  0000 C CNN
+F 1 "LED" H 17850 15200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17850 15300 50  0001 C CNN
+F 3 "" H 17850 15300 50  0001 C CNN
+	1    17850 15300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R100
+U 1 1 5EF89681
+P 18350 15300
+F 0 "R100" V 18430 15300 50  0000 C CNN
+F 1 "1k" V 18350 15300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18280 15300 50  0001 C CNN
+F 3 "" H 18350 15300 50  0001 C CNN
+	1    18350 15300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18000 15300 18200 15300
+$Comp
+L GND #PWR0109
+U 1 1 5EF89688
+P 18650 15450
+F 0 "#PWR0109" H 18650 15200 50  0001 C CNN
+F 1 "GND" H 18650 15300 50  0000 C CNN
+F 2 "" H 18650 15450 50  0001 C CNN
+F 3 "" H 18650 15450 50  0001 C CNN
+	1    18650 15450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18500 15300 18650 15300
+Wire Wire Line
+	18650 15300 18650 15450
+Wire Wire Line
+	17200 15300 17700 15300
+$Comp
+L LED D87
+U 1 1 5EF89691
+P 17600 15550
+F 0 "D87" H 17600 15650 50  0000 C CNN
+F 1 "LED" H 17600 15450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17600 15550 50  0001 C CNN
+F 3 "" H 17600 15550 50  0001 C CNN
+	1    17600 15550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R93
+U 1 1 5EF89697
+P 18100 15550
+F 0 "R93" V 18180 15550 50  0000 C CNN
+F 1 "1k" V 18100 15550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18030 15550 50  0001 C CNN
+F 3 "" H 18100 15550 50  0001 C CNN
+	1    18100 15550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17750 15550 17950 15550
+$Comp
+L GND #PWR0110
+U 1 1 5EF8969E
+P 18400 15700
+F 0 "#PWR0110" H 18400 15450 50  0001 C CNN
+F 1 "GND" H 18400 15550 50  0000 C CNN
+F 2 "" H 18400 15700 50  0001 C CNN
+F 3 "" H 18400 15700 50  0001 C CNN
+	1    18400 15700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18250 15550 18400 15550
+Wire Wire Line
+	18400 15550 18400 15700
+Wire Wire Line
+	16950 15550 17450 15550
+$Comp
+L LED D80
+U 1 1 5EF896A7
+P 17350 15850
+F 0 "D80" H 17350 15950 50  0000 C CNN
+F 1 "LED" H 17350 15750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17350 15850 50  0001 C CNN
+F 3 "" H 17350 15850 50  0001 C CNN
+	1    17350 15850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R86
+U 1 1 5EF896AD
+P 17850 15850
+F 0 "R86" V 17930 15850 50  0000 C CNN
+F 1 "1k" V 17850 15850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17780 15850 50  0001 C CNN
+F 3 "" H 17850 15850 50  0001 C CNN
+	1    17850 15850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17500 15850 17700 15850
+$Comp
+L GND #PWR0111
+U 1 1 5EF896B4
+P 18150 16000
+F 0 "#PWR0111" H 18150 15750 50  0001 C CNN
+F 1 "GND" H 18150 15850 50  0000 C CNN
+F 2 "" H 18150 16000 50  0001 C CNN
+F 3 "" H 18150 16000 50  0001 C CNN
+	1    18150 16000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 15850 18150 15850
+Wire Wire Line
+	18150 15850 18150 16000
+Wire Wire Line
+	16650 15850 17200 15850
+$Comp
+L LED D73
+U 1 1 5EF896BD
+P 17100 16150
+F 0 "D73" H 17100 16250 50  0000 C CNN
+F 1 "LED" H 17100 16050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17100 16150 50  0001 C CNN
+F 3 "" H 17100 16150 50  0001 C CNN
+	1    17100 16150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R79
+U 1 1 5EF896C3
+P 17600 16150
+F 0 "R79" V 17680 16150 50  0000 C CNN
+F 1 "1k" V 17600 16150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17530 16150 50  0001 C CNN
+F 3 "" H 17600 16150 50  0001 C CNN
+	1    17600 16150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17250 16150 17450 16150
+$Comp
+L GND #PWR0112
+U 1 1 5EF896CA
+P 17900 16300
+F 0 "#PWR0112" H 17900 16050 50  0001 C CNN
+F 1 "GND" H 17900 16150 50  0000 C CNN
+F 2 "" H 17900 16300 50  0001 C CNN
+F 3 "" H 17900 16300 50  0001 C CNN
+	1    17900 16300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17750 16150 17900 16150
+Wire Wire Line
+	17900 16150 17900 16300
+Wire Wire Line
+	16450 16150 16950 16150
+Wire Wire Line
+	16300 14400 17800 14400
+Wire Wire Line
+	17800 14400 17800 14550
+Wire Wire Line
+	16300 14500 17600 14500
+Wire Wire Line
+	17600 14500 17600 14800
+Wire Wire Line
+	16300 14600 17400 14600
+Wire Wire Line
+	17400 14600 17400 15050
+Wire Wire Line
+	16300 14700 17200 14700
+Wire Wire Line
+	17200 14700 17200 15300
+Wire Wire Line
+	16300 14800 16950 14800
+Wire Wire Line
+	16950 14800 16950 15550
+Wire Wire Line
+	16650 15850 16650 14900
+Wire Wire Line
+	16650 14900 16300 14900
+Wire Wire Line
+	16450 15000 16450 16150
+Wire Wire Line
+	16450 15000 16300 15000
+$Comp
+L LED D120
+U 1 1 5EF896E1
+P 18650 16850
+F 0 "D120" H 18650 16950 50  0000 C CNN
+F 1 "LED" H 18650 16750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18650 16850 50  0001 C CNN
+F 3 "" H 18650 16850 50  0001 C CNN
+	1    18650 16850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R126
+U 1 1 5EF896E7
+P 19150 16850
+F 0 "R126" V 19230 16850 50  0000 C CNN
+F 1 "1k" V 19150 16850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 19080 16850 50  0001 C CNN
+F 3 "" H 19150 16850 50  0001 C CNN
+	1    19150 16850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18800 16850 19000 16850
+$Comp
+L GND #PWR0113
+U 1 1 5EF896EE
+P 19450 17000
+F 0 "#PWR0113" H 19450 16750 50  0001 C CNN
+F 1 "GND" H 19450 16850 50  0000 C CNN
+F 2 "" H 19450 17000 50  0001 C CNN
+F 3 "" H 19450 17000 50  0001 C CNN
+	1    19450 17000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19300 16850 19450 16850
+Wire Wire Line
+	19450 16850 19450 17000
+Wire Wire Line
+	16350 16850 18500 16850
+$Comp
+L LED D117
+U 1 1 5EF896F7
+P 18500 17100
+F 0 "D117" H 18500 17200 50  0000 C CNN
+F 1 "LED" H 18500 17000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18500 17100 50  0001 C CNN
+F 3 "" H 18500 17100 50  0001 C CNN
+	1    18500 17100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R123
+U 1 1 5EF896FD
+P 19000 17100
+F 0 "R123" V 19080 17100 50  0000 C CNN
+F 1 "1k" V 19000 17100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18930 17100 50  0001 C CNN
+F 3 "" H 19000 17100 50  0001 C CNN
+	1    19000 17100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 17100 18850 17100
+$Comp
+L GND #PWR0114
+U 1 1 5EF89704
+P 19300 17250
+F 0 "#PWR0114" H 19300 17000 50  0001 C CNN
+F 1 "GND" H 19300 17100 50  0000 C CNN
+F 2 "" H 19300 17250 50  0001 C CNN
+F 3 "" H 19300 17250 50  0001 C CNN
+	1    19300 17250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19150 17100 19300 17100
+Wire Wire Line
+	19300 17100 19300 17250
+Wire Wire Line
+	17850 17100 18350 17100
+$Comp
+L LED D111
+U 1 1 5EF8970D
+P 18300 17350
+F 0 "D111" H 18300 17450 50  0000 C CNN
+F 1 "LED" H 18300 17250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18300 17350 50  0001 C CNN
+F 3 "" H 18300 17350 50  0001 C CNN
+	1    18300 17350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R117
+U 1 1 5EF89713
+P 18800 17350
+F 0 "R117" V 18880 17350 50  0000 C CNN
+F 1 "1k" V 18800 17350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18730 17350 50  0001 C CNN
+F 3 "" H 18800 17350 50  0001 C CNN
+	1    18800 17350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18450 17350 18650 17350
+$Comp
+L GND #PWR0115
+U 1 1 5EF8971A
+P 19100 17500
+F 0 "#PWR0115" H 19100 17250 50  0001 C CNN
+F 1 "GND" H 19100 17350 50  0000 C CNN
+F 2 "" H 19100 17500 50  0001 C CNN
+F 3 "" H 19100 17500 50  0001 C CNN
+	1    19100 17500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18950 17350 19100 17350
+Wire Wire Line
+	19100 17350 19100 17500
+Wire Wire Line
+	17650 17350 18150 17350
+$Comp
+L LED D102
+U 1 1 5EF89723
+P 18100 17600
+F 0 "D102" H 18100 17700 50  0000 C CNN
+F 1 "LED" H 18100 17500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 18100 17600 50  0001 C CNN
+F 3 "" H 18100 17600 50  0001 C CNN
+	1    18100 17600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R109
+U 1 1 5EF89729
+P 18600 17600
+F 0 "R109" V 18680 17600 50  0000 C CNN
+F 1 "1k" V 18600 17600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18530 17600 50  0001 C CNN
+F 3 "" H 18600 17600 50  0001 C CNN
+	1    18600 17600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18250 17600 18450 17600
+$Comp
+L GND #PWR0116
+U 1 1 5EF89730
+P 18900 17750
+F 0 "#PWR0116" H 18900 17500 50  0001 C CNN
+F 1 "GND" H 18900 17600 50  0000 C CNN
+F 2 "" H 18900 17750 50  0001 C CNN
+F 3 "" H 18900 17750 50  0001 C CNN
+	1    18900 17750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18750 17600 18900 17600
+Wire Wire Line
+	18900 17600 18900 17750
+Wire Wire Line
+	17450 17600 17950 17600
+$Comp
+L LED D95
+U 1 1 5EF89739
+P 17900 17850
+F 0 "D95" H 17900 17950 50  0000 C CNN
+F 1 "LED" H 17900 17750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17900 17850 50  0001 C CNN
+F 3 "" H 17900 17850 50  0001 C CNN
+	1    17900 17850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R102
+U 1 1 5EF8973F
+P 18400 17850
+F 0 "R102" V 18480 17850 50  0000 C CNN
+F 1 "1k" V 18400 17850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18330 17850 50  0001 C CNN
+F 3 "" H 18400 17850 50  0001 C CNN
+	1    18400 17850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18050 17850 18250 17850
+$Comp
+L GND #PWR0117
+U 1 1 5EF89746
+P 18700 18000
+F 0 "#PWR0117" H 18700 17750 50  0001 C CNN
+F 1 "GND" H 18700 17850 50  0000 C CNN
+F 2 "" H 18700 18000 50  0001 C CNN
+F 3 "" H 18700 18000 50  0001 C CNN
+	1    18700 18000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 17850 18700 17850
+Wire Wire Line
+	18700 17850 18700 18000
+Wire Wire Line
+	17250 17850 17750 17850
+$Comp
+L LED D88
+U 1 1 5EF8974F
+P 17650 18100
+F 0 "D88" H 17650 18200 50  0000 C CNN
+F 1 "LED" H 17650 18000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17650 18100 50  0001 C CNN
+F 3 "" H 17650 18100 50  0001 C CNN
+	1    17650 18100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R94
+U 1 1 5EF89755
+P 18150 18100
+F 0 "R94" V 18230 18100 50  0000 C CNN
+F 1 "1k" V 18150 18100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 18080 18100 50  0001 C CNN
+F 3 "" H 18150 18100 50  0001 C CNN
+	1    18150 18100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17800 18100 18000 18100
+$Comp
+L GND #PWR0118
+U 1 1 5EF8975C
+P 18450 18250
+F 0 "#PWR0118" H 18450 18000 50  0001 C CNN
+F 1 "GND" H 18450 18100 50  0000 C CNN
+F 2 "" H 18450 18250 50  0001 C CNN
+F 3 "" H 18450 18250 50  0001 C CNN
+	1    18450 18250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18300 18100 18450 18100
+Wire Wire Line
+	18450 18100 18450 18250
+Wire Wire Line
+	17000 18100 17500 18100
+$Comp
+L LED D81
+U 1 1 5EF89765
+P 17400 18400
+F 0 "D81" H 17400 18500 50  0000 C CNN
+F 1 "LED" H 17400 18300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17400 18400 50  0001 C CNN
+F 3 "" H 17400 18400 50  0001 C CNN
+	1    17400 18400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R87
+U 1 1 5EF8976B
+P 17900 18400
+F 0 "R87" V 17980 18400 50  0000 C CNN
+F 1 "1k" V 17900 18400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17830 18400 50  0001 C CNN
+F 3 "" H 17900 18400 50  0001 C CNN
+	1    17900 18400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17550 18400 17750 18400
+$Comp
+L GND #PWR0119
+U 1 1 5EF89772
+P 18200 18550
+F 0 "#PWR0119" H 18200 18300 50  0001 C CNN
+F 1 "GND" H 18200 18400 50  0000 C CNN
+F 2 "" H 18200 18550 50  0001 C CNN
+F 3 "" H 18200 18550 50  0001 C CNN
+	1    18200 18550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18050 18400 18200 18400
+Wire Wire Line
+	18200 18400 18200 18550
+Wire Wire Line
+	16700 18400 17250 18400
+$Comp
+L LED D74
+U 1 1 5EF8977B
+P 17150 18700
+F 0 "D74" H 17150 18800 50  0000 C CNN
+F 1 "LED" H 17150 18600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 17150 18700 50  0001 C CNN
+F 3 "" H 17150 18700 50  0001 C CNN
+	1    17150 18700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R80
+U 1 1 5EF89781
+P 17650 18700
+F 0 "R80" V 17730 18700 50  0000 C CNN
+F 1 "1k" V 17650 18700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 17580 18700 50  0001 C CNN
+F 3 "" H 17650 18700 50  0001 C CNN
+	1    17650 18700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17300 18700 17500 18700
+$Comp
+L GND #PWR0120
+U 1 1 5EF89788
+P 18000 18700
+F 0 "#PWR0120" H 18000 18450 50  0001 C CNN
+F 1 "GND" H 18000 18550 50  0000 C CNN
+F 2 "" H 18000 18700 50  0001 C CNN
+F 3 "" H 18000 18700 50  0001 C CNN
+	1    18000 18700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17800 18700 17950 18700
+Wire Wire Line
+	17950 18700 17950 18850
+Wire Wire Line
+	16500 18700 17000 18700
+Wire Wire Line
+	16350 16950 17850 16950
+Wire Wire Line
+	17850 16950 17850 17100
+Wire Wire Line
+	16350 17050 17650 17050
+Wire Wire Line
+	17650 17050 17650 17350
+Wire Wire Line
+	16350 17150 17450 17150
+Wire Wire Line
+	17450 17150 17450 17600
+Wire Wire Line
+	16350 17250 17250 17250
+Wire Wire Line
+	17250 17250 17250 17850
+Wire Wire Line
+	16350 17350 17000 17350
+Wire Wire Line
+	17000 17350 17000 18100
+Wire Wire Line
+	16700 18400 16700 17450
+Wire Wire Line
+	16700 17450 16350 17450
+Wire Wire Line
+	16500 17550 16500 18700
+Wire Wire Line
+	16500 17550 16350 17550
+$Comp
+L 74HC595D_118 U14
+U 1 1 5EF89866
+P 15750 11800
+F 0 "U14" H 15453 11838 60  0000 L CNN
+F 1 "74HC595D_118" V 15850 11300 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 15950 12000 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15950 12100 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 15950 12200 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 15950 12300 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 15950 12400 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 15950 12500 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 15950 12600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 15950 12700 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 15950 12800 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 15950 12900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15950 13000 60  0001 L CNN "Status"
+	1    15750 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D118
+U 1 1 5EF89875
+P 18600 11900
+F 0 "D118" H 18400 12050 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 18600 11750 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18800 12100 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18800 12200 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18800 12300 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18800 12400 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18800 12500 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18800 12600 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18800 12700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18800 12800 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18800 12900 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18800 13000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18800 13100 60  0001 L CNN "Status"
+	1    18600 11900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U15
+U 1 1 5EF89884
+P 15800 14200
+F 0 "U15" H 15503 14238 60  0000 L CNN
+F 1 "74HC595D_118" V 15900 13700 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 16000 14400 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 16000 14500 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 16000 14600 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 16000 14700 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 16000 14800 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 16000 14900 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 16000 15000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 16000 15100 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 16000 15200 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 16000 15300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 16000 15400 60  0001 L CNN "Status"
+	1    15800 14200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U16
+U 1 1 5EF89893
+P 15850 16750
+F 0 "U16" H 15553 16788 60  0000 L CNN
+F 1 "74HC595D_118" V 15950 16250 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 16050 16950 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 16050 17050 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 16050 17150 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 16050 17250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 16050 17350 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 16050 17450 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 16050 17550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 16050 17650 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 16050 17750 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 16050 17850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 16050 17950 60  0001 L CNN "Status"
+	1    15850 16750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D114
+U 1 1 5EF898B1
+P 18450 12150
+F 0 "D114" H 18250 12300 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 18450 12000 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18650 12350 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18650 12450 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18650 12550 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18650 12650 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18650 12750 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18650 12850 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18650 12950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18650 13050 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18650 13150 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18650 13250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18650 13350 60  0001 L CNN "Status"
+	1    18450 12150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D107
+U 1 1 5EF898C0
+P 18250 12400
+F 0 "D107" H 18050 12550 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 18250 12250 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18450 12600 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18450 12700 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18450 12800 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18450 12900 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18450 13000 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18450 13100 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18450 13200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18450 13300 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18450 13400 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18450 13500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18450 13600 60  0001 L CNN "Status"
+	1    18250 12400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D100
+U 1 1 5EF898CF
+P 18050 12650
+F 0 "D100" H 17850 12800 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 18050 12500 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18250 12850 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18250 12950 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18250 13050 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18250 13150 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18250 13250 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18250 13350 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18250 13450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18250 13550 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18250 13650 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18250 13750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18250 13850 60  0001 L CNN "Status"
+	1    18050 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D93
+U 1 1 5EF898DE
+P 17850 12900
+F 0 "D93" H 17650 13050 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17850 12750 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 18050 13100 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18050 13200 60  0001 L CNN
+F 4 "475-2709-1-ND" H 18050 13300 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 18050 13400 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 18050 13500 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 18050 13600 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 18050 13700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 18050 13800 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 18050 13900 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 18050 14000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18050 14100 60  0001 L CNN "Status"
+	1    17850 12900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D86
+U 1 1 5EF898ED
+P 17600 13150
+F 0 "D86" H 17400 13300 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17600 13000 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17800 13350 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17800 13450 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17800 13550 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17800 13650 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17800 13750 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17800 13850 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17800 13950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17800 14050 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17800 14150 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17800 14250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17800 14350 60  0001 L CNN "Status"
+	1    17600 13150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D79
+U 1 1 5EF898FC
+P 17350 13450
+F 0 "D79" H 17150 13600 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17350 13300 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17550 13650 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17550 13750 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17550 13850 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17550 13950 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17550 14050 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17550 14150 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17550 14250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17550 14350 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17550 14450 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17550 14550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17550 14650 60  0001 L CNN "Status"
+	1    17350 13450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D72
+U 1 1 5EF8990B
+P 17100 13750
+F 0 "D72" H 16900 13900 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 17100 13600 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 17300 13950 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17300 14050 60  0001 L CNN
+F 4 "475-2709-1-ND" H 17300 14150 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 17300 14250 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 17300 14350 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 17300 14450 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 17300 14550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 17300 14650 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 17300 14750 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 17300 14850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 17300 14950 60  0001 L CNN "Status"
+	1    17100 13750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R174
+U 1 1 5EF8B5C1
+P 25000 1700
+F 0 "R174" V 25080 1700 50  0000 C CNN
+F 1 "1k" V 25000 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24930 1700 50  0001 C CNN
+F 3 "" H 25000 1700 50  0001 C CNN
+	1    25000 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24650 1700 24850 1700
+$Comp
+L GND #PWR0121
+U 1 1 5EF8B5C8
+P 25300 1850
+F 0 "#PWR0121" H 25300 1600 50  0001 C CNN
+F 1 "GND" H 25300 1700 50  0000 C CNN
+F 2 "" H 25300 1850 50  0001 C CNN
+F 3 "" H 25300 1850 50  0001 C CNN
+	1    25300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25150 1700 25300 1700
+Wire Wire Line
+	25300 1700 25300 1850
+Wire Wire Line
+	22200 1700 24350 1700
+$Comp
+L R R168
+U 1 1 5EF8B5D1
+P 24850 1950
+F 0 "R168" V 24930 1950 50  0000 C CNN
+F 1 "1k" V 24850 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24780 1950 50  0001 C CNN
+F 3 "" H 24850 1950 50  0001 C CNN
+	1    24850 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24500 1950 24700 1950
+$Comp
+L GND #PWR0122
+U 1 1 5EF8B5D8
+P 25150 2100
+F 0 "#PWR0122" H 25150 1850 50  0001 C CNN
+F 1 "GND" H 25150 1950 50  0000 C CNN
+F 2 "" H 25150 2100 50  0001 C CNN
+F 3 "" H 25150 2100 50  0001 C CNN
+	1    25150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25000 1950 25150 1950
+Wire Wire Line
+	25150 1950 25150 2100
+Wire Wire Line
+	23700 1950 24200 1950
+$Comp
+L R R160
+U 1 1 5EF8B5E1
+P 24650 2200
+F 0 "R160" V 24730 2200 50  0000 C CNN
+F 1 "1k" V 24650 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24580 2200 50  0001 C CNN
+F 3 "" H 24650 2200 50  0001 C CNN
+	1    24650 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24300 2200 24500 2200
+$Comp
+L GND #PWR0123
+U 1 1 5EF8B5E8
+P 24950 2350
+F 0 "#PWR0123" H 24950 2100 50  0001 C CNN
+F 1 "GND" H 24950 2200 50  0000 C CNN
+F 2 "" H 24950 2350 50  0001 C CNN
+F 3 "" H 24950 2350 50  0001 C CNN
+	1    24950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24800 2200 24950 2200
+Wire Wire Line
+	24950 2200 24950 2350
+Wire Wire Line
+	23500 2200 24000 2200
+$Comp
+L R R153
+U 1 1 5EF8B5F1
+P 24450 2450
+F 0 "R153" V 24530 2450 50  0000 C CNN
+F 1 "1k" V 24450 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24380 2450 50  0001 C CNN
+F 3 "" H 24450 2450 50  0001 C CNN
+	1    24450 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24100 2450 24300 2450
+$Comp
+L GND #PWR0124
+U 1 1 5EF8B5F8
+P 24750 2600
+F 0 "#PWR0124" H 24750 2350 50  0001 C CNN
+F 1 "GND" H 24750 2450 50  0000 C CNN
+F 2 "" H 24750 2600 50  0001 C CNN
+F 3 "" H 24750 2600 50  0001 C CNN
+	1    24750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24600 2450 24750 2450
+Wire Wire Line
+	24750 2450 24750 2600
+Wire Wire Line
+	23300 2450 23800 2450
+$Comp
+L R R145
+U 1 1 5EF8B601
+P 24250 2700
+F 0 "R145" V 24330 2700 50  0000 C CNN
+F 1 "1k" V 24250 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24180 2700 50  0001 C CNN
+F 3 "" H 24250 2700 50  0001 C CNN
+	1    24250 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23900 2700 24100 2700
+$Comp
+L GND #PWR0125
+U 1 1 5EF8B608
+P 24550 2850
+F 0 "#PWR0125" H 24550 2600 50  0001 C CNN
+F 1 "GND" H 24550 2700 50  0000 C CNN
+F 2 "" H 24550 2850 50  0001 C CNN
+F 3 "" H 24550 2850 50  0001 C CNN
+	1    24550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24400 2700 24550 2700
+Wire Wire Line
+	24550 2700 24550 2850
+Wire Wire Line
+	23100 2700 23600 2700
+$Comp
+L R R137
+U 1 1 5EF8B611
+P 24000 2950
+F 0 "R137" V 24080 2950 50  0000 C CNN
+F 1 "1k" V 24000 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23930 2950 50  0001 C CNN
+F 3 "" H 24000 2950 50  0001 C CNN
+	1    24000 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23650 2950 23850 2950
+$Comp
+L GND #PWR0126
+U 1 1 5EF8B618
+P 24300 3100
+F 0 "#PWR0126" H 24300 2850 50  0001 C CNN
+F 1 "GND" H 24300 2950 50  0000 C CNN
+F 2 "" H 24300 3100 50  0001 C CNN
+F 3 "" H 24300 3100 50  0001 C CNN
+	1    24300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24150 2950 24300 2950
+Wire Wire Line
+	24300 2950 24300 3100
+Wire Wire Line
+	22850 2950 23350 2950
+$Comp
+L R R130
+U 1 1 5EF8B621
+P 23750 3250
+F 0 "R130" V 23830 3250 50  0000 C CNN
+F 1 "1k" V 23750 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23680 3250 50  0001 C CNN
+F 3 "" H 23750 3250 50  0001 C CNN
+	1    23750 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23400 3250 23600 3250
+$Comp
+L GND #PWR0127
+U 1 1 5EF8B628
+P 24050 3400
+F 0 "#PWR0127" H 24050 3150 50  0001 C CNN
+F 1 "GND" H 24050 3250 50  0000 C CNN
+F 2 "" H 24050 3400 50  0001 C CNN
+F 3 "" H 24050 3400 50  0001 C CNN
+	1    24050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23900 3250 24050 3250
+Wire Wire Line
+	24050 3250 24050 3400
+Wire Wire Line
+	22550 3250 23100 3250
+$Comp
+L R R127
+U 1 1 5EF8B631
+P 23500 3550
+F 0 "R127" V 23580 3550 50  0000 C CNN
+F 1 "1k" V 23500 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23430 3550 50  0001 C CNN
+F 3 "" H 23500 3550 50  0001 C CNN
+	1    23500 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23150 3550 23350 3550
+$Comp
+L GND #PWR0128
+U 1 1 5EF8B638
+P 23800 3700
+F 0 "#PWR0128" H 23800 3450 50  0001 C CNN
+F 1 "GND" H 23800 3550 50  0000 C CNN
+F 2 "" H 23800 3700 50  0001 C CNN
+F 3 "" H 23800 3700 50  0001 C CNN
+	1    23800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23650 3550 23800 3550
+Wire Wire Line
+	23800 3550 23800 3700
+Wire Wire Line
+	22350 3550 22850 3550
+Wire Wire Line
+	22200 1800 23700 1800
+Wire Wire Line
+	23700 1800 23700 1950
+Wire Wire Line
+	22200 1900 23500 1900
+Wire Wire Line
+	23500 1900 23500 2200
+Wire Wire Line
+	22200 2000 23300 2000
+Wire Wire Line
+	23300 2000 23300 2450
+Wire Wire Line
+	22200 2100 23100 2100
+Wire Wire Line
+	23100 2100 23100 2700
+Wire Wire Line
+	22200 2200 22850 2200
+Wire Wire Line
+	22850 2200 22850 2950
+Wire Wire Line
+	22550 3250 22550 2300
+Wire Wire Line
+	22550 2300 22200 2300
+Wire Wire Line
+	22350 2400 22350 3550
+Wire Wire Line
+	22350 2400 22200 2400
+$Comp
+L LED D171
+U 1 1 5EF8B64F
+P 24550 4100
+F 0 "D171" H 24550 4200 50  0000 C CNN
+F 1 "LED" H 24550 4000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24550 4100 50  0001 C CNN
+F 3 "" H 24550 4100 50  0001 C CNN
+	1    24550 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R177
+U 1 1 5EF8B655
+P 25050 4100
+F 0 "R177" V 25130 4100 50  0000 C CNN
+F 1 "1k" V 25050 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24980 4100 50  0001 C CNN
+F 3 "" H 25050 4100 50  0001 C CNN
+	1    25050 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24700 4100 24900 4100
+$Comp
+L GND #PWR0129
+U 1 1 5EF8B65C
+P 25350 4250
+F 0 "#PWR0129" H 25350 4000 50  0001 C CNN
+F 1 "GND" H 25350 4100 50  0000 C CNN
+F 2 "" H 25350 4250 50  0001 C CNN
+F 3 "" H 25350 4250 50  0001 C CNN
+	1    25350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25200 4100 25350 4100
+Wire Wire Line
+	25350 4100 25350 4250
+Wire Wire Line
+	22250 4100 24400 4100
+$Comp
+L LED D164
+U 1 1 5EF8B665
+P 24400 4350
+F 0 "D164" H 24400 4450 50  0000 C CNN
+F 1 "LED" H 24400 4250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24400 4350 50  0001 C CNN
+F 3 "" H 24400 4350 50  0001 C CNN
+	1    24400 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R170
+U 1 1 5EF8B66B
+P 24900 4350
+F 0 "R170" V 24980 4350 50  0000 C CNN
+F 1 "1k" V 24900 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24830 4350 50  0001 C CNN
+F 3 "" H 24900 4350 50  0001 C CNN
+	1    24900 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24550 4350 24750 4350
+$Comp
+L GND #PWR0130
+U 1 1 5EF8B672
+P 25200 4500
+F 0 "#PWR0130" H 25200 4250 50  0001 C CNN
+F 1 "GND" H 25200 4350 50  0000 C CNN
+F 2 "" H 25200 4500 50  0001 C CNN
+F 3 "" H 25200 4500 50  0001 C CNN
+	1    25200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25050 4350 25200 4350
+Wire Wire Line
+	25200 4350 25200 4500
+Wire Wire Line
+	23750 4350 24250 4350
+$Comp
+L LED D156
+U 1 1 5EF8B67B
+P 24200 4600
+F 0 "D156" H 24200 4700 50  0000 C CNN
+F 1 "LED" H 24200 4500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24200 4600 50  0001 C CNN
+F 3 "" H 24200 4600 50  0001 C CNN
+	1    24200 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R162
+U 1 1 5EF8B681
+P 24700 4600
+F 0 "R162" V 24780 4600 50  0000 C CNN
+F 1 "1k" V 24700 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24630 4600 50  0001 C CNN
+F 3 "" H 24700 4600 50  0001 C CNN
+	1    24700 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24350 4600 24550 4600
+$Comp
+L GND #PWR0131
+U 1 1 5EF8B688
+P 25000 4750
+F 0 "#PWR0131" H 25000 4500 50  0001 C CNN
+F 1 "GND" H 25000 4600 50  0000 C CNN
+F 2 "" H 25000 4750 50  0001 C CNN
+F 3 "" H 25000 4750 50  0001 C CNN
+	1    25000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24850 4600 25000 4600
+Wire Wire Line
+	25000 4600 25000 4750
+Wire Wire Line
+	23550 4600 24050 4600
+$Comp
+L LED D148
+U 1 1 5EF8B691
+P 24000 4850
+F 0 "D148" H 24000 4950 50  0000 C CNN
+F 1 "LED" H 24000 4750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24000 4850 50  0001 C CNN
+F 3 "" H 24000 4850 50  0001 C CNN
+	1    24000 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R154
+U 1 1 5EF8B697
+P 24500 4850
+F 0 "R154" V 24580 4850 50  0000 C CNN
+F 1 "1k" V 24500 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24430 4850 50  0001 C CNN
+F 3 "" H 24500 4850 50  0001 C CNN
+	1    24500 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24150 4850 24350 4850
+$Comp
+L GND #PWR0132
+U 1 1 5EF8B69E
+P 24800 5000
+F 0 "#PWR0132" H 24800 4750 50  0001 C CNN
+F 1 "GND" H 24800 4850 50  0000 C CNN
+F 2 "" H 24800 5000 50  0001 C CNN
+F 3 "" H 24800 5000 50  0001 C CNN
+	1    24800 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24650 4850 24800 4850
+Wire Wire Line
+	24800 4850 24800 5000
+Wire Wire Line
+	23350 4850 23850 4850
+$Comp
+L LED D141
+U 1 1 5EF8B6A7
+P 23800 5100
+F 0 "D141" H 23800 5200 50  0000 C CNN
+F 1 "LED" H 23800 5000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23800 5100 50  0001 C CNN
+F 3 "" H 23800 5100 50  0001 C CNN
+	1    23800 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R147
+U 1 1 5EF8B6AD
+P 24300 5100
+F 0 "R147" V 24380 5100 50  0000 C CNN
+F 1 "1k" V 24300 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24230 5100 50  0001 C CNN
+F 3 "" H 24300 5100 50  0001 C CNN
+	1    24300 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23950 5100 24150 5100
+$Comp
+L GND #PWR0133
+U 1 1 5EF8B6B4
+P 24600 5250
+F 0 "#PWR0133" H 24600 5000 50  0001 C CNN
+F 1 "GND" H 24600 5100 50  0000 C CNN
+F 2 "" H 24600 5250 50  0001 C CNN
+F 3 "" H 24600 5250 50  0001 C CNN
+	1    24600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24450 5100 24600 5100
+Wire Wire Line
+	24600 5100 24600 5250
+Wire Wire Line
+	23150 5100 23650 5100
+$Comp
+L LED D133
+U 1 1 5EF8B6BD
+P 23550 5350
+F 0 "D133" H 23550 5450 50  0000 C CNN
+F 1 "LED" H 23550 5250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23550 5350 50  0001 C CNN
+F 3 "" H 23550 5350 50  0001 C CNN
+	1    23550 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R139
+U 1 1 5EF8B6C3
+P 24050 5350
+F 0 "R139" V 24130 5350 50  0000 C CNN
+F 1 "1k" V 24050 5350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23980 5350 50  0001 C CNN
+F 3 "" H 24050 5350 50  0001 C CNN
+	1    24050 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23700 5350 23900 5350
+$Comp
+L GND #PWR0134
+U 1 1 5EF8B6CA
+P 24350 5500
+F 0 "#PWR0134" H 24350 5250 50  0001 C CNN
+F 1 "GND" H 24350 5350 50  0000 C CNN
+F 2 "" H 24350 5500 50  0001 C CNN
+F 3 "" H 24350 5500 50  0001 C CNN
+	1    24350 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24200 5350 24350 5350
+Wire Wire Line
+	24350 5350 24350 5500
+Wire Wire Line
+	22900 5350 23400 5350
+$Comp
+L LED D126
+U 1 1 5EF8B6D3
+P 23300 5650
+F 0 "D126" H 23300 5750 50  0000 C CNN
+F 1 "LED" H 23300 5550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23300 5650 50  0001 C CNN
+F 3 "" H 23300 5650 50  0001 C CNN
+	1    23300 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R132
+U 1 1 5EF8B6D9
+P 23800 5650
+F 0 "R132" V 23880 5650 50  0000 C CNN
+F 1 "1k" V 23800 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23730 5650 50  0001 C CNN
+F 3 "" H 23800 5650 50  0001 C CNN
+	1    23800 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23450 5650 23650 5650
+$Comp
+L GND #PWR0135
+U 1 1 5EF8B6E0
+P 24100 5800
+F 0 "#PWR0135" H 24100 5550 50  0001 C CNN
+F 1 "GND" H 24100 5650 50  0000 C CNN
+F 2 "" H 24100 5800 50  0001 C CNN
+F 3 "" H 24100 5800 50  0001 C CNN
+	1    24100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23950 5650 24100 5650
+Wire Wire Line
+	24100 5650 24100 5800
+Wire Wire Line
+	22600 5650 23150 5650
+$Comp
+L LED D122
+U 1 1 5EF8B6E9
+P 23050 5950
+F 0 "D122" H 23050 6050 50  0000 C CNN
+F 1 "LED" H 23050 5850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23050 5950 50  0001 C CNN
+F 3 "" H 23050 5950 50  0001 C CNN
+	1    23050 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R128
+U 1 1 5EF8B6EF
+P 23550 5950
+F 0 "R128" V 23630 5950 50  0000 C CNN
+F 1 "1k" V 23550 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23480 5950 50  0001 C CNN
+F 3 "" H 23550 5950 50  0001 C CNN
+	1    23550 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23200 5950 23400 5950
+$Comp
+L GND #PWR0136
+U 1 1 5EF8B6F6
+P 23850 6100
+F 0 "#PWR0136" H 23850 5850 50  0001 C CNN
+F 1 "GND" H 23850 5950 50  0000 C CNN
+F 2 "" H 23850 6100 50  0001 C CNN
+F 3 "" H 23850 6100 50  0001 C CNN
+	1    23850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23700 5950 23850 5950
+Wire Wire Line
+	23850 5950 23850 6100
+Wire Wire Line
+	22400 5950 22900 5950
+Wire Wire Line
+	22250 4200 23750 4200
+Wire Wire Line
+	23750 4200 23750 4350
+Wire Wire Line
+	22250 4300 23550 4300
+Wire Wire Line
+	23550 4300 23550 4600
+Wire Wire Line
+	22250 4400 23350 4400
+Wire Wire Line
+	23350 4400 23350 4850
+Wire Wire Line
+	22250 4500 23150 4500
+Wire Wire Line
+	23150 4500 23150 5100
+Wire Wire Line
+	22250 4600 22900 4600
+Wire Wire Line
+	22900 4600 22900 5350
+Wire Wire Line
+	22600 5650 22600 4700
+Wire Wire Line
+	22600 4700 22250 4700
+Wire Wire Line
+	22400 4800 22400 5950
+Wire Wire Line
+	22400 4800 22250 4800
+$Comp
+L LED D173
+U 1 1 5EF8B70D
+P 24600 6650
+F 0 "D173" H 24600 6750 50  0000 C CNN
+F 1 "LED" H 24600 6550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24600 6650 50  0001 C CNN
+F 3 "" H 24600 6650 50  0001 C CNN
+	1    24600 6650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R179
+U 1 1 5EF8B713
+P 25100 6650
+F 0 "R179" V 25180 6650 50  0000 C CNN
+F 1 "1k" V 25100 6650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25030 6650 50  0001 C CNN
+F 3 "" H 25100 6650 50  0001 C CNN
+	1    25100 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24750 6650 24950 6650
+$Comp
+L GND #PWR0137
+U 1 1 5EF8B71A
+P 25400 6800
+F 0 "#PWR0137" H 25400 6550 50  0001 C CNN
+F 1 "GND" H 25400 6650 50  0000 C CNN
+F 2 "" H 25400 6800 50  0001 C CNN
+F 3 "" H 25400 6800 50  0001 C CNN
+	1    25400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25250 6650 25400 6650
+Wire Wire Line
+	25400 6650 25400 6800
+Wire Wire Line
+	22300 6650 24450 6650
+$Comp
+L LED D166
+U 1 1 5EF8B723
+P 24450 6900
+F 0 "D166" H 24450 7000 50  0000 C CNN
+F 1 "LED" H 24450 6800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24450 6900 50  0001 C CNN
+F 3 "" H 24450 6900 50  0001 C CNN
+	1    24450 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R172
+U 1 1 5EF8B729
+P 24950 6900
+F 0 "R172" V 25030 6900 50  0000 C CNN
+F 1 "1k" V 24950 6900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24880 6900 50  0001 C CNN
+F 3 "" H 24950 6900 50  0001 C CNN
+	1    24950 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24600 6900 24800 6900
+$Comp
+L GND #PWR0138
+U 1 1 5EF8B730
+P 25250 7050
+F 0 "#PWR0138" H 25250 6800 50  0001 C CNN
+F 1 "GND" H 25250 6900 50  0000 C CNN
+F 2 "" H 25250 7050 50  0001 C CNN
+F 3 "" H 25250 7050 50  0001 C CNN
+	1    25250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25100 6900 25250 6900
+Wire Wire Line
+	25250 6900 25250 7050
+Wire Wire Line
+	23800 6900 24300 6900
+$Comp
+L LED D158
+U 1 1 5EF8B739
+P 24250 7150
+F 0 "D158" H 24250 7250 50  0000 C CNN
+F 1 "LED" H 24250 7050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24250 7150 50  0001 C CNN
+F 3 "" H 24250 7150 50  0001 C CNN
+	1    24250 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R164
+U 1 1 5EF8B73F
+P 24750 7150
+F 0 "R164" V 24830 7150 50  0000 C CNN
+F 1 "1k" V 24750 7150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24680 7150 50  0001 C CNN
+F 3 "" H 24750 7150 50  0001 C CNN
+	1    24750 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24400 7150 24600 7150
+$Comp
+L GND #PWR0139
+U 1 1 5EF8B746
+P 25050 7300
+F 0 "#PWR0139" H 25050 7050 50  0001 C CNN
+F 1 "GND" H 25050 7150 50  0000 C CNN
+F 2 "" H 25050 7300 50  0001 C CNN
+F 3 "" H 25050 7300 50  0001 C CNN
+	1    25050 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24900 7150 25050 7150
+Wire Wire Line
+	25050 7150 25050 7300
+Wire Wire Line
+	23600 7150 24100 7150
+$Comp
+L LED D150
+U 1 1 5EF8B74F
+P 24050 7400
+F 0 "D150" H 24050 7500 50  0000 C CNN
+F 1 "LED" H 24050 7300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24050 7400 50  0001 C CNN
+F 3 "" H 24050 7400 50  0001 C CNN
+	1    24050 7400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R156
+U 1 1 5EF8B755
+P 24550 7400
+F 0 "R156" V 24630 7400 50  0000 C CNN
+F 1 "1k" V 24550 7400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24480 7400 50  0001 C CNN
+F 3 "" H 24550 7400 50  0001 C CNN
+	1    24550 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24200 7400 24400 7400
+$Comp
+L GND #PWR0140
+U 1 1 5EF8B75C
+P 24850 7550
+F 0 "#PWR0140" H 24850 7300 50  0001 C CNN
+F 1 "GND" H 24850 7400 50  0000 C CNN
+F 2 "" H 24850 7550 50  0001 C CNN
+F 3 "" H 24850 7550 50  0001 C CNN
+	1    24850 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24700 7400 24850 7400
+Wire Wire Line
+	24850 7400 24850 7550
+Wire Wire Line
+	23400 7400 23900 7400
+$Comp
+L LED D143
+U 1 1 5EF8B765
+P 23850 7650
+F 0 "D143" H 23850 7750 50  0000 C CNN
+F 1 "LED" H 23850 7550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23850 7650 50  0001 C CNN
+F 3 "" H 23850 7650 50  0001 C CNN
+	1    23850 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R150
+U 1 1 5EF8B76B
+P 24350 7650
+F 0 "R150" V 24430 7650 50  0000 C CNN
+F 1 "1k" V 24350 7650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24280 7650 50  0001 C CNN
+F 3 "" H 24350 7650 50  0001 C CNN
+	1    24350 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24000 7650 24200 7650
+$Comp
+L GND #PWR0141
+U 1 1 5EF8B772
+P 24650 7800
+F 0 "#PWR0141" H 24650 7550 50  0001 C CNN
+F 1 "GND" H 24650 7650 50  0000 C CNN
+F 2 "" H 24650 7800 50  0001 C CNN
+F 3 "" H 24650 7800 50  0001 C CNN
+	1    24650 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24500 7650 24650 7650
+Wire Wire Line
+	24650 7650 24650 7800
+Wire Wire Line
+	23200 7650 23700 7650
+$Comp
+L LED D135
+U 1 1 5EF8B77B
+P 23600 7900
+F 0 "D135" H 23600 8000 50  0000 C CNN
+F 1 "LED" H 23600 7800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23600 7900 50  0001 C CNN
+F 3 "" H 23600 7900 50  0001 C CNN
+	1    23600 7900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R142
+U 1 1 5EF8B781
+P 24100 7900
+F 0 "R142" V 24180 7900 50  0000 C CNN
+F 1 "1k" V 24100 7900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24030 7900 50  0001 C CNN
+F 3 "" H 24100 7900 50  0001 C CNN
+	1    24100 7900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23750 7900 23950 7900
+$Comp
+L GND #PWR0142
+U 1 1 5EF8B788
+P 24400 8050
+F 0 "#PWR0142" H 24400 7800 50  0001 C CNN
+F 1 "GND" H 24400 7900 50  0000 C CNN
+F 2 "" H 24400 8050 50  0001 C CNN
+F 3 "" H 24400 8050 50  0001 C CNN
+	1    24400 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24250 7900 24400 7900
+Wire Wire Line
+	24400 7900 24400 8050
+Wire Wire Line
+	22950 7900 23450 7900
+$Comp
+L LED D127
+U 1 1 5EF8B791
+P 23350 8200
+F 0 "D127" H 23350 8300 50  0000 C CNN
+F 1 "LED" H 23350 8100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23350 8200 50  0001 C CNN
+F 3 "" H 23350 8200 50  0001 C CNN
+	1    23350 8200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R134
+U 1 1 5EF8B797
+P 23850 8200
+F 0 "R134" V 23930 8200 50  0000 C CNN
+F 1 "1k" V 23850 8200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23780 8200 50  0001 C CNN
+F 3 "" H 23850 8200 50  0001 C CNN
+	1    23850 8200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23500 8200 23700 8200
+$Comp
+L GND #PWR0143
+U 1 1 5EF8B79E
+P 24150 8350
+F 0 "#PWR0143" H 24150 8100 50  0001 C CNN
+F 1 "GND" H 24150 8200 50  0000 C CNN
+F 2 "" H 24150 8350 50  0001 C CNN
+F 3 "" H 24150 8350 50  0001 C CNN
+	1    24150 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24000 8200 24150 8200
+Wire Wire Line
+	24150 8200 24150 8350
+Wire Wire Line
+	22650 8200 23200 8200
+$Comp
+L LED D123
+U 1 1 5EF8B7A7
+P 23100 8500
+F 0 "D123" H 23100 8600 50  0000 C CNN
+F 1 "LED" H 23100 8400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23100 8500 50  0001 C CNN
+F 3 "" H 23100 8500 50  0001 C CNN
+	1    23100 8500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R129
+U 1 1 5EF8B7AD
+P 23600 8500
+F 0 "R129" V 23680 8500 50  0000 C CNN
+F 1 "1k" V 23600 8500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23530 8500 50  0001 C CNN
+F 3 "" H 23600 8500 50  0001 C CNN
+	1    23600 8500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23250 8500 23450 8500
+$Comp
+L GND #PWR0144
+U 1 1 5EF8B7B4
+P 23950 8500
+F 0 "#PWR0144" H 23950 8250 50  0001 C CNN
+F 1 "GND" H 23950 8350 50  0000 C CNN
+F 2 "" H 23950 8500 50  0001 C CNN
+F 3 "" H 23950 8500 50  0001 C CNN
+	1    23950 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23750 8500 23900 8500
+Wire Wire Line
+	23900 8500 23900 8650
+Wire Wire Line
+	22450 8500 22950 8500
+Wire Wire Line
+	22300 6750 23800 6750
+Wire Wire Line
+	23800 6750 23800 6900
+Wire Wire Line
+	22300 6850 23600 6850
+Wire Wire Line
+	23600 6850 23600 7150
+Wire Wire Line
+	22300 6950 23400 6950
+Wire Wire Line
+	23400 6950 23400 7400
+Wire Wire Line
+	22300 7050 23200 7050
+Wire Wire Line
+	23200 7050 23200 7650
+Wire Wire Line
+	22300 7150 22950 7150
+Wire Wire Line
+	22950 7150 22950 7900
+Wire Wire Line
+	22650 8200 22650 7250
+Wire Wire Line
+	22650 7250 22300 7250
+Wire Wire Line
+	22450 7350 22450 8500
+Wire Wire Line
+	22450 7350 22300 7350
+$Comp
+L LED D178
+U 1 1 5EF8B7CB
+P 24750 8950
+F 0 "D178" H 24750 9050 50  0000 C CNN
+F 1 "LED" H 24750 8850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24750 8950 50  0001 C CNN
+F 3 "" H 24750 8950 50  0001 C CNN
+	1    24750 8950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R184
+U 1 1 5EF8B7D1
+P 25250 8950
+F 0 "R184" V 25330 8950 50  0000 C CNN
+F 1 "1k" V 25250 8950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25180 8950 50  0001 C CNN
+F 3 "" H 25250 8950 50  0001 C CNN
+	1    25250 8950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24900 8950 25100 8950
+$Comp
+L GND #PWR0145
+U 1 1 5EF8B7D8
+P 25550 9100
+F 0 "#PWR0145" H 25550 8850 50  0001 C CNN
+F 1 "GND" H 25550 8950 50  0000 C CNN
+F 2 "" H 25550 9100 50  0001 C CNN
+F 3 "" H 25550 9100 50  0001 C CNN
+	1    25550 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25400 8950 25550 8950
+Wire Wire Line
+	25550 8950 25550 9100
+Wire Wire Line
+	22450 8950 24600 8950
+$Comp
+L LED D174
+U 1 1 5EF8B7E1
+P 24600 9200
+F 0 "D174" H 24600 9300 50  0000 C CNN
+F 1 "LED" H 24600 9100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24600 9200 50  0001 C CNN
+F 3 "" H 24600 9200 50  0001 C CNN
+	1    24600 9200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R180
+U 1 1 5EF8B7E7
+P 25100 9200
+F 0 "R180" V 25180 9200 50  0000 C CNN
+F 1 "1k" V 25100 9200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25030 9200 50  0001 C CNN
+F 3 "" H 25100 9200 50  0001 C CNN
+	1    25100 9200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24750 9200 24950 9200
+$Comp
+L GND #PWR0146
+U 1 1 5EF8B7EE
+P 25400 9350
+F 0 "#PWR0146" H 25400 9100 50  0001 C CNN
+F 1 "GND" H 25400 9200 50  0000 C CNN
+F 2 "" H 25400 9350 50  0001 C CNN
+F 3 "" H 25400 9350 50  0001 C CNN
+	1    25400 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25250 9200 25400 9200
+Wire Wire Line
+	25400 9200 25400 9350
+Wire Wire Line
+	23950 9200 24450 9200
+$Comp
+L LED D165
+U 1 1 5EF8B7F7
+P 24400 9450
+F 0 "D165" H 24400 9550 50  0000 C CNN
+F 1 "LED" H 24400 9350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24400 9450 50  0001 C CNN
+F 3 "" H 24400 9450 50  0001 C CNN
+	1    24400 9450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R171
+U 1 1 5EF8B7FD
+P 24900 9450
+F 0 "R171" V 24980 9450 50  0000 C CNN
+F 1 "1k" V 24900 9450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24830 9450 50  0001 C CNN
+F 3 "" H 24900 9450 50  0001 C CNN
+	1    24900 9450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24550 9450 24750 9450
+$Comp
+L GND #PWR0147
+U 1 1 5EF8B804
+P 25200 9600
+F 0 "#PWR0147" H 25200 9350 50  0001 C CNN
+F 1 "GND" H 25200 9450 50  0000 C CNN
+F 2 "" H 25200 9600 50  0001 C CNN
+F 3 "" H 25200 9600 50  0001 C CNN
+	1    25200 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25050 9450 25200 9450
+Wire Wire Line
+	25200 9450 25200 9600
+Wire Wire Line
+	23750 9450 24250 9450
+$Comp
+L LED D157
+U 1 1 5EF8B80D
+P 24200 9700
+F 0 "D157" H 24200 9800 50  0000 C CNN
+F 1 "LED" H 24200 9600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24200 9700 50  0001 C CNN
+F 3 "" H 24200 9700 50  0001 C CNN
+	1    24200 9700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R163
+U 1 1 5EF8B813
+P 24700 9700
+F 0 "R163" V 24780 9700 50  0000 C CNN
+F 1 "1k" V 24700 9700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24630 9700 50  0001 C CNN
+F 3 "" H 24700 9700 50  0001 C CNN
+	1    24700 9700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24350 9700 24550 9700
+$Comp
+L GND #PWR0148
+U 1 1 5EF8B81A
+P 25000 9850
+F 0 "#PWR0148" H 25000 9600 50  0001 C CNN
+F 1 "GND" H 25000 9700 50  0000 C CNN
+F 2 "" H 25000 9850 50  0001 C CNN
+F 3 "" H 25000 9850 50  0001 C CNN
+	1    25000 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24850 9700 25000 9700
+Wire Wire Line
+	25000 9700 25000 9850
+Wire Wire Line
+	23550 9700 24050 9700
+$Comp
+L LED D149
+U 1 1 5EF8B823
+P 24000 9950
+F 0 "D149" H 24000 10050 50  0000 C CNN
+F 1 "LED" H 24000 9850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24000 9950 50  0001 C CNN
+F 3 "" H 24000 9950 50  0001 C CNN
+	1    24000 9950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R155
+U 1 1 5EF8B829
+P 24500 9950
+F 0 "R155" V 24580 9950 50  0000 C CNN
+F 1 "1k" V 24500 9950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24430 9950 50  0001 C CNN
+F 3 "" H 24500 9950 50  0001 C CNN
+	1    24500 9950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24150 9950 24350 9950
+$Comp
+L GND #PWR0149
+U 1 1 5EF8B830
+P 24800 10100
+F 0 "#PWR0149" H 24800 9850 50  0001 C CNN
+F 1 "GND" H 24800 9950 50  0000 C CNN
+F 2 "" H 24800 10100 50  0001 C CNN
+F 3 "" H 24800 10100 50  0001 C CNN
+	1    24800 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24650 9950 24800 9950
+Wire Wire Line
+	24800 9950 24800 10100
+Wire Wire Line
+	23350 9950 23850 9950
+$Comp
+L LED D139
+U 1 1 5EF8B839
+P 23750 10200
+F 0 "D139" H 23750 10300 50  0000 C CNN
+F 1 "LED" H 23750 10100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23750 10200 50  0001 C CNN
+F 3 "" H 23750 10200 50  0001 C CNN
+	1    23750 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R146
+U 1 1 5EF8B83F
+P 24250 10200
+F 0 "R146" V 24330 10200 50  0000 C CNN
+F 1 "1k" V 24250 10200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24180 10200 50  0001 C CNN
+F 3 "" H 24250 10200 50  0001 C CNN
+	1    24250 10200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23900 10200 24100 10200
+$Comp
+L GND #PWR0150
+U 1 1 5EF8B846
+P 24550 10350
+F 0 "#PWR0150" H 24550 10100 50  0001 C CNN
+F 1 "GND" H 24550 10200 50  0000 C CNN
+F 2 "" H 24550 10350 50  0001 C CNN
+F 3 "" H 24550 10350 50  0001 C CNN
+	1    24550 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24400 10200 24550 10200
+Wire Wire Line
+	24550 10200 24550 10350
+Wire Wire Line
+	23100 10200 23600 10200
+$Comp
+L LED D131
+U 1 1 5EF8B84F
+P 23500 10500
+F 0 "D131" H 23500 10600 50  0000 C CNN
+F 1 "LED" H 23500 10400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23500 10500 50  0001 C CNN
+F 3 "" H 23500 10500 50  0001 C CNN
+	1    23500 10500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R138
+U 1 1 5EF8B855
+P 24000 10500
+F 0 "R138" V 24080 10500 50  0000 C CNN
+F 1 "1k" V 24000 10500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23930 10500 50  0001 C CNN
+F 3 "" H 24000 10500 50  0001 C CNN
+	1    24000 10500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23650 10500 23850 10500
+$Comp
+L GND #PWR0151
+U 1 1 5EF8B85C
+P 24300 10650
+F 0 "#PWR0151" H 24300 10400 50  0001 C CNN
+F 1 "GND" H 24300 10500 50  0000 C CNN
+F 2 "" H 24300 10650 50  0001 C CNN
+F 3 "" H 24300 10650 50  0001 C CNN
+	1    24300 10650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24150 10500 24300 10500
+Wire Wire Line
+	24300 10500 24300 10650
+Wire Wire Line
+	22800 10500 23350 10500
+$Comp
+L LED D124
+U 1 1 5EF8B865
+P 23250 10800
+F 0 "D124" H 23250 10900 50  0000 C CNN
+F 1 "LED" H 23250 10700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23250 10800 50  0001 C CNN
+F 3 "" H 23250 10800 50  0001 C CNN
+	1    23250 10800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R131
+U 1 1 5EF8B86B
+P 23750 10800
+F 0 "R131" V 23830 10800 50  0000 C CNN
+F 1 "1k" V 23750 10800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23680 10800 50  0001 C CNN
+F 3 "" H 23750 10800 50  0001 C CNN
+	1    23750 10800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23400 10800 23600 10800
+$Comp
+L GND #PWR0152
+U 1 1 5EF8B872
+P 24050 10950
+F 0 "#PWR0152" H 24050 10700 50  0001 C CNN
+F 1 "GND" H 24050 10800 50  0000 C CNN
+F 2 "" H 24050 10950 50  0001 C CNN
+F 3 "" H 24050 10950 50  0001 C CNN
+	1    24050 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23900 10800 24050 10800
+Wire Wire Line
+	24050 10800 24050 10950
+Wire Wire Line
+	22600 10800 23100 10800
+Wire Wire Line
+	22450 9050 23950 9050
+Wire Wire Line
+	23950 9050 23950 9200
+Wire Wire Line
+	22450 9150 23750 9150
+Wire Wire Line
+	23750 9150 23750 9450
+Wire Wire Line
+	22450 9250 23550 9250
+Wire Wire Line
+	23550 9250 23550 9700
+Wire Wire Line
+	22450 9350 23350 9350
+Wire Wire Line
+	23350 9350 23350 9950
+Wire Wire Line
+	22450 9450 23100 9450
+Wire Wire Line
+	23100 9450 23100 10200
+Wire Wire Line
+	22800 10500 22800 9550
+Wire Wire Line
+	22800 9550 22450 9550
+Wire Wire Line
+	22600 9650 22600 10800
+Wire Wire Line
+	22600 9650 22450 9650
+$Comp
+L 74HC595D_118 U17
+U 1 1 5EF8B892
+P 21700 1600
+F 0 "U17" H 21403 1638 60  0000 L CNN
+F 1 "74HC595D_118" V 21800 1100 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 21900 1800 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 21900 1900 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 21900 2000 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 21900 2100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 21900 2200 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 21900 2300 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 21900 2400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 21900 2500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 21900 2600 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 21900 2700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 21900 2800 60  0001 L CNN "Status"
+	1    21700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D170
+U 1 1 5EF8B8A1
+P 24550 1700
+F 0 "D170" H 24350 1850 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24550 1550 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24750 1900 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24750 2000 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24750 2100 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24750 2200 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24750 2300 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24750 2400 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24750 2500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24750 2600 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24750 2700 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24750 2800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24750 2900 60  0001 L CNN "Status"
+	1    24550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U18
+U 1 1 5EF8B8B0
+P 21750 4000
+F 0 "U18" H 21453 4038 60  0000 L CNN
+F 1 "74HC595D_118" V 21850 3500 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 21950 4200 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 21950 4300 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 21950 4400 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 21950 4500 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 21950 4600 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 21950 4700 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 21950 4800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 21950 4900 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 21950 5000 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 21950 5100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 21950 5200 60  0001 L CNN "Status"
+	1    21750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U19
+U 1 1 5EF8B8BF
+P 21800 6550
+F 0 "U19" H 21503 6588 60  0000 L CNN
+F 1 "74HC595D_118" V 21900 6050 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 22000 6750 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22000 6850 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 22000 6950 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 22000 7050 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 22000 7150 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 22000 7250 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22000 7350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 22000 7450 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 22000 7550 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 22000 7650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 22000 7750 60  0001 L CNN "Status"
+	1    21800 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U20
+U 1 1 5EF8B8CE
+P 21950 8850
+F 0 "U20" H 21653 8888 60  0000 L CNN
+F 1 "74HC595D_118" V 22050 8350 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 22150 9050 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22150 9150 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 22150 9250 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 22150 9350 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 22150 9450 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 22150 9550 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22150 9650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 22150 9750 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 22150 9850 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 22150 9950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 22150 10050 60  0001 L CNN "Status"
+	1    21950 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D163
+U 1 1 5EF8B8DD
+P 24400 1950
+F 0 "D163" H 24200 2100 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24400 1800 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24600 2150 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24600 2250 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24600 2350 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24600 2450 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24600 2550 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24600 2650 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24600 2750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24600 2850 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24600 2950 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24600 3050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24600 3150 60  0001 L CNN "Status"
+	1    24400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D155
+U 1 1 5EF8B8EC
+P 24200 2200
+F 0 "D155" H 24000 2350 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24200 2050 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24400 2400 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24400 2500 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24400 2600 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24400 2700 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24400 2800 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24400 2900 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24400 3000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24400 3100 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24400 3200 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24400 3300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24400 3400 60  0001 L CNN "Status"
+	1    24200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D147
+U 1 1 5EF8B8FB
+P 24000 2450
+F 0 "D147" H 23800 2600 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24000 2300 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24200 2650 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24200 2750 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24200 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24200 2950 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24200 3050 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24200 3150 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24200 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24200 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24200 3450 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24200 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24200 3650 60  0001 L CNN "Status"
+	1    24000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D140
+U 1 1 5EF8B90A
+P 23800 2700
+F 0 "D140" H 23600 2850 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23800 2550 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24000 2900 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24000 3000 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24000 3100 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24000 3200 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24000 3300 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24000 3400 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24000 3500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24000 3600 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24000 3700 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24000 3800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24000 3900 60  0001 L CNN "Status"
+	1    23800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D132
+U 1 1 5EF8B919
+P 23550 2950
+F 0 "D132" H 23350 3100 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23550 2800 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 23750 3150 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23750 3250 60  0001 L CNN
+F 4 "475-2709-1-ND" H 23750 3350 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 23750 3450 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 23750 3550 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 23750 3650 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23750 3750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 23750 3850 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 23750 3950 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 23750 4050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 23750 4150 60  0001 L CNN "Status"
+	1    23550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D125
+U 1 1 5EF8B928
+P 23300 3250
+F 0 "D125" H 23100 3400 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23300 3100 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 23500 3450 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23500 3550 60  0001 L CNN
+F 4 "475-2709-1-ND" H 23500 3650 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 23500 3750 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 23500 3850 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 23500 3950 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23500 4050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 23500 4150 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 23500 4250 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 23500 4350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 23500 4450 60  0001 L CNN "Status"
+	1    23300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D121
+U 1 1 5EF8B937
+P 23050 3550
+F 0 "D121" H 22850 3700 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23050 3400 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 23250 3750 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23250 3850 60  0001 L CNN
+F 4 "475-2709-1-ND" H 23250 3950 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 23250 4050 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 23250 4150 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 23250 4250 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23250 4350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 23250 4450 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 23250 4550 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 23250 4650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 23250 4750 60  0001 L CNN "Status"
+	1    23050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R186
+U 1 1 5EF8B93D
+P 25300 11800
+F 0 "R186" V 25380 11800 50  0000 C CNN
+F 1 "1k" V 25300 11800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25230 11800 50  0001 C CNN
+F 3 "" H 25300 11800 50  0001 C CNN
+	1    25300 11800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24950 11800 25150 11800
+$Comp
+L GND #PWR0153
+U 1 1 5EF8B944
+P 25600 11950
+F 0 "#PWR0153" H 25600 11700 50  0001 C CNN
+F 1 "GND" H 25600 11800 50  0000 C CNN
+F 2 "" H 25600 11950 50  0001 C CNN
+F 3 "" H 25600 11950 50  0001 C CNN
+	1    25600 11950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25450 11800 25600 11800
+Wire Wire Line
+	25600 11800 25600 11950
+Wire Wire Line
+	22500 11800 24650 11800
+$Comp
+L R R181
+U 1 1 5EF8B94D
+P 25150 12050
+F 0 "R181" V 25230 12050 50  0000 C CNN
+F 1 "1k" V 25150 12050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25080 12050 50  0001 C CNN
+F 3 "" H 25150 12050 50  0001 C CNN
+	1    25150 12050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24800 12050 25000 12050
+$Comp
+L GND #PWR0154
+U 1 1 5EF8B954
+P 25450 12200
+F 0 "#PWR0154" H 25450 11950 50  0001 C CNN
+F 1 "GND" H 25450 12050 50  0000 C CNN
+F 2 "" H 25450 12200 50  0001 C CNN
+F 3 "" H 25450 12200 50  0001 C CNN
+	1    25450 12200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25300 12050 25450 12050
+Wire Wire Line
+	25450 12050 25450 12200
+Wire Wire Line
+	24000 12050 24500 12050
+$Comp
+L R R173
+U 1 1 5EF8B95D
+P 24950 12300
+F 0 "R173" V 25030 12300 50  0000 C CNN
+F 1 "1k" V 24950 12300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24880 12300 50  0001 C CNN
+F 3 "" H 24950 12300 50  0001 C CNN
+	1    24950 12300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24600 12300 24800 12300
+$Comp
+L GND #PWR0155
+U 1 1 5EF8B964
+P 25250 12450
+F 0 "#PWR0155" H 25250 12200 50  0001 C CNN
+F 1 "GND" H 25250 12300 50  0000 C CNN
+F 2 "" H 25250 12450 50  0001 C CNN
+F 3 "" H 25250 12450 50  0001 C CNN
+	1    25250 12450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25100 12300 25250 12300
+Wire Wire Line
+	25250 12300 25250 12450
+Wire Wire Line
+	23800 12300 24300 12300
+$Comp
+L R R165
+U 1 1 5EF8B96D
+P 24750 12550
+F 0 "R165" V 24830 12550 50  0000 C CNN
+F 1 "1k" V 24750 12550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24680 12550 50  0001 C CNN
+F 3 "" H 24750 12550 50  0001 C CNN
+	1    24750 12550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24400 12550 24600 12550
+$Comp
+L GND #PWR0156
+U 1 1 5EF8B974
+P 25050 12700
+F 0 "#PWR0156" H 25050 12450 50  0001 C CNN
+F 1 "GND" H 25050 12550 50  0000 C CNN
+F 2 "" H 25050 12700 50  0001 C CNN
+F 3 "" H 25050 12700 50  0001 C CNN
+	1    25050 12700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24900 12550 25050 12550
+Wire Wire Line
+	25050 12550 25050 12700
+Wire Wire Line
+	23600 12550 24100 12550
+$Comp
+L R R157
+U 1 1 5EF8B97D
+P 24550 12800
+F 0 "R157" V 24630 12800 50  0000 C CNN
+F 1 "1k" V 24550 12800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24480 12800 50  0001 C CNN
+F 3 "" H 24550 12800 50  0001 C CNN
+	1    24550 12800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24200 12800 24400 12800
+$Comp
+L GND #PWR0157
+U 1 1 5EF8B984
+P 24850 12950
+F 0 "#PWR0157" H 24850 12700 50  0001 C CNN
+F 1 "GND" H 24850 12800 50  0000 C CNN
+F 2 "" H 24850 12950 50  0001 C CNN
+F 3 "" H 24850 12950 50  0001 C CNN
+	1    24850 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24700 12800 24850 12800
+Wire Wire Line
+	24850 12800 24850 12950
+Wire Wire Line
+	23400 12800 23900 12800
+$Comp
+L R R148
+U 1 1 5EF8B98D
+P 24300 13050
+F 0 "R148" V 24380 13050 50  0000 C CNN
+F 1 "1k" V 24300 13050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24230 13050 50  0001 C CNN
+F 3 "" H 24300 13050 50  0001 C CNN
+	1    24300 13050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23950 13050 24150 13050
+$Comp
+L GND #PWR0158
+U 1 1 5EF8B994
+P 24600 13200
+F 0 "#PWR0158" H 24600 12950 50  0001 C CNN
+F 1 "GND" H 24600 13050 50  0000 C CNN
+F 2 "" H 24600 13200 50  0001 C CNN
+F 3 "" H 24600 13200 50  0001 C CNN
+	1    24600 13200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24450 13050 24600 13050
+Wire Wire Line
+	24600 13050 24600 13200
+Wire Wire Line
+	23150 13050 23650 13050
+$Comp
+L R R140
+U 1 1 5EF8B99D
+P 24050 13350
+F 0 "R140" V 24130 13350 50  0000 C CNN
+F 1 "1k" V 24050 13350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23980 13350 50  0001 C CNN
+F 3 "" H 24050 13350 50  0001 C CNN
+	1    24050 13350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23700 13350 23900 13350
+$Comp
+L GND #PWR0159
+U 1 1 5EF8B9A4
+P 24350 13500
+F 0 "#PWR0159" H 24350 13250 50  0001 C CNN
+F 1 "GND" H 24350 13350 50  0000 C CNN
+F 2 "" H 24350 13500 50  0001 C CNN
+F 3 "" H 24350 13500 50  0001 C CNN
+	1    24350 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24200 13350 24350 13350
+Wire Wire Line
+	24350 13350 24350 13500
+Wire Wire Line
+	22850 13350 23400 13350
+$Comp
+L R R133
+U 1 1 5EF8B9AD
+P 23800 13650
+F 0 "R133" V 23880 13650 50  0000 C CNN
+F 1 "1k" V 23800 13650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23730 13650 50  0001 C CNN
+F 3 "" H 23800 13650 50  0001 C CNN
+	1    23800 13650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23450 13650 23650 13650
+$Comp
+L GND #PWR0160
+U 1 1 5EF8B9B4
+P 24100 13800
+F 0 "#PWR0160" H 24100 13550 50  0001 C CNN
+F 1 "GND" H 24100 13650 50  0000 C CNN
+F 2 "" H 24100 13800 50  0001 C CNN
+F 3 "" H 24100 13800 50  0001 C CNN
+	1    24100 13800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23950 13650 24100 13650
+Wire Wire Line
+	24100 13650 24100 13800
+Wire Wire Line
+	22650 13650 23150 13650
+Wire Wire Line
+	22500 11900 24000 11900
+Wire Wire Line
+	24000 11900 24000 12050
+Wire Wire Line
+	22500 12000 23800 12000
+Wire Wire Line
+	23800 12000 23800 12300
+Wire Wire Line
+	22500 12100 23600 12100
+Wire Wire Line
+	23600 12100 23600 12550
+Wire Wire Line
+	22500 12200 23400 12200
+Wire Wire Line
+	23400 12200 23400 12800
+Wire Wire Line
+	22500 12300 23150 12300
+Wire Wire Line
+	23150 12300 23150 13050
+Wire Wire Line
+	22850 13350 22850 12400
+Wire Wire Line
+	22850 12400 22500 12400
+Wire Wire Line
+	22650 12500 22650 13650
+Wire Wire Line
+	22650 12500 22500 12500
+$Comp
+L LED D181
+U 1 1 5EF8B9CB
+P 24850 14200
+F 0 "D181" H 24850 14300 50  0000 C CNN
+F 1 "LED" H 24850 14100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24850 14200 50  0001 C CNN
+F 3 "" H 24850 14200 50  0001 C CNN
+	1    24850 14200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R187
+U 1 1 5EF8B9D1
+P 25350 14200
+F 0 "R187" V 25430 14200 50  0000 C CNN
+F 1 "1k" V 25350 14200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25280 14200 50  0001 C CNN
+F 3 "" H 25350 14200 50  0001 C CNN
+	1    25350 14200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	25000 14200 25200 14200
+$Comp
+L GND #PWR0161
+U 1 1 5EF8B9D8
+P 25650 14350
+F 0 "#PWR0161" H 25650 14100 50  0001 C CNN
+F 1 "GND" H 25650 14200 50  0000 C CNN
+F 2 "" H 25650 14350 50  0001 C CNN
+F 3 "" H 25650 14350 50  0001 C CNN
+	1    25650 14350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25500 14200 25650 14200
+Wire Wire Line
+	25650 14200 25650 14350
+Wire Wire Line
+	22550 14200 24700 14200
+$Comp
+L LED D176
+U 1 1 5EF8B9E1
+P 24700 14450
+F 0 "D176" H 24700 14550 50  0000 C CNN
+F 1 "LED" H 24700 14350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24700 14450 50  0001 C CNN
+F 3 "" H 24700 14450 50  0001 C CNN
+	1    24700 14450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R182
+U 1 1 5EF8B9E7
+P 25200 14450
+F 0 "R182" V 25280 14450 50  0000 C CNN
+F 1 "1k" V 25200 14450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25130 14450 50  0001 C CNN
+F 3 "" H 25200 14450 50  0001 C CNN
+	1    25200 14450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24850 14450 25050 14450
+$Comp
+L GND #PWR0162
+U 1 1 5EF8B9EE
+P 25500 14600
+F 0 "#PWR0162" H 25500 14350 50  0001 C CNN
+F 1 "GND" H 25500 14450 50  0000 C CNN
+F 2 "" H 25500 14600 50  0001 C CNN
+F 3 "" H 25500 14600 50  0001 C CNN
+	1    25500 14600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25350 14450 25500 14450
+Wire Wire Line
+	25500 14450 25500 14600
+Wire Wire Line
+	24050 14450 24550 14450
+$Comp
+L LED D168
+U 1 1 5EF8B9F7
+P 24500 14700
+F 0 "D168" H 24500 14800 50  0000 C CNN
+F 1 "LED" H 24500 14600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24500 14700 50  0001 C CNN
+F 3 "" H 24500 14700 50  0001 C CNN
+	1    24500 14700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R175
+U 1 1 5EF8B9FD
+P 25000 14700
+F 0 "R175" V 25080 14700 50  0000 C CNN
+F 1 "1k" V 25000 14700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24930 14700 50  0001 C CNN
+F 3 "" H 25000 14700 50  0001 C CNN
+	1    25000 14700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24650 14700 24850 14700
+$Comp
+L GND #PWR0163
+U 1 1 5EF8BA04
+P 25300 14850
+F 0 "#PWR0163" H 25300 14600 50  0001 C CNN
+F 1 "GND" H 25300 14700 50  0000 C CNN
+F 2 "" H 25300 14850 50  0001 C CNN
+F 3 "" H 25300 14850 50  0001 C CNN
+	1    25300 14850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25150 14700 25300 14700
+Wire Wire Line
+	25300 14700 25300 14850
+Wire Wire Line
+	23850 14700 24350 14700
+$Comp
+L LED D160
+U 1 1 5EF8BA0D
+P 24300 14950
+F 0 "D160" H 24300 15050 50  0000 C CNN
+F 1 "LED" H 24300 14850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24300 14950 50  0001 C CNN
+F 3 "" H 24300 14950 50  0001 C CNN
+	1    24300 14950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R166
+U 1 1 5EF8BA13
+P 24800 14950
+F 0 "R166" V 24880 14950 50  0000 C CNN
+F 1 "1k" V 24800 14950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24730 14950 50  0001 C CNN
+F 3 "" H 24800 14950 50  0001 C CNN
+	1    24800 14950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24450 14950 24650 14950
+$Comp
+L GND #PWR0164
+U 1 1 5EF8BA1A
+P 25100 15100
+F 0 "#PWR0164" H 25100 14850 50  0001 C CNN
+F 1 "GND" H 25100 14950 50  0000 C CNN
+F 2 "" H 25100 15100 50  0001 C CNN
+F 3 "" H 25100 15100 50  0001 C CNN
+	1    25100 15100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24950 14950 25100 14950
+Wire Wire Line
+	25100 14950 25100 15100
+Wire Wire Line
+	23650 14950 24150 14950
+$Comp
+L LED D153
+U 1 1 5EF8BA23
+P 24100 15200
+F 0 "D153" H 24100 15300 50  0000 C CNN
+F 1 "LED" H 24100 15100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24100 15200 50  0001 C CNN
+F 3 "" H 24100 15200 50  0001 C CNN
+	1    24100 15200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R159
+U 1 1 5EF8BA29
+P 24600 15200
+F 0 "R159" V 24680 15200 50  0000 C CNN
+F 1 "1k" V 24600 15200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24530 15200 50  0001 C CNN
+F 3 "" H 24600 15200 50  0001 C CNN
+	1    24600 15200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24250 15200 24450 15200
+$Comp
+L GND #PWR0165
+U 1 1 5EF8BA30
+P 24900 15350
+F 0 "#PWR0165" H 24900 15100 50  0001 C CNN
+F 1 "GND" H 24900 15200 50  0000 C CNN
+F 2 "" H 24900 15350 50  0001 C CNN
+F 3 "" H 24900 15350 50  0001 C CNN
+	1    24900 15350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24750 15200 24900 15200
+Wire Wire Line
+	24900 15200 24900 15350
+Wire Wire Line
+	23450 15200 23950 15200
+$Comp
+L LED D145
+U 1 1 5EF8BA39
+P 23850 15450
+F 0 "D145" H 23850 15550 50  0000 C CNN
+F 1 "LED" H 23850 15350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23850 15450 50  0001 C CNN
+F 3 "" H 23850 15450 50  0001 C CNN
+	1    23850 15450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R151
+U 1 1 5EF8BA3F
+P 24350 15450
+F 0 "R151" V 24430 15450 50  0000 C CNN
+F 1 "1k" V 24350 15450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24280 15450 50  0001 C CNN
+F 3 "" H 24350 15450 50  0001 C CNN
+	1    24350 15450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24000 15450 24200 15450
+$Comp
+L GND #PWR0166
+U 1 1 5EF8BA46
+P 24650 15600
+F 0 "#PWR0166" H 24650 15350 50  0001 C CNN
+F 1 "GND" H 24650 15450 50  0000 C CNN
+F 2 "" H 24650 15600 50  0001 C CNN
+F 3 "" H 24650 15600 50  0001 C CNN
+	1    24650 15600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24500 15450 24650 15450
+Wire Wire Line
+	24650 15450 24650 15600
+Wire Wire Line
+	23200 15450 23700 15450
+$Comp
+L LED D137
+U 1 1 5EF8BA4F
+P 23600 15750
+F 0 "D137" H 23600 15850 50  0000 C CNN
+F 1 "LED" H 23600 15650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23600 15750 50  0001 C CNN
+F 3 "" H 23600 15750 50  0001 C CNN
+	1    23600 15750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R143
+U 1 1 5EF8BA55
+P 24100 15750
+F 0 "R143" V 24180 15750 50  0000 C CNN
+F 1 "1k" V 24100 15750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24030 15750 50  0001 C CNN
+F 3 "" H 24100 15750 50  0001 C CNN
+	1    24100 15750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23750 15750 23950 15750
+$Comp
+L GND #PWR0167
+U 1 1 5EF8BA5C
+P 24400 15900
+F 0 "#PWR0167" H 24400 15650 50  0001 C CNN
+F 1 "GND" H 24400 15750 50  0000 C CNN
+F 2 "" H 24400 15900 50  0001 C CNN
+F 3 "" H 24400 15900 50  0001 C CNN
+	1    24400 15900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24250 15750 24400 15750
+Wire Wire Line
+	24400 15750 24400 15900
+Wire Wire Line
+	22900 15750 23450 15750
+$Comp
+L LED D129
+U 1 1 5EF8BA65
+P 23350 16050
+F 0 "D129" H 23350 16150 50  0000 C CNN
+F 1 "LED" H 23350 15950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23350 16050 50  0001 C CNN
+F 3 "" H 23350 16050 50  0001 C CNN
+	1    23350 16050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R135
+U 1 1 5EF8BA6B
+P 23850 16050
+F 0 "R135" V 23930 16050 50  0000 C CNN
+F 1 "1k" V 23850 16050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23780 16050 50  0001 C CNN
+F 3 "" H 23850 16050 50  0001 C CNN
+	1    23850 16050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23500 16050 23700 16050
+$Comp
+L GND #PWR0168
+U 1 1 5EF8BA72
+P 24150 16200
+F 0 "#PWR0168" H 24150 15950 50  0001 C CNN
+F 1 "GND" H 24150 16050 50  0000 C CNN
+F 2 "" H 24150 16200 50  0001 C CNN
+F 3 "" H 24150 16200 50  0001 C CNN
+	1    24150 16200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24000 16050 24150 16050
+Wire Wire Line
+	24150 16050 24150 16200
+Wire Wire Line
+	22700 16050 23200 16050
+Wire Wire Line
+	22550 14300 24050 14300
+Wire Wire Line
+	24050 14300 24050 14450
+Wire Wire Line
+	22550 14400 23850 14400
+Wire Wire Line
+	23850 14400 23850 14700
+Wire Wire Line
+	22550 14500 23650 14500
+Wire Wire Line
+	23650 14500 23650 14950
+Wire Wire Line
+	22550 14600 23450 14600
+Wire Wire Line
+	23450 14600 23450 15200
+Wire Wire Line
+	22550 14700 23200 14700
+Wire Wire Line
+	23200 14700 23200 15450
+Wire Wire Line
+	22900 15750 22900 14800
+Wire Wire Line
+	22900 14800 22550 14800
+Wire Wire Line
+	22700 14900 22700 16050
+Wire Wire Line
+	22700 14900 22550 14900
+$Comp
+L LED D182
+U 1 1 5EF8BA89
+P 24900 16750
+F 0 "D182" H 24900 16850 50  0000 C CNN
+F 1 "LED" H 24900 16650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24900 16750 50  0001 C CNN
+F 3 "" H 24900 16750 50  0001 C CNN
+	1    24900 16750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R188
+U 1 1 5EF8BA8F
+P 25400 16750
+F 0 "R188" V 25480 16750 50  0000 C CNN
+F 1 "1k" V 25400 16750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25330 16750 50  0001 C CNN
+F 3 "" H 25400 16750 50  0001 C CNN
+	1    25400 16750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	25050 16750 25250 16750
+$Comp
+L GND #PWR0169
+U 1 1 5EF8BA96
+P 25700 16900
+F 0 "#PWR0169" H 25700 16650 50  0001 C CNN
+F 1 "GND" H 25700 16750 50  0000 C CNN
+F 2 "" H 25700 16900 50  0001 C CNN
+F 3 "" H 25700 16900 50  0001 C CNN
+	1    25700 16900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25550 16750 25700 16750
+Wire Wire Line
+	25700 16750 25700 16900
+Wire Wire Line
+	22600 16750 24750 16750
+$Comp
+L LED D179
+U 1 1 5EF8BA9F
+P 24750 17000
+F 0 "D179" H 24750 17100 50  0000 C CNN
+F 1 "LED" H 24750 16900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24750 17000 50  0001 C CNN
+F 3 "" H 24750 17000 50  0001 C CNN
+	1    24750 17000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R185
+U 1 1 5EF8BAA5
+P 25250 17000
+F 0 "R185" V 25330 17000 50  0000 C CNN
+F 1 "1k" V 25250 17000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25180 17000 50  0001 C CNN
+F 3 "" H 25250 17000 50  0001 C CNN
+	1    25250 17000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24900 17000 25100 17000
+$Comp
+L GND #PWR0170
+U 1 1 5EF8BAAC
+P 25550 17150
+F 0 "#PWR0170" H 25550 16900 50  0001 C CNN
+F 1 "GND" H 25550 17000 50  0000 C CNN
+F 2 "" H 25550 17150 50  0001 C CNN
+F 3 "" H 25550 17150 50  0001 C CNN
+	1    25550 17150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25400 17000 25550 17000
+Wire Wire Line
+	25550 17000 25550 17150
+Wire Wire Line
+	24100 17000 24600 17000
+$Comp
+L LED D172
+U 1 1 5EF8BAB5
+P 24550 17250
+F 0 "D172" H 24550 17350 50  0000 C CNN
+F 1 "LED" H 24550 17150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24550 17250 50  0001 C CNN
+F 3 "" H 24550 17250 50  0001 C CNN
+	1    24550 17250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R178
+U 1 1 5EF8BABB
+P 25050 17250
+F 0 "R178" V 25130 17250 50  0000 C CNN
+F 1 "1k" V 25050 17250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24980 17250 50  0001 C CNN
+F 3 "" H 25050 17250 50  0001 C CNN
+	1    25050 17250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24700 17250 24900 17250
+$Comp
+L GND #PWR0171
+U 1 1 5EF8BAC2
+P 25350 17400
+F 0 "#PWR0171" H 25350 17150 50  0001 C CNN
+F 1 "GND" H 25350 17250 50  0000 C CNN
+F 2 "" H 25350 17400 50  0001 C CNN
+F 3 "" H 25350 17400 50  0001 C CNN
+	1    25350 17400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25200 17250 25350 17250
+Wire Wire Line
+	25350 17250 25350 17400
+Wire Wire Line
+	23900 17250 24400 17250
+$Comp
+L LED D162
+U 1 1 5EF8BACB
+P 24350 17500
+F 0 "D162" H 24350 17600 50  0000 C CNN
+F 1 "LED" H 24350 17400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24350 17500 50  0001 C CNN
+F 3 "" H 24350 17500 50  0001 C CNN
+	1    24350 17500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R169
+U 1 1 5EF8BAD1
+P 24850 17500
+F 0 "R169" V 24930 17500 50  0000 C CNN
+F 1 "1k" V 24850 17500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24780 17500 50  0001 C CNN
+F 3 "" H 24850 17500 50  0001 C CNN
+	1    24850 17500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24500 17500 24700 17500
+$Comp
+L GND #PWR0172
+U 1 1 5EF8BAD8
+P 25150 17650
+F 0 "#PWR0172" H 25150 17400 50  0001 C CNN
+F 1 "GND" H 25150 17500 50  0000 C CNN
+F 2 "" H 25150 17650 50  0001 C CNN
+F 3 "" H 25150 17650 50  0001 C CNN
+	1    25150 17650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25000 17500 25150 17500
+Wire Wire Line
+	25150 17500 25150 17650
+Wire Wire Line
+	23700 17500 24200 17500
+$Comp
+L LED D154
+U 1 1 5EF8BAE1
+P 24150 17750
+F 0 "D154" H 24150 17850 50  0000 C CNN
+F 1 "LED" H 24150 17650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24150 17750 50  0001 C CNN
+F 3 "" H 24150 17750 50  0001 C CNN
+	1    24150 17750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R161
+U 1 1 5EF8BAE7
+P 24650 17750
+F 0 "R161" V 24730 17750 50  0000 C CNN
+F 1 "1k" V 24650 17750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24580 17750 50  0001 C CNN
+F 3 "" H 24650 17750 50  0001 C CNN
+	1    24650 17750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24300 17750 24500 17750
+$Comp
+L GND #PWR0173
+U 1 1 5EF8BAEE
+P 24950 17900
+F 0 "#PWR0173" H 24950 17650 50  0001 C CNN
+F 1 "GND" H 24950 17750 50  0000 C CNN
+F 2 "" H 24950 17900 50  0001 C CNN
+F 3 "" H 24950 17900 50  0001 C CNN
+	1    24950 17900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24800 17750 24950 17750
+Wire Wire Line
+	24950 17750 24950 17900
+Wire Wire Line
+	23500 17750 24000 17750
+$Comp
+L LED D146
+U 1 1 5EF8BAF7
+P 23900 18000
+F 0 "D146" H 23900 18100 50  0000 C CNN
+F 1 "LED" H 23900 17900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23900 18000 50  0001 C CNN
+F 3 "" H 23900 18000 50  0001 C CNN
+	1    23900 18000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R152
+U 1 1 5EF8BAFD
+P 24400 18000
+F 0 "R152" V 24480 18000 50  0000 C CNN
+F 1 "1k" V 24400 18000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24330 18000 50  0001 C CNN
+F 3 "" H 24400 18000 50  0001 C CNN
+	1    24400 18000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24050 18000 24250 18000
+$Comp
+L GND #PWR0174
+U 1 1 5EF8BB04
+P 24700 18150
+F 0 "#PWR0174" H 24700 17900 50  0001 C CNN
+F 1 "GND" H 24700 18000 50  0000 C CNN
+F 2 "" H 24700 18150 50  0001 C CNN
+F 3 "" H 24700 18150 50  0001 C CNN
+	1    24700 18150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24550 18000 24700 18000
+Wire Wire Line
+	24700 18000 24700 18150
+Wire Wire Line
+	23250 18000 23750 18000
+$Comp
+L LED D138
+U 1 1 5EF8BB0D
+P 23650 18300
+F 0 "D138" H 23650 18400 50  0000 C CNN
+F 1 "LED" H 23650 18200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23650 18300 50  0001 C CNN
+F 3 "" H 23650 18300 50  0001 C CNN
+	1    23650 18300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R144
+U 1 1 5EF8BB13
+P 24150 18300
+F 0 "R144" V 24230 18300 50  0000 C CNN
+F 1 "1k" V 24150 18300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24080 18300 50  0001 C CNN
+F 3 "" H 24150 18300 50  0001 C CNN
+	1    24150 18300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23800 18300 24000 18300
+$Comp
+L GND #PWR0175
+U 1 1 5EF8BB1A
+P 24450 18450
+F 0 "#PWR0175" H 24450 18200 50  0001 C CNN
+F 1 "GND" H 24450 18300 50  0000 C CNN
+F 2 "" H 24450 18450 50  0001 C CNN
+F 3 "" H 24450 18450 50  0001 C CNN
+	1    24450 18450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24300 18300 24450 18300
+Wire Wire Line
+	24450 18300 24450 18450
+Wire Wire Line
+	22950 18300 23500 18300
+$Comp
+L LED D130
+U 1 1 5EF8BB23
+P 23400 18600
+F 0 "D130" H 23400 18700 50  0000 C CNN
+F 1 "LED" H 23400 18500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23400 18600 50  0001 C CNN
+F 3 "" H 23400 18600 50  0001 C CNN
+	1    23400 18600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R136
+U 1 1 5EF8BB29
+P 23900 18600
+F 0 "R136" V 23980 18600 50  0000 C CNN
+F 1 "1k" V 23900 18600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23830 18600 50  0001 C CNN
+F 3 "" H 23900 18600 50  0001 C CNN
+	1    23900 18600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23550 18600 23750 18600
+$Comp
+L GND #PWR0176
+U 1 1 5EF8BB30
+P 24250 18600
+F 0 "#PWR0176" H 24250 18350 50  0001 C CNN
+F 1 "GND" H 24250 18450 50  0000 C CNN
+F 2 "" H 24250 18600 50  0001 C CNN
+F 3 "" H 24250 18600 50  0001 C CNN
+	1    24250 18600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24050 18600 24200 18600
+Wire Wire Line
+	24200 18600 24200 18750
+Wire Wire Line
+	22750 18600 23250 18600
+Wire Wire Line
+	22600 16850 24100 16850
+Wire Wire Line
+	24100 16850 24100 17000
+Wire Wire Line
+	22600 16950 23900 16950
+Wire Wire Line
+	23900 16950 23900 17250
+Wire Wire Line
+	22600 17050 23700 17050
+Wire Wire Line
+	23700 17050 23700 17500
+Wire Wire Line
+	22600 17150 23500 17150
+Wire Wire Line
+	23500 17150 23500 17750
+Wire Wire Line
+	22600 17250 23250 17250
+Wire Wire Line
+	23250 17250 23250 18000
+Wire Wire Line
+	22950 18300 22950 17350
+Wire Wire Line
+	22950 17350 22600 17350
+Wire Wire Line
+	22750 17450 22750 18600
+Wire Wire Line
+	22750 17450 22600 17450
+$Comp
+L LED D184
+U 1 1 5EF8BB47
+P 25050 19050
+F 0 "D184" H 25050 19150 50  0000 C CNN
+F 1 "LED" H 25050 18950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 25050 19050 50  0001 C CNN
+F 3 "" H 25050 19050 50  0001 C CNN
+	1    25050 19050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R190
+U 1 1 5EF8BB4D
+P 25550 19050
+F 0 "R190" V 25630 19050 50  0000 C CNN
+F 1 "1k" V 25550 19050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25480 19050 50  0001 C CNN
+F 3 "" H 25550 19050 50  0001 C CNN
+	1    25550 19050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	25200 19050 25400 19050
+$Comp
+L GND #PWR0177
+U 1 1 5EF8BB54
+P 25850 19200
+F 0 "#PWR0177" H 25850 18950 50  0001 C CNN
+F 1 "GND" H 25850 19050 50  0000 C CNN
+F 2 "" H 25850 19200 50  0001 C CNN
+F 3 "" H 25850 19200 50  0001 C CNN
+	1    25850 19200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25700 19050 25850 19050
+Wire Wire Line
+	25850 19050 25850 19200
+Wire Wire Line
+	22750 19050 24900 19050
+$Comp
+L LED D183
+U 1 1 5EF8BB5D
+P 24900 19300
+F 0 "D183" H 24900 19400 50  0000 C CNN
+F 1 "LED" H 24900 19200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24900 19300 50  0001 C CNN
+F 3 "" H 24900 19300 50  0001 C CNN
+	1    24900 19300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R189
+U 1 1 5EF8BB63
+P 25400 19300
+F 0 "R189" V 25480 19300 50  0000 C CNN
+F 1 "1k" V 25400 19300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25330 19300 50  0001 C CNN
+F 3 "" H 25400 19300 50  0001 C CNN
+	1    25400 19300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	25050 19300 25250 19300
+$Comp
+L GND #PWR0178
+U 1 1 5EF8BB6A
+P 25700 19450
+F 0 "#PWR0178" H 25700 19200 50  0001 C CNN
+F 1 "GND" H 25700 19300 50  0000 C CNN
+F 2 "" H 25700 19450 50  0001 C CNN
+F 3 "" H 25700 19450 50  0001 C CNN
+	1    25700 19450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25550 19300 25700 19300
+Wire Wire Line
+	25700 19300 25700 19450
+Wire Wire Line
+	24250 19300 24750 19300
+$Comp
+L LED D177
+U 1 1 5EF8BB73
+P 24700 19550
+F 0 "D177" H 24700 19650 50  0000 C CNN
+F 1 "LED" H 24700 19450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24700 19550 50  0001 C CNN
+F 3 "" H 24700 19550 50  0001 C CNN
+	1    24700 19550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R183
+U 1 1 5EF8BB79
+P 25200 19550
+F 0 "R183" V 25280 19550 50  0000 C CNN
+F 1 "1k" V 25200 19550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 25130 19550 50  0001 C CNN
+F 3 "" H 25200 19550 50  0001 C CNN
+	1    25200 19550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24850 19550 25050 19550
+$Comp
+L GND #PWR0179
+U 1 1 5EF8BB80
+P 25500 19700
+F 0 "#PWR0179" H 25500 19450 50  0001 C CNN
+F 1 "GND" H 25500 19550 50  0000 C CNN
+F 2 "" H 25500 19700 50  0001 C CNN
+F 3 "" H 25500 19700 50  0001 C CNN
+	1    25500 19700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25350 19550 25500 19550
+Wire Wire Line
+	25500 19550 25500 19700
+Wire Wire Line
+	24050 19550 24550 19550
+$Comp
+L LED D169
+U 1 1 5EF8BB89
+P 24500 19800
+F 0 "D169" H 24500 19900 50  0000 C CNN
+F 1 "LED" H 24500 19700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24500 19800 50  0001 C CNN
+F 3 "" H 24500 19800 50  0001 C CNN
+	1    24500 19800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R176
+U 1 1 5EF8BB8F
+P 25000 19800
+F 0 "R176" V 25080 19800 50  0000 C CNN
+F 1 "1k" V 25000 19800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24930 19800 50  0001 C CNN
+F 3 "" H 25000 19800 50  0001 C CNN
+	1    25000 19800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24650 19800 24850 19800
+$Comp
+L GND #PWR0180
+U 1 1 5EF8BB96
+P 25300 19950
+F 0 "#PWR0180" H 25300 19700 50  0001 C CNN
+F 1 "GND" H 25300 19800 50  0000 C CNN
+F 2 "" H 25300 19950 50  0001 C CNN
+F 3 "" H 25300 19950 50  0001 C CNN
+	1    25300 19950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25150 19800 25300 19800
+Wire Wire Line
+	25300 19800 25300 19950
+Wire Wire Line
+	23850 19800 24350 19800
+$Comp
+L LED D161
+U 1 1 5EF8BB9F
+P 24300 20050
+F 0 "D161" H 24300 20150 50  0000 C CNN
+F 1 "LED" H 24300 19950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24300 20050 50  0001 C CNN
+F 3 "" H 24300 20050 50  0001 C CNN
+	1    24300 20050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R167
+U 1 1 5EF8BBA5
+P 24800 20050
+F 0 "R167" V 24880 20050 50  0000 C CNN
+F 1 "1k" V 24800 20050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24730 20050 50  0001 C CNN
+F 3 "" H 24800 20050 50  0001 C CNN
+	1    24800 20050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24450 20050 24650 20050
+$Comp
+L GND #PWR0181
+U 1 1 5EF8BBAC
+P 25100 20200
+F 0 "#PWR0181" H 25100 19950 50  0001 C CNN
+F 1 "GND" H 25100 20050 50  0000 C CNN
+F 2 "" H 25100 20200 50  0001 C CNN
+F 3 "" H 25100 20200 50  0001 C CNN
+	1    25100 20200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24950 20050 25100 20050
+Wire Wire Line
+	25100 20050 25100 20200
+Wire Wire Line
+	23650 20050 24150 20050
+$Comp
+L LED D151
+U 1 1 5EF8BBB5
+P 24050 20300
+F 0 "D151" H 24050 20400 50  0000 C CNN
+F 1 "LED" H 24050 20200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 24050 20300 50  0001 C CNN
+F 3 "" H 24050 20300 50  0001 C CNN
+	1    24050 20300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R158
+U 1 1 5EF8BBBB
+P 24550 20300
+F 0 "R158" V 24630 20300 50  0000 C CNN
+F 1 "1k" V 24550 20300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24480 20300 50  0001 C CNN
+F 3 "" H 24550 20300 50  0001 C CNN
+	1    24550 20300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	24200 20300 24400 20300
+$Comp
+L GND #PWR0182
+U 1 1 5EF8BBC2
+P 24850 20450
+F 0 "#PWR0182" H 24850 20200 50  0001 C CNN
+F 1 "GND" H 24850 20300 50  0000 C CNN
+F 2 "" H 24850 20450 50  0001 C CNN
+F 3 "" H 24850 20450 50  0001 C CNN
+	1    24850 20450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24700 20300 24850 20300
+Wire Wire Line
+	24850 20300 24850 20450
+Wire Wire Line
+	23400 20300 23900 20300
+$Comp
+L LED D142
+U 1 1 5EF8BBCB
+P 23800 20600
+F 0 "D142" H 23800 20700 50  0000 C CNN
+F 1 "LED" H 23800 20500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23800 20600 50  0001 C CNN
+F 3 "" H 23800 20600 50  0001 C CNN
+	1    23800 20600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R149
+U 1 1 5EF8BBD1
+P 24300 20600
+F 0 "R149" V 24380 20600 50  0000 C CNN
+F 1 "1k" V 24300 20600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 24230 20600 50  0001 C CNN
+F 3 "" H 24300 20600 50  0001 C CNN
+	1    24300 20600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23950 20600 24150 20600
+$Comp
+L GND #PWR0183
+U 1 1 5EF8BBD8
+P 24600 20750
+F 0 "#PWR0183" H 24600 20500 50  0001 C CNN
+F 1 "GND" H 24600 20600 50  0000 C CNN
+F 2 "" H 24600 20750 50  0001 C CNN
+F 3 "" H 24600 20750 50  0001 C CNN
+	1    24600 20750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24450 20600 24600 20600
+Wire Wire Line
+	24600 20600 24600 20750
+Wire Wire Line
+	23100 20600 23650 20600
+$Comp
+L LED D134
+U 1 1 5EF8BBE1
+P 23550 20900
+F 0 "D134" H 23550 21000 50  0000 C CNN
+F 1 "LED" H 23550 20800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 23550 20900 50  0001 C CNN
+F 3 "" H 23550 20900 50  0001 C CNN
+	1    23550 20900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R141
+U 1 1 5EF8BBE7
+P 24050 20900
+F 0 "R141" V 24130 20900 50  0000 C CNN
+F 1 "1k" V 24050 20900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 23980 20900 50  0001 C CNN
+F 3 "" H 24050 20900 50  0001 C CNN
+	1    24050 20900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	23700 20900 23900 20900
+$Comp
+L GND #PWR0184
+U 1 1 5EF8BBEE
+P 24350 21050
+F 0 "#PWR0184" H 24350 20800 50  0001 C CNN
+F 1 "GND" H 24350 20900 50  0000 C CNN
+F 2 "" H 24350 21050 50  0001 C CNN
+F 3 "" H 24350 21050 50  0001 C CNN
+	1    24350 21050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24200 20900 24350 20900
+Wire Wire Line
+	24350 20900 24350 21050
+Wire Wire Line
+	22900 20900 23400 20900
+Wire Wire Line
+	22750 19150 24250 19150
+Wire Wire Line
+	24250 19150 24250 19300
+Wire Wire Line
+	22750 19250 24050 19250
+Wire Wire Line
+	24050 19250 24050 19550
+Wire Wire Line
+	22750 19350 23850 19350
+Wire Wire Line
+	23850 19350 23850 19800
+Wire Wire Line
+	22750 19450 23650 19450
+Wire Wire Line
+	23650 19450 23650 20050
+Wire Wire Line
+	22750 19550 23400 19550
+Wire Wire Line
+	23400 19550 23400 20300
+Wire Wire Line
+	23100 20600 23100 19650
+Wire Wire Line
+	23100 19650 22750 19650
+Wire Wire Line
+	22900 19750 22900 20900
+Wire Wire Line
+	22900 19750 22750 19750
+$Comp
+L 74HC595D_118 U21
+U 1 1 5EF8BC0E
+P 22000 11700
+F 0 "U21" H 21703 11738 60  0000 L CNN
+F 1 "74HC595D_118" V 22100 11200 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 22200 11900 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22200 12000 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 22200 12100 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 22200 12200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 22200 12300 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 22200 12400 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22200 12500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 22200 12600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 22200 12700 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 22200 12800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 22200 12900 60  0001 L CNN "Status"
+	1    22000 11700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D180
+U 1 1 5EF8BC1D
+P 24850 11800
+F 0 "D180" H 24650 11950 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24850 11650 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 25050 12000 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 25050 12100 60  0001 L CNN
+F 4 "475-2709-1-ND" H 25050 12200 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 25050 12300 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 25050 12400 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 25050 12500 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 25050 12600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 25050 12700 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 25050 12800 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 25050 12900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 25050 13000 60  0001 L CNN "Status"
+	1    24850 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U22
+U 1 1 5EF8BC2C
+P 22050 14100
+F 0 "U22" H 21753 14138 60  0000 L CNN
+F 1 "74HC595D_118" V 22150 13600 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 22250 14300 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22250 14400 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 22250 14500 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 22250 14600 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 22250 14700 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 22250 14800 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22250 14900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 22250 15000 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 22250 15100 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 22250 15200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 22250 15300 60  0001 L CNN "Status"
+	1    22050 14100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U23
+U 1 1 5EF8BC3B
+P 22100 16650
+F 0 "U23" H 21803 16688 60  0000 L CNN
+F 1 "74HC595D_118" V 22200 16150 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 22300 16850 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22300 16950 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 22300 17050 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 22300 17150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 22300 17250 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 22300 17350 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22300 17450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 22300 17550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 22300 17650 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 22300 17750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 22300 17850 60  0001 L CNN "Status"
+	1    22100 16650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U24
+U 1 1 5EF8BC4A
+P 22250 18950
+F 0 "U24" H 21953 18988 60  0000 L CNN
+F 1 "74HC595D_118" V 22350 18450 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 22450 19150 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22450 19250 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 22450 19350 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 22450 19450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 22450 19550 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 22450 19650 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 22450 19750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 22450 19850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 22450 19950 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 22450 20050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 22450 20150 60  0001 L CNN "Status"
+	1    22250 18950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D175
+U 1 1 5EF8BC59
+P 24700 12050
+F 0 "D175" H 24500 12200 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24700 11900 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24900 12250 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24900 12350 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24900 12450 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24900 12550 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24900 12650 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24900 12750 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24900 12850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24900 12950 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24900 13050 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24900 13150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24900 13250 60  0001 L CNN "Status"
+	1    24700 12050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D167
+U 1 1 5EF8BC68
+P 24500 12300
+F 0 "D167" H 24300 12450 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24500 12150 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24700 12500 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24700 12600 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24700 12700 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24700 12800 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24700 12900 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24700 13000 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24700 13100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24700 13200 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24700 13300 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24700 13400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24700 13500 60  0001 L CNN "Status"
+	1    24500 12300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D159
+U 1 1 5EF8BC77
+P 24300 12550
+F 0 "D159" H 24100 12700 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24300 12400 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24500 12750 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24500 12850 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24500 12950 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24500 13050 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24500 13150 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24500 13250 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24500 13350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24500 13450 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24500 13550 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24500 13650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24500 13750 60  0001 L CNN "Status"
+	1    24300 12550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D152
+U 1 1 5EF8BC86
+P 24100 12800
+F 0 "D152" H 23900 12950 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 24100 12650 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24300 13000 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24300 13100 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24300 13200 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24300 13300 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24300 13400 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24300 13500 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24300 13600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24300 13700 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24300 13800 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24300 13900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24300 14000 60  0001 L CNN "Status"
+	1    24100 12800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D144
+U 1 1 5EF8BC95
+P 23850 13050
+F 0 "D144" H 23650 13200 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23850 12900 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 24050 13250 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24050 13350 60  0001 L CNN
+F 4 "475-2709-1-ND" H 24050 13450 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 24050 13550 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 24050 13650 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 24050 13750 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 24050 13850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 24050 13950 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 24050 14050 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 24050 14150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 24050 14250 60  0001 L CNN "Status"
+	1    23850 13050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D136
+U 1 1 5EF8BCA4
+P 23600 13350
+F 0 "D136" H 23400 13500 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23600 13200 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 23800 13550 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23800 13650 60  0001 L CNN
+F 4 "475-2709-1-ND" H 23800 13750 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 23800 13850 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 23800 13950 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 23800 14050 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23800 14150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 23800 14250 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 23800 14350 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 23800 14450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 23800 14550 60  0001 L CNN "Status"
+	1    23600 13350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D128
+U 1 1 5EF8BCB3
+P 23350 13650
+F 0 "D128" H 23150 13800 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 23350 13500 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 23550 13850 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23550 13950 60  0001 L CNN
+F 4 "475-2709-1-ND" H 23550 14050 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 23550 14150 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 23550 14250 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 23550 14350 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 23550 14450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 23550 14550 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 23550 14650 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 23550 14750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 23550 14850 60  0001 L CNN "Status"
+	1    23350 13650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R234
+U 1 1 5EF8BCB9
+P 30250 1750
+F 0 "R234" V 30330 1750 50  0000 C CNN
+F 1 "1k" V 30250 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30180 1750 50  0001 C CNN
+F 3 "" H 30250 1750 50  0001 C CNN
+	1    30250 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29900 1750 30100 1750
+$Comp
+L GND #PWR0185
+U 1 1 5EF8BCC0
+P 30550 1900
+F 0 "#PWR0185" H 30550 1650 50  0001 C CNN
+F 1 "GND" H 30550 1750 50  0000 C CNN
+F 2 "" H 30550 1900 50  0001 C CNN
+F 3 "" H 30550 1900 50  0001 C CNN
+	1    30550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30400 1750 30550 1750
+Wire Wire Line
+	30550 1750 30550 1900
+Wire Wire Line
+	27450 1750 29600 1750
+$Comp
+L R R228
+U 1 1 5EF8BCC9
+P 30100 2000
+F 0 "R228" V 30180 2000 50  0000 C CNN
+F 1 "1k" V 30100 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30030 2000 50  0001 C CNN
+F 3 "" H 30100 2000 50  0001 C CNN
+	1    30100 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29750 2000 29950 2000
+$Comp
+L GND #PWR0186
+U 1 1 5EF8BCD0
+P 30400 2150
+F 0 "#PWR0186" H 30400 1900 50  0001 C CNN
+F 1 "GND" H 30400 2000 50  0000 C CNN
+F 2 "" H 30400 2150 50  0001 C CNN
+F 3 "" H 30400 2150 50  0001 C CNN
+	1    30400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30250 2000 30400 2000
+Wire Wire Line
+	30400 2000 30400 2150
+Wire Wire Line
+	28950 2000 29450 2000
+$Comp
+L R R221
+U 1 1 5EF8BCD9
+P 29900 2250
+F 0 "R221" V 29980 2250 50  0000 C CNN
+F 1 "1k" V 29900 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29830 2250 50  0001 C CNN
+F 3 "" H 29900 2250 50  0001 C CNN
+	1    29900 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29550 2250 29750 2250
+$Comp
+L GND #PWR0187
+U 1 1 5EF8BCE0
+P 30200 2400
+F 0 "#PWR0187" H 30200 2150 50  0001 C CNN
+F 1 "GND" H 30200 2250 50  0000 C CNN
+F 2 "" H 30200 2400 50  0001 C CNN
+F 3 "" H 30200 2400 50  0001 C CNN
+	1    30200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30050 2250 30200 2250
+Wire Wire Line
+	30200 2250 30200 2400
+Wire Wire Line
+	28750 2250 29250 2250
+$Comp
+L R R215
+U 1 1 5EF8BCE9
+P 29700 2500
+F 0 "R215" V 29780 2500 50  0000 C CNN
+F 1 "1k" V 29700 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29630 2500 50  0001 C CNN
+F 3 "" H 29700 2500 50  0001 C CNN
+	1    29700 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29350 2500 29550 2500
+$Comp
+L GND #PWR0188
+U 1 1 5EF8BCF0
+P 30000 2650
+F 0 "#PWR0188" H 30000 2400 50  0001 C CNN
+F 1 "GND" H 30000 2500 50  0000 C CNN
+F 2 "" H 30000 2650 50  0001 C CNN
+F 3 "" H 30000 2650 50  0001 C CNN
+	1    30000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29850 2500 30000 2500
+Wire Wire Line
+	30000 2500 30000 2650
+Wire Wire Line
+	28550 2500 29050 2500
+$Comp
+L R R208
+U 1 1 5EF8BCF9
+P 29500 2750
+F 0 "R208" V 29580 2750 50  0000 C CNN
+F 1 "1k" V 29500 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29430 2750 50  0001 C CNN
+F 3 "" H 29500 2750 50  0001 C CNN
+	1    29500 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29150 2750 29350 2750
+$Comp
+L GND #PWR0189
+U 1 1 5EF8BD00
+P 29800 2900
+F 0 "#PWR0189" H 29800 2650 50  0001 C CNN
+F 1 "GND" H 29800 2750 50  0000 C CNN
+F 2 "" H 29800 2900 50  0001 C CNN
+F 3 "" H 29800 2900 50  0001 C CNN
+	1    29800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29650 2750 29800 2750
+Wire Wire Line
+	29800 2750 29800 2900
+Wire Wire Line
+	28350 2750 28850 2750
+$Comp
+L R R201
+U 1 1 5EF8BD09
+P 29250 3000
+F 0 "R201" V 29330 3000 50  0000 C CNN
+F 1 "1k" V 29250 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29180 3000 50  0001 C CNN
+F 3 "" H 29250 3000 50  0001 C CNN
+	1    29250 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28900 3000 29100 3000
+$Comp
+L GND #PWR0190
+U 1 1 5EF8BD10
+P 29550 3150
+F 0 "#PWR0190" H 29550 2900 50  0001 C CNN
+F 1 "GND" H 29550 3000 50  0000 C CNN
+F 2 "" H 29550 3150 50  0001 C CNN
+F 3 "" H 29550 3150 50  0001 C CNN
+	1    29550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29400 3000 29550 3000
+Wire Wire Line
+	29550 3000 29550 3150
+Wire Wire Line
+	28100 3000 28600 3000
+$Comp
+L R R194
+U 1 1 5EF8BD19
+P 29000 3300
+F 0 "R194" V 29080 3300 50  0000 C CNN
+F 1 "1k" V 29000 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28930 3300 50  0001 C CNN
+F 3 "" H 29000 3300 50  0001 C CNN
+	1    29000 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28650 3300 28850 3300
+$Comp
+L GND #PWR0191
+U 1 1 5EF8BD20
+P 29300 3450
+F 0 "#PWR0191" H 29300 3200 50  0001 C CNN
+F 1 "GND" H 29300 3300 50  0000 C CNN
+F 2 "" H 29300 3450 50  0001 C CNN
+F 3 "" H 29300 3450 50  0001 C CNN
+	1    29300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29150 3300 29300 3300
+Wire Wire Line
+	29300 3300 29300 3450
+Wire Wire Line
+	27800 3300 28350 3300
+$Comp
+L R R191
+U 1 1 5EF8BD29
+P 28750 3600
+F 0 "R191" V 28830 3600 50  0000 C CNN
+F 1 "1k" V 28750 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28680 3600 50  0001 C CNN
+F 3 "" H 28750 3600 50  0001 C CNN
+	1    28750 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28400 3600 28600 3600
+$Comp
+L GND #PWR0192
+U 1 1 5EF8BD30
+P 29050 3750
+F 0 "#PWR0192" H 29050 3500 50  0001 C CNN
+F 1 "GND" H 29050 3600 50  0000 C CNN
+F 2 "" H 29050 3750 50  0001 C CNN
+F 3 "" H 29050 3750 50  0001 C CNN
+	1    29050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28900 3600 29050 3600
+Wire Wire Line
+	29050 3600 29050 3750
+Wire Wire Line
+	27600 3600 28100 3600
+Wire Wire Line
+	27450 1850 28950 1850
+Wire Wire Line
+	28950 1850 28950 2000
+Wire Wire Line
+	27450 1950 28750 1950
+Wire Wire Line
+	28750 1950 28750 2250
+Wire Wire Line
+	27450 2050 28550 2050
+Wire Wire Line
+	28550 2050 28550 2500
+Wire Wire Line
+	27450 2150 28350 2150
+Wire Wire Line
+	28350 2150 28350 2750
+Wire Wire Line
+	27450 2250 28100 2250
+Wire Wire Line
+	28100 2250 28100 3000
+Wire Wire Line
+	27800 3300 27800 2350
+Wire Wire Line
+	27800 2350 27450 2350
+Wire Wire Line
+	27600 2450 27600 3600
+Wire Wire Line
+	27600 2450 27450 2450
+$Comp
+L LED D230
+U 1 1 5EF8BD47
+P 29800 4150
+F 0 "D230" H 29800 4250 50  0000 C CNN
+F 1 "LED" H 29800 4050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29800 4150 50  0001 C CNN
+F 3 "" H 29800 4150 50  0001 C CNN
+	1    29800 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R236
+U 1 1 5EF8BD4D
+P 30300 4150
+F 0 "R236" V 30380 4150 50  0000 C CNN
+F 1 "1k" V 30300 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30230 4150 50  0001 C CNN
+F 3 "" H 30300 4150 50  0001 C CNN
+	1    30300 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29950 4150 30150 4150
+$Comp
+L GND #PWR0193
+U 1 1 5EF8BD54
+P 30600 4300
+F 0 "#PWR0193" H 30600 4050 50  0001 C CNN
+F 1 "GND" H 30600 4150 50  0000 C CNN
+F 2 "" H 30600 4300 50  0001 C CNN
+F 3 "" H 30600 4300 50  0001 C CNN
+	1    30600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30450 4150 30600 4150
+Wire Wire Line
+	30600 4150 30600 4300
+Wire Wire Line
+	27500 4150 29650 4150
+$Comp
+L LED D224
+U 1 1 5EF8BD5D
+P 29650 4400
+F 0 "D224" H 29650 4500 50  0000 C CNN
+F 1 "LED" H 29650 4300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29650 4400 50  0001 C CNN
+F 3 "" H 29650 4400 50  0001 C CNN
+	1    29650 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R230
+U 1 1 5EF8BD63
+P 30150 4400
+F 0 "R230" V 30230 4400 50  0000 C CNN
+F 1 "1k" V 30150 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30080 4400 50  0001 C CNN
+F 3 "" H 30150 4400 50  0001 C CNN
+	1    30150 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29800 4400 30000 4400
+$Comp
+L GND #PWR0194
+U 1 1 5EF8BD6A
+P 30450 4550
+F 0 "#PWR0194" H 30450 4300 50  0001 C CNN
+F 1 "GND" H 30450 4400 50  0000 C CNN
+F 2 "" H 30450 4550 50  0001 C CNN
+F 3 "" H 30450 4550 50  0001 C CNN
+	1    30450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30300 4400 30450 4400
+Wire Wire Line
+	30450 4400 30450 4550
+Wire Wire Line
+	29000 4400 29500 4400
+$Comp
+L LED D217
+U 1 1 5EF8BD73
+P 29450 4650
+F 0 "D217" H 29450 4750 50  0000 C CNN
+F 1 "LED" H 29450 4550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29450 4650 50  0001 C CNN
+F 3 "" H 29450 4650 50  0001 C CNN
+	1    29450 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R223
+U 1 1 5EF8BD79
+P 29950 4650
+F 0 "R223" V 30030 4650 50  0000 C CNN
+F 1 "1k" V 29950 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29880 4650 50  0001 C CNN
+F 3 "" H 29950 4650 50  0001 C CNN
+	1    29950 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29600 4650 29800 4650
+$Comp
+L GND #PWR0195
+U 1 1 5EF8BD80
+P 30250 4800
+F 0 "#PWR0195" H 30250 4550 50  0001 C CNN
+F 1 "GND" H 30250 4650 50  0000 C CNN
+F 2 "" H 30250 4800 50  0001 C CNN
+F 3 "" H 30250 4800 50  0001 C CNN
+	1    30250 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30100 4650 30250 4650
+Wire Wire Line
+	30250 4650 30250 4800
+Wire Wire Line
+	28800 4650 29300 4650
+$Comp
+L LED D210
+U 1 1 5EF8BD89
+P 29250 4900
+F 0 "D210" H 29250 5000 50  0000 C CNN
+F 1 "LED" H 29250 4800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29250 4900 50  0001 C CNN
+F 3 "" H 29250 4900 50  0001 C CNN
+	1    29250 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R216
+U 1 1 5EF8BD8F
+P 29750 4900
+F 0 "R216" V 29830 4900 50  0000 C CNN
+F 1 "1k" V 29750 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29680 4900 50  0001 C CNN
+F 3 "" H 29750 4900 50  0001 C CNN
+	1    29750 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29400 4900 29600 4900
+$Comp
+L GND #PWR0196
+U 1 1 5EF8BD96
+P 30050 5050
+F 0 "#PWR0196" H 30050 4800 50  0001 C CNN
+F 1 "GND" H 30050 4900 50  0000 C CNN
+F 2 "" H 30050 5050 50  0001 C CNN
+F 3 "" H 30050 5050 50  0001 C CNN
+	1    30050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29900 4900 30050 4900
+Wire Wire Line
+	30050 4900 30050 5050
+Wire Wire Line
+	28600 4900 29100 4900
+$Comp
+L LED D204
+U 1 1 5EF8BD9F
+P 29050 5150
+F 0 "D204" H 29050 5250 50  0000 C CNN
+F 1 "LED" H 29050 5050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29050 5150 50  0001 C CNN
+F 3 "" H 29050 5150 50  0001 C CNN
+	1    29050 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R210
+U 1 1 5EF8BDA5
+P 29550 5150
+F 0 "R210" V 29630 5150 50  0000 C CNN
+F 1 "1k" V 29550 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29480 5150 50  0001 C CNN
+F 3 "" H 29550 5150 50  0001 C CNN
+	1    29550 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29200 5150 29400 5150
+$Comp
+L GND #PWR0197
+U 1 1 5EF8BDAC
+P 29850 5300
+F 0 "#PWR0197" H 29850 5050 50  0001 C CNN
+F 1 "GND" H 29850 5150 50  0000 C CNN
+F 2 "" H 29850 5300 50  0001 C CNN
+F 3 "" H 29850 5300 50  0001 C CNN
+	1    29850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29700 5150 29850 5150
+Wire Wire Line
+	29850 5150 29850 5300
+Wire Wire Line
+	28400 5150 28900 5150
+$Comp
+L LED D197
+U 1 1 5EF8BDB5
+P 28800 5400
+F 0 "D197" H 28800 5500 50  0000 C CNN
+F 1 "LED" H 28800 5300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28800 5400 50  0001 C CNN
+F 3 "" H 28800 5400 50  0001 C CNN
+	1    28800 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R203
+U 1 1 5EF8BDBB
+P 29300 5400
+F 0 "R203" V 29380 5400 50  0000 C CNN
+F 1 "1k" V 29300 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29230 5400 50  0001 C CNN
+F 3 "" H 29300 5400 50  0001 C CNN
+	1    29300 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28950 5400 29150 5400
+$Comp
+L GND #PWR0198
+U 1 1 5EF8BDC2
+P 29600 5550
+F 0 "#PWR0198" H 29600 5300 50  0001 C CNN
+F 1 "GND" H 29600 5400 50  0000 C CNN
+F 2 "" H 29600 5550 50  0001 C CNN
+F 3 "" H 29600 5550 50  0001 C CNN
+	1    29600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29450 5400 29600 5400
+Wire Wire Line
+	29600 5400 29600 5550
+Wire Wire Line
+	28150 5400 28650 5400
+$Comp
+L LED D190
+U 1 1 5EF8BDCB
+P 28550 5700
+F 0 "D190" H 28550 5800 50  0000 C CNN
+F 1 "LED" H 28550 5600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28550 5700 50  0001 C CNN
+F 3 "" H 28550 5700 50  0001 C CNN
+	1    28550 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R196
+U 1 1 5EF8BDD1
+P 29050 5700
+F 0 "R196" V 29130 5700 50  0000 C CNN
+F 1 "1k" V 29050 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28980 5700 50  0001 C CNN
+F 3 "" H 29050 5700 50  0001 C CNN
+	1    29050 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28700 5700 28900 5700
+$Comp
+L GND #PWR0199
+U 1 1 5EF8BDD8
+P 29350 5850
+F 0 "#PWR0199" H 29350 5600 50  0001 C CNN
+F 1 "GND" H 29350 5700 50  0000 C CNN
+F 2 "" H 29350 5850 50  0001 C CNN
+F 3 "" H 29350 5850 50  0001 C CNN
+	1    29350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29200 5700 29350 5700
+Wire Wire Line
+	29350 5700 29350 5850
+Wire Wire Line
+	27850 5700 28400 5700
+$Comp
+L LED D186
+U 1 1 5EF8BDE1
+P 28300 6000
+F 0 "D186" H 28300 6100 50  0000 C CNN
+F 1 "LED" H 28300 5900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28300 6000 50  0001 C CNN
+F 3 "" H 28300 6000 50  0001 C CNN
+	1    28300 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R192
+U 1 1 5EF8BDE7
+P 28800 6000
+F 0 "R192" V 28880 6000 50  0000 C CNN
+F 1 "1k" V 28800 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28730 6000 50  0001 C CNN
+F 3 "" H 28800 6000 50  0001 C CNN
+	1    28800 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28450 6000 28650 6000
+$Comp
+L GND #PWR0200
+U 1 1 5EF8BDEE
+P 29100 6150
+F 0 "#PWR0200" H 29100 5900 50  0001 C CNN
+F 1 "GND" H 29100 6000 50  0000 C CNN
+F 2 "" H 29100 6150 50  0001 C CNN
+F 3 "" H 29100 6150 50  0001 C CNN
+	1    29100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28950 6000 29100 6000
+Wire Wire Line
+	29100 6000 29100 6150
+Wire Wire Line
+	27650 6000 28150 6000
+Wire Wire Line
+	27500 4250 29000 4250
+Wire Wire Line
+	29000 4250 29000 4400
+Wire Wire Line
+	27500 4350 28800 4350
+Wire Wire Line
+	28800 4350 28800 4650
+Wire Wire Line
+	27500 4450 28600 4450
+Wire Wire Line
+	28600 4450 28600 4900
+Wire Wire Line
+	27500 4550 28400 4550
+Wire Wire Line
+	28400 4550 28400 5150
+Wire Wire Line
+	27500 4650 28150 4650
+Wire Wire Line
+	28150 4650 28150 5400
+Wire Wire Line
+	27850 5700 27850 4750
+Wire Wire Line
+	27850 4750 27500 4750
+Wire Wire Line
+	27650 4850 27650 6000
+Wire Wire Line
+	27650 4850 27500 4850
+$Comp
+L LED D232
+U 1 1 5EF8BE05
+P 29850 6700
+F 0 "D232" H 29850 6800 50  0000 C CNN
+F 1 "LED" H 29850 6600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29850 6700 50  0001 C CNN
+F 3 "" H 29850 6700 50  0001 C CNN
+	1    29850 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R238
+U 1 1 5EF8BE0B
+P 30350 6700
+F 0 "R238" V 30430 6700 50  0000 C CNN
+F 1 "1k" V 30350 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30280 6700 50  0001 C CNN
+F 3 "" H 30350 6700 50  0001 C CNN
+	1    30350 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30000 6700 30200 6700
+$Comp
+L GND #PWR0201
+U 1 1 5EF8BE12
+P 30650 6850
+F 0 "#PWR0201" H 30650 6600 50  0001 C CNN
+F 1 "GND" H 30650 6700 50  0000 C CNN
+F 2 "" H 30650 6850 50  0001 C CNN
+F 3 "" H 30650 6850 50  0001 C CNN
+	1    30650 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30500 6700 30650 6700
+Wire Wire Line
+	30650 6700 30650 6850
+Wire Wire Line
+	27550 6700 29700 6700
+$Comp
+L LED D226
+U 1 1 5EF8BE1B
+P 29700 6950
+F 0 "D226" H 29700 7050 50  0000 C CNN
+F 1 "LED" H 29700 6850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29700 6950 50  0001 C CNN
+F 3 "" H 29700 6950 50  0001 C CNN
+	1    29700 6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R232
+U 1 1 5EF8BE21
+P 30200 6950
+F 0 "R232" V 30280 6950 50  0000 C CNN
+F 1 "1k" V 30200 6950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30130 6950 50  0001 C CNN
+F 3 "" H 30200 6950 50  0001 C CNN
+	1    30200 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29850 6950 30050 6950
+$Comp
+L GND #PWR0202
+U 1 1 5EF8BE28
+P 30500 7100
+F 0 "#PWR0202" H 30500 6850 50  0001 C CNN
+F 1 "GND" H 30500 6950 50  0000 C CNN
+F 2 "" H 30500 7100 50  0001 C CNN
+F 3 "" H 30500 7100 50  0001 C CNN
+	1    30500 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30350 6950 30500 6950
+Wire Wire Line
+	30500 6950 30500 7100
+Wire Wire Line
+	29050 6950 29550 6950
+$Comp
+L LED D219
+U 1 1 5EF8BE31
+P 29500 7200
+F 0 "D219" H 29500 7300 50  0000 C CNN
+F 1 "LED" H 29500 7100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29500 7200 50  0001 C CNN
+F 3 "" H 29500 7200 50  0001 C CNN
+	1    29500 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R225
+U 1 1 5EF8BE37
+P 30000 7200
+F 0 "R225" V 30080 7200 50  0000 C CNN
+F 1 "1k" V 30000 7200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29930 7200 50  0001 C CNN
+F 3 "" H 30000 7200 50  0001 C CNN
+	1    30000 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29650 7200 29850 7200
+$Comp
+L GND #PWR0203
+U 1 1 5EF8BE3E
+P 30300 7350
+F 0 "#PWR0203" H 30300 7100 50  0001 C CNN
+F 1 "GND" H 30300 7200 50  0000 C CNN
+F 2 "" H 30300 7350 50  0001 C CNN
+F 3 "" H 30300 7350 50  0001 C CNN
+	1    30300 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30150 7200 30300 7200
+Wire Wire Line
+	30300 7200 30300 7350
+Wire Wire Line
+	28850 7200 29350 7200
+$Comp
+L LED D212
+U 1 1 5EF8BE47
+P 29300 7450
+F 0 "D212" H 29300 7550 50  0000 C CNN
+F 1 "LED" H 29300 7350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29300 7450 50  0001 C CNN
+F 3 "" H 29300 7450 50  0001 C CNN
+	1    29300 7450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R218
+U 1 1 5EF8BE4D
+P 29800 7450
+F 0 "R218" V 29880 7450 50  0000 C CNN
+F 1 "1k" V 29800 7450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29730 7450 50  0001 C CNN
+F 3 "" H 29800 7450 50  0001 C CNN
+	1    29800 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29450 7450 29650 7450
+$Comp
+L GND #PWR0204
+U 1 1 5EF8BE54
+P 30100 7600
+F 0 "#PWR0204" H 30100 7350 50  0001 C CNN
+F 1 "GND" H 30100 7450 50  0000 C CNN
+F 2 "" H 30100 7600 50  0001 C CNN
+F 3 "" H 30100 7600 50  0001 C CNN
+	1    30100 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29950 7450 30100 7450
+Wire Wire Line
+	30100 7450 30100 7600
+Wire Wire Line
+	28650 7450 29150 7450
+$Comp
+L LED D205
+U 1 1 5EF8BE5D
+P 29100 7700
+F 0 "D205" H 29100 7800 50  0000 C CNN
+F 1 "LED" H 29100 7600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29100 7700 50  0001 C CNN
+F 3 "" H 29100 7700 50  0001 C CNN
+	1    29100 7700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R212
+U 1 1 5EF8BE63
+P 29600 7700
+F 0 "R212" V 29680 7700 50  0000 C CNN
+F 1 "1k" V 29600 7700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29530 7700 50  0001 C CNN
+F 3 "" H 29600 7700 50  0001 C CNN
+	1    29600 7700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29250 7700 29450 7700
+$Comp
+L GND #PWR0205
+U 1 1 5EF8BE6A
+P 29900 7850
+F 0 "#PWR0205" H 29900 7600 50  0001 C CNN
+F 1 "GND" H 29900 7700 50  0000 C CNN
+F 2 "" H 29900 7850 50  0001 C CNN
+F 3 "" H 29900 7850 50  0001 C CNN
+	1    29900 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29750 7700 29900 7700
+Wire Wire Line
+	29900 7700 29900 7850
+Wire Wire Line
+	28450 7700 28950 7700
+$Comp
+L LED D198
+U 1 1 5EF8BE73
+P 28850 7950
+F 0 "D198" H 28850 8050 50  0000 C CNN
+F 1 "LED" H 28850 7850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28850 7950 50  0001 C CNN
+F 3 "" H 28850 7950 50  0001 C CNN
+	1    28850 7950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R205
+U 1 1 5EF8BE79
+P 29350 7950
+F 0 "R205" V 29430 7950 50  0000 C CNN
+F 1 "1k" V 29350 7950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29280 7950 50  0001 C CNN
+F 3 "" H 29350 7950 50  0001 C CNN
+	1    29350 7950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29000 7950 29200 7950
+$Comp
+L GND #PWR0206
+U 1 1 5EF8BE80
+P 29650 8100
+F 0 "#PWR0206" H 29650 7850 50  0001 C CNN
+F 1 "GND" H 29650 7950 50  0000 C CNN
+F 2 "" H 29650 8100 50  0001 C CNN
+F 3 "" H 29650 8100 50  0001 C CNN
+	1    29650 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29500 7950 29650 7950
+Wire Wire Line
+	29650 7950 29650 8100
+Wire Wire Line
+	28200 7950 28700 7950
+$Comp
+L LED D191
+U 1 1 5EF8BE89
+P 28600 8250
+F 0 "D191" H 28600 8350 50  0000 C CNN
+F 1 "LED" H 28600 8150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28600 8250 50  0001 C CNN
+F 3 "" H 28600 8250 50  0001 C CNN
+	1    28600 8250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R198
+U 1 1 5EF8BE8F
+P 29100 8250
+F 0 "R198" V 29180 8250 50  0000 C CNN
+F 1 "1k" V 29100 8250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29030 8250 50  0001 C CNN
+F 3 "" H 29100 8250 50  0001 C CNN
+	1    29100 8250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28750 8250 28950 8250
+$Comp
+L GND #PWR0207
+U 1 1 5EF8BE96
+P 29400 8400
+F 0 "#PWR0207" H 29400 8150 50  0001 C CNN
+F 1 "GND" H 29400 8250 50  0000 C CNN
+F 2 "" H 29400 8400 50  0001 C CNN
+F 3 "" H 29400 8400 50  0001 C CNN
+	1    29400 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29250 8250 29400 8250
+Wire Wire Line
+	29400 8250 29400 8400
+Wire Wire Line
+	27900 8250 28450 8250
+$Comp
+L LED D187
+U 1 1 5EF8BE9F
+P 28350 8550
+F 0 "D187" H 28350 8650 50  0000 C CNN
+F 1 "LED" H 28350 8450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28350 8550 50  0001 C CNN
+F 3 "" H 28350 8550 50  0001 C CNN
+	1    28350 8550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R193
+U 1 1 5EF8BEA5
+P 28850 8550
+F 0 "R193" V 28930 8550 50  0000 C CNN
+F 1 "1k" V 28850 8550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28780 8550 50  0001 C CNN
+F 3 "" H 28850 8550 50  0001 C CNN
+	1    28850 8550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28500 8550 28700 8550
+$Comp
+L GND #PWR0208
+U 1 1 5EF8BEAC
+P 29200 8550
+F 0 "#PWR0208" H 29200 8300 50  0001 C CNN
+F 1 "GND" H 29200 8400 50  0000 C CNN
+F 2 "" H 29200 8550 50  0001 C CNN
+F 3 "" H 29200 8550 50  0001 C CNN
+	1    29200 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29000 8550 29150 8550
+Wire Wire Line
+	29150 8550 29150 8700
+Wire Wire Line
+	27700 8550 28200 8550
+Wire Wire Line
+	27550 6800 29050 6800
+Wire Wire Line
+	29050 6800 29050 6950
+Wire Wire Line
+	27550 6900 28850 6900
+Wire Wire Line
+	28850 6900 28850 7200
+Wire Wire Line
+	27550 7000 28650 7000
+Wire Wire Line
+	28650 7000 28650 7450
+Wire Wire Line
+	27550 7100 28450 7100
+Wire Wire Line
+	28450 7100 28450 7700
+Wire Wire Line
+	27550 7200 28200 7200
+Wire Wire Line
+	28200 7200 28200 7950
+Wire Wire Line
+	27900 8250 27900 7300
+Wire Wire Line
+	27900 7300 27550 7300
+Wire Wire Line
+	27700 7400 27700 8550
+Wire Wire Line
+	27700 7400 27550 7400
+$Comp
+L LED D236
+U 1 1 5EF8BEC3
+P 30000 9000
+F 0 "D236" H 30000 9100 50  0000 C CNN
+F 1 "LED" H 30000 8900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 30000 9000 50  0001 C CNN
+F 3 "" H 30000 9000 50  0001 C CNN
+	1    30000 9000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R242
+U 1 1 5EF8BEC9
+P 30500 9000
+F 0 "R242" V 30580 9000 50  0000 C CNN
+F 1 "1k" V 30500 9000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30430 9000 50  0001 C CNN
+F 3 "" H 30500 9000 50  0001 C CNN
+	1    30500 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30150 9000 30350 9000
+$Comp
+L GND #PWR0209
+U 1 1 5EF8BED0
+P 30800 9150
+F 0 "#PWR0209" H 30800 8900 50  0001 C CNN
+F 1 "GND" H 30800 9000 50  0000 C CNN
+F 2 "" H 30800 9150 50  0001 C CNN
+F 3 "" H 30800 9150 50  0001 C CNN
+	1    30800 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30650 9000 30800 9000
+Wire Wire Line
+	30800 9000 30800 9150
+Wire Wire Line
+	27700 9000 29850 9000
+$Comp
+L LED D233
+U 1 1 5EF8BED9
+P 29850 9250
+F 0 "D233" H 29850 9350 50  0000 C CNN
+F 1 "LED" H 29850 9150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29850 9250 50  0001 C CNN
+F 3 "" H 29850 9250 50  0001 C CNN
+	1    29850 9250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R239
+U 1 1 5EF8BEDF
+P 30350 9250
+F 0 "R239" V 30430 9250 50  0000 C CNN
+F 1 "1k" V 30350 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30280 9250 50  0001 C CNN
+F 3 "" H 30350 9250 50  0001 C CNN
+	1    30350 9250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30000 9250 30200 9250
+$Comp
+L GND #PWR0210
+U 1 1 5EF8BEE6
+P 30650 9400
+F 0 "#PWR0210" H 30650 9150 50  0001 C CNN
+F 1 "GND" H 30650 9250 50  0000 C CNN
+F 2 "" H 30650 9400 50  0001 C CNN
+F 3 "" H 30650 9400 50  0001 C CNN
+	1    30650 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30500 9250 30650 9250
+Wire Wire Line
+	30650 9250 30650 9400
+Wire Wire Line
+	29200 9250 29700 9250
+$Comp
+L LED D225
+U 1 1 5EF8BEEF
+P 29650 9500
+F 0 "D225" H 29650 9600 50  0000 C CNN
+F 1 "LED" H 29650 9400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29650 9500 50  0001 C CNN
+F 3 "" H 29650 9500 50  0001 C CNN
+	1    29650 9500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R231
+U 1 1 5EF8BEF5
+P 30150 9500
+F 0 "R231" V 30230 9500 50  0000 C CNN
+F 1 "1k" V 30150 9500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30080 9500 50  0001 C CNN
+F 3 "" H 30150 9500 50  0001 C CNN
+	1    30150 9500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29800 9500 30000 9500
+$Comp
+L GND #PWR0211
+U 1 1 5EF8BEFC
+P 30450 9650
+F 0 "#PWR0211" H 30450 9400 50  0001 C CNN
+F 1 "GND" H 30450 9500 50  0000 C CNN
+F 2 "" H 30450 9650 50  0001 C CNN
+F 3 "" H 30450 9650 50  0001 C CNN
+	1    30450 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30300 9500 30450 9500
+Wire Wire Line
+	30450 9500 30450 9650
+Wire Wire Line
+	29000 9500 29500 9500
+$Comp
+L LED D218
+U 1 1 5EF8BF05
+P 29450 9750
+F 0 "D218" H 29450 9850 50  0000 C CNN
+F 1 "LED" H 29450 9650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29450 9750 50  0001 C CNN
+F 3 "" H 29450 9750 50  0001 C CNN
+	1    29450 9750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R224
+U 1 1 5EF8BF0B
+P 29950 9750
+F 0 "R224" V 30030 9750 50  0000 C CNN
+F 1 "1k" V 29950 9750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29880 9750 50  0001 C CNN
+F 3 "" H 29950 9750 50  0001 C CNN
+	1    29950 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29600 9750 29800 9750
+$Comp
+L GND #PWR0212
+U 1 1 5EF8BF12
+P 30250 9900
+F 0 "#PWR0212" H 30250 9650 50  0001 C CNN
+F 1 "GND" H 30250 9750 50  0000 C CNN
+F 2 "" H 30250 9900 50  0001 C CNN
+F 3 "" H 30250 9900 50  0001 C CNN
+	1    30250 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30100 9750 30250 9750
+Wire Wire Line
+	30250 9750 30250 9900
+Wire Wire Line
+	28800 9750 29300 9750
+$Comp
+L LED D211
+U 1 1 5EF8BF1B
+P 29250 10000
+F 0 "D211" H 29250 10100 50  0000 C CNN
+F 1 "LED" H 29250 9900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29250 10000 50  0001 C CNN
+F 3 "" H 29250 10000 50  0001 C CNN
+	1    29250 10000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R217
+U 1 1 5EF8BF21
+P 29750 10000
+F 0 "R217" V 29830 10000 50  0000 C CNN
+F 1 "1k" V 29750 10000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29680 10000 50  0001 C CNN
+F 3 "" H 29750 10000 50  0001 C CNN
+	1    29750 10000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29400 10000 29600 10000
+$Comp
+L GND #PWR0213
+U 1 1 5EF8BF28
+P 30050 10150
+F 0 "#PWR0213" H 30050 9900 50  0001 C CNN
+F 1 "GND" H 30050 10000 50  0000 C CNN
+F 2 "" H 30050 10150 50  0001 C CNN
+F 3 "" H 30050 10150 50  0001 C CNN
+	1    30050 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29900 10000 30050 10000
+Wire Wire Line
+	30050 10000 30050 10150
+Wire Wire Line
+	28600 10000 29100 10000
+$Comp
+L LED D202
+U 1 1 5EF8BF31
+P 29000 10250
+F 0 "D202" H 29000 10350 50  0000 C CNN
+F 1 "LED" H 29000 10150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29000 10250 50  0001 C CNN
+F 3 "" H 29000 10250 50  0001 C CNN
+	1    29000 10250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R209
+U 1 1 5EF8BF37
+P 29500 10250
+F 0 "R209" V 29580 10250 50  0000 C CNN
+F 1 "1k" V 29500 10250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29430 10250 50  0001 C CNN
+F 3 "" H 29500 10250 50  0001 C CNN
+	1    29500 10250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29150 10250 29350 10250
+$Comp
+L GND #PWR0214
+U 1 1 5EF8BF3E
+P 29800 10400
+F 0 "#PWR0214" H 29800 10150 50  0001 C CNN
+F 1 "GND" H 29800 10250 50  0000 C CNN
+F 2 "" H 29800 10400 50  0001 C CNN
+F 3 "" H 29800 10400 50  0001 C CNN
+	1    29800 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29650 10250 29800 10250
+Wire Wire Line
+	29800 10250 29800 10400
+Wire Wire Line
+	28350 10250 28850 10250
+$Comp
+L LED D195
+U 1 1 5EF8BF47
+P 28750 10550
+F 0 "D195" H 28750 10650 50  0000 C CNN
+F 1 "LED" H 28750 10450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28750 10550 50  0001 C CNN
+F 3 "" H 28750 10550 50  0001 C CNN
+	1    28750 10550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R202
+U 1 1 5EF8BF4D
+P 29250 10550
+F 0 "R202" V 29330 10550 50  0000 C CNN
+F 1 "1k" V 29250 10550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29180 10550 50  0001 C CNN
+F 3 "" H 29250 10550 50  0001 C CNN
+	1    29250 10550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28900 10550 29100 10550
+$Comp
+L GND #PWR0215
+U 1 1 5EF8BF54
+P 29550 10700
+F 0 "#PWR0215" H 29550 10450 50  0001 C CNN
+F 1 "GND" H 29550 10550 50  0000 C CNN
+F 2 "" H 29550 10700 50  0001 C CNN
+F 3 "" H 29550 10700 50  0001 C CNN
+	1    29550 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29400 10550 29550 10550
+Wire Wire Line
+	29550 10550 29550 10700
+Wire Wire Line
+	28050 10550 28600 10550
+$Comp
+L LED D188
+U 1 1 5EF8BF5D
+P 28500 10850
+F 0 "D188" H 28500 10950 50  0000 C CNN
+F 1 "LED" H 28500 10750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28500 10850 50  0001 C CNN
+F 3 "" H 28500 10850 50  0001 C CNN
+	1    28500 10850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R195
+U 1 1 5EF8BF63
+P 29000 10850
+F 0 "R195" V 29080 10850 50  0000 C CNN
+F 1 "1k" V 29000 10850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28930 10850 50  0001 C CNN
+F 3 "" H 29000 10850 50  0001 C CNN
+	1    29000 10850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28650 10850 28850 10850
+$Comp
+L GND #PWR0216
+U 1 1 5EF8BF6A
+P 29300 11000
+F 0 "#PWR0216" H 29300 10750 50  0001 C CNN
+F 1 "GND" H 29300 10850 50  0000 C CNN
+F 2 "" H 29300 11000 50  0001 C CNN
+F 3 "" H 29300 11000 50  0001 C CNN
+	1    29300 11000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29150 10850 29300 10850
+Wire Wire Line
+	29300 10850 29300 11000
+Wire Wire Line
+	27850 10850 28350 10850
+Wire Wire Line
+	27700 9100 29200 9100
+Wire Wire Line
+	29200 9100 29200 9250
+Wire Wire Line
+	27700 9200 29000 9200
+Wire Wire Line
+	29000 9200 29000 9500
+Wire Wire Line
+	27700 9300 28800 9300
+Wire Wire Line
+	28800 9300 28800 9750
+Wire Wire Line
+	27700 9400 28600 9400
+Wire Wire Line
+	28600 9400 28600 10000
+Wire Wire Line
+	27700 9500 28350 9500
+Wire Wire Line
+	28350 9500 28350 10250
+Wire Wire Line
+	28050 10550 28050 9600
+Wire Wire Line
+	28050 9600 27700 9600
+Wire Wire Line
+	27850 9700 27850 10850
+Wire Wire Line
+	27850 9700 27700 9700
+$Comp
+L 74HC595D_118 U25
+U 1 1 5EF8BF8A
+P 26950 1650
+F 0 "U25" H 26653 1688 60  0000 L CNN
+F 1 "74HC595D_118" V 27050 1150 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27150 1850 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27150 1950 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27150 2050 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27150 2150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27150 2250 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27150 2350 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27150 2450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27150 2550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27150 2650 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27150 2750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27150 2850 60  0001 L CNN "Status"
+	1    26950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D229
+U 1 1 5EF8BF99
+P 29800 1750
+F 0 "D229" H 29600 1900 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29800 1600 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 30000 1950 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 30000 2050 60  0001 L CNN
+F 4 "475-2709-1-ND" H 30000 2150 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 30000 2250 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 30000 2350 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 30000 2450 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 30000 2550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 30000 2650 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 30000 2750 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 30000 2850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 30000 2950 60  0001 L CNN "Status"
+	1    29800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U26
+U 1 1 5EF8BFA8
+P 27000 4050
+F 0 "U26" H 26703 4088 60  0000 L CNN
+F 1 "74HC595D_118" V 27100 3550 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27200 4250 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27200 4350 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27200 4450 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27200 4550 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27200 4650 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27200 4750 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27200 4850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27200 4950 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27200 5050 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27200 5150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27200 5250 60  0001 L CNN "Status"
+	1    27000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U27
+U 1 1 5EF8BFB7
+P 27050 6600
+F 0 "U27" H 26753 6638 60  0000 L CNN
+F 1 "74HC595D_118" V 27150 6100 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27250 6800 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27250 6900 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27250 7000 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27250 7100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27250 7200 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27250 7300 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27250 7400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27250 7500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27250 7600 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27250 7700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27250 7800 60  0001 L CNN "Status"
+	1    27050 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U28
+U 1 1 5EF8BFC6
+P 27200 8900
+F 0 "U28" H 26903 8938 60  0000 L CNN
+F 1 "74HC595D_118" V 27300 8400 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27400 9100 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27400 9200 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27400 9300 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27400 9400 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27400 9500 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27400 9600 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27400 9700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27400 9800 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27400 9900 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27400 10000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27400 10100 60  0001 L CNN "Status"
+	1    27200 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D223
+U 1 1 5EF8BFD5
+P 29650 2000
+F 0 "D223" H 29450 2150 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29650 1850 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29850 2200 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29850 2300 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29850 2400 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29850 2500 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29850 2600 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29850 2700 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29850 2800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29850 2900 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29850 3000 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29850 3100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29850 3200 60  0001 L CNN "Status"
+	1    29650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D216
+U 1 1 5EF8BFE4
+P 29450 2250
+F 0 "D216" H 29250 2400 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29450 2100 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29650 2450 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29650 2550 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29650 2650 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29650 2750 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29650 2850 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29650 2950 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29650 3050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29650 3150 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29650 3250 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29650 3350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29650 3450 60  0001 L CNN "Status"
+	1    29450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D209
+U 1 1 5EF8BFF3
+P 29250 2500
+F 0 "D209" H 29050 2650 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29250 2350 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29450 2700 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29450 2800 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29450 2900 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29450 3000 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29450 3100 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29450 3200 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29450 3300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29450 3400 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29450 3500 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29450 3600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29450 3700 60  0001 L CNN "Status"
+	1    29250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D203
+U 1 1 5EF8C002
+P 29050 2750
+F 0 "D203" H 28850 2900 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29050 2600 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29250 2950 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29250 3050 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29250 3150 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29250 3250 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29250 3350 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29250 3450 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29250 3550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29250 3650 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29250 3750 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29250 3850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29250 3950 60  0001 L CNN "Status"
+	1    29050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D196
+U 1 1 5EF8C011
+P 28800 3000
+F 0 "D196" H 28600 3150 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 28800 2850 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29000 3200 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29000 3300 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29000 3400 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29000 3500 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29000 3600 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29000 3700 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29000 3800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29000 3900 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29000 4000 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29000 4100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29000 4200 60  0001 L CNN "Status"
+	1    28800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D189
+U 1 1 5EF8C020
+P 28550 3300
+F 0 "D189" H 28350 3450 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 28550 3150 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 28750 3500 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 28750 3600 60  0001 L CNN
+F 4 "475-2709-1-ND" H 28750 3700 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 28750 3800 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 28750 3900 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 28750 4000 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 28750 4100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 28750 4200 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 28750 4300 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 28750 4400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 28750 4500 60  0001 L CNN "Status"
+	1    28550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D185
+U 1 1 5EF8C02F
+P 28300 3600
+F 0 "D185" H 28100 3750 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 28300 3450 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 28500 3800 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 28500 3900 60  0001 L CNN
+F 4 "475-2709-1-ND" H 28500 4000 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 28500 4100 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 28500 4200 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 28500 4300 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 28500 4400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 28500 4500 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 28500 4600 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 28500 4700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 28500 4800 60  0001 L CNN "Status"
+	1    28300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R244
+U 1 1 5EF8C035
+P 30550 11850
+F 0 "R244" V 30630 11850 50  0000 C CNN
+F 1 "1k" V 30550 11850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30480 11850 50  0001 C CNN
+F 3 "" H 30550 11850 50  0001 C CNN
+	1    30550 11850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30200 11850 30400 11850
+$Comp
+L GND #PWR0217
+U 1 1 5EF8C03C
+P 30850 12000
+F 0 "#PWR0217" H 30850 11750 50  0001 C CNN
+F 1 "GND" H 30850 11850 50  0000 C CNN
+F 2 "" H 30850 12000 50  0001 C CNN
+F 3 "" H 30850 12000 50  0001 C CNN
+	1    30850 12000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30700 11850 30850 11850
+Wire Wire Line
+	30850 11850 30850 12000
+Wire Wire Line
+	27750 11850 29900 11850
+$Comp
+L R R240
+U 1 1 5EF8C045
+P 30400 12100
+F 0 "R240" V 30480 12100 50  0000 C CNN
+F 1 "1k" V 30400 12100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30330 12100 50  0001 C CNN
+F 3 "" H 30400 12100 50  0001 C CNN
+	1    30400 12100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30050 12100 30250 12100
+$Comp
+L GND #PWR0218
+U 1 1 5EF8C04C
+P 30700 12250
+F 0 "#PWR0218" H 30700 12000 50  0001 C CNN
+F 1 "GND" H 30700 12100 50  0000 C CNN
+F 2 "" H 30700 12250 50  0001 C CNN
+F 3 "" H 30700 12250 50  0001 C CNN
+	1    30700 12250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30550 12100 30700 12100
+Wire Wire Line
+	30700 12100 30700 12250
+Wire Wire Line
+	29250 12100 29750 12100
+$Comp
+L R R233
+U 1 1 5EF8C055
+P 30200 12350
+F 0 "R233" V 30280 12350 50  0000 C CNN
+F 1 "1k" V 30200 12350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30130 12350 50  0001 C CNN
+F 3 "" H 30200 12350 50  0001 C CNN
+	1    30200 12350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29850 12350 30050 12350
+$Comp
+L GND #PWR0219
+U 1 1 5EF8C05C
+P 30500 12500
+F 0 "#PWR0219" H 30500 12250 50  0001 C CNN
+F 1 "GND" H 30500 12350 50  0000 C CNN
+F 2 "" H 30500 12500 50  0001 C CNN
+F 3 "" H 30500 12500 50  0001 C CNN
+	1    30500 12500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30350 12350 30500 12350
+Wire Wire Line
+	30500 12350 30500 12500
+Wire Wire Line
+	29050 12350 29550 12350
+$Comp
+L R R226
+U 1 1 5EF8C065
+P 30000 12600
+F 0 "R226" V 30080 12600 50  0000 C CNN
+F 1 "1k" V 30000 12600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29930 12600 50  0001 C CNN
+F 3 "" H 30000 12600 50  0001 C CNN
+	1    30000 12600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29650 12600 29850 12600
+$Comp
+L GND #PWR0220
+U 1 1 5EF8C06C
+P 30300 12750
+F 0 "#PWR0220" H 30300 12500 50  0001 C CNN
+F 1 "GND" H 30300 12600 50  0000 C CNN
+F 2 "" H 30300 12750 50  0001 C CNN
+F 3 "" H 30300 12750 50  0001 C CNN
+	1    30300 12750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30150 12600 30300 12600
+Wire Wire Line
+	30300 12600 30300 12750
+Wire Wire Line
+	28850 12600 29350 12600
+$Comp
+L R R219
+U 1 1 5EF8C075
+P 29800 12850
+F 0 "R219" V 29880 12850 50  0000 C CNN
+F 1 "1k" V 29800 12850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29730 12850 50  0001 C CNN
+F 3 "" H 29800 12850 50  0001 C CNN
+	1    29800 12850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29450 12850 29650 12850
+$Comp
+L GND #PWR0221
+U 1 1 5EF8C07C
+P 30100 13000
+F 0 "#PWR0221" H 30100 12750 50  0001 C CNN
+F 1 "GND" H 30100 12850 50  0000 C CNN
+F 2 "" H 30100 13000 50  0001 C CNN
+F 3 "" H 30100 13000 50  0001 C CNN
+	1    30100 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29950 12850 30100 12850
+Wire Wire Line
+	30100 12850 30100 13000
+Wire Wire Line
+	28650 12850 29150 12850
+$Comp
+L R R211
+U 1 1 5EF8C085
+P 29550 13100
+F 0 "R211" V 29630 13100 50  0000 C CNN
+F 1 "1k" V 29550 13100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29480 13100 50  0001 C CNN
+F 3 "" H 29550 13100 50  0001 C CNN
+	1    29550 13100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29200 13100 29400 13100
+$Comp
+L GND #PWR0222
+U 1 1 5EF8C08C
+P 29850 13250
+F 0 "#PWR0222" H 29850 13000 50  0001 C CNN
+F 1 "GND" H 29850 13100 50  0000 C CNN
+F 2 "" H 29850 13250 50  0001 C CNN
+F 3 "" H 29850 13250 50  0001 C CNN
+	1    29850 13250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29700 13100 29850 13100
+Wire Wire Line
+	29850 13100 29850 13250
+Wire Wire Line
+	28400 13100 28900 13100
+$Comp
+L R R204
+U 1 1 5EF8C095
+P 29300 13400
+F 0 "R204" V 29380 13400 50  0000 C CNN
+F 1 "1k" V 29300 13400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29230 13400 50  0001 C CNN
+F 3 "" H 29300 13400 50  0001 C CNN
+	1    29300 13400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28950 13400 29150 13400
+$Comp
+L GND #PWR0223
+U 1 1 5EF8C09C
+P 29600 13550
+F 0 "#PWR0223" H 29600 13300 50  0001 C CNN
+F 1 "GND" H 29600 13400 50  0000 C CNN
+F 2 "" H 29600 13550 50  0001 C CNN
+F 3 "" H 29600 13550 50  0001 C CNN
+	1    29600 13550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29450 13400 29600 13400
+Wire Wire Line
+	29600 13400 29600 13550
+Wire Wire Line
+	28100 13400 28650 13400
+$Comp
+L R R197
+U 1 1 5EF8C0A5
+P 29050 13700
+F 0 "R197" V 29130 13700 50  0000 C CNN
+F 1 "1k" V 29050 13700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 28980 13700 50  0001 C CNN
+F 3 "" H 29050 13700 50  0001 C CNN
+	1    29050 13700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28700 13700 28900 13700
+$Comp
+L GND #PWR0224
+U 1 1 5EF8C0AC
+P 29350 13850
+F 0 "#PWR0224" H 29350 13600 50  0001 C CNN
+F 1 "GND" H 29350 13700 50  0000 C CNN
+F 2 "" H 29350 13850 50  0001 C CNN
+F 3 "" H 29350 13850 50  0001 C CNN
+	1    29350 13850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29200 13700 29350 13700
+Wire Wire Line
+	29350 13700 29350 13850
+Wire Wire Line
+	27900 13700 28400 13700
+Wire Wire Line
+	27750 11950 29250 11950
+Wire Wire Line
+	29250 11950 29250 12100
+Wire Wire Line
+	27750 12050 29050 12050
+Wire Wire Line
+	29050 12050 29050 12350
+Wire Wire Line
+	27750 12150 28850 12150
+Wire Wire Line
+	28850 12150 28850 12600
+Wire Wire Line
+	27750 12250 28650 12250
+Wire Wire Line
+	28650 12250 28650 12850
+Wire Wire Line
+	27750 12350 28400 12350
+Wire Wire Line
+	28400 12350 28400 13100
+Wire Wire Line
+	28100 13400 28100 12450
+Wire Wire Line
+	28100 12450 27750 12450
+Wire Wire Line
+	27900 12550 27900 13700
+Wire Wire Line
+	27900 12550 27750 12550
+$Comp
+L LED D239
+U 1 1 5EF8C0C3
+P 30100 14250
+F 0 "D239" H 30100 14350 50  0000 C CNN
+F 1 "LED" H 30100 14150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 30100 14250 50  0001 C CNN
+F 3 "" H 30100 14250 50  0001 C CNN
+	1    30100 14250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R245
+U 1 1 5EF8C0C9
+P 30600 14250
+F 0 "R245" V 30680 14250 50  0000 C CNN
+F 1 "1k" V 30600 14250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30530 14250 50  0001 C CNN
+F 3 "" H 30600 14250 50  0001 C CNN
+	1    30600 14250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30250 14250 30450 14250
+$Comp
+L GND #PWR0225
+U 1 1 5EF8C0D0
+P 30900 14400
+F 0 "#PWR0225" H 30900 14150 50  0001 C CNN
+F 1 "GND" H 30900 14250 50  0000 C CNN
+F 2 "" H 30900 14400 50  0001 C CNN
+F 3 "" H 30900 14400 50  0001 C CNN
+	1    30900 14400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30750 14250 30900 14250
+Wire Wire Line
+	30900 14250 30900 14400
+Wire Wire Line
+	27800 14250 29950 14250
+$Comp
+L LED D235
+U 1 1 5EF8C0D9
+P 29950 14500
+F 0 "D235" H 29950 14600 50  0000 C CNN
+F 1 "LED" H 29950 14400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29950 14500 50  0001 C CNN
+F 3 "" H 29950 14500 50  0001 C CNN
+	1    29950 14500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R241
+U 1 1 5EF8C0DF
+P 30450 14500
+F 0 "R241" V 30530 14500 50  0000 C CNN
+F 1 "1k" V 30450 14500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30380 14500 50  0001 C CNN
+F 3 "" H 30450 14500 50  0001 C CNN
+	1    30450 14500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30100 14500 30300 14500
+$Comp
+L GND #PWR0226
+U 1 1 5EF8C0E6
+P 30750 14650
+F 0 "#PWR0226" H 30750 14400 50  0001 C CNN
+F 1 "GND" H 30750 14500 50  0000 C CNN
+F 2 "" H 30750 14650 50  0001 C CNN
+F 3 "" H 30750 14650 50  0001 C CNN
+	1    30750 14650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30600 14500 30750 14500
+Wire Wire Line
+	30750 14500 30750 14650
+Wire Wire Line
+	29300 14500 29800 14500
+$Comp
+L LED D228
+U 1 1 5EF8C0EF
+P 29750 14750
+F 0 "D228" H 29750 14850 50  0000 C CNN
+F 1 "LED" H 29750 14650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29750 14750 50  0001 C CNN
+F 3 "" H 29750 14750 50  0001 C CNN
+	1    29750 14750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R235
+U 1 1 5EF8C0F5
+P 30250 14750
+F 0 "R235" V 30330 14750 50  0000 C CNN
+F 1 "1k" V 30250 14750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30180 14750 50  0001 C CNN
+F 3 "" H 30250 14750 50  0001 C CNN
+	1    30250 14750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29900 14750 30100 14750
+$Comp
+L GND #PWR0227
+U 1 1 5EF8C0FC
+P 30550 14900
+F 0 "#PWR0227" H 30550 14650 50  0001 C CNN
+F 1 "GND" H 30550 14750 50  0000 C CNN
+F 2 "" H 30550 14900 50  0001 C CNN
+F 3 "" H 30550 14900 50  0001 C CNN
+	1    30550 14900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30400 14750 30550 14750
+Wire Wire Line
+	30550 14750 30550 14900
+Wire Wire Line
+	29100 14750 29600 14750
+$Comp
+L LED D221
+U 1 1 5EF8C105
+P 29550 15000
+F 0 "D221" H 29550 15100 50  0000 C CNN
+F 1 "LED" H 29550 14900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29550 15000 50  0001 C CNN
+F 3 "" H 29550 15000 50  0001 C CNN
+	1    29550 15000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R227
+U 1 1 5EF8C10B
+P 30050 15000
+F 0 "R227" V 30130 15000 50  0000 C CNN
+F 1 "1k" V 30050 15000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29980 15000 50  0001 C CNN
+F 3 "" H 30050 15000 50  0001 C CNN
+	1    30050 15000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29700 15000 29900 15000
+$Comp
+L GND #PWR0228
+U 1 1 5EF8C112
+P 30350 15150
+F 0 "#PWR0228" H 30350 14900 50  0001 C CNN
+F 1 "GND" H 30350 15000 50  0000 C CNN
+F 2 "" H 30350 15150 50  0001 C CNN
+F 3 "" H 30350 15150 50  0001 C CNN
+	1    30350 15150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30200 15000 30350 15000
+Wire Wire Line
+	30350 15000 30350 15150
+Wire Wire Line
+	28900 15000 29400 15000
+$Comp
+L LED D214
+U 1 1 5EF8C11B
+P 29350 15250
+F 0 "D214" H 29350 15350 50  0000 C CNN
+F 1 "LED" H 29350 15150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29350 15250 50  0001 C CNN
+F 3 "" H 29350 15250 50  0001 C CNN
+	1    29350 15250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R220
+U 1 1 5EF8C121
+P 29850 15250
+F 0 "R220" V 29930 15250 50  0000 C CNN
+F 1 "1k" V 29850 15250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29780 15250 50  0001 C CNN
+F 3 "" H 29850 15250 50  0001 C CNN
+	1    29850 15250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29500 15250 29700 15250
+$Comp
+L GND #PWR0229
+U 1 1 5EF8C128
+P 30150 15400
+F 0 "#PWR0229" H 30150 15150 50  0001 C CNN
+F 1 "GND" H 30150 15250 50  0000 C CNN
+F 2 "" H 30150 15400 50  0001 C CNN
+F 3 "" H 30150 15400 50  0001 C CNN
+	1    30150 15400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30000 15250 30150 15250
+Wire Wire Line
+	30150 15250 30150 15400
+Wire Wire Line
+	28700 15250 29200 15250
+$Comp
+L LED D207
+U 1 1 5EF8C131
+P 29100 15500
+F 0 "D207" H 29100 15600 50  0000 C CNN
+F 1 "LED" H 29100 15400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29100 15500 50  0001 C CNN
+F 3 "" H 29100 15500 50  0001 C CNN
+	1    29100 15500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R213
+U 1 1 5EF8C137
+P 29600 15500
+F 0 "R213" V 29680 15500 50  0000 C CNN
+F 1 "1k" V 29600 15500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29530 15500 50  0001 C CNN
+F 3 "" H 29600 15500 50  0001 C CNN
+	1    29600 15500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29250 15500 29450 15500
+$Comp
+L GND #PWR0230
+U 1 1 5EF8C13E
+P 29900 15650
+F 0 "#PWR0230" H 29900 15400 50  0001 C CNN
+F 1 "GND" H 29900 15500 50  0000 C CNN
+F 2 "" H 29900 15650 50  0001 C CNN
+F 3 "" H 29900 15650 50  0001 C CNN
+	1    29900 15650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29750 15500 29900 15500
+Wire Wire Line
+	29900 15500 29900 15650
+Wire Wire Line
+	28450 15500 28950 15500
+$Comp
+L LED D200
+U 1 1 5EF8C147
+P 28850 15800
+F 0 "D200" H 28850 15900 50  0000 C CNN
+F 1 "LED" H 28850 15700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28850 15800 50  0001 C CNN
+F 3 "" H 28850 15800 50  0001 C CNN
+	1    28850 15800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R206
+U 1 1 5EF8C14D
+P 29350 15800
+F 0 "R206" V 29430 15800 50  0000 C CNN
+F 1 "1k" V 29350 15800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29280 15800 50  0001 C CNN
+F 3 "" H 29350 15800 50  0001 C CNN
+	1    29350 15800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29000 15800 29200 15800
+$Comp
+L GND #PWR0231
+U 1 1 5EF8C154
+P 29650 15950
+F 0 "#PWR0231" H 29650 15700 50  0001 C CNN
+F 1 "GND" H 29650 15800 50  0000 C CNN
+F 2 "" H 29650 15950 50  0001 C CNN
+F 3 "" H 29650 15950 50  0001 C CNN
+	1    29650 15950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29500 15800 29650 15800
+Wire Wire Line
+	29650 15800 29650 15950
+Wire Wire Line
+	28150 15800 28700 15800
+$Comp
+L LED D193
+U 1 1 5EF8C15D
+P 28600 16100
+F 0 "D193" H 28600 16200 50  0000 C CNN
+F 1 "LED" H 28600 16000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28600 16100 50  0001 C CNN
+F 3 "" H 28600 16100 50  0001 C CNN
+	1    28600 16100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R199
+U 1 1 5EF8C163
+P 29100 16100
+F 0 "R199" V 29180 16100 50  0000 C CNN
+F 1 "1k" V 29100 16100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29030 16100 50  0001 C CNN
+F 3 "" H 29100 16100 50  0001 C CNN
+	1    29100 16100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28750 16100 28950 16100
+$Comp
+L GND #PWR0232
+U 1 1 5EF8C16A
+P 29400 16250
+F 0 "#PWR0232" H 29400 16000 50  0001 C CNN
+F 1 "GND" H 29400 16100 50  0000 C CNN
+F 2 "" H 29400 16250 50  0001 C CNN
+F 3 "" H 29400 16250 50  0001 C CNN
+	1    29400 16250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29250 16100 29400 16100
+Wire Wire Line
+	29400 16100 29400 16250
+Wire Wire Line
+	27950 16100 28450 16100
+Wire Wire Line
+	27800 14350 29300 14350
+Wire Wire Line
+	29300 14350 29300 14500
+Wire Wire Line
+	27800 14450 29100 14450
+Wire Wire Line
+	29100 14450 29100 14750
+Wire Wire Line
+	27800 14550 28900 14550
+Wire Wire Line
+	28900 14550 28900 15000
+Wire Wire Line
+	27800 14650 28700 14650
+Wire Wire Line
+	28700 14650 28700 15250
+Wire Wire Line
+	27800 14750 28450 14750
+Wire Wire Line
+	28450 14750 28450 15500
+Wire Wire Line
+	28150 15800 28150 14850
+Wire Wire Line
+	28150 14850 27800 14850
+Wire Wire Line
+	27950 14950 27950 16100
+Wire Wire Line
+	27950 14950 27800 14950
+$Comp
+L LED D240
+U 1 1 5EF8C181
+P 30150 16800
+F 0 "D240" H 30150 16900 50  0000 C CNN
+F 1 "LED" H 30150 16700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 30150 16800 50  0001 C CNN
+F 3 "" H 30150 16800 50  0001 C CNN
+	1    30150 16800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R246
+U 1 1 5EF8C187
+P 30650 16800
+F 0 "R246" V 30730 16800 50  0000 C CNN
+F 1 "1k" V 30650 16800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30580 16800 50  0001 C CNN
+F 3 "" H 30650 16800 50  0001 C CNN
+	1    30650 16800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30300 16800 30500 16800
+$Comp
+L GND #PWR0233
+U 1 1 5EF8C18E
+P 30950 16950
+F 0 "#PWR0233" H 30950 16700 50  0001 C CNN
+F 1 "GND" H 30950 16800 50  0000 C CNN
+F 2 "" H 30950 16950 50  0001 C CNN
+F 3 "" H 30950 16950 50  0001 C CNN
+	1    30950 16950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30800 16800 30950 16800
+Wire Wire Line
+	30950 16800 30950 16950
+Wire Wire Line
+	27850 16800 30000 16800
+$Comp
+L LED D237
+U 1 1 5EF8C197
+P 30000 17050
+F 0 "D237" H 30000 17150 50  0000 C CNN
+F 1 "LED" H 30000 16950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 30000 17050 50  0001 C CNN
+F 3 "" H 30000 17050 50  0001 C CNN
+	1    30000 17050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R243
+U 1 1 5EF8C19D
+P 30500 17050
+F 0 "R243" V 30580 17050 50  0000 C CNN
+F 1 "1k" V 30500 17050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30430 17050 50  0001 C CNN
+F 3 "" H 30500 17050 50  0001 C CNN
+	1    30500 17050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30150 17050 30350 17050
+$Comp
+L GND #PWR0234
+U 1 1 5EF8C1A4
+P 30800 17200
+F 0 "#PWR0234" H 30800 16950 50  0001 C CNN
+F 1 "GND" H 30800 17050 50  0000 C CNN
+F 2 "" H 30800 17200 50  0001 C CNN
+F 3 "" H 30800 17200 50  0001 C CNN
+	1    30800 17200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30650 17050 30800 17050
+Wire Wire Line
+	30800 17050 30800 17200
+Wire Wire Line
+	29350 17050 29850 17050
+$Comp
+L LED D231
+U 1 1 5EF8C1AD
+P 29800 17300
+F 0 "D231" H 29800 17400 50  0000 C CNN
+F 1 "LED" H 29800 17200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29800 17300 50  0001 C CNN
+F 3 "" H 29800 17300 50  0001 C CNN
+	1    29800 17300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R237
+U 1 1 5EF8C1B3
+P 30300 17300
+F 0 "R237" V 30380 17300 50  0000 C CNN
+F 1 "1k" V 30300 17300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30230 17300 50  0001 C CNN
+F 3 "" H 30300 17300 50  0001 C CNN
+	1    30300 17300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29950 17300 30150 17300
+$Comp
+L GND #PWR0235
+U 1 1 5EF8C1BA
+P 30600 17450
+F 0 "#PWR0235" H 30600 17200 50  0001 C CNN
+F 1 "GND" H 30600 17300 50  0000 C CNN
+F 2 "" H 30600 17450 50  0001 C CNN
+F 3 "" H 30600 17450 50  0001 C CNN
+	1    30600 17450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30450 17300 30600 17300
+Wire Wire Line
+	30600 17300 30600 17450
+Wire Wire Line
+	29150 17300 29650 17300
+$Comp
+L LED D222
+U 1 1 5EF8C1C3
+P 29600 17550
+F 0 "D222" H 29600 17650 50  0000 C CNN
+F 1 "LED" H 29600 17450 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29600 17550 50  0001 C CNN
+F 3 "" H 29600 17550 50  0001 C CNN
+	1    29600 17550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R229
+U 1 1 5EF8C1C9
+P 30100 17550
+F 0 "R229" V 30180 17550 50  0000 C CNN
+F 1 "1k" V 30100 17550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 30030 17550 50  0001 C CNN
+F 3 "" H 30100 17550 50  0001 C CNN
+	1    30100 17550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29750 17550 29950 17550
+$Comp
+L GND #PWR0236
+U 1 1 5EF8C1D0
+P 30400 17700
+F 0 "#PWR0236" H 30400 17450 50  0001 C CNN
+F 1 "GND" H 30400 17550 50  0000 C CNN
+F 2 "" H 30400 17700 50  0001 C CNN
+F 3 "" H 30400 17700 50  0001 C CNN
+	1    30400 17700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30250 17550 30400 17550
+Wire Wire Line
+	30400 17550 30400 17700
+Wire Wire Line
+	28950 17550 29450 17550
+$Comp
+L LED D215
+U 1 1 5EF8C1D9
+P 29400 17800
+F 0 "D215" H 29400 17900 50  0000 C CNN
+F 1 "LED" H 29400 17700 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29400 17800 50  0001 C CNN
+F 3 "" H 29400 17800 50  0001 C CNN
+	1    29400 17800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R222
+U 1 1 5EF8C1DF
+P 29900 17800
+F 0 "R222" V 29980 17800 50  0000 C CNN
+F 1 "1k" V 29900 17800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29830 17800 50  0001 C CNN
+F 3 "" H 29900 17800 50  0001 C CNN
+	1    29900 17800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29550 17800 29750 17800
+$Comp
+L GND #PWR0237
+U 1 1 5EF8C1E6
+P 30200 17950
+F 0 "#PWR0237" H 30200 17700 50  0001 C CNN
+F 1 "GND" H 30200 17800 50  0000 C CNN
+F 2 "" H 30200 17950 50  0001 C CNN
+F 3 "" H 30200 17950 50  0001 C CNN
+	1    30200 17950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30050 17800 30200 17800
+Wire Wire Line
+	30200 17800 30200 17950
+Wire Wire Line
+	28750 17800 29250 17800
+$Comp
+L LED D208
+U 1 1 5EF8C1EF
+P 29150 18050
+F 0 "D208" H 29150 18150 50  0000 C CNN
+F 1 "LED" H 29150 17950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 29150 18050 50  0001 C CNN
+F 3 "" H 29150 18050 50  0001 C CNN
+	1    29150 18050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R214
+U 1 1 5EF8C1F5
+P 29650 18050
+F 0 "R214" V 29730 18050 50  0000 C CNN
+F 1 "1k" V 29650 18050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29580 18050 50  0001 C CNN
+F 3 "" H 29650 18050 50  0001 C CNN
+	1    29650 18050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29300 18050 29500 18050
+$Comp
+L GND #PWR0238
+U 1 1 5EF8C1FC
+P 29950 18200
+F 0 "#PWR0238" H 29950 17950 50  0001 C CNN
+F 1 "GND" H 29950 18050 50  0000 C CNN
+F 2 "" H 29950 18200 50  0001 C CNN
+F 3 "" H 29950 18200 50  0001 C CNN
+	1    29950 18200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29800 18050 29950 18050
+Wire Wire Line
+	29950 18050 29950 18200
+Wire Wire Line
+	28500 18050 29000 18050
+$Comp
+L LED D201
+U 1 1 5EF8C205
+P 28900 18350
+F 0 "D201" H 28900 18450 50  0000 C CNN
+F 1 "LED" H 28900 18250 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28900 18350 50  0001 C CNN
+F 3 "" H 28900 18350 50  0001 C CNN
+	1    28900 18350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R207
+U 1 1 5EF8C20B
+P 29400 18350
+F 0 "R207" V 29480 18350 50  0000 C CNN
+F 1 "1k" V 29400 18350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29330 18350 50  0001 C CNN
+F 3 "" H 29400 18350 50  0001 C CNN
+	1    29400 18350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	29050 18350 29250 18350
+$Comp
+L GND #PWR0239
+U 1 1 5EF8C212
+P 29700 18500
+F 0 "#PWR0239" H 29700 18250 50  0001 C CNN
+F 1 "GND" H 29700 18350 50  0000 C CNN
+F 2 "" H 29700 18500 50  0001 C CNN
+F 3 "" H 29700 18500 50  0001 C CNN
+	1    29700 18500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29550 18350 29700 18350
+Wire Wire Line
+	29700 18350 29700 18500
+Wire Wire Line
+	28200 18350 28750 18350
+$Comp
+L LED D194
+U 1 1 5EF8C21B
+P 28650 18650
+F 0 "D194" H 28650 18750 50  0000 C CNN
+F 1 "LED" H 28650 18550 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 28650 18650 50  0001 C CNN
+F 3 "" H 28650 18650 50  0001 C CNN
+	1    28650 18650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R200
+U 1 1 5EF8C221
+P 29150 18650
+F 0 "R200" V 29230 18650 50  0000 C CNN
+F 1 "1k" V 29150 18650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 29080 18650 50  0001 C CNN
+F 3 "" H 29150 18650 50  0001 C CNN
+	1    29150 18650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28800 18650 29000 18650
+Wire Wire Line
+	29300 18650 29450 18650
+Wire Wire Line
+	28000 18650 28500 18650
+Wire Wire Line
+	27850 16900 29350 16900
+Wire Wire Line
+	29350 16900 29350 17050
+Wire Wire Line
+	27850 17000 29150 17000
+Wire Wire Line
+	29150 17000 29150 17300
+Wire Wire Line
+	27850 17100 28950 17100
+Wire Wire Line
+	28950 17100 28950 17550
+Wire Wire Line
+	27850 17200 28750 17200
+Wire Wire Line
+	28750 17200 28750 17800
+Wire Wire Line
+	27850 17300 28500 17300
+Wire Wire Line
+	28500 17300 28500 18050
+Wire Wire Line
+	28200 18350 28200 17400
+Wire Wire Line
+	28200 17400 27850 17400
+Wire Wire Line
+	28000 17500 28000 18650
+Wire Wire Line
+	28000 17500 27850 17500
+$Comp
+L 74HC595D_118 U29
+U 1 1 5EF8C306
+P 27250 11750
+F 0 "U29" H 26953 11788 60  0000 L CNN
+F 1 "74HC595D_118" V 27350 11250 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27450 11950 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27450 12050 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27450 12150 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27450 12250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27450 12350 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27450 12450 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27450 12550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27450 12650 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27450 12750 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27450 12850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27450 12950 60  0001 L CNN "Status"
+	1    27250 11750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D238
+U 1 1 5EF8C315
+P 30100 11850
+F 0 "D238" H 29900 12000 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 30100 11700 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 30300 12050 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 30300 12150 60  0001 L CNN
+F 4 "475-2709-1-ND" H 30300 12250 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 30300 12350 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 30300 12450 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 30300 12550 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 30300 12650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 30300 12750 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 30300 12850 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 30300 12950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 30300 13050 60  0001 L CNN "Status"
+	1    30100 11850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U30
+U 1 1 5EF8C324
+P 27300 14150
+F 0 "U30" H 27003 14188 60  0000 L CNN
+F 1 "74HC595D_118" V 27400 13650 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27500 14350 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27500 14450 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27500 14550 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27500 14650 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27500 14750 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27500 14850 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27500 14950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27500 15050 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27500 15150 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27500 15250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27500 15350 60  0001 L CNN "Status"
+	1    27300 14150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595D_118 U31
+U 1 1 5EF8C333
+P 27350 16700
+F 0 "U31" H 27053 16738 60  0000 L CNN
+F 1 "74HC595D_118" V 27450 16200 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 27550 16900 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27550 17000 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 27550 17100 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 27550 17200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 27550 17300 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 27550 17400 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 27550 17500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 27550 17600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 27550 17700 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 27550 17800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 27550 17900 60  0001 L CNN "Status"
+	1    27350 16700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D234
+U 1 1 5EF8C351
+P 29950 12100
+F 0 "D234" H 29750 12250 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29950 11950 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 30150 12300 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 30150 12400 60  0001 L CNN
+F 4 "475-2709-1-ND" H 30150 12500 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 30150 12600 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 30150 12700 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 30150 12800 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 30150 12900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 30150 13000 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 30150 13100 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 30150 13200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 30150 13300 60  0001 L CNN "Status"
+	1    29950 12100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D227
+U 1 1 5EF8C360
+P 29750 12350
+F 0 "D227" H 29550 12500 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29750 12200 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29950 12550 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29950 12650 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29950 12750 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29950 12850 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29950 12950 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29950 13050 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29950 13150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29950 13250 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29950 13350 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29950 13450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29950 13550 60  0001 L CNN "Status"
+	1    29750 12350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D220
+U 1 1 5EF8C36F
+P 29550 12600
+F 0 "D220" H 29350 12750 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29550 12450 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29750 12800 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29750 12900 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29750 13000 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29750 13100 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29750 13200 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29750 13300 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29750 13400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29750 13500 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29750 13600 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29750 13700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29750 13800 60  0001 L CNN "Status"
+	1    29550 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D213
+U 1 1 5EF8C37E
+P 29350 12850
+F 0 "D213" H 29150 13000 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29350 12700 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29550 13050 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29550 13150 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29550 13250 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29550 13350 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29550 13450 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29550 13550 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29550 13650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29550 13750 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29550 13850 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29550 13950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29550 14050 60  0001 L CNN "Status"
+	1    29350 12850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D206
+U 1 1 5EF8C38D
+P 29100 13100
+F 0 "D206" H 28900 13250 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 29100 12950 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29300 13300 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29300 13400 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29300 13500 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29300 13600 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29300 13700 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29300 13800 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29300 13900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29300 14000 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29300 14100 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29300 14200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29300 14300 60  0001 L CNN "Status"
+	1    29100 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D199
+U 1 1 5EF8C39C
+P 28850 13400
+F 0 "D199" H 28650 13550 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 28850 13250 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 29050 13600 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29050 13700 60  0001 L CNN
+F 4 "475-2709-1-ND" H 29050 13800 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 29050 13900 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 29050 14000 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 29050 14100 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 29050 14200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 29050 14300 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 29050 14400 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 29050 14500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 29050 14600 60  0001 L CNN "Status"
+	1    28850 13400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LG_L29K-G2J1-24-Z D192
+U 1 1 5EF8C3AB
+P 28600 13700
+F 0 "D192" H 28400 13850 60  0000 C CNN
+F 1 "LG_L29K-G2J1-24-Z" H 28600 13550 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 28800 13900 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 28800 14000 60  0001 L CNN
+F 4 "475-2709-1-ND" H 28800 14100 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 28800 14200 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 28800 14300 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 28800 14400 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 28800 14500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 28800 14600 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 28800 14700 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 28800 14800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 28800 14900 60  0001 L CNN "Status"
+	1    28600 13700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MSP430F2012IPW U1
+U 1 1 5EF93233
+P 3800 2900
+F 0 "U1" H 3200 3500 50  0000 C CNN
+F 1 "MSP430F2012IPW" H 4250 2250 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3250 2250 50  0001 C CIN
+F 3 "" H 3800 2900 50  0001 C CNN
+	1    3800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPTS203211B S4
+U 1 1 5EF9BD30
+P 6650 2650
+F 0 "S4" H 6500 2800 50  0000 C CNN
+F 1 "GPTS203211B" H 6650 2550 50  0000 C CNN
+F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 6850 2850 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6850 2950 60  0001 L CNN
+F 4 "CW181-ND" H 6850 3050 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6850 3150 60  0001 L CNN "MPN"
+F 6 "Switches" H 6850 3250 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6850 3350 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6850 3450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6850 3550 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6850 3650 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6850 3750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6850 3850 60  0001 L CNN "Status"
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPTS203211B S3
+U 1 1 5EF9E941
+P 6300 3700
+F 0 "S3" H 6150 3850 50  0000 C CNN
+F 1 "GPTS203211B" H 6300 3600 50  0000 C CNN
+F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 6500 3900 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6500 4000 60  0001 L CNN
+F 4 "CW181-ND" H 6500 4100 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6500 4200 60  0001 L CNN "MPN"
+F 6 "Switches" H 6500 4300 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6500 4400 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6500 4500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6500 4600 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6500 4700 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6500 4800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6500 4900 60  0001 L CNN "Status"
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPTS203211B S2
+U 1 1 5EF9EFDC
+P 6050 4750
+F 0 "S2" H 5900 4900 50  0000 C CNN
+F 1 "GPTS203211B" H 6050 4650 50  0000 C CNN
+F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 6250 4950 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6250 5050 60  0001 L CNN
+F 4 "CW181-ND" H 6250 5150 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6250 5250 60  0001 L CNN "MPN"
+F 6 "Switches" H 6250 5350 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6250 5450 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6250 5550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6250 5650 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6250 5750 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6250 5850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6250 5950 60  0001 L CNN "Status"
+	1    6050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPTS203211B S1
+U 1 1 5EF9F674
+P 5800 5800
+F 0 "S1" H 5650 5950 50  0000 C CNN
+F 1 "GPTS203211B" H 5800 5700 50  0000 C CNN
+F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 6000 6000 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6000 6100 60  0001 L CNN
+F 4 "CW181-ND" H 6000 6200 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6000 6300 60  0001 L CNN "MPN"
+F 6 "Switches" H 6000 6400 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6000 6500 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6000 6600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6000 6700 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6000 6800 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6000 6900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 7000 60  0001 L CNN "Status"
+	1    5800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BS-7 BAT1
+U 1 1 5EFA1F62
+P 1400 2150
+F 0 "BAT1" H 1350 2300 60  0000 R CNN
+F 1 "BS-7" H 1350 2000 60  0000 R CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1600 2350 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1600 2450 60  0001 L CNN
+F 4 "BS-7-ND" H 1600 2550 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 1600 2650 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1600 2750 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1600 2850 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1600 2950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1600 3050 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1600 3150 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1600 3250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1600 3350 60  0001 L CNN "Status"
+	1    1400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0240
+U 1 1 5EFA2484
+P 1400 2550
+F 0 "#PWR0240" H 1400 2300 50  0001 C CNN
+F 1 "GND" H 1400 2400 50  0000 C CNN
+F 2 "" H 1400 2550 50  0001 C CNN
+F 3 "" H 1400 2550 50  0001 C CNN
+	1    1400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR0241
+U 1 1 5EFA2F56
+P 1400 1800
+F 0 "#PWR0241" H 1400 1650 50  0001 C CNN
+F 1 "+3.3V" H 1400 1940 50  0000 C CNN
+F 2 "" H 1400 1800 50  0001 C CNN
+F 3 "" H 1400 1800 50  0001 C CNN
+	1    1400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1800 1400 1950
+Wire Wire Line
+	1400 2350 1400 2550
+$Comp
+L GND #PWR0242
+U 1 1 5EFA47DB
+P 3800 3800
+F 0 "#PWR0242" H 3800 3550 50  0001 C CNN
+F 1 "GND" H 3800 3650 50  0000 C CNN
+F 2 "" H 3800 3800 50  0001 C CNN
+F 3 "" H 3800 3800 50  0001 C CNN
+	1    3800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3650 3800 3800
+$Comp
+L C C1
+U 1 1 5EFA7F6A
+P 4150 1800
+F 0 "C1" H 4175 1900 50  0000 L CNN
+F 1 "1.0uF" H 4175 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4188 1650 50  0001 C CNN
+F 3 "" H 4150 1800 50  0001 C CNN
+	1    4150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0243
+U 1 1 5EFA8401
+P 4150 2100
+F 0 "#PWR0243" H 4150 1850 50  0001 C CNN
+F 1 "GND" H 4150 1950 50  0000 C CNN
+F 2 "" H 4150 2100 50  0001 C CNN
+F 3 "" H 4150 2100 50  0001 C CNN
+	1    4150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR0244
+U 1 1 5EFA8863
+P 3800 1450
+F 0 "#PWR0244" H 3800 1300 50  0001 C CNN
+F 1 "+3.3V" H 3800 1590 50  0000 C CNN
+F 2 "" H 3800 1450 50  0001 C CNN
+F 3 "" H 3800 1450 50  0001 C CNN
+	1    3800 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1450 3800 2200
+Wire Wire Line
+	4150 1650 4150 1500
+Wire Wire Line
+	4150 1500 3800 1500
+Connection ~ 3800 1500
+Wire Wire Line
+	4150 1950 4150 2100
+$Comp
+L C C6
+U 1 1 5EFBC8B7
+P 10450 1200
+F 0 "C6" H 10475 1300 50  0000 L CNN
+F 1 "1.0uF" H 10475 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10488 1050 50  0001 C CNN
+F 3 "" H 10450 1200 50  0001 C CNN
+	1    10450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR0245
+U 1 1 5EFBC8BD
+P 10450 950
+F 0 "#PWR0245" H 10450 800 50  0001 C CNN
+F 1 "+3.3V" H 10450 1090 50  0000 C CNN
+F 2 "" H 10450 950 50  0001 C CNN
+F 3 "" H 10450 950 50  0001 C CNN
+	1    10450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0246
+U 1 1 5EFBCD18
+P 10450 1400
+F 0 "#PWR0246" H 10450 1150 50  0001 C CNN
+F 1 "GND" H 10450 1250 50  0000 C CNN
+F 2 "" H 10450 1400 50  0001 C CNN
+F 3 "" H 10450 1400 50  0001 C CNN
+	1    10450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 950  10450 1050
+Wire Wire Line
+	10450 1350 10450 1400
+Wire Wire Line
+	10200 1000 10200 1550
+Wire Wire Line
+	10200 1000 10450 1000
+Connection ~ 10450 1000
+$Comp
+L GND #PWR0247
+U 1 1 5EFC48B1
+P 10200 2800
+F 0 "#PWR0247" H 10200 2550 50  0001 C CNN
+F 1 "GND" H 10200 2650 50  0000 C CNN
+F 2 "" H 10200 2800 50  0001 C CNN
+F 3 "" H 10200 2800 50  0001 C CNN
+	1    10200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2750 10200 2800
+$Comp
+L C C7
+U 1 1 5EFC7A73
+P 10500 3600
+F 0 "C7" H 10525 3700 50  0000 L CNN
+F 1 "1.0uF" H 10525 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10538 3450 50  0001 C CNN
+F 3 "" H 10500 3600 50  0001 C CNN
+	1    10500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR0248
+U 1 1 5EFC7A79
+P 10500 3350
+F 0 "#PWR0248" H 10500 3200 50  0001 C CNN
+F 1 "+3.3V" H 10500 3490 50  0000 C CNN
+F 2 "" H 10500 3350 50  0001 C CNN
+F 3 "" H 10500 3350 50  0001 C CNN
+	1    10500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0249
+U 1 1 5EFC7A7F
+P 10500 3800
+F 0 "#PWR0249" H 10500 3550 50  0001 C CNN
+F 1 "GND" H 10500 3650 50  0000 C CNN
+F 2 "" H 10500 3800 50  0001 C CNN
+F 3 "" H 10500 3800 50  0001 C CNN
+	1    10500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3350 10500 3450
+Wire Wire Line
+	10500 3750 10500 3800
+Wire Wire Line
+	10250 3400 10500 3400
+Connection ~ 10500 3400
+Wire Wire Line
+	10250 3400 10250 3950
+$Comp
+L +3.3V #PWR0250
+U 1 1 5EFCC581
+P 5450 2050
+F 0 "#PWR0250" H 5450 1900 50  0001 C CNN
+F 1 "+3.3V" H 5450 2190 50  0000 C CNN
+F 2 "" H 5450 2050 50  0001 C CNN
+F 3 "" H 5450 2050 50  0001 C CNN
+	1    5450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R34
+U 1 1 5EFCE3CB
+P 5450 2300
+F 0 "R34" V 5530 2300 50  0000 C CNN
+F 1 "10k" V 5450 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5380 2300 50  0001 C CNN
+F 3 "" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R35
+U 1 1 5EFD427F
+P 5750 2300
+F 0 "R35" V 5830 2300 50  0000 C CNN
+F 1 "10k" V 5750 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5680 2300 50  0001 C CNN
+F 3 "" H 5750 2300 50  0001 C CNN
+	1    5750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R36
+U 1 1 5EFD4922
+P 6050 2300
+F 0 "R36" V 6130 2300 50  0000 C CNN
+F 1 "10k" V 6050 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5980 2300 50  0001 C CNN
+F 3 "" H 6050 2300 50  0001 C CNN
+	1    6050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R37
+U 1 1 5EFD4FC0
+P 6350 2300
+F 0 "R37" V 6430 2300 50  0000 C CNN
+F 1 "10k" V 6350 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6280 2300 50  0001 C CNN
+F 3 "" H 6350 2300 50  0001 C CNN
+	1    6350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0251
+U 1 1 5EFD5438
+P 7050 2750
+F 0 "#PWR0251" H 7050 2500 50  0001 C CNN
+F 1 "GND" H 7050 2600 50  0000 C CNN
+F 2 "" H 7050 2750 50  0001 C CNN
+F 3 "" H 7050 2750 50  0001 C CNN
+	1    7050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0252
+U 1 1 5EFD6C39
+P 6700 3750
+F 0 "#PWR0252" H 6700 3500 50  0001 C CNN
+F 1 "GND" H 6700 3600 50  0000 C CNN
+F 2 "" H 6700 3750 50  0001 C CNN
+F 3 "" H 6700 3750 50  0001 C CNN
+	1    6700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0253
+U 1 1 5EFD72CB
+P 6450 4800
+F 0 "#PWR0253" H 6450 4550 50  0001 C CNN
+F 1 "GND" H 6450 4650 50  0000 C CNN
+F 2 "" H 6450 4800 50  0001 C CNN
+F 3 "" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0254
+U 1 1 5EFD795D
+P 6200 5850
+F 0 "#PWR0254" H 6200 5600 50  0001 C CNN
+F 1 "GND" H 6200 5700 50  0000 C CNN
+F 2 "" H 6200 5850 50  0001 C CNN
+F 3 "" H 6200 5850 50  0001 C CNN
+	1    6200 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2650 7050 2650
+Wire Wire Line
+	7050 2650 7050 2750
+Wire Wire Line
+	6500 3700 6700 3700
+Wire Wire Line
+	6700 3700 6700 3750
+Wire Wire Line
+	6250 4750 6450 4750
+Wire Wire Line
+	6450 4750 6450 4800
+Wire Wire Line
+	6000 5800 6200 5800
+Wire Wire Line
+	6200 5800 6200 5850
+Wire Wire Line
+	5450 2050 5450 2150
+Wire Wire Line
+	5750 2150 5750 2100
+Wire Wire Line
+	5450 2100 6350 2100
+Connection ~ 5450 2100
+Wire Wire Line
+	6050 2100 6050 2150
+Connection ~ 5750 2100
+Wire Wire Line
+	6350 2100 6350 2150
+Connection ~ 6050 2100
+Wire Wire Line
+	5450 2450 5450 5950
+Wire Wire Line
+	5450 5800 5600 5800
+Wire Wire Line
+	5750 4750 5850 4750
+Wire Wire Line
+	5750 2450 5750 4950
+Wire Wire Line
+	6050 3700 6100 3700
+Wire Wire Line
+	6050 2450 6050 3900
+Wire Wire Line
+	6350 2450 6350 2900
+Wire Wire Line
+	6350 2650 6450 2650
+Text GLabel 5050 3100 2    60   Input ~ 0
+CLK
+Wire Wire Line
+	4750 3100 5050 3100
+Wire Wire Line
+	4750 3200 4950 3200
+Wire Wire Line
+	4950 3200 4950 3400
+Wire Wire Line
+	4950 3400 5050 3400
+Wire Wire Line
+	4750 2600 6350 2600
+Connection ~ 6350 2600
+Wire Wire Line
+	4750 2700 6050 2700
+Connection ~ 6050 2700
+Wire Wire Line
+	4750 2800 5750 2800
+Connection ~ 5750 2800
+Wire Wire Line
+	4750 2900 5450 2900
+Connection ~ 5450 2900
+Text GLabel 2250 3100 0    60   Input ~ 0
+LE1
+Text GLabel 2250 3300 0    60   Input ~ 0
+LE2
+Wire Wire Line
+	2250 3100 2800 3100
+Wire Wire Line
+	2250 3300 2800 3300
+$Comp
+L R R33
+U 1 1 5EFF40DA
+P 2600 2200
+F 0 "R33" V 2680 2200 50  0000 C CNN
+F 1 "10k" V 2600 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2530 2200 50  0001 C CNN
+F 3 "" H 2600 2200 50  0001 C CNN
+	1    2600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2450 2600 2450
+Wire Wire Line
+	2600 2450 2600 2350
+Wire Wire Line
+	2600 2050 2600 1750
+Wire Wire Line
+	2600 1750 3800 1750
+Connection ~ 3800 1750
+Text GLabel 9450 2050 0    60   Input ~ 0
+CLK
+Wire Wire Line
+	9450 2050 9800 2050
+Wire Wire Line
+	9800 2150 9600 2150
+Wire Wire Line
+	9600 2150 9600 2050
+Connection ~ 9600 2050
+$Comp
+L R R38
+U 1 1 5EFFEADA
+P 9700 1650
+F 0 "R38" V 9780 1650 50  0000 C CNN
+F 1 "10k" V 9700 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9630 1650 50  0001 C CNN
+F 3 "" H 9700 1650 50  0001 C CNN
+	1    9700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1800 9700 2250
+Wire Wire Line
+	9700 2250 9800 2250
+Wire Wire Line
+	9700 1350 9700 1500
+Wire Wire Line
+	9700 1350 10200 1350
+Connection ~ 10200 1350
+Text GLabel 9450 2350 0    60   Input ~ 0
+DATA
+Wire Wire Line
+	9450 2350 9800 2350
+Wire Wire Line
+	9800 1950 9700 1950
+Connection ~ 9700 1950
+Wire Wire Line
+	10700 2550 10750 2550
+Wire Wire Line
+	10750 2550 10750 3050
+Wire Wire Line
+	10750 3050 9450 3050
+Wire Wire Line
+	9450 4750 9850 4750
+Wire Wire Line
+	9450 3050 9450 4750
+$Comp
+L C C2
+U 1 1 5F01CBF5
+P 5450 6100
+F 0 "C2" H 5475 6200 50  0000 L CNN
+F 1 "0.1uF" H 5475 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5488 5950 50  0001 C CNN
+F 3 "" H 5450 6100 50  0001 C CNN
+	1    5450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0255
+U 1 1 5F020C79
+P 5450 6300
+F 0 "#PWR0255" H 5450 6050 50  0001 C CNN
+F 1 "GND" H 5450 6150 50  0000 C CNN
+F 2 "" H 5450 6300 50  0001 C CNN
+F 3 "" H 5450 6300 50  0001 C CNN
+	1    5450 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 5800
+Wire Wire Line
+	5450 6250 5450 6300
+$Comp
+L C C3
+U 1 1 5F022242
+P 5750 5100
+F 0 "C3" H 5775 5200 50  0000 L CNN
+F 1 "0.1uF" H 5775 5000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5788 4950 50  0001 C CNN
+F 3 "" H 5750 5100 50  0001 C CNN
+	1    5750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0256
+U 1 1 5F023BA3
+P 5750 5300
+F 0 "#PWR0256" H 5750 5050 50  0001 C CNN
+F 1 "GND" H 5750 5150 50  0000 C CNN
+F 2 "" H 5750 5300 50  0001 C CNN
+F 3 "" H 5750 5300 50  0001 C CNN
+	1    5750 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5250 5750 5300
+Connection ~ 5750 4750
+$Comp
+L C C4
+U 1 1 5F0283B2
+P 6050 4050
+F 0 "C4" H 6075 4150 50  0000 L CNN
+F 1 "0.1uF" H 6075 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6088 3900 50  0001 C CNN
+F 3 "" H 6050 4050 50  0001 C CNN
+	1    6050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0257
+U 1 1 5F0283B8
+P 6050 4250
+F 0 "#PWR0257" H 6050 4000 50  0001 C CNN
+F 1 "GND" H 6050 4100 50  0000 C CNN
+F 2 "" H 6050 4250 50  0001 C CNN
+F 3 "" H 6050 4250 50  0001 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4200 6050 4250
+Connection ~ 6050 3700
+$Comp
+L C C5
+U 1 1 5F02BA3D
+P 6350 3050
+F 0 "C5" H 6375 3150 50  0000 L CNN
+F 1 "0.1uF" H 6375 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6388 2900 50  0001 C CNN
+F 3 "" H 6350 3050 50  0001 C CNN
+	1    6350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0258
+U 1 1 5F02BA43
+P 6350 3250
+F 0 "#PWR0258" H 6350 3000 50  0001 C CNN
+F 1 "GND" H 6350 3100 50  0000 C CNN
+F 2 "" H 6350 3250 50  0001 C CNN
+F 3 "" H 6350 3250 50  0001 C CNN
+	1    6350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3200 6350 3250
+Connection ~ 6350 2650
+$EndSCHEMATC
