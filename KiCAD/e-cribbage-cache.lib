@@ -119,38 +119,6 @@ X ~ 2 0 -200 100 U 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# dk_Logic-Buffers-Drivers-Receivers-Transceivers_SN74LVC1G125DCKR
-#
-DEF dk_Logic-Buffers-Drivers-Receivers-Transceivers_SN74LVC1G125DCKR U 0 0 Y Y 1 F N
-F0 "U" -100 250 60 H V R CNN
-F1 "dk_Logic-Buffers-Drivers-Receivers-Transceivers_SN74LVC1G125DCKR" 75 -250 60 H V L CNN
-F2 "digikey-footprints:SOT-353" 200 200 60 H I L CNN
-F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" 200 300 60 H I L CNN
-F4 "296-11604-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SN74LVC1G125DCKR" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Logic - Buffers, Drivers, Receivers, Transceivers" 200 700 60 H I L CNN "Family"
-F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/texas-instruments/SN74LVC1G125DCKR/296-11604-1-ND/385743" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC BUF NON-INVERT 5.5V SC70-5" 200 1000 60 H I L CNN "Description"
-F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-C -50 -60 10 0 1 0 N
-S -200 200 100 -200 0 1 0 f
-P 2 0 1 0 -50 50 -50 -50 N
-P 2 0 1 0 0 -100 100 -100 N
-P 3 0 1 0 -200 100 -50 100 -50 50 N
-P 3 0 1 0 -100 -100 -150 -100 -200 -100 N
-P 4 0 1 0 -100 -50 -100 -150 0 -100 -100 -50 N
-X ~OE 1 -300 100 100 R 50 50 1 1 I
-X A 2 -300 -100 100 R 50 50 1 1 I
-X GND 3 0 -300 100 U 50 50 1 1 W
-X Y 4 200 -100 100 L 50 50 1 1 O
-X VCC 5 0 300 100 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
 # dk_Logic-Gates-and-Inverters_SN74LVC1G08DBVR
 #
 DEF dk_Logic-Gates-and-Inverters_SN74LVC1G08DBVR U 0 1 Y Y 1 F N
