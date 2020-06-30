@@ -1313,7 +1313,7 @@ Wire Wire Line
 	8400 7500 7550 7500
 Connection ~ 7550 7500
 Wire Wire Line
-	7550 7500 7550 8000
+	7550 7500 7550 7850
 $Comp
 L Device:R R25
 U 1 1 5FA38016
@@ -6192,7 +6192,7 @@ Wire Wire Line
 	16750 7450 15900 7450
 Connection ~ 15900 7450
 Wire Wire Line
-	15900 7450 15900 7950
+	15900 7450 15900 7850
 $Comp
 L power:+3.3V #PWR0145
 U 1 1 5FDC82D3
@@ -6212,7 +6212,7 @@ Wire Wire Line
 	16800 4450 15950 4450
 Connection ~ 15950 4450
 Wire Wire Line
-	15950 4450 15950 5000
+	15950 4450 15950 4850
 Wire Wire Line
 	16800 1850 16800 1900
 $Comp
@@ -13025,25 +13025,10 @@ Wire Wire Line
 	1350 6300 1750 6300
 Wire Wire Line
 	3700 6200 4800 6200
-$Comp
-L Device:R R241
-U 1 1 66577B82
-P 7000 1950
-F 0 "R241" V 6793 1950 50  0000 C CNN
-F 1 "10k" V 6884 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6930 1950 50  0001 C CNN
-F 3 "~" H 7000 1950 50  0001 C CNN
-	1    7000 1950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7000 2400 7000 2100
 Wire Wire Line
 	7000 2400 7200 2400
 Wire Wire Line
 	7000 1650 7600 1650
-Wire Wire Line
-	7000 1650 7000 1800
 Connection ~ 7600 1650
 Wire Wire Line
 	7600 1650 7600 2000
@@ -13382,52 +13367,6 @@ F 12 "Active" H 3650 10100 60  0001 L CNN "Status"
 	1    3450 8900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R242
-U 1 1 6D4F9F31
-P 7050 4750
-F 0 "R242" V 6843 4750 50  0000 C CNN
-F 1 "10k" V 6934 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6980 4750 50  0001 C CNN
-F 3 "~" H 7050 4750 50  0001 C CNN
-	1    7050 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R248
-U 1 1 6D4FABF6
-P 6950 10900
-F 0 "R248" V 6743 10900 50  0000 C CNN
-F 1 "10k" V 6834 10900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6880 10900 50  0001 C CNN
-F 3 "~" H 6950 10900 50  0001 C CNN
-	1    6950 10900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R249
-U 1 1 6D4FB15A
-P 7000 13850
-F 0 "R249" V 6793 13850 50  0000 C CNN
-F 1 "10k" V 6884 13850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6930 13850 50  0001 C CNN
-F 3 "~" H 7000 13850 50  0001 C CNN
-	1    7000 13850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R250
-U 1 1 6D4FB82B
-P 6950 16950
-F 0 "R250" V 6743 16950 50  0000 C CNN
-F 1 "10k" V 6834 16950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6880 16950 50  0001 C CNN
-F 3 "~" H 6950 16950 50  0001 C CNN
-	1    6950 16950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7050 4900 7050 5350
 Wire Wire Line
 	7050 5650 7150 5650
 Wire Wire Line
@@ -13435,8 +13374,6 @@ Wire Wire Line
 Connection ~ 7050 5350
 Wire Wire Line
 	7050 5350 7050 5650
-Wire Wire Line
-	7050 4600 7050 4550
 Wire Wire Line
 	7050 4550 7550 4550
 Connection ~ 7550 4550
@@ -14023,9 +13960,9 @@ Text GLabel 2200 8800 0    50   Input ~ 0
 LE1
 Text GLabel 2300 12000 0    50   Input ~ 0
 LE2
-Text GLabel 4900 8900 2    50   Input ~ 0
+Text GLabel 4900 8900 2    50   Output ~ 0
 CLK1A
-Text GLabel 4950 12100 2    50   Input ~ 0
+Text GLabel 4950 12100 2    50   Output ~ 0
 CLK2A
 Wire Wire Line
 	2200 8800 2700 8800
@@ -14106,17 +14043,17 @@ Wire Wire Line
 Connection ~ 2450 13800
 Wire Wire Line
 	3750 8900 4900 8900
-Text GLabel 4900 9750 2    50   Input ~ 0
+Text GLabel 4900 9750 2    50   Output ~ 0
 CLK1B
-Text GLabel 4900 10500 2    50   Input ~ 0
+Text GLabel 4900 10500 2    50   Output ~ 0
 CLK1C
-Text GLabel 4900 11300 2    50   Input ~ 0
+Text GLabel 4900 11300 2    50   Output ~ 0
 CLK1D
-Text GLabel 4950 12950 2    50   Input ~ 0
+Text GLabel 4950 12950 2    50   Output ~ 0
 CLK2B
-Text GLabel 4950 13700 2    50   Input ~ 0
+Text GLabel 4950 13700 2    50   Output ~ 0
 CLK2C
-Text GLabel 4950 14500 2    50   Input ~ 0
+Text GLabel 4950 14500 2    50   Output ~ 0
 CLK2D
 Wire Wire Line
 	4050 14500 4950 14500
@@ -14422,4 +14359,87 @@ Wire Wire Line
 	5000 8100 4550 8100
 Text GLabel 4800 6100 2    50   Input ~ 0
 CLK
+Text GLabel 6800 5450 0    50   Input ~ 0
+CLK1A
+Wire Wire Line
+	6800 5450 7100 5450
+Wire Wire Line
+	7150 5550 7100 5550
+Wire Wire Line
+	7100 5550 7100 5450
+Connection ~ 7100 5450
+Wire Wire Line
+	7100 5450 7150 5450
+Text GLabel 6800 8500 0    50   Input ~ 0
+CLK1A
+Wire Wire Line
+	6800 8500 7050 8500
+Wire Wire Line
+	7150 8600 7050 8600
+Wire Wire Line
+	7050 8600 7050 8500
+Connection ~ 7050 8500
+Wire Wire Line
+	7050 8500 7150 8500
+Text GLabel 6600 11450 0    50   Input ~ 0
+CLK1A
+Wire Wire Line
+	6600 11450 7000 11450
+Wire Wire Line
+	7100 11550 7000 11550
+Wire Wire Line
+	7000 11550 7000 11450
+Connection ~ 7000 11450
+Wire Wire Line
+	7000 11450 7100 11450
+Wire Wire Line
+	7000 1650 7000 2400
+Wire Wire Line
+	7050 4550 7050 5350
+Wire Wire Line
+	7150 8700 7000 8700
+Wire Wire Line
+	7000 8700 7000 8400
+Wire Wire Line
+	7000 8400 7050 8400
+Wire Wire Line
+	7050 8400 7050 7850
+Wire Wire Line
+	7050 7850 7550 7850
+Connection ~ 7050 8400
+Wire Wire Line
+	7050 8400 7150 8400
+Connection ~ 7550 7850
+Wire Wire Line
+	7550 7850 7550 8000
+Wire Wire Line
+	15250 8650 15250 8350
+Wire Wire Line
+	15250 8350 15300 8350
+Wire Wire Line
+	15250 8650 15500 8650
+Wire Wire Line
+	15300 8350 15300 7850
+Wire Wire Line
+	15300 7850 15900 7850
+Connection ~ 15300 8350
+Wire Wire Line
+	15300 8350 15500 8350
+Connection ~ 15900 7850
+Wire Wire Line
+	15900 7850 15900 7950
+Wire Wire Line
+	15550 5400 15300 5400
+Wire Wire Line
+	15300 5400 15300 5700
+Wire Wire Line
+	15300 5700 15550 5700
+Connection ~ 15300 5400
+Wire Wire Line
+	15300 4850 15950 4850
+Wire Wire Line
+	15300 4850 15300 5400
+Connection ~ 15950 4850
+Wire Wire Line
+	15950 4850 15950 5000
 $EndSCHEMATC

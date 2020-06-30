@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\git\e-cribbage\KiCAD\e-cribbage.sch)
-    (date "6/30/2020 12:33:25 AM")
+    (date "6/30/2020 7:53:16 AM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
