@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name e-cribbage)(type KiCad)(uri C:/Users/e212010/Desktop/e-cribbage/KiCAD/local_lib)(options "")(descr ""))
 )
