@@ -13211,8 +13211,6 @@ Wire Wire Line
 Wire Wire Line
 	19950 5500 20500 5500
 Wire Wire Line
-	21450 5700 21850 5700
-Wire Wire Line
 	21850 5700 21850 6750
 Wire Wire Line
 	21850 6750 19800 6750
@@ -15233,4 +15231,6 @@ Wire Wire Line
 Connection ~ 25400 5950
 Wire Wire Line
 	25400 5950 25400 6050
+Wire Wire Line
+	21400 5700 21850 5700
 $EndSCHEMATC

@@ -1269,7 +1269,7 @@ F 3 "" H 7550 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 9200 7550 9350
+	7550 9200 7550 9250
 $Comp
 L power:+3.3V #PWR026
 U 1 1 5FA37FDF
@@ -9078,7 +9078,7 @@ F 3 "" H 25450 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	25450 2950 25450 3100
+	25450 2950 25450 3050
 $Comp
 L power:+3.3V #PWR0235
 U 1 1 6039CEB7
@@ -9488,7 +9488,7 @@ F 3 "" H 25400 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	25400 5900 25400 6050
+	25400 5900 25400 5950
 $Comp
 L power:+3.3V #PWR0245
 U 1 1 6039D015
@@ -14359,8 +14359,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 8700 7000 8700
 Wire Wire Line
-	7000 8700 7000 8400
-Wire Wire Line
 	7000 8400 7050 8400
 Wire Wire Line
 	7050 8400 7050 7850
@@ -14579,21 +14577,16 @@ Wire Wire Line
 Wire Wire Line
 	25050 2450 24750 2450
 Wire Wire Line
-	24750 2450 24750 2150
-Wire Wire Line
 	24750 1650 25450 1650
 Connection ~ 25450 1650
 Wire Wire Line
 	25450 1650 25450 1750
 Wire Wire Line
 	25050 2150 24750 2150
-Connection ~ 24750 2150
 Wire Wire Line
 	24750 2150 24750 1650
 Wire Wire Line
 	25000 5400 24700 5400
-Wire Wire Line
-	24700 5400 24700 5100
 Wire Wire Line
 	24700 4450 25400 4450
 Connection ~ 25400 4450
@@ -14601,7 +14594,6 @@ Wire Wire Line
 	25400 4450 25400 4700
 Wire Wire Line
 	25000 5100 24700 5100
-Connection ~ 24700 5100
 Wire Wire Line
 	24700 5100 24700 4450
 Wire Wire Line
@@ -15220,4 +15212,25 @@ Wire Wire Line
 	1450 5400 1450 3950
 Wire Wire Line
 	1450 3950 1100 3950
+Wire Wire Line
+	7000 8700 7000 9250
+Wire Wire Line
+	7000 9250 7550 9250
+Connection ~ 7550 9250
+Wire Wire Line
+	7550 9250 7550 9350
+Wire Wire Line
+	24750 2450 24750 3050
+Wire Wire Line
+	24750 3050 25450 3050
+Connection ~ 25450 3050
+Wire Wire Line
+	25450 3050 25450 3100
+Wire Wire Line
+	24700 5400 24700 5950
+Wire Wire Line
+	24700 5950 25400 5950
+Connection ~ 25400 5950
+Wire Wire Line
+	25400 5950 25400 6050
 $EndSCHEMATC
