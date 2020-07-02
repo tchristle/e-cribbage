@@ -7,31 +7,34 @@
 //         | |                 |
 //         --|RST          XOUT|-
 //           |                 |
-//           |             P1.0|-->LED
+//           |             P1.0|<--S1
+//           |             P1.1|<--S2
+//           |             P1.2|<--S3
+//           |             P1.3|<--S4
 //           |                 |
 //           |                 |     ^   LED TRACKS
 //           |                 |     |  -------------
 //           |                 |     |-|VDD          |
-//           |          (8)P1.6|------>|DATA(18)     |
-//           |          (7)P1.5|------>|CLK(22)      |
+//           |             P1.6|------>|DATA         |
+//           |             P1.5|------>|CLK          |
 //           |                 |       |             |
-//           |          (3)P1.1|------>|LE(20)       |
+//           |             P2.6|------>|LE1          |
+//           |             P2.7|------>|LE2          |
 //           |                 |       |             |
-//           |                 |
 //
 // 1 - VCC
-// 2 - LED 			(P1.0)
-// 3 - TX 			(P1.1)
-// 4 - RX 			(P1.2)
-// 5 - SPI_LE 		(P1.3)
-// 6 - FPGA_RST		(P1.4)
-// 7 - SPI_CLK 		(P1.5)
-// 8 - SPI_DOUT 	(P1.6)
-// 9 - SPI_DIN  	(P1.7)
+// 2 - S1			(P1.0)
+// 3 - S2			(P1.1)
+// 4 - S3			(P1.2)
+// 5 - S4			(P1.3)
+// 6 - NC			(P1.4)
+// 7 - CLK			(P1.5)
+// 8 - DATA			(P1.6)
+// 9 - NC			(P1.7)
 // 10 - JTAG - RST
 // 11 - JTAG - TCK
-// 12 - NC			(P2.7)
-// 13 - RF_BUF_EN	(P2.6)
+// 12 - LE2			(P2.7)
+// 13 - LE1			(P2.6)
 // 14 - GND
 //
 //
@@ -106,90 +109,19 @@ USICTL0 &= ~USISWRST;                     		    	// USI released for operation
 
 //Startup Blinky
 for(j=0; j<4; j++)                	      	 	        // Blink green LED for power up & ready
-{
+	{
 	P1OUT |= LED;
 	for(i=1; i<=pause; i++);
 	P1OUT ^= LED;
 	for(i=1; i<=pause; i++);
-}
+	}
 
 __bis_SR_register(GIE);
 
 while(1)                          			 // Begin loop
-{
-
-	if(hasReceived)
 	{
-		TXByte = RXByte;
-		hasReceived = false;
-		Transmit();
-		RXBuff[4]=RXBuff[3];
-		RXBuff[3]=RXBuff[2];
-		RXBuff[2]=RXBuff[1];
-		RXBuff[1]=RXBuff[0];
-		if(RXByte < 58 && RXByte > 47) RXBuff[0]=RXByte-48;									// char 0 - 9
-		else if(RXByte < 103 && RXByte > 96) RXBuff[0]=RXByte-87;							// char a - f
-		else if(RXByte == 82) {P1OUT ^= FRST; TXByte = 00; Transmit(); P1OUT ^= FRST;}		// char R RESET FPGA
-		else if(RXByte == 81) {P2OUT ^= RF_BUF_EN; }										// char Q RF_BUF_EN
-		else if(RXByte == 87) {echo = false; }												// char W echo off
-		else if(RXByte == 119) {echo = true; }												// char w echo on
-		else if(RXByte == 66) {burst_read();}												// char B BURST READ
-		else if(RXByte == 13) RXBuff[0]=16;													// char ENTER
-		else RXBuff[0]=17;																	// invalid char
-
-		if(RXBuff[0]==16 && (RXBuff[1]==16 || RXBuff[2]==16 || RXBuff[3]==16 || RXBuff[4]==16))	//clear RXBuff on early ENTER press
-		{
-			RXBuff[4]=16;
-			RXBuff[3]=16;
-			RXBuff[2]=16;
-			RXBuff[1]=16;
-			RXBuff[0]=16;
-		}
-		else if(RXBuff[0]==17)										// trap invalid characters with error message
-		{
-			RXBuff[4]=16;
-			RXBuff[3]=16;
-			RXBuff[2]=16;
-			RXBuff[1]=16;
-			RXBuff[0]=16;
-			TXByte = 10; Transmit(); //nl
-			TXByte = 13; Transmit(); //cr
-			TXByte = 63; Transmit(); //?
-			TXByte = 10; Transmit(); //nl
-			TXByte = 13; Transmit(); //cr
-		}
-		else if(RXBuff[0]==16 && RXBuff[1]!=16 && RXBuff[2]!=16 && RXBuff[3]!=16 && RXBuff[4]!=16)	// write SPI when input buffer is valid
-		{
-			Send_SPI((RXBuff[4] << 4) + RXBuff[3], (RXBuff[2] << 4) + RXBuff[1]);
-			TXByte = 10; Transmit();
-			TXByte = 13; Transmit();
-			if ((RXBuff[4] & 0x8) == 0)																//if readback is set
-			{
-				if ((SPI_readback >> 4) <= 9)
-					TXByte = (SPI_readback >> 4) + 48;
-				else
-					TXByte = (SPI_readback >> 4) + 87;
-				temp = echo;
-				echo = true;
-				Transmit();
-				if ((SPI_readback & 0xF) <= 9)
-					TXByte = (SPI_readback & 0xF) + 48;
-				else
-					TXByte = (SPI_readback & 0xF) + 87;
-				Transmit();
-				echo = temp;
-				TXByte = 10; Transmit();
-				TXByte = 13; Transmit();
-			}
-		}
 
 	}
-	else
-	{
-		TXByte = 0x55; //Transmit();
-	}
-
-}
 }
 
 // ****************************************************************************************
