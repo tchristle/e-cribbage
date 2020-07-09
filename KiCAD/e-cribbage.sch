@@ -16,71 +16,60 @@ $EndDescr
 $Comp
 L MCU_Texas_MSP430:MSP430F2012IPW U2
 U 1 1 5F600DAF
-P 2750 5900
-F 0 "U2" H 2000 6600 50  0000 C CNN
-F 1 "MSP430F2012IPW" H 2250 6500 50  0000 C CNN
-F 2 "digikey-footprints:TSSOP-14_W4.4mm" H 2200 5250 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/msp430f2012.pdf" H 2750 5900 50  0001 C CNN
-	1    2750 5900
+P 3000 6700
+F 0 "U2" H 2250 7400 50  0000 C CNN
+F 1 "MSP430F2012IPW" H 2500 7300 50  0000 C CNN
+F 2 "digikey-footprints:TSSOP-14_W4.4mm" H 2450 6050 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/msp430f2012.pdf" H 3000 6700 50  0001 C CNN
+	1    3000 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5F9DD00B
-P 2750 6800
-F 0 "#PWR014" H 2750 6550 50  0001 C CNN
-F 1 "GND" H 2755 6627 50  0000 C CNN
-F 2 "" H 2750 6800 50  0001 C CNN
-F 3 "" H 2750 6800 50  0001 C CNN
-	1    2750 6800
+P 3000 7600
+F 0 "#PWR014" H 3000 7350 50  0001 C CNN
+F 1 "GND" H 3005 7427 50  0000 C CNN
+F 2 "" H 3000 7600 50  0001 C CNN
+F 3 "" H 3000 7600 50  0001 C CNN
+	1    3000 7600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 6650 2750 6800
-$Comp
-L power:+3.3V #PWR06
-U 1 1 5F9DD8E3
-P 2750 4650
-F 0 "#PWR06" H 2750 4500 50  0001 C CNN
-F 1 "+3.3V" H 2765 4823 50  0000 C CNN
-F 2 "" H 2750 4650 50  0001 C CNN
-F 3 "" H 2750 4650 50  0001 C CNN
-	1    2750 4650
-	1    0    0    -1  
-$EndComp
+	3000 7450 3000 7600
 Wire Wire Line
-	2750 4650 2750 4700
+	3000 5450 3000 5500
 $Comp
 L Device:C C2
 U 1 1 5F9DE9B9
-P 3150 4900
-F 0 "C2" H 3265 4946 50  0000 L CNN
-F 1 "1.0uF" H 3265 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3188 4750 50  0001 C CNN
-F 3 "~" H 3150 4900 50  0001 C CNN
-	1    3150 4900
+P 3400 5700
+F 0 "C2" H 3515 5746 50  0000 L CNN
+F 1 "1.0uF" H 3515 5655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3438 5550 50  0001 C CNN
+F 3 "~" H 3400 5700 50  0001 C CNN
+	1    3400 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5F9DF230
-P 3150 5100
-F 0 "#PWR08" H 3150 4850 50  0001 C CNN
-F 1 "GND" H 3155 4927 50  0000 C CNN
-F 2 "" H 3150 5100 50  0001 C CNN
-F 3 "" H 3150 5100 50  0001 C CNN
-	1    3150 5100
+P 3400 5900
+F 0 "#PWR08" H 3400 5650 50  0001 C CNN
+F 1 "GND" H 3405 5727 50  0000 C CNN
+F 2 "" H 3400 5900 50  0001 C CNN
+F 3 "" H 3400 5900 50  0001 C CNN
+	1    3400 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 4750 3150 4700
+	3400 5550 3400 5500
 Wire Wire Line
-	3150 4700 2750 4700
-Connection ~ 2750 4700
+	3400 5500 3000 5500
+Connection ~ 3000 5500
 Wire Wire Line
-	2750 4700 2750 4800
+	3000 5500 3000 5600
 Wire Wire Line
-	3150 5050 3150 5100
+	3400 5850 3400 5900
 $Comp
 L Device:R R1
 U 1 1 5F9E3723
@@ -13009,20 +12998,20 @@ F 12 "Active" H 30250 8800 60  0001 L CNN "Status"
 	1    30050 7600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2200 9000 0    50   Input ~ 0
+Text GLabel 1900 11800 0    50   Input ~ 0
 CLK
-Text GLabel 4800 6200 2    50   Input ~ 0
+Text GLabel 5050 7000 2    50   Input ~ 0
 DATA
-Text GLabel 1350 6100 0    50   Input ~ 0
+Text GLabel 1600 6900 0    50   Input ~ 0
 LE1
-Text GLabel 1350 6300 0    50   Input ~ 0
+Text GLabel 1600 7100 0    50   Input ~ 0
 LE2
 Wire Wire Line
-	1750 6100 1350 6100
+	2000 6900 1600 6900
 Wire Wire Line
-	1350 6300 1750 6300
+	1600 7100 2000 7100
 Wire Wire Line
-	3700 6200 4800 6200
+	3950 7000 5050 7000
 Wire Wire Line
 	7000 2400 7200 2400
 Wire Wire Line
@@ -13333,21 +13322,21 @@ Wire Wire Line
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U32
 U 1 1 6CF906B7
-P 3450 8900
-F 0 "U32" H 3794 8953 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 3794 8847 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3650 9100 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 9200 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3650 9300 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3650 9400 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3650 9500 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3650 9600 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 9700 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3650 9800 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3650 9900 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3650 10000 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3650 10100 60  0001 L CNN "Status"
-	1    3450 8900
+P 3150 11700
+F 0 "U32" H 3494 11753 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3494 11647 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3350 11900 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3350 12000 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3350 12100 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3350 12200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3350 12300 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3350 12400 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3350 12500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3350 12600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3350 12700 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3350 12800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3350 12900 60  0001 L CNN "Status"
+	1    3150 11700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -13362,972 +13351,946 @@ Wire Wire Line
 $Comp
 L e-cribbage-rescue:GPTS203211B-dk_Pushbutton-Switches S1
 U 1 1 6DCE5AF6
-P 5750 4200
-F 0 "S1" H 5750 4475 50  0000 C CNN
-F 1 "GPTS203211B" H 5750 4384 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 4400 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 4500 60  0001 L CNN
-F 4 "CW181-ND" H 5950 4600 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 5950 4700 60  0001 L CNN "MPN"
-F 6 "Switches" H 5950 4800 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 5950 4900 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 5000 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 5100 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 5200 60  0001 L CNN "Description"
-F 11 "CW Industries" H 5950 5300 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5950 5400 60  0001 L CNN "Status"
-	1    5750 4200
+P 6000 5000
+F 0 "S1" H 6000 5275 50  0000 C CNN
+F 1 "GPTS203211B" H 6000 5184 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 6200 5200 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 5300 60  0001 L CNN
+F 4 "CW181-ND" H 6200 5400 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6200 5500 60  0001 L CNN "MPN"
+F 6 "Switches" H 6200 5600 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6200 5700 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 5800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6200 5900 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6200 6000 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6200 6100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6200 6200 60  0001 L CNN "Status"
+	1    6000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:GPTS203211B-dk_Pushbutton-Switches S2
 U 1 1 6DCE704D
-P 5750 4650
-F 0 "S2" H 5750 4925 50  0000 C CNN
-F 1 "GPTS203211B" H 5750 4834 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 4850 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 4950 60  0001 L CNN
-F 4 "CW181-ND" H 5950 5050 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 5950 5150 60  0001 L CNN "MPN"
-F 6 "Switches" H 5950 5250 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 5950 5350 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 5450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 5550 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 5650 60  0001 L CNN "Description"
-F 11 "CW Industries" H 5950 5750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5950 5850 60  0001 L CNN "Status"
-	1    5750 4650
+P 6000 5450
+F 0 "S2" H 6000 5725 50  0000 C CNN
+F 1 "GPTS203211B" H 6000 5634 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 6200 5650 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 5750 60  0001 L CNN
+F 4 "CW181-ND" H 6200 5850 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6200 5950 60  0001 L CNN "MPN"
+F 6 "Switches" H 6200 6050 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6200 6150 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 6250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6200 6350 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6200 6450 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6200 6550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6200 6650 60  0001 L CNN "Status"
+	1    6000 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:GPTS203211B-dk_Pushbutton-Switches S3
 U 1 1 6DCE774E
-P 5750 5100
-F 0 "S3" H 5750 5375 50  0000 C CNN
-F 1 "GPTS203211B" H 5750 5284 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 5300 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 5400 60  0001 L CNN
-F 4 "CW181-ND" H 5950 5500 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 5950 5600 60  0001 L CNN "MPN"
-F 6 "Switches" H 5950 5700 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 5950 5800 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 5900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 6000 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 6100 60  0001 L CNN "Description"
-F 11 "CW Industries" H 5950 6200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5950 6300 60  0001 L CNN "Status"
-	1    5750 5100
+P 6000 5900
+F 0 "S3" H 6000 6175 50  0000 C CNN
+F 1 "GPTS203211B" H 6000 6084 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 6200 6100 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 6200 60  0001 L CNN
+F 4 "CW181-ND" H 6200 6300 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6200 6400 60  0001 L CNN "MPN"
+F 6 "Switches" H 6200 6500 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6200 6600 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 6700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6200 6800 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6200 6900 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6200 7000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6200 7100 60  0001 L CNN "Status"
+	1    6000 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:GPTS203211B-dk_Pushbutton-Switches S4
 U 1 1 6DCE7E95
-P 5750 5550
-F 0 "S4" H 5750 5825 50  0000 C CNN
-F 1 "GPTS203211B" H 5750 5734 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 5950 5750 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 5850 60  0001 L CNN
-F 4 "CW181-ND" H 5950 5950 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 5950 6050 60  0001 L CNN "MPN"
-F 6 "Switches" H 5950 6150 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 5950 6250 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 5950 6350 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 5950 6450 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 5950 6550 60  0001 L CNN "Description"
-F 11 "CW Industries" H 5950 6650 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5950 6750 60  0001 L CNN "Status"
-	1    5750 5550
+P 6000 6350
+F 0 "S4" H 6000 6625 50  0000 C CNN
+F 1 "GPTS203211B" H 6000 6534 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 6200 6550 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 6650 60  0001 L CNN
+F 4 "CW181-ND" H 6200 6750 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 6200 6850 60  0001 L CNN "MPN"
+F 6 "Switches" H 6200 6950 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 6200 7050 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 6200 7150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 6200 7250 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 6200 7350 60  0001 L CNN "Description"
+F 11 "CW Industries" H 6200 7450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6200 7550 60  0001 L CNN "Status"
+	1    6000 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R243
 U 1 1 6DCE852B
-P 4300 3950
-F 0 "R243" V 4093 3950 50  0000 C CNN
-F 1 "10k" V 4184 3950 50  0000 C CNN
-F 2 "e-cribbage:R_0603" V 4230 3950 50  0001 C CNN
-F 3 "~" H 4300 3950 50  0001 C CNN
-	1    4300 3950
+P 4550 4750
+F 0 "R243" V 4343 4750 50  0000 C CNN
+F 1 "10k" V 4434 4750 50  0000 C CNN
+F 2 "e-cribbage:R_0603" V 4480 4750 50  0001 C CNN
+F 3 "~" H 4550 4750 50  0001 C CNN
+	1    4550 4750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R244
 U 1 1 6DCE8CE9
-P 5200 3950
-F 0 "R244" V 4993 3950 50  0000 C CNN
-F 1 "10k" V 5084 3950 50  0000 C CNN
-F 2 "e-cribbage:R_0603" V 5130 3950 50  0001 C CNN
-F 3 "~" H 5200 3950 50  0001 C CNN
-	1    5200 3950
+P 5450 4750
+F 0 "R244" V 5243 4750 50  0000 C CNN
+F 1 "10k" V 5334 4750 50  0000 C CNN
+F 2 "e-cribbage:R_0603" V 5380 4750 50  0001 C CNN
+F 3 "~" H 5450 4750 50  0001 C CNN
+	1    5450 4750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R246
 U 1 1 6DCE8FDE
-P 4900 3950
-F 0 "R246" V 4693 3950 50  0000 C CNN
-F 1 "10k" V 4784 3950 50  0000 C CNN
-F 2 "e-cribbage:R_0603" V 4830 3950 50  0001 C CNN
-F 3 "~" H 4900 3950 50  0001 C CNN
-	1    4900 3950
+P 5150 4750
+F 0 "R246" V 4943 4750 50  0000 C CNN
+F 1 "10k" V 5034 4750 50  0000 C CNN
+F 2 "e-cribbage:R_0603" V 5080 4750 50  0001 C CNN
+F 3 "~" H 5150 4750 50  0001 C CNN
+	1    5150 4750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R247
 U 1 1 6DCE92BF
-P 4600 3950
-F 0 "R247" V 4393 3950 50  0000 C CNN
-F 1 "10k" V 4484 3950 50  0000 C CNN
-F 2 "e-cribbage:R_0603" V 4530 3950 50  0001 C CNN
-F 3 "~" H 4600 3950 50  0001 C CNN
-	1    4600 3950
+P 4850 4750
+F 0 "R247" V 4643 4750 50  0000 C CNN
+F 1 "10k" V 4734 4750 50  0000 C CNN
+F 2 "e-cribbage:R_0603" V 4780 4750 50  0001 C CNN
+F 3 "~" H 4850 4750 50  0001 C CNN
+	1    4850 4750
 	-1   0    0    1   
 $EndComp
 $Comp
 L e-cribbage-rescue:BS-7-dk_Battery-Holders-Clips-Contacts BAT1
 U 1 1 6DDA013A
-P 1550 2400
-F 0 "BAT1" H 1678 2453 60  0000 L CNN
-F 1 "BS-7" H 1678 2347 60  0000 L CNN
-F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" H 1750 2600 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1750 2700 60  0001 L CNN
-F 4 "BS-7-ND" H 1750 2800 60  0001 L CNN "Digi-Key_PN"
-F 5 "BS-7" H 1750 2900 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 1750 3000 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 1750 3100 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1750 3200 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1750 3300 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1750 3400 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 1750 3500 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1750 3600 60  0001 L CNN "Status"
-	1    1550 2400
+P 1800 3350
+F 0 "BAT1" H 1928 3403 60  0000 L CNN
+F 1 "BS-7" H 1928 3297 60  0000 L CNN
+F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" H 2000 3550 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 2000 3650 60  0001 L CNN
+F 4 "BS-7-ND" H 2000 3750 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 2000 3850 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 2000 3950 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 2000 4050 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 2000 4150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 2000 4250 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 2000 4350 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 2000 4450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2000 4550 60  0001 L CNN "Status"
+	1    1800 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0334
 U 1 1 6DDA1AA0
-P 1550 2700
-F 0 "#PWR0334" H 1550 2450 50  0001 C CNN
-F 1 "GND" H 1555 2527 50  0000 C CNN
-F 2 "" H 1550 2700 50  0001 C CNN
-F 3 "" H 1550 2700 50  0001 C CNN
-	1    1550 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0335
-U 1 1 6DDA1D80
-P 1550 2050
-F 0 "#PWR0335" H 1550 1900 50  0001 C CNN
-F 1 "+3.3V" H 1565 2223 50  0000 C CNN
-F 2 "" H 1550 2050 50  0001 C CNN
-F 3 "" H 1550 2050 50  0001 C CNN
-	1    1550 2050
+P 1800 3600
+F 0 "#PWR0334" H 1800 3350 50  0001 C CNN
+F 1 "GND" H 1805 3427 50  0000 C CNN
+F 2 "" H 1800 3600 50  0001 C CNN
+F 3 "" H 1800 3600 50  0001 C CNN
+	1    1800 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 2050 1550 2200
-Wire Wire Line
-	1550 2600 1550 2700
+	1800 3550 1800 3600
 $Comp
 L power:GND #PWR0341
 U 1 1 5FA2DFC2
-P 5400 6000
-F 0 "#PWR0341" H 5400 5750 50  0001 C CNN
-F 1 "GND" H 5405 5827 50  0000 C CNN
-F 2 "" H 5400 6000 50  0001 C CNN
-F 3 "" H 5400 6000 50  0001 C CNN
-	1    5400 6000
+P 5650 6800
+F 0 "#PWR0341" H 5650 6550 50  0001 C CNN
+F 1 "GND" H 5655 6627 50  0000 C CNN
+F 2 "" H 5650 6800 50  0001 C CNN
+F 3 "" H 5650 6800 50  0001 C CNN
+	1    5650 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 5700 6150 5550
+	6400 6500 6400 6350
 Wire Wire Line
-	6150 4200 5950 4200
+	6400 5000 6200 5000
 Wire Wire Line
-	5950 4650 6150 4650
-Connection ~ 6150 4650
+	6200 5450 6400 5450
+Connection ~ 6400 5450
 Wire Wire Line
-	6150 4650 6150 4200
+	6400 5450 6400 5000
 Wire Wire Line
-	5950 5100 6150 5100
-Connection ~ 6150 5100
+	6200 5900 6400 5900
+Connection ~ 6400 5900
 Wire Wire Line
-	6150 5100 6150 4650
+	6400 5900 6400 5450
 Wire Wire Line
-	5950 5550 6150 5550
-Connection ~ 6150 5550
+	6200 6350 6400 6350
+Connection ~ 6400 6350
 Wire Wire Line
-	6150 5550 6150 5100
+	6400 6350 6400 5900
 $Comp
 L Device:C C35
 U 1 1 604D9BE3
-P 5400 5850
-F 0 "C35" H 5515 5896 50  0000 L CNN
-F 1 "1.0uF" H 5515 5805 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 5700 50  0001 C CNN
-F 3 "~" H 5400 5850 50  0001 C CNN
-	1    5400 5850
+P 5650 6650
+F 0 "C35" H 5765 6696 50  0000 L CNN
+F 1 "1.0uF" H 5765 6605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5688 6500 50  0001 C CNN
+F 3 "~" H 5650 6650 50  0001 C CNN
+	1    5650 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C34
 U 1 1 604DA6BA
-P 4900 5350
-F 0 "C34" H 5015 5396 50  0000 L CNN
-F 1 "1.0uF" H 5015 5305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4938 5200 50  0001 C CNN
-F 3 "~" H 4900 5350 50  0001 C CNN
-	1    4900 5350
+P 5150 6150
+F 0 "C34" H 5265 6196 50  0000 L CNN
+F 1 "1.0uF" H 5265 6105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5188 6000 50  0001 C CNN
+F 3 "~" H 5150 6150 50  0001 C CNN
+	1    5150 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0340
 U 1 1 604DBE88
-P 6150 5700
-F 0 "#PWR0340" H 6150 5450 50  0001 C CNN
-F 1 "GND" H 6155 5527 50  0000 C CNN
-F 2 "" H 6150 5700 50  0001 C CNN
-F 3 "" H 6150 5700 50  0001 C CNN
-	1    6150 5700
+P 6400 6500
+F 0 "#PWR0340" H 6400 6250 50  0001 C CNN
+F 1 "GND" H 6405 6327 50  0000 C CNN
+F 2 "" H 6400 6500 50  0001 C CNN
+F 3 "" H 6400 6500 50  0001 C CNN
+	1    6400 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0339
 U 1 1 604DC18B
-P 4900 5500
-F 0 "#PWR0339" H 4900 5250 50  0001 C CNN
-F 1 "GND" H 4905 5327 50  0000 C CNN
-F 2 "" H 4900 5500 50  0001 C CNN
-F 3 "" H 4900 5500 50  0001 C CNN
-	1    4900 5500
+P 5150 6300
+F 0 "#PWR0339" H 5150 6050 50  0001 C CNN
+F 1 "GND" H 5155 6127 50  0000 C CNN
+F 2 "" H 5150 6300 50  0001 C CNN
+F 3 "" H 5150 6300 50  0001 C CNN
+	1    5150 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0338
 U 1 1 604DC3C6
-P 4600 4950
-F 0 "#PWR0338" H 4600 4700 50  0001 C CNN
-F 1 "GND" H 4605 4777 50  0000 C CNN
-F 2 "" H 4600 4950 50  0001 C CNN
-F 3 "" H 4600 4950 50  0001 C CNN
-	1    4600 4950
+P 4850 5750
+F 0 "#PWR0338" H 4850 5500 50  0001 C CNN
+F 1 "GND" H 4855 5577 50  0000 C CNN
+F 2 "" H 4850 5750 50  0001 C CNN
+F 3 "" H 4850 5750 50  0001 C CNN
+	1    4850 5750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C33
 U 1 1 604DC859
-P 4600 4800
-F 0 "C33" H 4715 4846 50  0000 L CNN
-F 1 "1.0uF" H 4715 4755 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4638 4650 50  0001 C CNN
-F 3 "~" H 4600 4800 50  0001 C CNN
-	1    4600 4800
+P 4850 5600
+F 0 "C33" H 4965 5646 50  0000 L CNN
+F 1 "1.0uF" H 4965 5555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4888 5450 50  0001 C CNN
+F 3 "~" H 4850 5600 50  0001 C CNN
+	1    4850 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C32
 U 1 1 604DCBE2
-P 4100 4450
-F 0 "C32" H 4215 4496 50  0000 L CNN
-F 1 "1.0uF" H 4215 4405 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4138 4300 50  0001 C CNN
-F 3 "~" H 4100 4450 50  0001 C CNN
-	1    4100 4450
+P 4350 5250
+F 0 "C32" H 4465 5296 50  0000 L CNN
+F 1 "1.0uF" H 4465 5205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4388 5100 50  0001 C CNN
+F 3 "~" H 4350 5250 50  0001 C CNN
+	1    4350 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0337
 U 1 1 604DD28B
-P 4100 4600
-F 0 "#PWR0337" H 4100 4350 50  0001 C CNN
-F 1 "GND" H 4105 4427 50  0000 C CNN
-F 2 "" H 4100 4600 50  0001 C CNN
-F 3 "" H 4100 4600 50  0001 C CNN
-	1    4100 4600
+P 4350 5400
+F 0 "#PWR0337" H 4350 5150 50  0001 C CNN
+F 1 "GND" H 4355 5227 50  0000 C CNN
+F 2 "" H 4350 5400 50  0001 C CNN
+F 3 "" H 4350 5400 50  0001 C CNN
+	1    4350 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5200 4900 5100
+	5150 6000 5150 5900
 Wire Wire Line
-	3700 6100 4800 6100
-$Comp
-L power:+3.3V #PWR0336
-U 1 1 62294B87
-P 4300 3650
-F 0 "#PWR0336" H 4300 3500 50  0001 C CNN
-F 1 "+3.3V" H 4315 3823 50  0000 C CNN
-F 2 "" H 4300 3650 50  0001 C CNN
-F 3 "" H 4300 3650 50  0001 C CNN
-	1    4300 3650
-	1    0    0    -1  
-$EndComp
+	3950 6900 5050 6900
 Wire Wire Line
-	4300 3650 4300 3700
+	4550 4500 4850 4500
 Wire Wire Line
-	4300 3700 4600 3700
+	5450 4500 5450 4600
+Connection ~ 4550 4500
 Wire Wire Line
-	5200 3700 5200 3800
-Connection ~ 4300 3700
+	4550 4500 4550 4600
 Wire Wire Line
-	4300 3700 4300 3800
+	5150 4600 5150 4500
+Connection ~ 5150 4500
 Wire Wire Line
-	4900 3800 4900 3700
-Connection ~ 4900 3700
+	5150 4500 5450 4500
 Wire Wire Line
-	4900 3700 5200 3700
+	4850 4600 4850 4500
+Connection ~ 4850 4500
 Wire Wire Line
-	4600 3800 4600 3700
-Connection ~ 4600 3700
+	4850 4500 5150 4500
 Wire Wire Line
-	4600 3700 4900 3700
+	4550 4900 4550 5000
+Connection ~ 4550 5000
 Wire Wire Line
-	4300 4100 4300 4200
-Connection ~ 4300 4200
+	4550 5000 4700 5000
 Wire Wire Line
-	4300 4200 4450 4200
+	5600 6350 5650 6350
 Wire Wire Line
-	5350 5550 5400 5550
+	5150 5900 5350 5900
 Wire Wire Line
-	4900 5100 5100 5100
+	4850 5450 5200 5450
 Wire Wire Line
-	4600 4650 4950 4650
+	5450 4900 5450 5700
 Wire Wire Line
-	5200 4100 5200 4900
+	5450 5700 5600 5700
 Wire Wire Line
-	5200 4900 5350 4900
+	5600 5700 5600 6350
+Connection ~ 5600 6350
 Wire Wire Line
-	5350 4900 5350 5550
-Connection ~ 5350 5550
+	5150 4900 5150 5300
 Wire Wire Line
-	4900 4100 4900 4500
+	5150 5300 5350 5300
 Wire Wire Line
-	4900 4500 5100 4500
+	5350 5300 5350 5900
+Connection ~ 5350 5900
 Wire Wire Line
-	5100 4500 5100 5100
-Connection ~ 5100 5100
+	5350 5900 5500 5900
 Wire Wire Line
-	5100 5100 5250 5100
+	4850 4900 4850 5450
+Connection ~ 4850 5450
 Wire Wire Line
-	4600 4100 4600 4650
-Connection ~ 4600 4650
+	4700 6400 4700 5000
+Connection ~ 4700 5000
 Wire Wire Line
-	4450 5600 4450 4200
-Connection ~ 4450 4200
+	4700 5000 5800 5000
 Wire Wire Line
-	4450 4200 5550 4200
+	3950 6400 4700 6400
 Wire Wire Line
-	3700 5600 4450 5600
+	3950 6500 5000 6500
 Wire Wire Line
-	3700 5700 4750 5700
+	5000 6500 5000 5750
 Wire Wire Line
-	4750 5700 4750 4950
+	5000 5750 5200 5750
 Wire Wire Line
-	4750 4950 4950 4950
+	5200 5750 5200 5450
+Connection ~ 5200 5450
 Wire Wire Line
-	4950 4950 4950 4650
-Connection ~ 4950 4650
+	5200 5450 5800 5450
 Wire Wire Line
-	4950 4650 5550 4650
+	3950 6600 5350 6600
 Wire Wire Line
-	3700 5800 5100 5800
+	5350 6600 5350 6300
 Wire Wire Line
-	5100 5800 5100 5500
+	5350 6300 5500 6300
 Wire Wire Line
-	5100 5500 5250 5500
+	5500 6300 5500 5900
+Connection ~ 5500 5900
 Wire Wire Line
-	5250 5500 5250 5100
-Connection ~ 5250 5100
+	5500 5900 5800 5900
 Wire Wire Line
-	5250 5100 5550 5100
+	3950 6700 5450 6700
 Wire Wire Line
-	3700 5900 5200 5900
+	5450 6700 5450 6350
 Wire Wire Line
-	5200 5900 5200 5550
+	5450 6350 5600 6350
 Wire Wire Line
-	5200 5550 5350 5550
+	5650 6350 5650 6500
+Connection ~ 5650 6350
 Wire Wire Line
-	5400 5550 5400 5700
-Connection ~ 5400 5550
-Wire Wire Line
-	5400 5550 5550 5550
+	5650 6350 5800 6350
 $Comp
 L Device:R R251
 U 1 1 662AA3F1
-P 1600 5100
-F 0 "R251" V 1393 5100 50  0000 C CNN
-F 1 "47k" V 1484 5100 50  0000 C CNN
-F 2 "e-cribbage:R_0603" V 1530 5100 50  0001 C CNN
-F 3 "~" H 1600 5100 50  0001 C CNN
-	1    1600 5100
+P 1850 5900
+F 0 "R251" V 1643 5900 50  0000 C CNN
+F 1 "47k" V 1734 5900 50  0000 C CNN
+F 2 "e-cribbage:R_0603" V 1780 5900 50  0001 C CNN
+F 3 "~" H 1850 5900 50  0001 C CNN
+	1    1850 5900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1600 5250 1600 5400
+	1850 6050 1850 6200
 Wire Wire Line
-	1600 5450 1750 5450
+	1850 6250 2000 6250
 Wire Wire Line
-	1600 4950 1600 4800
+	1850 5750 1850 5600
 Wire Wire Line
-	1600 4800 2750 4800
-Connection ~ 2750 4800
+	1850 5600 3000 5600
+Connection ~ 3000 5600
 Wire Wire Line
-	2750 4800 2750 5200
+	3000 5600 3000 6000
 Wire Wire Line
-	3750 5450 3700 5450
+	4000 6250 3950 6250
 Wire Wire Line
-	1450 5400 1600 5400
-Connection ~ 1600 5400
+	1700 6200 1850 6200
+Connection ~ 1850 6200
 Wire Wire Line
-	1600 5400 1600 5450
+	1850 6200 1850 6250
 Wire Wire Line
-	4100 4300 4100 4200
+	4350 5100 4350 5000
 Wire Wire Line
-	4100 4200 4300 4200
+	4350 5000 4550 5000
 Wire Wire Line
-	3750 3850 3750 5450
+	4000 4650 4000 6250
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U34
 U 1 1 698C7558
-P 3700 9750
-F 0 "U34" H 4044 9803 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 4044 9697 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3900 9950 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3900 10050 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3900 10150 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3900 10250 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3900 10350 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3900 10450 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3900 10550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3900 10650 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3900 10750 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3900 10850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3900 10950 60  0001 L CNN "Status"
-	1    3700 9750
+P 3400 12550
+F 0 "U34" H 3744 12603 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3744 12497 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3600 12750 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3600 12850 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3600 12950 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3600 13050 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3600 13150 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3600 13250 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3600 13350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3600 13450 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3600 13550 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3600 13650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3600 13750 60  0001 L CNN "Status"
+	1    3400 12550
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U35
 U 1 1 698C7AC5
-P 3450 10500
-F 0 "U35" H 3794 10553 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 3794 10447 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3650 10700 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 10800 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3650 10900 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3650 11000 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3650 11100 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3650 11200 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 11300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3650 11400 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3650 11500 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3650 11600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3650 11700 60  0001 L CNN "Status"
-	1    3450 10500
+P 3150 13300
+F 0 "U35" H 3494 13353 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3494 13247 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3350 13500 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3350 13600 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3350 13700 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3350 13800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3350 13900 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3350 14000 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3350 14100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3350 14200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3350 14300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3350 14400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3350 14500 60  0001 L CNN "Status"
+	1    3150 13300
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U36
 U 1 1 69BB7BEF
-P 3750 11300
-F 0 "U36" H 4094 11353 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 4094 11247 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3950 11500 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3950 11600 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3950 11700 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3950 11800 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3950 11900 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3950 12000 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3950 12100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3950 12200 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3950 12300 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3950 12400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3950 12500 60  0001 L CNN "Status"
-	1    3750 11300
+P 3450 14100
+F 0 "U36" H 3794 14153 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3794 14047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3650 14300 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 14400 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3650 14500 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3650 14600 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3650 14700 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3650 14800 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 14900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3650 15000 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3650 15100 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3650 15200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3650 15300 60  0001 L CNN "Status"
+	1    3450 14100
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U37
 U 1 1 69EA8FE9
-P 3400 12100
-F 0 "U37" H 3744 12153 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 3744 12047 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3600 12300 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3600 12400 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3600 12500 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3600 12600 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3600 12700 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3600 12800 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3600 12900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3600 13000 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3600 13100 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3600 13200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3600 13300 60  0001 L CNN "Status"
-	1    3400 12100
+P 3100 14900
+F 0 "U37" H 3444 14953 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3444 14847 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3300 15100 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3300 15200 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3300 15300 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3300 15400 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3300 15500 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3300 15600 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3300 15700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3300 15800 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3300 15900 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3300 16000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3300 16100 60  0001 L CNN "Status"
+	1    3100 14900
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U38
 U 1 1 69EA8FFC
-P 3750 12950
-F 0 "U38" H 4094 13003 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 4094 12897 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3950 13150 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3950 13250 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3950 13350 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3950 13450 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3950 13550 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3950 13650 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3950 13750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3950 13850 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3950 13950 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3950 14050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3950 14150 60  0001 L CNN "Status"
-	1    3750 12950
+P 3450 15750
+F 0 "U38" H 3794 15803 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3794 15697 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3650 15950 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 16050 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3650 16150 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3650 16250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3650 16350 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3650 16450 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 16550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3650 16650 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3650 16750 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3650 16850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3650 16950 60  0001 L CNN "Status"
+	1    3450 15750
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U39
 U 1 1 69EA900F
-P 3400 13700
-F 0 "U39" H 3744 13753 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 3744 13647 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3600 13900 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3600 14000 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3600 14100 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3600 14200 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3600 14300 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3600 14400 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3600 14500 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3600 14600 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3600 14700 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3600 14800 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3600 14900 60  0001 L CNN "Status"
-	1    3400 13700
+P 3100 16500
+F 0 "U39" H 3444 16553 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3444 16447 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3300 16700 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3300 16800 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3300 16900 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3300 17000 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3300 17100 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3300 17200 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3300 17300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3300 17400 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3300 17500 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3300 17600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3300 17700 60  0001 L CNN "Status"
+	1    3100 16500
 	1    0    0    -1  
 $EndComp
 $Comp
 L e-cribbage-rescue:SN74LVC1G08DBVR-dk_Logic-Gates-and-Inverters U40
 U 1 1 69EA9022
-P 3750 14500
-F 0 "U40" H 4094 14553 60  0000 L CNN
-F 1 "SN74LVC1G08DBVR" H 4094 14447 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 3950 14700 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3950 14800 60  0001 L CNN
-F 4 "296-11601-1-ND" H 3950 14900 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G08DBVR" H 3950 15000 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3950 15100 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 3950 15200 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3950 15300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3950 15400 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3950 15500 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3950 15600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3950 15700 60  0001 L CNN "Status"
-	1    3750 14500
+P 3450 17300
+F 0 "U40" H 3794 17353 60  0000 L CNN
+F 1 "SN74LVC1G08DBVR" H 3794 17247 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 3650 17500 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 17600 60  0001 L CNN
+F 4 "296-11601-1-ND" H 3650 17700 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G08DBVR" H 3650 17800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3650 17900 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 3650 18000 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g08" H 3650 18100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G08DBVR/296-11601-1-ND/385740" H 3650 18200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE AND 1CH 2-INP SOT23-5" H 3650 18300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3650 18400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3650 18500 60  0001 L CNN "Status"
+	1    3450 17300
 	1    0    0    -1  
 $EndComp
-Text GLabel 2200 8800 0    50   Input ~ 0
+Text GLabel 1900 11600 0    50   Input ~ 0
 LE1
-Text GLabel 2300 12000 0    50   Input ~ 0
+Text GLabel 2000 14800 0    50   Input ~ 0
 LE2
-Text GLabel 4900 8900 2    50   Output ~ 0
+Text GLabel 4600 11700 2    50   Output ~ 0
 CLK1A
-Text GLabel 4950 12100 2    50   Output ~ 0
+Text GLabel 4650 14900 2    50   Output ~ 0
 CLK2A
 Wire Wire Line
-	2200 8800 2700 8800
+	1900 11600 2400 11600
 Wire Wire Line
-	2300 12000 2700 12000
+	2000 14800 2400 14800
 Wire Wire Line
-	3450 12850 2700 12850
+	3150 15650 2400 15650
 Wire Wire Line
-	2700 12850 2700 12000
-Connection ~ 2700 12000
+	2400 15650 2400 14800
+Connection ~ 2400 14800
 Wire Wire Line
-	2700 12000 3100 12000
+	2400 14800 2800 14800
 Wire Wire Line
-	3100 13600 2700 13600
+	2800 16400 2400 16400
 Wire Wire Line
-	2700 13600 2700 12850
-Connection ~ 2700 12850
+	2400 16400 2400 15650
+Connection ~ 2400 15650
 Wire Wire Line
-	2700 14400 2700 13600
+	2400 17200 2400 16400
 Wire Wire Line
-	2700 14400 3450 14400
-Connection ~ 2700 13600
+	2400 17200 3150 17200
+Connection ~ 2400 16400
 Wire Wire Line
-	2200 9000 2450 9000
+	1900 11800 2150 11800
 Wire Wire Line
-	3400 9650 2700 9650
+	3100 12450 2400 12450
 Wire Wire Line
-	2700 9650 2700 8800
-Connection ~ 2700 8800
+	2400 12450 2400 11600
+Connection ~ 2400 11600
 Wire Wire Line
-	2700 8800 3150 8800
+	2400 11600 2850 11600
 Wire Wire Line
-	3150 10400 2700 10400
+	2850 13200 2400 13200
 Wire Wire Line
-	2700 10400 2700 9650
-Connection ~ 2700 9650
+	2400 13200 2400 12450
+Connection ~ 2400 12450
 Wire Wire Line
-	2700 11200 2700 10400
+	2400 14000 2400 13200
 Wire Wire Line
-	2700 11200 3450 11200
-Connection ~ 2700 10400
+	2400 14000 3150 14000
+Connection ~ 2400 13200
 Wire Wire Line
-	3400 9850 2450 9850
+	3100 12650 2150 12650
 Wire Wire Line
-	2450 9850 2450 9000
-Connection ~ 2450 9000
+	2150 12650 2150 11800
+Connection ~ 2150 11800
 Wire Wire Line
-	2450 9000 3150 9000
+	2150 11800 2850 11800
 Wire Wire Line
-	3150 10600 2450 10600
+	2850 13400 2150 13400
 Wire Wire Line
-	2450 10600 2450 9850
-Connection ~ 2450 9850
+	2150 13400 2150 12650
+Connection ~ 2150 12650
 Wire Wire Line
-	3450 11400 2450 11400
+	3150 14200 2150 14200
 Wire Wire Line
-	2450 11400 2450 10600
-Connection ~ 2450 10600
+	2150 14200 2150 13400
+Connection ~ 2150 13400
 Wire Wire Line
-	3100 12200 2450 12200
+	2800 15000 2150 15000
 Wire Wire Line
-	2450 12200 2450 11400
-Connection ~ 2450 11400
+	2150 15000 2150 14200
+Connection ~ 2150 14200
 Wire Wire Line
-	3450 13050 2450 13050
+	3150 15850 2150 15850
 Wire Wire Line
-	2450 13050 2450 12200
-Connection ~ 2450 12200
+	2150 15850 2150 15000
+Connection ~ 2150 15000
 Wire Wire Line
-	3100 13800 2450 13800
+	2800 16600 2150 16600
 Wire Wire Line
-	2450 13800 2450 13050
-Connection ~ 2450 13050
+	2150 16600 2150 15850
+Connection ~ 2150 15850
 Wire Wire Line
-	3450 14600 2450 14600
+	3150 17400 2150 17400
 Wire Wire Line
-	2450 14600 2450 13800
-Connection ~ 2450 13800
+	2150 17400 2150 16600
+Connection ~ 2150 16600
 Wire Wire Line
-	3750 8900 4900 8900
-Text GLabel 4900 9750 2    50   Output ~ 0
+	3450 11700 4600 11700
+Text GLabel 4600 12550 2    50   Output ~ 0
 CLK1B
-Text GLabel 4900 10500 2    50   Output ~ 0
+Text GLabel 4600 13300 2    50   Output ~ 0
 CLK1C
-Text GLabel 4900 11300 2    50   Output ~ 0
+Text GLabel 4600 14100 2    50   Output ~ 0
 CLK1D
-Text GLabel 4950 12950 2    50   Output ~ 0
+Text GLabel 4650 15750 2    50   Output ~ 0
 CLK2B
-Text GLabel 4950 13700 2    50   Output ~ 0
+Text GLabel 4650 16500 2    50   Output ~ 0
 CLK2C
-Text GLabel 4950 14500 2    50   Output ~ 0
+Text GLabel 4650 17300 2    50   Output ~ 0
 CLK2D
 Wire Wire Line
-	4050 14500 4950 14500
+	3750 17300 4650 17300
 Wire Wire Line
-	4950 13700 3700 13700
+	4650 16500 3400 16500
 Wire Wire Line
-	4950 12950 4050 12950
+	4650 15750 3750 15750
 Wire Wire Line
-	4950 12100 3700 12100
+	4650 14900 3400 14900
 Wire Wire Line
-	4900 11300 4050 11300
+	4600 14100 3750 14100
 Wire Wire Line
-	4900 10500 3750 10500
+	4600 13300 3450 13300
 Wire Wire Line
-	4900 9750 4000 9750
+	4600 12550 3700 12550
 $Comp
 L power:+3.3V #PWR0342
 U 1 1 6F44147C
-P 3450 8050
-F 0 "#PWR0342" H 3450 7900 50  0001 C CNN
-F 1 "+3.3V" H 3465 8223 50  0000 C CNN
-F 2 "" H 3450 8050 50  0001 C CNN
-F 3 "" H 3450 8050 50  0001 C CNN
-	1    3450 8050
+P 3150 10850
+F 0 "#PWR0342" H 3150 10700 50  0001 C CNN
+F 1 "+3.3V" H 3165 11023 50  0000 C CNN
+F 2 "" H 3150 10850 50  0001 C CNN
+F 3 "" H 3150 10850 50  0001 C CNN
+	1    3150 10850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0347
 U 1 1 6F442027
-P 3450 9200
-F 0 "#PWR0347" H 3450 8950 50  0001 C CNN
-F 1 "GND" H 3455 9027 50  0000 C CNN
-F 2 "" H 3450 9200 50  0001 C CNN
-F 3 "" H 3450 9200 50  0001 C CNN
-	1    3450 9200
+P 3150 12000
+F 0 "#PWR0347" H 3150 11750 50  0001 C CNN
+F 1 "GND" H 3155 11827 50  0000 C CNN
+F 2 "" H 3150 12000 50  0001 C CNN
+F 3 "" H 3150 12000 50  0001 C CNN
+	1    3150 12000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0348
 U 1 1 700DA632
-P 3700 9450
-F 0 "#PWR0348" H 3700 9300 50  0001 C CNN
-F 1 "+3.3V" H 3715 9623 50  0000 C CNN
-F 2 "" H 3700 9450 50  0001 C CNN
-F 3 "" H 3700 9450 50  0001 C CNN
-	1    3700 9450
+P 3400 12250
+F 0 "#PWR0348" H 3400 12100 50  0001 C CNN
+F 1 "+3.3V" H 3415 12423 50  0000 C CNN
+F 2 "" H 3400 12250 50  0001 C CNN
+F 3 "" H 3400 12250 50  0001 C CNN
+	1    3400 12250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0350
 U 1 1 700DA8A3
-P 3450 10200
-F 0 "#PWR0350" H 3450 10050 50  0001 C CNN
-F 1 "+3.3V" H 3465 10373 50  0000 C CNN
-F 2 "" H 3450 10200 50  0001 C CNN
-F 3 "" H 3450 10200 50  0001 C CNN
-	1    3450 10200
+P 3150 13000
+F 0 "#PWR0350" H 3150 12850 50  0001 C CNN
+F 1 "+3.3V" H 3165 13173 50  0000 C CNN
+F 2 "" H 3150 13000 50  0001 C CNN
+F 3 "" H 3150 13000 50  0001 C CNN
+	1    3150 13000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0352
 U 1 1 700DABC4
-P 3750 11000
-F 0 "#PWR0352" H 3750 10850 50  0001 C CNN
-F 1 "+3.3V" H 3765 11173 50  0000 C CNN
-F 2 "" H 3750 11000 50  0001 C CNN
-F 3 "" H 3750 11000 50  0001 C CNN
-	1    3750 11000
+P 3450 13800
+F 0 "#PWR0352" H 3450 13650 50  0001 C CNN
+F 1 "+3.3V" H 3465 13973 50  0000 C CNN
+F 2 "" H 3450 13800 50  0001 C CNN
+F 3 "" H 3450 13800 50  0001 C CNN
+	1    3450 13800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0354
 U 1 1 700DAEC9
-P 3400 11800
-F 0 "#PWR0354" H 3400 11650 50  0001 C CNN
-F 1 "+3.3V" H 3415 11973 50  0000 C CNN
-F 2 "" H 3400 11800 50  0001 C CNN
-F 3 "" H 3400 11800 50  0001 C CNN
-	1    3400 11800
+P 3100 14600
+F 0 "#PWR0354" H 3100 14450 50  0001 C CNN
+F 1 "+3.3V" H 3115 14773 50  0000 C CNN
+F 2 "" H 3100 14600 50  0001 C CNN
+F 3 "" H 3100 14600 50  0001 C CNN
+	1    3100 14600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0356
 U 1 1 700DB315
-P 3750 12650
-F 0 "#PWR0356" H 3750 12500 50  0001 C CNN
-F 1 "+3.3V" H 3765 12823 50  0000 C CNN
-F 2 "" H 3750 12650 50  0001 C CNN
-F 3 "" H 3750 12650 50  0001 C CNN
-	1    3750 12650
+P 3450 15450
+F 0 "#PWR0356" H 3450 15300 50  0001 C CNN
+F 1 "+3.3V" H 3465 15623 50  0000 C CNN
+F 2 "" H 3450 15450 50  0001 C CNN
+F 3 "" H 3450 15450 50  0001 C CNN
+	1    3450 15450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0358
 U 1 1 700DB6B8
-P 3400 13400
-F 0 "#PWR0358" H 3400 13250 50  0001 C CNN
-F 1 "+3.3V" H 3415 13573 50  0000 C CNN
-F 2 "" H 3400 13400 50  0001 C CNN
-F 3 "" H 3400 13400 50  0001 C CNN
-	1    3400 13400
+P 3100 16200
+F 0 "#PWR0358" H 3100 16050 50  0001 C CNN
+F 1 "+3.3V" H 3115 16373 50  0000 C CNN
+F 2 "" H 3100 16200 50  0001 C CNN
+F 3 "" H 3100 16200 50  0001 C CNN
+	1    3100 16200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0360
 U 1 1 700DBAE9
-P 3750 14200
-F 0 "#PWR0360" H 3750 14050 50  0001 C CNN
-F 1 "+3.3V" H 3765 14373 50  0000 C CNN
-F 2 "" H 3750 14200 50  0001 C CNN
-F 3 "" H 3750 14200 50  0001 C CNN
-	1    3750 14200
+P 3450 17000
+F 0 "#PWR0360" H 3450 16850 50  0001 C CNN
+F 1 "+3.3V" H 3465 17173 50  0000 C CNN
+F 2 "" H 3450 17000 50  0001 C CNN
+F 3 "" H 3450 17000 50  0001 C CNN
+	1    3450 17000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0349
 U 1 1 700DBF68
-P 3700 10050
-F 0 "#PWR0349" H 3700 9800 50  0001 C CNN
-F 1 "GND" H 3705 9877 50  0000 C CNN
-F 2 "" H 3700 10050 50  0001 C CNN
-F 3 "" H 3700 10050 50  0001 C CNN
-	1    3700 10050
+P 3400 12850
+F 0 "#PWR0349" H 3400 12600 50  0001 C CNN
+F 1 "GND" H 3405 12677 50  0000 C CNN
+F 2 "" H 3400 12850 50  0001 C CNN
+F 3 "" H 3400 12850 50  0001 C CNN
+	1    3400 12850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0351
 U 1 1 700DC17E
-P 3450 10800
-F 0 "#PWR0351" H 3450 10550 50  0001 C CNN
-F 1 "GND" H 3455 10627 50  0000 C CNN
-F 2 "" H 3450 10800 50  0001 C CNN
-F 3 "" H 3450 10800 50  0001 C CNN
-	1    3450 10800
+P 3150 13600
+F 0 "#PWR0351" H 3150 13350 50  0001 C CNN
+F 1 "GND" H 3155 13427 50  0000 C CNN
+F 2 "" H 3150 13600 50  0001 C CNN
+F 3 "" H 3150 13600 50  0001 C CNN
+	1    3150 13600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0353
 U 1 1 700DC45A
-P 3750 11600
-F 0 "#PWR0353" H 3750 11350 50  0001 C CNN
-F 1 "GND" H 3755 11427 50  0000 C CNN
-F 2 "" H 3750 11600 50  0001 C CNN
-F 3 "" H 3750 11600 50  0001 C CNN
-	1    3750 11600
+P 3450 14400
+F 0 "#PWR0353" H 3450 14150 50  0001 C CNN
+F 1 "GND" H 3455 14227 50  0000 C CNN
+F 2 "" H 3450 14400 50  0001 C CNN
+F 3 "" H 3450 14400 50  0001 C CNN
+	1    3450 14400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0355
 U 1 1 700DC736
-P 3400 12400
-F 0 "#PWR0355" H 3400 12150 50  0001 C CNN
-F 1 "GND" H 3405 12227 50  0000 C CNN
-F 2 "" H 3400 12400 50  0001 C CNN
-F 3 "" H 3400 12400 50  0001 C CNN
-	1    3400 12400
+P 3100 15200
+F 0 "#PWR0355" H 3100 14950 50  0001 C CNN
+F 1 "GND" H 3105 15027 50  0000 C CNN
+F 2 "" H 3100 15200 50  0001 C CNN
+F 3 "" H 3100 15200 50  0001 C CNN
+	1    3100 15200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0357
 U 1 1 700DC96A
-P 3750 13250
-F 0 "#PWR0357" H 3750 13000 50  0001 C CNN
-F 1 "GND" H 3755 13077 50  0000 C CNN
-F 2 "" H 3750 13250 50  0001 C CNN
-F 3 "" H 3750 13250 50  0001 C CNN
-	1    3750 13250
+P 3450 16050
+F 0 "#PWR0357" H 3450 15800 50  0001 C CNN
+F 1 "GND" H 3455 15877 50  0000 C CNN
+F 2 "" H 3450 16050 50  0001 C CNN
+F 3 "" H 3450 16050 50  0001 C CNN
+	1    3450 16050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0359
 U 1 1 700DCB90
-P 3400 14000
-F 0 "#PWR0359" H 3400 13750 50  0001 C CNN
-F 1 "GND" H 3405 13827 50  0000 C CNN
-F 2 "" H 3400 14000 50  0001 C CNN
-F 3 "" H 3400 14000 50  0001 C CNN
-	1    3400 14000
+P 3100 16800
+F 0 "#PWR0359" H 3100 16550 50  0001 C CNN
+F 1 "GND" H 3105 16627 50  0000 C CNN
+F 2 "" H 3100 16800 50  0001 C CNN
+F 3 "" H 3100 16800 50  0001 C CNN
+	1    3100 16800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0361
 U 1 1 700DD3EF
-P 3750 14800
-F 0 "#PWR0361" H 3750 14550 50  0001 C CNN
-F 1 "GND" H 3755 14627 50  0000 C CNN
-F 2 "" H 3750 14800 50  0001 C CNN
-F 3 "" H 3750 14800 50  0001 C CNN
-	1    3750 14800
+P 3450 17600
+F 0 "#PWR0361" H 3450 17350 50  0001 C CNN
+F 1 "GND" H 3455 17427 50  0000 C CNN
+F 2 "" H 3450 17600 50  0001 C CNN
+F 3 "" H 3450 17600 50  0001 C CNN
+	1    3450 17600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C36
 U 1 1 7041DA12
-P 4100 8400
-F 0 "C36" H 4215 8446 50  0000 L CNN
-F 1 "1.0uF" H 4215 8355 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4138 8250 50  0001 C CNN
-F 3 "~" H 4100 8400 50  0001 C CNN
-	1    4100 8400
+P 3800 11200
+F 0 "C36" H 3915 11246 50  0000 L CNN
+F 1 "1.0uF" H 3915 11155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3838 11050 50  0001 C CNN
+F 3 "~" H 3800 11200 50  0001 C CNN
+	1    3800 11200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 8050 3450 8100
+	3150 10850 3150 10900
 $Comp
 L power:GND #PWR0343
 U 1 1 70A7AFE0
-P 4100 8550
-F 0 "#PWR0343" H 4100 8300 50  0001 C CNN
-F 1 "GND" H 4105 8377 50  0000 C CNN
-F 2 "" H 4100 8550 50  0001 C CNN
-F 3 "" H 4100 8550 50  0001 C CNN
-	1    4100 8550
+P 3800 11350
+F 0 "#PWR0343" H 3800 11100 50  0001 C CNN
+F 1 "GND" H 3805 11177 50  0000 C CNN
+F 2 "" H 3800 11350 50  0001 C CNN
+F 3 "" H 3800 11350 50  0001 C CNN
+	1    3800 11350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C37
 U 1 1 70A7B28F
-P 4550 8400
-F 0 "C37" H 4665 8446 50  0000 L CNN
-F 1 "1.0uF" H 4665 8355 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4588 8250 50  0001 C CNN
-F 3 "~" H 4550 8400 50  0001 C CNN
-	1    4550 8400
+P 4250 11200
+F 0 "C37" H 4365 11246 50  0000 L CNN
+F 1 "1.0uF" H 4365 11155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4288 11050 50  0001 C CNN
+F 3 "~" H 4250 11200 50  0001 C CNN
+	1    4250 11200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C38
 U 1 1 70A7B8E2
-P 5000 8400
-F 0 "C38" H 5115 8446 50  0000 L CNN
-F 1 "1.0uF" H 5115 8355 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5038 8250 50  0001 C CNN
-F 3 "~" H 5000 8400 50  0001 C CNN
-	1    5000 8400
+P 4700 11200
+F 0 "C38" H 4815 11246 50  0000 L CNN
+F 1 "1.0uF" H 4815 11155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4738 11050 50  0001 C CNN
+F 3 "~" H 4700 11200 50  0001 C CNN
+	1    4700 11200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C39
 U 1 1 70A7BCA1
-P 5450 8400
-F 0 "C39" H 5565 8446 50  0000 L CNN
-F 1 "1.0uF" H 5565 8355 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5488 8250 50  0001 C CNN
-F 3 "~" H 5450 8400 50  0001 C CNN
-	1    5450 8400
+P 5150 11200
+F 0 "C39" H 5265 11246 50  0000 L CNN
+F 1 "1.0uF" H 5265 11155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5188 11050 50  0001 C CNN
+F 3 "~" H 5150 11200 50  0001 C CNN
+	1    5150 11200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0344
 U 1 1 70A7C120
-P 4550 8550
-F 0 "#PWR0344" H 4550 8300 50  0001 C CNN
-F 1 "GND" H 4555 8377 50  0000 C CNN
-F 2 "" H 4550 8550 50  0001 C CNN
-F 3 "" H 4550 8550 50  0001 C CNN
-	1    4550 8550
+P 4250 11350
+F 0 "#PWR0344" H 4250 11100 50  0001 C CNN
+F 1 "GND" H 4255 11177 50  0000 C CNN
+F 2 "" H 4250 11350 50  0001 C CNN
+F 3 "" H 4250 11350 50  0001 C CNN
+	1    4250 11350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0345
 U 1 1 70A7C255
-P 5000 8550
-F 0 "#PWR0345" H 5000 8300 50  0001 C CNN
-F 1 "GND" H 5005 8377 50  0000 C CNN
-F 2 "" H 5000 8550 50  0001 C CNN
-F 3 "" H 5000 8550 50  0001 C CNN
-	1    5000 8550
+P 4700 11350
+F 0 "#PWR0345" H 4700 11100 50  0001 C CNN
+F 1 "GND" H 4705 11177 50  0000 C CNN
+F 2 "" H 4700 11350 50  0001 C CNN
+F 3 "" H 4700 11350 50  0001 C CNN
+	1    4700 11350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0346
 U 1 1 70A7C4A5
-P 5450 8550
-F 0 "#PWR0346" H 5450 8300 50  0001 C CNN
-F 1 "GND" H 5455 8377 50  0000 C CNN
-F 2 "" H 5450 8550 50  0001 C CNN
-F 3 "" H 5450 8550 50  0001 C CNN
-	1    5450 8550
+P 5150 11350
+F 0 "#PWR0346" H 5150 11100 50  0001 C CNN
+F 1 "GND" H 5155 11177 50  0000 C CNN
+F 2 "" H 5150 11350 50  0001 C CNN
+F 3 "" H 5150 11350 50  0001 C CNN
+	1    5150 11350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 8250 5450 8100
+	5150 11050 5150 10900
 Wire Wire Line
-	5450 8100 5000 8100
-Connection ~ 3450 8100
+	5150 10900 4700 10900
+Connection ~ 3150 10900
 Wire Wire Line
-	3450 8100 3450 8600
+	3150 10900 3150 11400
 Wire Wire Line
-	4100 8250 4100 8100
-Connection ~ 4100 8100
+	3800 11050 3800 10900
+Connection ~ 3800 10900
 Wire Wire Line
-	4100 8100 3450 8100
+	3800 10900 3150 10900
 Wire Wire Line
-	4550 8250 4550 8100
-Connection ~ 4550 8100
+	4250 11050 4250 10900
+Connection ~ 4250 10900
 Wire Wire Line
-	4550 8100 4100 8100
+	4250 10900 3800 10900
 Wire Wire Line
-	5000 8250 5000 8100
-Connection ~ 5000 8100
+	4700 11050 4700 10900
+Connection ~ 4700 10900
 Wire Wire Line
-	5000 8100 4550 8100
-Text GLabel 4800 6100 2    50   Input ~ 0
+	4700 10900 4250 10900
+Text GLabel 5050 6900 2    50   Input ~ 0
 CLK
 Wire Wire Line
 	7150 5550 7100 5550
@@ -15166,50 +15129,39 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x04_Female J1
 U 1 1 5F480BDE
-P 900 3850
-F 0 "J1" H 792 4135 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 792 4044 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 900 3850 50  0001 C CNN
-F 3 "~" H 900 3850 50  0001 C CNN
-	1    900  3850
+P 1150 4650
+F 0 "J1" H 1042 4935 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 1042 4844 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 1150 4650 50  0001 C CNN
+F 3 "~" H 1150 4650 50  0001 C CNN
+	1    1150 4650
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0362
-U 1 1 5F940DFF
-P 1550 3450
-F 0 "#PWR0362" H 1550 3300 50  0001 C CNN
-F 1 "+3.3V" H 1565 3623 50  0000 C CNN
-F 2 "" H 1550 3450 50  0001 C CNN
-F 3 "" H 1550 3450 50  0001 C CNN
-	1    1550 3450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1100 3750 1550 3750
+	1350 4550 1800 4550
 Wire Wire Line
-	1550 3750 1550 3450
+	1800 4550 1800 4350
 $Comp
 L power:GND #PWR0363
 U 1 1 5FDFA229
-P 1200 4100
-F 0 "#PWR0363" H 1200 3850 50  0001 C CNN
-F 1 "GND" H 1205 3927 50  0000 C CNN
-F 2 "" H 1200 4100 50  0001 C CNN
-F 3 "" H 1200 4100 50  0001 C CNN
-	1    1200 4100
+P 1450 4900
+F 0 "#PWR0363" H 1450 4650 50  0001 C CNN
+F 1 "GND" H 1455 4727 50  0000 C CNN
+F 2 "" H 1450 4900 50  0001 C CNN
+F 3 "" H 1450 4900 50  0001 C CNN
+	1    1450 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 4100 1200 4050
+	1450 4900 1450 4850
 Wire Wire Line
-	1200 4050 1100 4050
+	1450 4850 1350 4850
 Wire Wire Line
-	1100 3850 3750 3850
+	1350 4650 4000 4650
 Wire Wire Line
-	1450 5400 1450 3950
+	1700 6200 1700 4750
 Wire Wire Line
-	1450 3950 1100 3950
+	1700 4750 1350 4750
 Wire Wire Line
 	7000 8700 7000 9250
 Wire Wire Line
@@ -15233,4 +15185,259 @@ Wire Wire Line
 	25400 5950 25400 6050
 Wire Wire Line
 	21400 5700 21850 5700
+$Comp
+L power:+BATT #PWR0335
+U 1 1 5F546745
+P 1800 3050
+F 0 "#PWR0335" H 1800 2900 50  0001 C CNN
+F 1 "+BATT" H 1815 3223 50  0000 C CNN
+F 2 "" H 1800 3050 50  0001 C CNN
+F 3 "" H 1800 3050 50  0001 C CNN
+	1    1800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Slide-Switches:EG1218 S5
+U 1 1 5F54CAD8
+P 4100 3000
+F 0 "S5" H 4100 2675 50  0000 C CNN
+F 1 "EG1218" H 4100 2766 50  0000 C CNN
+F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 4300 3200 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 4300 3300 60  0001 L CNN
+F 4 "EG1903-ND" H 4300 3400 60  0001 L CNN "Digi-Key_PN"
+F 5 "EG1218" H 4300 3500 60  0001 L CNN "MPN"
+F 6 "Switches" H 4300 3600 60  0001 L CNN "Category"
+F 7 "Slide Switches" H 4300 3700 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 4300 3800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 4300 3900 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH SLIDE SPDT 200MA 30V" H 4300 4000 60  0001 L CNN "Description"
+F 11 "E-Switch" H 4300 4100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4300 4200 60  0001 L CNN "Status"
+	1    4100 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2750 4550 3000
+Wire Wire Line
+	4550 3000 4300 3000
+Wire Wire Line
+	1800 3050 1800 3100
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5FEE567C
+P 1900 2000
+F 0 "J2" H 1957 2467 50  0000 C CNN
+F 1 "USB_B_Micro" H 1957 2376 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 2050 1950 50  0001 C CNN
+F 3 "~" H 2050 1950 50  0001 C CNN
+	1    1900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61B9B6C9
+P 1800 2500
+F 0 "#PWR06" H 1800 2250 50  0001 C CNN
+F 1 "GND" H 1805 2327 50  0000 C CNN
+F 2 "" H 1800 2500 50  0001 C CNN
+F 3 "" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2400 1800 2450
+Wire Wire Line
+	1900 2400 1900 2450
+Wire Wire Line
+	1900 2450 1800 2450
+Connection ~ 1800 2450
+Wire Wire Line
+	1800 2450 1800 2500
+Wire Wire Line
+	2200 1800 2850 1800
+Wire Wire Line
+	2850 1800 2850 2900
+Wire Wire Line
+	2850 2900 3900 2900
+Wire Wire Line
+	1800 3100 3900 3100
+Connection ~ 1800 3100
+Wire Wire Line
+	1800 3100 1800 3150
+$Comp
+L Power_Management:TPS22929D U33
+U 1 1 5F557997
+P 3850 9100
+F 0 "U33" H 3850 9567 50  0000 C CNN
+F 1 "TPS22929D" H 3850 9476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3850 8700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps22929d.pdf" H 3750 9550 50  0001 C CNN
+	1    3850 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0366
+U 1 1 5FF10EA0
+P 3850 9500
+F 0 "#PWR0366" H 3850 9250 50  0001 C CNN
+F 1 "GND" H 3855 9327 50  0000 C CNN
+F 2 "" H 3850 9500 50  0001 C CNN
+F 3 "" H 3850 9500 50  0001 C CNN
+	1    3850 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 9400 3850 9450
+Wire Wire Line
+	3950 9400 3950 9450
+Wire Wire Line
+	3950 9450 3850 9450
+Connection ~ 3850 9450
+Wire Wire Line
+	3850 9450 3850 9500
+$Comp
+L power:+3.3V #PWR0369
+U 1 1 608C847E
+P 4600 8750
+F 0 "#PWR0369" H 4600 8600 50  0001 C CNN
+F 1 "+3.3V" H 4615 8923 50  0000 C CNN
+F 2 "" H 4600 8750 50  0001 C CNN
+F 3 "" H 4600 8750 50  0001 C CNN
+	1    4600 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 8750 4600 8900
+Wire Wire Line
+	4600 8900 4250 8900
+Wire Wire Line
+	3950 7100 4250 7100
+Wire Wire Line
+	4250 7100 4250 8000
+Wire Wire Line
+	4250 8000 2250 8000
+Wire Wire Line
+	2250 8000 2250 9200
+Wire Wire Line
+	2250 9200 3450 9200
+$Comp
+L power:VS #PWR0365
+U 1 1 61294C1D
+P 3100 8450
+F 0 "#PWR0365" H 2900 8300 50  0001 C CNN
+F 1 "VS" H 3117 8623 50  0000 C CNN
+F 2 "" H 3100 8450 50  0001 C CNN
+F 3 "" H 3100 8450 50  0001 C CNN
+	1    3100 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 8450 3100 8550
+Wire Wire Line
+	3100 9000 3450 9000
+Wire Wire Line
+	3450 8900 3100 8900
+Connection ~ 3100 8900
+Wire Wire Line
+	3100 8900 3100 9000
+$Comp
+L power:VS #PWR0367
+U 1 1 61C7542B
+P 4550 2750
+F 0 "#PWR0367" H 4350 2600 50  0001 C CNN
+F 1 "VS" H 4567 2923 50  0000 C CNN
+F 2 "" H 4550 2750 50  0001 C CNN
+F 3 "" H 4550 2750 50  0001 C CNN
+	1    4550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VS #PWR0336
+U 1 1 61C76F5F
+P 1800 4350
+F 0 "#PWR0336" H 1600 4200 50  0001 C CNN
+F 1 "VS" H 1817 4523 50  0000 C CNN
+F 2 "" H 1800 4350 50  0001 C CNN
+F 3 "" H 1800 4350 50  0001 C CNN
+	1    1800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VS #PWR0368
+U 1 1 61C78B40
+P 4550 4300
+F 0 "#PWR0368" H 4350 4150 50  0001 C CNN
+F 1 "VS" H 4567 4473 50  0000 C CNN
+F 2 "" H 4550 4300 50  0001 C CNN
+F 3 "" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4300 4550 4500
+$Comp
+L power:VS #PWR0364
+U 1 1 6216B2FB
+P 3000 5450
+F 0 "#PWR0364" H 2800 5300 50  0001 C CNN
+F 1 "VS" H 3017 5623 50  0000 C CNN
+F 2 "" H 3000 5450 50  0001 C CNN
+F 3 "" H 3000 5450 50  0001 C CNN
+	1    3000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C40
+U 1 1 6265FD55
+P 2650 8750
+F 0 "C40" H 2765 8796 50  0000 L CNN
+F 1 "1.0uF" H 2765 8705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2688 8600 50  0001 C CNN
+F 3 "~" H 2650 8750 50  0001 C CNN
+	1    2650 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C41
+U 1 1 62B4D1D3
+P 4600 9150
+F 0 "C41" H 4715 9196 50  0000 L CNN
+F 1 "1.0uF" H 4715 9105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4638 9000 50  0001 C CNN
+F 3 "~" H 4600 9150 50  0001 C CNN
+	1    4600 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0370
+U 1 1 62B4D76D
+P 4600 9300
+F 0 "#PWR0370" H 4600 9050 50  0001 C CNN
+F 1 "GND" H 4605 9127 50  0000 C CNN
+F 2 "" H 4600 9300 50  0001 C CNN
+F 3 "" H 4600 9300 50  0001 C CNN
+	1    4600 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0362
+U 1 1 62B4DC70
+P 2650 8900
+F 0 "#PWR0362" H 2650 8650 50  0001 C CNN
+F 1 "GND" H 2655 8727 50  0000 C CNN
+F 2 "" H 2650 8900 50  0001 C CNN
+F 3 "" H 2650 8900 50  0001 C CNN
+	1    2650 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 8600 2650 8550
+Wire Wire Line
+	2650 8550 3100 8550
+Connection ~ 3100 8550
+Wire Wire Line
+	3100 8550 3100 8900
+Wire Wire Line
+	4600 8900 4600 9000
+Connection ~ 4600 8900
 $EndSCHEMATC
