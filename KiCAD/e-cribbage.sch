@@ -15254,12 +15254,6 @@ Connection ~ 1800 2450
 Wire Wire Line
 	1800 2450 1800 2500
 Wire Wire Line
-	2200 1800 2850 1800
-Wire Wire Line
-	2850 1800 2850 2900
-Wire Wire Line
-	2850 2900 3900 2900
-Wire Wire Line
 	1800 3100 3900 3100
 Connection ~ 1800 3100
 Wire Wire Line
@@ -15440,4 +15434,43 @@ Wire Wire Line
 Wire Wire Line
 	4600 8900 4600 9000
 Connection ~ 4600 8900
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:LM317T U41
+U 1 1 5F6E0963
+P 3250 1800
+F 0 "U41" H 3250 2087 60  0000 C CNN
+F 1 "LM317T" H 3250 1981 60  0000 C CNN
+F 2 "digikey-footprints:TO-220-3" H 3450 2000 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf" H 3450 2100 60  0001 L CNN
+F 4 "497-1575-5-ND" H 3450 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "LM317T" H 3450 2300 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3450 2400 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 3450 2500 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf" H 3450 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/LM317T/497-1575-5-ND/591677" H 3450 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LIN POS ADJ 1.5A TO220AB" H 3450 2800 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 3450 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3450 3000 60  0001 L CNN "Status"
+	1    3250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0371
+U 1 1 5F6E21CF
+P 3250 2100
+F 0 "#PWR0371" H 3250 1850 50  0001 C CNN
+F 1 "GND" H 3255 1927 50  0000 C CNN
+F 2 "" H 3250 2100 50  0001 C CNN
+F 3 "" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1800 2950 1800
+Wire Wire Line
+	3550 1800 3650 1800
+Wire Wire Line
+	3650 1800 3650 2900
+Wire Wire Line
+	3650 2900 3900 2900
 $EndSCHEMATC
