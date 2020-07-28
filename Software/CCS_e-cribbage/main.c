@@ -3,9 +3,9 @@
 //
 //               MSP430F2012
 //            -----------------
-//        /|\|              XIN|-
+//        /|\|                 |
 //         | |                 |
-//         --|RST          XOUT|-
+//         --|RST              |
 //           |                 |
 //           |             P1.0|<--S1
 //           |             P1.1|<--S2
@@ -22,6 +22,8 @@
 //           |             P2.6|------>|LE1          |
 //           |             P2.7|------>|LE2          |
 //           |                 |       |             |
+//           |                 |
+//           |                 |        -------------
 //           |             P1.7|------>|VSW          |
 //           |                 |       |             |
 //
@@ -48,11 +50,11 @@
 #include "msp430.h"
 #include "stdbool.h"
 
-#define P1REV   BIT0                // TXD on P1.5 to uart module
-#define P1FWD   BIT1                // RXD on P1.1 from uart module
-#define P2REV   BIT2                // LED
-#define P2FWD   BIT3                // LED
-#define LE      BIT4                // Latch Enable
+#define P1REV   BIT0                // S1
+#define P1FWD   BIT1                // S2
+#define P2REV   BIT2                // S3
+#define P2FWD   BIT3                // S4
+#define LE      BIT4                // RCLK
 #define CLK     BIT5                // Clock
 #define DATA    BIT6                // Data
 #define VSW     BIT7                // 3V SW
@@ -79,21 +81,19 @@ unsigned int P2pegA = 0;
 unsigned int P2pegB = 0;
 bool cur1Peg = false;
 bool cur2Peg = false;
-bool button_pressed = false;
+bool P1button_pressed = false;
+bool P2button_pressed = false;
+bool current_player1 = false;
 
-// Function Definitions
+//function declarations
 void show_pegs(void);
-void restart_game(void);
-void save_game(void);
+//void restart_game(void);
+//void save_game(void);
 void wait_for_input(void);
-void show_winner_pattern(void);
+//void show_winner_pattern(void);
 void delay(unsigned int dcount);
 
 // ******************************************************************************************
-
-/**
- * main.c
- */
 int main(void)
 {
 	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
@@ -111,8 +111,10 @@ int main(void)
 	//P1SEL P2SEL
 	P1SEL = 0;
 	P2SEL = 0;
+	P1IE = 0;
+	P2IE = 0;
 
-	wait_for_input();
+	while(true) wait_for_input();
 
 	return 0;
 }
@@ -127,7 +129,7 @@ void wait_for_input(void)
     //Start Timer
     main_time=0;
 
-    while(main_time<five_minutes) //~20s at 12MHz
+    while(main_time<five_minutes)
     {
         //Reset Button Press Timer
         j=0;
@@ -139,22 +141,19 @@ void wait_for_input(void)
         //Detect Button Press
         while(P1REV & ~P1IN)
         {
-            button_pressed = true;
-            if(j==0 && P1pegA>P1pegB && P1pegA>0) P1pegA--;
-            if(j==0 && P1pegB>P1pegA && P1pegB>0) P1pegB--;
+            P1button_pressed = true;
+            if(j==0 && P1pts>0) P1pts--;
             j++;
             if(j==longpress) break;
         }
         while(P1FWD & ~P1IN)
         {
-            button_pressed = true;
-            if(j==0 && cur1Peg) {P1pegA++; }
-            if(j==0 && ~cur1Peg) {P1pegB++; }
+            P1button_pressed = true;
+            if(j==0) P1pts++;
             //wait for release and count for long press (+5)
             if(j==longpress)
             {
-                if(cur1Peg) {P1pegA+=3; }
-                if(~cur1Peg) {P1pegB+=3; }
+                P1pts+=3;
                 break;
             }
             j++;
@@ -162,73 +161,77 @@ void wait_for_input(void)
         }
         while(P2REV & ~P1IN)
         {
-            button_pressed = true;
-            if(j==0 && P2pegA>P2pegB && P2pegA>0) P2pegA--;
-            if(j==0 && P2pegB>P2pegA && P2pegB>0) P2pegB--;
+            P2button_pressed = true;
+            if(j==0 && P2pts>0) P2pts--;
             j++;
             if(j==longpress) break;
         }
         while(P2FWD & ~P1IN)
         {
-            button_pressed = true;
-            if(j==0 && cur2Peg) {P2pegA++; }
-            if(j==0 && ~cur2Peg) {P2pegB++; }
+            P2button_pressed = true;
+            if(j==0) P2pts++;
             //wait for release and count for long press (+5)
             if(j==longpress)
             {
-                if(cur2Peg) {P2pegA+=3; }
-                if(~cur2Peg) {P2pegB+=3; }
+                P2pts+=3;
                 break;
             }
             j++;
-            /*
-            //debug
-            P1OUT |= VSW + DATA;
-            P2OUT |= LE1 + LE2;
-            delay(delay100us);
-            P1OUT &= ~VSW;
-            P1OUT &= ~DATA; //10us from VSW to DATA LOW
-            P2OUT &= ~LE1;
-            P2OUT &= ~LE2;
-            */
         }
 
         //update pegs and increment timer_i
-        if(button_pressed)
+        if(P1button_pressed || P2button_pressed)
         {
+            //alternate pegs
+            //Update peg values if points changed
+            if(P1button_pressed)
+                {
+                //switch pegs if player switched
+                if(current_player1 == false) cur1Peg ^= 1;
+                if(cur1Peg) P1pegA = P1pts;
+                else P1pegB = P1pts;
+                current_player1 = true;
+                }
+            if(P2button_pressed)
+                {
+                //switch pegs if player switched
+                if(current_player1 == true) cur2Peg ^= 1;
+                if(cur2Peg) P2pegA = P2pts;
+                else P2pegB = P2pts;
+                current_player1 = false;
+                }
             show_pegs();
-            button_pressed = false;
+            P1button_pressed = false;
+            P2button_pressed = false;
             main_time=0;
             peg_time=0;
         }
-        //for(j=0; j<=delay20ms; j++);
+
         delay(delay20ms);
         main_time++;
         peg_time++;
 
-        //change active peg after timeout
-        if(peg_time == five_seconds)
-        {
-            P1OUT |= VSW;
-            P1OUT &= ~VSW;
-            cur1Peg = ~cur1Peg;
-            if(P1pegA < P1pegB) P1pegA = P1pegB;
-            else P1pegB = P1pegA;
-            cur2Peg = ~cur2Peg;
-            if(P2pegA < P2pegB) P2pegA = P2pegB;
-            else P2pegB = P2pegA;
-            peg_time = 0;
-        }
-
         //check for winner
 
     }
-    save_game();
+    //save_game();
 
 }
 // ******************************************************************************************
 void show_pegs(void)
 {
+    //change active peg after timeout
+    /*
+    if(peg_time > five_seconds)
+    {
+        //P1OUT |= VSW;
+        //P1OUT &= ~VSW;
+        cur1Peg = ~cur1Peg;
+        cur2Peg = ~cur2Peg;
+        peg_time = 0;
+    }
+    */
+
     //Show Player 1 Pegs
     P2OUT |= LE1;
     for(i=1; i<=120; i++)
@@ -243,12 +246,12 @@ void show_pegs(void)
         }
         else
         {
-            P1OUT |= CLK;   //~420ns
+            P1OUT |= CLK;   //~5us
             P1OUT &= ~CLK;
         }
     }
     P1OUT |= LE;
-    P1OUT &= ~LE;   //~430ns
+    P1OUT &= ~LE;
     P2OUT &= ~ LE1;
 
     //Show Player 2 Pegs
@@ -276,6 +279,7 @@ void show_pegs(void)
 }
 
 // ******************************************************************************************
+/*
 void restart_game(void)
 {
 
@@ -300,8 +304,9 @@ void restart_game(void)
     P2pegB = 0;
 
 }
-
+*/
 // ******************************************************************************************
+/*
 void save_game(void)
 {
     //Store Peg Values to EEPROM
@@ -312,16 +317,28 @@ void save_game(void)
     //temp place holder for debug
     wait_for_input();
 }
-
+*/
 // ******************************************************************************************
+/*
 void show_winner_pattern()
 {
-    //Display Patter for Winner
+    //Display Pattern for Winner
 }
-
+*/
 // ******************************************************************************************
 void delay(unsigned int dcount)
 {
     unsigned int d;
     for(d=dcount; d>0; d--);
 }
+// ******************************************************************************************
+/*
+//debug
+P1OUT |= VSW + DATA;
+P2OUT |= LE1 + LE2;
+delay(delay100us);
+P1OUT &= ~VSW;
+P1OUT &= ~DATA; //10us from VSW to DATA LOW
+P2OUT &= ~LE1;
+P2OUT &= ~LE2;
+*/
