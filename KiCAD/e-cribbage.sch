@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:e-cribbage-cache
 EELAYER 30 0
 EELAYER END
 $Descr D 34000 22000
@@ -13228,13 +13229,9 @@ Wire Wire Line
 Wire Wire Line
 	24300 20000 24300 2550
 Wire Wire Line
-	26000 2750 26450 2750
-Wire Wire Line
 	26450 2750 26450 3900
 Wire Wire Line
 	26450 3900 24650 3900
-Wire Wire Line
-	24650 5500 25000 5500
 Wire Wire Line
 	25900 5700 26350 5700
 Wire Wire Line
@@ -14888,7 +14885,7 @@ F 3 "" H 1800 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Slide-Switches:EG1218 S5
+L e-cribbage-rescue:EG1218-dk_Slide-Switches S5
 U 1 1 5F54CAD8
 P 4100 3000
 F 0 "S5" H 4100 2675 50  0000 C CNN
@@ -15201,7 +15198,7 @@ Connection ~ 15200 5600
 Wire Wire Line
 	19900 5200 19900 8250
 $Comp
-L Regulator_Linear:TLV71333PDBV U41
+L e-cribbage-rescue:TLV71333PDBV-Regulator_Linear U41
 U 1 1 6DF80E45
 P 3250 1900
 F 0 "U41" H 3250 2242 50  0000 C CNN
@@ -15542,4 +15539,8 @@ Text GLabel 5050 6800 2    50   Input ~ 0
 RCLK
 Wire Wire Line
 	5050 6800 3950 6800
+Wire Wire Line
+	25000 5500 24650 5500
+Wire Wire Line
+	25950 2750 26450 2750
 $EndSCHEMATC
