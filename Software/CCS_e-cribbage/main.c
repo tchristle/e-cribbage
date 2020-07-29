@@ -215,7 +215,7 @@ void wait_for_input(void){
         delay(delay20ms);
 
         //check for winner
-        if(P1pts == 121 || P2pts ==121) show_winner_pattern();
+        if(P1pts >= 121 || P2pts >= 121) show_winner_pattern();
 
     }
 }
@@ -310,7 +310,26 @@ void save_game(void){
 // ******************************************************************************************
 void show_winner_pattern(){
     //display pattern for winner
-
+    if(P1pts >= 121){
+        P1pegA = 1;
+        P1pegB = 2;
+        while(P1pegB <= 120){
+            P1pegA++;
+            P1pegB++;
+            delay(delay20ms);
+            show_pegs();
+        }
+    }
+    if(P2pts >= 121){
+        P2pegA = 1;
+        P2pegB = 2;
+        while(P2pegB <= 120){
+            P2pegA++;
+            P2pegB++;
+            delay(delay20ms);
+            show_pegs();
+        }
+    }
     //reset points
     P1pts = 0;
     P2pts = 0;
@@ -329,15 +348,3 @@ __interrupt void Port_1(void){
     while(P1REV & ~P1IN || P1FWD & ~P1IN || P2REV & ~P1IN || P2FWD & ~P1IN);
     main();
 }
-
-// ******************************************************************************************
-/*
-//debug
-P1OUT |= VSW + DATA;
-P2OUT |= LE1 + LE2;
-delay(delay100us);
-P1OUT &= ~VSW;
-P1OUT &= ~DATA; //10us from VSW to DATA LOW
-P2OUT &= ~LE1;
-P2OUT &= ~LE2;
-*/
