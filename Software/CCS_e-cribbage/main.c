@@ -65,12 +65,12 @@
 #define delay10us       1
 #define delay100us      9
 #define delay20ms       1850
-#define five_minutes    11000
+#define five_minutes    20000
 #define five_seconds    400
 #define longpress       20000
 
 //global definitions
-unsigned int i=0, j=0;
+//unsigned int i=0, j=0;
 unsigned int sleep_time=0;
 unsigned int peg_time=0;
 unsigned int button_time=0;
@@ -97,39 +97,40 @@ void delay(unsigned int dcount);
 
 // ******************************************************************************************
 int main(void){
-	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
-	
-	//Configure Basic Clock
-	BCSCTL1 = CALBC1_1MHZ;                     // Set range
-	DCOCTL = CALDCO_1MHZ;                      // SMCLK = DCO = 8MHz
+    // stop watchdog timer
+    WDTCTL = WDTPW | WDTHOLD;
 
-	//Peripheral Setup
-	P1DIR |= LE + VSW + CLK + DATA;
-	P1OUT |= VSW;
-	P1OUT &= ~LE & ~CLK & ~DATA;
-	P2DIR |= LE1 + LE2;
-	P2OUT |= LE1 + LE2;
-	//P1SEL P2SEL
-	P1SEL = 0;
-	P2SEL = 0;
-	P1IE = 0;
-	P2IE = 0;
+    //Configure Basic Clock
+    BCSCTL1 = CALBC1_1MHZ;
+    DCOCTL = CALDCO_1MHZ;
 
-	//restore saved game
-	restore_game();
-	//wait for input
-	wait_for_input();
-	//save game
+    //Peripheral Setup
+    P1DIR |= LE + VSW + CLK + DATA;
+    P1OUT |= VSW;
+    P1OUT &= ~LE & ~CLK & ~DATA;
+    P2DIR |= LE1 + LE2;
+    P2OUT |= LE1 + LE2;
+    P1SEL = 0;
+    P2SEL = 0;
+    P1IE = 0;
+    P2IE = 0;
+
+    //restore saved game
+    restore_game();
+    //wait for input
+    wait_for_input();
+    //save game
+    save_game();
     //disable VSW
     P1OUT &= ~VSW;
-	//enable interupts for wake up
+    //enable interupts for wake up
     P1IE |= P1REV + P1FWD + P2REV + P2FWD;
     P1IES |= P1REV + P1FWD + P2REV + P2FWD;
     P1IFG &= ~P1REV & ~P1FWD & ~P2REV & ~P2FWD;
-	//enter low power mode
+    //enter low power mode
     _BIS_SR(LPM4_bits + GIE);                 // Enter LPM4 w/interrupt
 
-	return 0;
+    return 0;
 }
 
 // ******************************************************************************************
@@ -151,6 +152,7 @@ void wait_for_input(void){
             if(button_time==0 && P1pts>0) P1pts--;
             button_time++;
             if(button_time==longpress) break;
+            if(P1REV & ~P1IN && P2REV & ~P1IN) restart_game();
         }
         while(P1FWD & ~P1IN){
             P1button_pressed = true;
@@ -169,6 +171,7 @@ void wait_for_input(void){
             if(button_time==0 && P2pts>0) P2pts--;
             button_time++;
             if(button_time==longpress) break;
+            if(P1REV & ~P1IN && P2REV & ~P1IN) restart_game();
         }
         while(P2FWD & ~P1IN){
             P2button_pressed = true;
@@ -188,12 +191,16 @@ void wait_for_input(void){
                 //switch pegs if player switched
                 if(current_player1 == false) cur1Peg ^= 1; // or peg_time > five_seconds
                 if(cur1Peg) P1pegA = P1pts; else P1pegB = P1pts;
+                if(P1pegA > P1pts) P1pegA = P1pts - 1;
+                if(P1pegB > P1pts) P1pegB = P1pts - 1;
                 current_player1 = true;
                 }
             if(P2button_pressed){
                 //switch pegs if player switched
                 if(current_player1 == true) cur2Peg ^= 1; // or peg_time > five_seconds
                 if(cur2Peg) P2pegA = P2pts; else P2pegB = P2pts;
+                if(P2pegA > P2pts) P2pegA = P2pts - 1;
+                if(P2pegB > P2pts) P2pegB = P2pts - 1;
                 current_player1 = false;
                 }
             P1button_pressed = false;
@@ -203,12 +210,9 @@ void wait_for_input(void){
             show_pegs();
         }
         //increment timers
-        //debug P1OUT |= VSW;
-        for(j=0; j<=delay20ms; j++);
-        //delay(delay20ms);  this function is not working???
-        //debug P1OUT &= ~VSW;
         sleep_time++;
         peg_time++;
+        delay(delay20ms);
 
         //check for winner
         if(P1pts == 121 || P2pts ==121) show_winner_pattern();
@@ -217,6 +221,8 @@ void wait_for_input(void){
 }
 // ******************************************************************************************
 void show_pegs(void){
+    unsigned int i=0;
+
     //Show Player 1 Pegs
     P2OUT |= LE1;
     for(i=1; i<=120; i++){
@@ -233,6 +239,7 @@ void show_pegs(void){
         }
     }
     P1OUT |= LE;
+    delay(delay10us);
     P1OUT &= ~LE;
     P2OUT &= ~ LE1;
 
@@ -252,30 +259,40 @@ void show_pegs(void){
         }
     }
     P1OUT |= LE;
+    delay(delay10us);
     P1OUT &= ~LE;
     P2OUT &= ~ LE2;
 }
 
 // ******************************************************************************************
 void restart_game(void){
-    //show reverse LED sweep pattern
-    for(i=0; i<=120; i++){
-        P1pegA = 120-i;
-        P2pegA = 120-i;
-        P1pegB = 119-i;
-        P2pegB = 119-i;
-        //delay
-        //for(j=0; j<=delay20ms; j++);
+    //unsigned int j=0;
+    //show reverse LED walk pattern
+    /*
+    for(j=0; j<=120; j++){
+        P1pegA = 120-j;
+        P2pegA = 120-j;
+        P1pegB = 119-j;
+        P2pegB = 119-j;
+        delay(delay20ms);
+        show_pegs();
+    }
+    */
+    while((P1pegA+P1pegB+P2pegA+P2pegB) > 0){
+        if(P1pegA > 0) P1pegA--;
+        if(P1pegB > 0) P1pegB--;
+        if(P2pegA > 0) P2pegA--;
+        if(P2pegB > 0) P2pegB--;
         delay(delay20ms);
         show_pegs();
     }
     //Reset Peg Values
     P1pts = 0;
-    P1pegA = 0;
-    P1pegB = 0;
+    //P1pegA = 0;
+    //P1pegB = 0;
     P2pts = 0;
-    P2pegA = 0;
-    P2pegB = 0;
+    //P2pegA = 0;
+    //P2pegB = 0;
 }
 
 // ******************************************************************************************
@@ -302,12 +319,13 @@ void show_winner_pattern(){
 // ******************************************************************************************
 void delay(unsigned int dcount){
     unsigned int d;
-    for(d=0; d<=dcount; d++);
+    for(d=0; d<=dcount; d++) _NOP();
 }
 // ******************************************************************************************
 // Port 1 interrupt service routine
 #pragma vector=PORT1_VECTOR
 __interrupt void Port_1(void){
+    //stay in interrupt routine until button is released
     while(P1REV & ~P1IN || P1FWD & ~P1IN || P2REV & ~P1IN || P2FWD & ~P1IN);
     main();
 }
