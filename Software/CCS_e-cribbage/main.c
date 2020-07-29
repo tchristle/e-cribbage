@@ -297,14 +297,63 @@ void restart_game(void){
 
 // ******************************************************************************************
 void restore_game(void){
-    //read points and peg values from FLASH user space section C
-    show_pegs();
+    //read points and peg values from FLASH information memory section C
+    // *** this function appears to call after reset ***
+    //char  value;                // 8-bit value to write to segment C
+    //char *Flash_ptr;            // Flash pointer
+    //unsigned int i;
+
+    FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
+    //value = 0;                                // initialize value
+    //Flash_ptr = (char *) 0x1040;              // Initialize Flash pointer
+
+    /*
+    for (i=0; i<64; i++)
+    {
+      value = *Flash_ptr++;                   // Read value from flash
+    }
+    */
+    // *** ints need to be cast to char ***
+    //P1pegA = *Flash_ptr++;
+    //P1pegB = *Flash_ptr++;
+    //P1pts  = *Flash_ptr++;
+    //P2pegA = *Flash_ptr++;
+    //P2pegB = *Flash_ptr++;
+    //P2pts  = *Flash_ptr++;
+    //show_pegs();
 }
 
 // ******************************************************************************************
 void save_game(void){
-    //store points and peg values to FLASH user space section C
+    //store points and peg values to FLASH information memory section C
+    //char  value;                // 8-bit value to write to segment C
+    char *Flash_ptr;            // Flash pointer
+    //unsigned int i;
 
+    FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
+    //value = 0;                                // initialize value
+    Flash_ptr = (char *) 0x1040;              // Initialize Flash pointer
+    FCTL1 = FWKEY + ERASE;                    // Set Erase bit
+    FCTL3 = FWKEY;                            // Clear Lock bit
+    *Flash_ptr = 0;                           // Dummy write to erase Flash segment
+
+    FCTL1 = FWKEY + WRT;                      // Set WRT bit for write operation
+    /*
+    for (i=0; i<64; i++)
+    {
+      *Flash_ptr++ = value++;                 // Write value to flash
+    }
+     */
+    // *** ints need to be cast to char ***
+    //*Flash_ptr++ = P1pegA;
+    //*Flash_ptr++ = P1pegB;
+    //*Flash_ptr++ = P1pts;
+    //*Flash_ptr++ = P2pegA;
+    //*Flash_ptr++ = P2pegB;
+    //*Flash_ptr++ = P2pts;
+
+    FCTL1 = FWKEY;                            // Clear WRT bit
+    FCTL3 = FWKEY + LOCK;                     // Set LOCK bit
 }
 
 // ******************************************************************************************
@@ -333,6 +382,7 @@ void show_winner_pattern(){
     //reset points
     P1pts = 0;
     P2pts = 0;
+    show_pegs();
 }
 
 // ******************************************************************************************
