@@ -65,14 +65,15 @@
 #define delay10us       1
 #define delay100us      9
 #define delay20ms       1850
-#define five_minutes    5400
+#define five_minutes    11000
 #define five_seconds    400
 #define longpress       20000
 
 //global definitions
 unsigned int i=0, j=0;
-unsigned int main_time=0;
+unsigned int sleep_time=0;
 unsigned int peg_time=0;
+unsigned int button_time=0;
 unsigned int P1pts = 0;
 unsigned int P1pegA = 0;
 unsigned int P1pegB = 0;
@@ -87,15 +88,15 @@ bool current_player1 = false;
 
 //function declarations
 void show_pegs(void);
-//void restart_game(void);
-//void save_game(void);
+void restart_game(void);
+void restore_game(void);
+void save_game(void);
 void wait_for_input(void);
-//void show_winner_pattern(void);
+void show_winner_pattern(void);
 void delay(unsigned int dcount);
 
 // ******************************************************************************************
-int main(void)
-{
+int main(void){
 	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
 	
 	//Configure Basic Clock
@@ -114,138 +115,119 @@ int main(void)
 	P1IE = 0;
 	P2IE = 0;
 
-	while(true) wait_for_input();
+	//restore saved game
+	restore_game();
+	//wait for input
+	wait_for_input();
+	//save game
+    //disable VSW
+    P1OUT &= ~VSW;
+	//enable interupts for wake up
+    P1IE |= P1REV + P1FWD + P2REV + P2FWD;
+    P1IES |= P1REV + P1FWD + P2REV + P2FWD;
+    P1IFG &= ~P1REV & ~P1FWD & ~P2REV & ~P2FWD;
+	//enter low power mode
+    _BIS_SR(LPM4_bits + GIE);                 // Enter LPM4 w/interrupt
 
 	return 0;
 }
 
 // ******************************************************************************************
-void wait_for_input(void)
-{
-    //~393us
-    //Enable VSW
+void wait_for_input(void){
+    //enable VSW
     P1OUT |= VSW;
-    //show_pegs();
-    //Start Timer
-    main_time=0;
+    //start sleep timer
+    sleep_time=0;
 
-    while(main_time<five_minutes)
-    {
-        //Reset Button Press Timer
-        j=0;
-        //P1OUT |= VSW;
-        //P1OUT &= ~VSW;
-        //if Timer_j > 5s then switch Current Peg
-        //if Timer_i > 5min then save game and power down
+    while(sleep_time<five_minutes){
+        //reset button timer
+        button_time=0;
+
+        //debug P1OUT |= VSW; P1OUT &= ~VSW;
 
         //Detect Button Press
-        while(P1REV & ~P1IN)
-        {
+        while(P1REV & ~P1IN){
             P1button_pressed = true;
-            if(j==0 && P1pts>0) P1pts--;
-            j++;
-            if(j==longpress) break;
+            if(button_time==0 && P1pts>0) P1pts--;
+            button_time++;
+            if(button_time==longpress) break;
         }
-        while(P1FWD & ~P1IN)
-        {
+        while(P1FWD & ~P1IN){
             P1button_pressed = true;
-            if(j==0) P1pts++;
+            if(button_time==0) P1pts++;
             //wait for release and count for long press (+5)
-            if(j==longpress)
+            if(button_time==longpress)
             {
                 P1pts+=3;
                 break;
             }
-            j++;
+            button_time++;
 
         }
-        while(P2REV & ~P1IN)
-        {
+        while(P2REV & ~P1IN){
             P2button_pressed = true;
-            if(j==0 && P2pts>0) P2pts--;
-            j++;
-            if(j==longpress) break;
+            if(button_time==0 && P2pts>0) P2pts--;
+            button_time++;
+            if(button_time==longpress) break;
         }
-        while(P2FWD & ~P1IN)
-        {
+        while(P2FWD & ~P1IN){
             P2button_pressed = true;
-            if(j==0) P2pts++;
+            if(button_time==0) P2pts++;
             //wait for release and count for long press (+5)
-            if(j==longpress)
-            {
+            if(button_time==longpress){
                 P2pts+=3;
                 break;
             }
-            j++;
+            button_time++;
         }
 
-        //update pegs and increment timer_i
-        if(P1button_pressed || P2button_pressed)
-        {
-            //alternate pegs
-            //Update peg values if points changed
-            if(P1button_pressed)
-                {
+        //update pegs
+        if(P1button_pressed || P2button_pressed){
+            //alternate pegs update peg values if points changed
+            if(P1button_pressed){
                 //switch pegs if player switched
-                if(current_player1 == false) cur1Peg ^= 1;
-                if(cur1Peg) P1pegA = P1pts;
-                else P1pegB = P1pts;
+                if(current_player1 == false) cur1Peg ^= 1; // or peg_time > five_seconds
+                if(cur1Peg) P1pegA = P1pts; else P1pegB = P1pts;
                 current_player1 = true;
                 }
-            if(P2button_pressed)
-                {
+            if(P2button_pressed){
                 //switch pegs if player switched
-                if(current_player1 == true) cur2Peg ^= 1;
-                if(cur2Peg) P2pegA = P2pts;
-                else P2pegB = P2pts;
+                if(current_player1 == true) cur2Peg ^= 1; // or peg_time > five_seconds
+                if(cur2Peg) P2pegA = P2pts; else P2pegB = P2pts;
                 current_player1 = false;
                 }
-            show_pegs();
             P1button_pressed = false;
             P2button_pressed = false;
-            main_time=0;
+            sleep_time=0;
             peg_time=0;
+            show_pegs();
         }
-
-        delay(delay20ms);
-        main_time++;
+        //increment timers
+        //debug P1OUT |= VSW;
+        for(j=0; j<=delay20ms; j++);
+        //delay(delay20ms);  this function is not working???
+        //debug P1OUT &= ~VSW;
+        sleep_time++;
         peg_time++;
 
         //check for winner
+        if(P1pts == 121 || P2pts ==121) show_winner_pattern();
 
     }
-    //save_game();
-
 }
 // ******************************************************************************************
-void show_pegs(void)
-{
-    //change active peg after timeout
-    /*
-    if(peg_time > five_seconds)
-    {
-        //P1OUT |= VSW;
-        //P1OUT &= ~VSW;
-        cur1Peg = ~cur1Peg;
-        cur2Peg = ~cur2Peg;
-        peg_time = 0;
-    }
-    */
-
+void show_pegs(void){
     //Show Player 1 Pegs
     P2OUT |= LE1;
-    for(i=1; i<=120; i++)
-    {
-        if(i==P1pegA || i==P1pegB)
-        {
+    for(i=1; i<=120; i++){
+        if(i==P1pegA || i==P1pegB){
             P1OUT |= DATA;
             delay(delay10us);
             P1OUT |= CLK;
             P1OUT &= ~DATA;
             P1OUT &= ~CLK;
         }
-        else
-        {
+        else{
             P1OUT |= CLK;   //~5us
             P1OUT &= ~CLK;
         }
@@ -256,18 +238,15 @@ void show_pegs(void)
 
     //Show Player 2 Pegs
     P2OUT |= LE2;
-    for(i=1; i<=120; i++)
-    {
-        if(i==P2pegA || i==P2pegB)
-        {
+    for(i=1; i<=120; i++){
+        if(i==P2pegA || i==P2pegB){
             P1OUT |= DATA;
             delay(delay10us);
             P1OUT |= CLK;
             P1OUT &= ~DATA;
             P1OUT &= ~CLK;
         }
-        else
-        {
+        else{
             P1OUT |= CLK;
             P1OUT &= ~CLK;
         }
@@ -275,17 +254,12 @@ void show_pegs(void)
     P1OUT |= LE;
     P1OUT &= ~LE;
     P2OUT &= ~ LE2;
-
 }
 
 // ******************************************************************************************
-/*
-void restart_game(void)
-{
-
+void restart_game(void){
     //show reverse LED sweep pattern
-    for(i=0; i<=120; i++)
-    {
+    for(i=0; i<=120; i++){
         P1pegA = 120-i;
         P2pegA = 120-i;
         P1pegB = 119-i;
@@ -302,35 +276,42 @@ void restart_game(void)
     P2pts = 0;
     P2pegA = 0;
     P2pegB = 0;
+}
+
+// ******************************************************************************************
+void restore_game(void){
+    //read points and peg values from FLASH user space section C
+    show_pegs();
+}
+
+// ******************************************************************************************
+void save_game(void){
+    //store points and peg values to FLASH user space section C
 
 }
-*/
-// ******************************************************************************************
-/*
-void save_game(void)
-{
-    //Store Peg Values to EEPROM
-    //Disable VSW
-    P1OUT &= ~VSW;
-    //Enter Low Power Mode
 
-    //temp place holder for debug
-    wait_for_input();
-}
-*/
 // ******************************************************************************************
-/*
-void show_winner_pattern()
-{
-    //Display Pattern for Winner
+void show_winner_pattern(){
+    //display pattern for winner
+
+    //reset points
+    P1pts = 0;
+    P2pts = 0;
 }
-*/
+
 // ******************************************************************************************
-void delay(unsigned int dcount)
-{
+void delay(unsigned int dcount){
     unsigned int d;
-    for(d=dcount; d>0; d--);
+    for(d=0; d<=dcount; d++);
 }
+// ******************************************************************************************
+// Port 1 interrupt service routine
+#pragma vector=PORT1_VECTOR
+__interrupt void Port_1(void){
+    while(P1REV & ~P1IN || P1FWD & ~P1IN || P2REV & ~P1IN || P2FWD & ~P1IN);
+    main();
+}
+
 // ******************************************************************************************
 /*
 //debug
