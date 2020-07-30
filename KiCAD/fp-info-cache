@@ -1,10 +1,17 @@
-7979186428961
+12767607517961
 e-cribbage
 BC-2003-G_2032-CoinCell
 http://www.keyelco.com/product-pdf.cfm?p=14028
 Keystone type 1058 coin cell retainer
 0
 3
+2
+e-cribbage
+C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
 2
 e-cribbage
 KS11R22
@@ -34,3 +41,17 @@ switch spdt
 0
 3
 3
+e-cribbage
+TSSOP-14_W4.4mm
+http://pdfserv.maximintegrated.com/land_patterns/90-0113.PDF
+
+0
+14
+14
+e-cribbage
+TSSOP-16_W4.40mm
+
+
+0
+16
+16

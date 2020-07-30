@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name e-cribbage)(type KiCad)(uri ${KIPRJMOD}/local_lib)(options "")(descr ""))
-  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name w_switch)(type KiCad)(uri ${KIPRJMOD}/local_lib/mod_switch/w_switch.pretty)(options "")(descr ""))
 )
