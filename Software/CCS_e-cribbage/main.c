@@ -50,10 +50,10 @@
 #include "msp430.h"
 #include "stdbool.h"
 
-#define P1REV   BIT0                // S1
-#define P1FWD   BIT1                // S2
-#define P2REV   BIT2                // S3
-#define P2FWD   BIT3                // S4
+#define P1REV   BIT2                // S3
+#define P1FWD   BIT3                // S4
+#define P2REV   BIT0                // S1
+#define P2FWD   BIT1                // S2
 #define LE      BIT4                // RCLK
 #define CLK     BIT5                // Clock
 #define DATA    BIT6                // Data
@@ -74,12 +74,16 @@
 unsigned int sleep_time=0;
 unsigned int peg_time=0;
 unsigned int button_time=0;
+unsigned int playtime0=0;
+unsigned int playtime1=0;
 unsigned int P1pts = 0;
 unsigned int P1pegA = 0;
 unsigned int P1pegB = 0;
 unsigned int P2pts = 0;
 unsigned int P2pegA = 0;
 unsigned int P2pegB = 0;
+unsigned int P1gameswon = 0;
+unsigned int P2gameswon = 0;
 bool cur1Peg = false;
 bool cur2Peg = false;
 bool P1button_pressed = false;
@@ -115,12 +119,9 @@ int main(void){
     P1IE = 0;
     P2IE = 0;
 
-    //restore saved game
-    restore_game();
-    //wait for input
+    //restore_game();
     wait_for_input();
-    //save game
-    save_game();
+    //save_game();
     //disable VSW
     P1OUT &= ~VSW;
     //enable interupts for wake up
@@ -146,7 +147,7 @@ void wait_for_input(void){
 
         //debug P1OUT |= VSW; P1OUT &= ~VSW;
 
-        //Detect Button Press
+        //Detect Button Press, Port1_input=P1IN
         while(P1REV & ~P1IN){
             P1button_pressed = true;
             if(button_time==0 && P1pts>0) P1pts--;
@@ -186,21 +187,25 @@ void wait_for_input(void){
 
         //update pegs
         if(P1button_pressed || P2button_pressed){
-            //alternate pegs update peg values if points changed
+            //alternate pegs and update peg values if points changed
             if(P1button_pressed){
-                //switch pegs if player switched
-                if(current_player1 == false) cur1Peg ^= 1; // or peg_time > five_seconds
+                //switch pegs if player switched or peg_time > five_seconds
+                if(current_player1==false || peg_time>five_seconds) cur1Peg ^= 1;
                 if(cur1Peg) P1pegA = P1pts; else P1pegB = P1pts;
                 if(P1pegA > P1pts) P1pegA = P1pts - 1;
                 if(P1pegB > P1pts) P1pegB = P1pts - 1;
+                if(P1pegA==P1pegB && cur1Peg) P1pegB--;
+                if(P1pegA==P1pegB && ~cur1Peg) P1pegA--;
                 current_player1 = true;
                 }
             if(P2button_pressed){
-                //switch pegs if player switched
-                if(current_player1 == true) cur2Peg ^= 1; // or peg_time > five_seconds
+                //switch pegs if player switched or peg_time > five_seconds
+                if(current_player1==true  || peg_time>five_seconds) cur2Peg ^= 1;
                 if(cur2Peg) P2pegA = P2pts; else P2pegB = P2pts;
                 if(P2pegA > P2pts) P2pegA = P2pts - 1;
                 if(P2pegB > P2pts) P2pegB = P2pts - 1;
+                if(P2pegA==P2pegB && cur2Peg) P2pegB--;
+                if(P2pegA==P2pegB && ~cur2Peg) P2pegA--;
                 current_player1 = false;
                 }
             P1button_pressed = false;
@@ -212,6 +217,8 @@ void wait_for_input(void){
         //increment timers
         sleep_time++;
         peg_time++;
+        playtime0++;
+        if(playtime0==0xFFFF) playtime1++;
         delay(delay20ms);
 
         //check for winner
@@ -225,7 +232,7 @@ void show_pegs(void){
 
     //Show Player 1 Pegs
     P2OUT |= LE1;
-    for(i=1; i<=120; i++){
+    for(i=120; i>0; i--){
         if(i==P1pegA || i==P1pegB){
             P1OUT |= DATA;
             delay(delay10us);
@@ -245,7 +252,7 @@ void show_pegs(void){
 
     //Show Player 2 Pegs
     P2OUT |= LE2;
-    for(i=1; i<=120; i++){
+    for(i=120; i>0; i--){
         if(i==P2pegA || i==P2pegB){
             P1OUT |= DATA;
             delay(delay10us);
@@ -296,6 +303,7 @@ void restart_game(void){
 }
 
 // ******************************************************************************************
+// saving game to flash not needed for now becuase LPM4 is low enough power
 void restore_game(void){
     //read points and peg values from FLASH information memory section C
     // *** this function appears to call after reset ***
@@ -303,7 +311,7 @@ void restore_game(void){
     //char *Flash_ptr;            // Flash pointer
     //unsigned int i;
 
-    FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
+    //FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
     //value = 0;                                // initialize value
     //Flash_ptr = (char *) 0x1040;              // Initialize Flash pointer
 
@@ -345,12 +353,12 @@ void save_game(void){
     }
      */
     // *** ints need to be cast to char ***
-    //*Flash_ptr++ = P1pegA;
-    //*Flash_ptr++ = P1pegB;
-    //*Flash_ptr++ = P1pts;
-    //*Flash_ptr++ = P2pegA;
-    //*Flash_ptr++ = P2pegB;
-    //*Flash_ptr++ = P2pts;
+    *Flash_ptr++ = P1pegA;
+    *Flash_ptr++ = P1pegB;
+    *Flash_ptr++ = P1pts;
+    *Flash_ptr++ = P2pegA;
+    *Flash_ptr++ = P2pegB;
+    *Flash_ptr++ = P2pts;
 
     FCTL1 = FWKEY;                            // Clear WRT bit
     FCTL3 = FWKEY + LOCK;                     // Set LOCK bit
@@ -360,6 +368,8 @@ void save_game(void){
 void show_winner_pattern(){
     //display pattern for winner
     if(P1pts >= 121){
+        P1gameswon++;
+        if(P2pts<91) P1gameswon++; //skunk
         P1pegA = 1;
         P1pegB = 2;
         while(P1pegB <= 120){
@@ -370,6 +380,8 @@ void show_winner_pattern(){
         }
     }
     if(P2pts >= 121){
+        P2gameswon++;
+        if(P1pts<91) P2gameswon++; //skunk
         P2pegA = 1;
         P2pegB = 2;
         while(P2pegB <= 120){
@@ -388,7 +400,7 @@ void show_winner_pattern(){
 // ******************************************************************************************
 void delay(unsigned int dcount){
     unsigned int d;
-    for(d=0; d<=dcount; d++) _NOP();
+    for(d=dcount; d>0; d--) _NOP();
 }
 // ******************************************************************************************
 // Port 1 interrupt service routine
