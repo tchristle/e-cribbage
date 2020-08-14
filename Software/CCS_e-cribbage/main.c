@@ -145,8 +145,6 @@ void wait_for_input(void){
         //reset button timer
         button_time=0;
 
-        //debug P1OUT |= VSW; P1OUT &= ~VSW;
-
         //Detect Button Press, Port1_input=P1IN
         while(P1REV & ~P1IN){
             P1button_pressed = true;
@@ -165,7 +163,6 @@ void wait_for_input(void){
                 break;
             }
             button_time++;
-
         }
         while(P2REV & ~P1IN){
             P2button_pressed = true;
@@ -184,7 +181,6 @@ void wait_for_input(void){
             }
             button_time++;
         }
-
         //update pegs
         if(P1button_pressed || P2button_pressed){
             //alternate pegs and update peg values if points changed
@@ -223,9 +219,9 @@ void wait_for_input(void){
 
         //check for winner
         if(P1pts >= 121 || P2pts >= 121) show_winner_pattern();
-
     }
 }
+
 // ******************************************************************************************
 void show_pegs(void){
     unsigned int i=0;
@@ -273,18 +269,7 @@ void show_pegs(void){
 
 // ******************************************************************************************
 void restart_game(void){
-    //unsigned int j=0;
     //show reverse LED walk pattern
-    /*
-    for(j=0; j<=120; j++){
-        P1pegA = 120-j;
-        P2pegA = 120-j;
-        P1pegB = 119-j;
-        P2pegB = 119-j;
-        delay(delay20ms);
-        show_pegs();
-    }
-    */
     while((P1pegA+P1pegB+P2pegA+P2pegB) > 0){
         if(P1pegA > 0) P1pegA--;
         if(P1pegB > 0) P1pegB--;
@@ -295,40 +280,28 @@ void restart_game(void){
     }
     //Reset Peg Values
     P1pts = 0;
-    //P1pegA = 0;
-    //P1pegB = 0;
     P2pts = 0;
-    //P2pegA = 0;
-    //P2pegB = 0;
 }
 
 // ******************************************************************************************
 // saving game to flash not needed for now becuase LPM4 is low enough power
 void restore_game(void){
     //read points and peg values from FLASH information memory section C
-    // *** this function appears to call after reset ***
-    //char  value;                // 8-bit value to write to segment C
-    //char *Flash_ptr;            // Flash pointer
-    //unsigned int i;
+    char  value;                // 8-bit value to write to segment C
+    char *Flash_ptr;            // Flash pointer
 
-    //FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
-    //value = 0;                                // initialize value
-    //Flash_ptr = (char *) 0x1040;              // Initialize Flash pointer
+    FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
+    value = 0;                                // initialize value
+    Flash_ptr = (char *) 0x1040;              // Initialize Flash pointer
 
-    /*
-    for (i=0; i<64; i++)
-    {
-      value = *Flash_ptr++;                   // Read value from flash
-    }
-    */
     // *** ints need to be cast to char ***
-    //P1pegA = *Flash_ptr++;
-    //P1pegB = *Flash_ptr++;
-    //P1pts  = *Flash_ptr++;
-    //P2pegA = *Flash_ptr++;
-    //P2pegB = *Flash_ptr++;
-    //P2pts  = *Flash_ptr++;
-    //show_pegs();
+    P1pegA = *Flash_ptr++;
+    P1pegB = *Flash_ptr++;
+    P1pts  = *Flash_ptr++;
+    P2pegA = *Flash_ptr++;
+    P2pegB = *Flash_ptr++;
+    P2pts  = *Flash_ptr++;
+    show_pegs();
 }
 
 // ******************************************************************************************
@@ -336,7 +309,6 @@ void save_game(void){
     //store points and peg values to FLASH information memory section C
     //char  value;                // 8-bit value to write to segment C
     char *Flash_ptr;            // Flash pointer
-    //unsigned int i;
 
     FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
     //value = 0;                                // initialize value
@@ -346,12 +318,7 @@ void save_game(void){
     *Flash_ptr = 0;                           // Dummy write to erase Flash segment
 
     FCTL1 = FWKEY + WRT;                      // Set WRT bit for write operation
-    /*
-    for (i=0; i<64; i++)
-    {
-      *Flash_ptr++ = value++;                 // Write value to flash
-    }
-     */
+
     // *** ints need to be cast to char ***
     *Flash_ptr++ = P1pegA;
     *Flash_ptr++ = P1pegB;
@@ -394,6 +361,10 @@ void show_winner_pattern(){
     //reset points
     P1pts = 0;
     P2pts = 0;
+    P1pegA = 121-P1gameswon;
+    P1pegB = 0;
+    P2pegA = 121-P2gameswon;
+    P2pegB = 0;
     show_pegs();
 }
 
@@ -402,6 +373,7 @@ void delay(unsigned int dcount){
     unsigned int d;
     for(d=dcount; d>0; d--) _NOP();
 }
+
 // ******************************************************************************************
 // Port 1 interrupt service routine
 #pragma vector=PORT1_VECTOR
