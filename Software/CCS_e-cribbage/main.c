@@ -50,6 +50,7 @@
 #include "msp430.h"
 #include "stdbool.h"
 
+//port1 bits
 #define P1REV   BIT2                // S3
 #define P1FWD   BIT3                // S4
 #define P2REV   BIT0                // S1
@@ -58,7 +59,7 @@
 #define CLK     BIT5                // Clock
 #define DATA    BIT6                // Data
 #define VSW     BIT7                // 3V SW
-
+//port2 bits
 #define LE1     BIT6                // P1_EN
 #define LE2     BIT7                // P2_EN
 
@@ -70,7 +71,6 @@
 #define longpress       20000
 
 //global definitions
-//unsigned int i=0, j=0;
 unsigned int sleep_time=0;
 unsigned int peg_time=0;
 unsigned int button_time=0;
@@ -98,6 +98,7 @@ void save_game(void);
 void wait_for_input(void);
 void show_winner_pattern(void);
 void delay(unsigned int dcount);
+void show_win_totals(void);
 
 // ******************************************************************************************
 int main(void){
@@ -119,13 +120,9 @@ int main(void){
     P1IE = 0;
     P2IE = 0;
 
-    //restore_game();
     wait_for_input();
-    //save_game();
-    //disable VSW
-    P1OUT &= ~VSW;
-    //enable interupts for wake up
-    P1IE |= P1REV + P1FWD + P2REV + P2FWD;
+    P1OUT &= ~VSW;                            //disable VSW
+    P1IE |= P1REV + P1FWD + P2REV + P2FWD;    //enable interupts for wake up
     P1IES |= P1REV + P1FWD + P2REV + P2FWD;
     P1IFG &= ~P1REV & ~P1FWD & ~P2REV & ~P2FWD;
     //enter low power mode
@@ -163,6 +160,8 @@ void wait_for_input(void){
                 break;
             }
             button_time++;
+            if(P1FWD & ~P1IN && P2FWD & ~P1IN) save_game();
+            if(P1FWD & ~P1IN && P1REV & ~P1IN) show_win_totals();
         }
         while(P2REV & ~P1IN){
             P2button_pressed = true;
@@ -180,6 +179,7 @@ void wait_for_input(void){
                 break;
             }
             button_time++;
+            if(P1FWD & ~P1IN && P2FWD & ~P1IN) restore_game();
         }
         //update pegs
         if(P1button_pressed || P2button_pressed){
@@ -269,6 +269,11 @@ void show_pegs(void){
 
 // ******************************************************************************************
 void restart_game(void){
+    //prevent unsigned overflow
+    if(P1pegA > 121) P1pegA=1;
+    if(P1pegB > 121) P1pegB=1;
+    if(P2pegA > 121) P2pegA=1;
+    if(P2pegB > 121) P2pegB=1;
     //show reverse LED walk pattern
     while((P1pegA+P1pegB+P2pegA+P2pegB) > 0){
         if(P1pegA > 0) P1pegA--;
@@ -365,6 +370,19 @@ void show_winner_pattern(){
     P1pegB = 0;
     P2pegA = 121-P2gameswon;
     P2pegB = 0;
+    show_pegs();
+}
+// ******************************************************************************************
+void show_win_totals(void){
+    unsigned int tempA = P1pegA;
+    unsigned int tempB = P1pegB;
+    P1pegA = 121-P1gameswon;
+    P2pegA = 121-P2gameswon;
+    show_pegs();
+    //wait for release
+    while (P1FWD & ~P1IN || P1REV & ~P1IN);// _NOP();
+    P1pegA = tempA;
+    P2pegA = tempB;
     show_pegs();
 }
 
