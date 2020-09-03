@@ -112,19 +112,13 @@ int main(void){
 
     //Peripheral Setup
     P1DIR |= LE + VSW + CLK + DATA;
-    //P1OUT &= ~LE & ~CLK & ~DATA;
     P2DIR |= LE1 + LE2;
-    //P1SEL = 0;
     P2SEL = 0;
-    P1IE = 0;
-    //P2IE = 0;
+    P1IES |= P1REV + P1FWD + P2REV + P2FWD;
 
-    wait_for_input();
+    //Enter Sleep
     P1OUT &= ~VSW;                            //disable VSW
     P1IE |= P1REV + P1FWD + P2REV + P2FWD;    //enable interupts for wake up
-    P1IES |= P1REV + P1FWD + P2REV + P2FWD;
-    P1IFG &= ~P1REV & ~P1FWD & ~P2REV & ~P2FWD;
-    //enter low power mode
     _BIS_SR(LPM4_bits + GIE);                 // Enter LPM4 w/interrupt
 
     return 0;
@@ -223,6 +217,9 @@ void wait_for_input(void){
         if(P1pts >= 121 || P2pts >= 121) show_winner_pattern();
     }
     save_game();
+    P1OUT &= ~VSW;                            //disable VSW
+    P1IFG &= ~P1REV & ~P1FWD & ~P2REV & ~P2FWD;
+    _BIS_SR(LPM4_bits + GIE);                 // Enter LPM4 w/interrupt
 }
 
 // ******************************************************************************************
@@ -292,7 +289,7 @@ void restart_game(void){
 }
 
 // ******************************************************************************************
-// saving game to flash not needed for now becuase LPM4 is low enough power
+
 void restore_game(void){
     //read points and peg values from FLASH information memory section C
     //char  value;                // 8-bit value to write to segment C
@@ -376,6 +373,7 @@ void show_winner_pattern(){
     P2pegB = 0;
     show_pegs();
 }
+
 // ******************************************************************************************
 void show_win_totals(void){
     unsigned int tempA = P1pegA;
@@ -414,7 +412,7 @@ void delay(unsigned int dcount){
 // Port 1 interrupt service routine
 #pragma vector=PORT1_VECTOR
 __interrupt void Port_1(void){
-    //stay in interrupt routine until button is released
+    //wait until button is released after wake up
     while(P1REV & ~P1IN || P1FWD & ~P1IN || P2REV & ~P1IN || P2FWD & ~P1IN);
-    main();
+    wait_for_input();
 }
