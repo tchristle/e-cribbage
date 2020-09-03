@@ -68,7 +68,7 @@
 #define delay20ms       1850
 #define five_minutes    20000
 #define five_seconds    400
-#define longpress       20000
+#define longpress       11000
 
 //global definitions
 unsigned int sleep_time=0;
@@ -99,6 +99,7 @@ void wait_for_input(void);
 void show_winner_pattern(void);
 void delay(unsigned int dcount);
 void show_win_totals(void);
+void show_playtimer(void);
 
 // ******************************************************************************************
 int main(void){
@@ -111,14 +112,12 @@ int main(void){
 
     //Peripheral Setup
     P1DIR |= LE + VSW + CLK + DATA;
-    P1OUT |= VSW;
-    P1OUT &= ~LE & ~CLK & ~DATA;
+    //P1OUT &= ~LE & ~CLK & ~DATA;
     P2DIR |= LE1 + LE2;
-    P2OUT |= LE1 + LE2;
-    P1SEL = 0;
+    //P1SEL = 0;
     P2SEL = 0;
     P1IE = 0;
-    P2IE = 0;
+    //P2IE = 0;
 
     wait_for_input();
     P1OUT &= ~VSW;                            //disable VSW
@@ -135,6 +134,8 @@ int main(void){
 void wait_for_input(void){
     //enable VSW
     P1OUT |= VSW;
+    delay(delay20ms);
+    show_pegs();
     //start sleep timer
     sleep_time=0;
 
@@ -179,7 +180,8 @@ void wait_for_input(void){
                 break;
             }
             button_time++;
-            if(P1FWD & ~P1IN && P2FWD & ~P1IN) restore_game();
+            if(P1FWD & ~P1IN && P2FWD & ~P1IN) { restore_game(); P2pts--;}
+            if(P2FWD & ~P1IN && P2REV & ~P1IN) show_playtimer();
         }
         //update pegs
         if(P1button_pressed || P2button_pressed){
@@ -220,6 +222,7 @@ void wait_for_input(void){
         //check for winner
         if(P1pts >= 121 || P2pts >= 121) show_winner_pattern();
     }
+    save_game();
 }
 
 // ******************************************************************************************
@@ -227,7 +230,7 @@ void show_pegs(void){
     unsigned int i=0;
 
     //Show Player 1 Pegs
-    P2OUT |= LE1;
+    P2OUT = LE1;
     for(i=120; i>0; i--){
         if(i==P1pegA || i==P1pegB){
             P1OUT |= DATA;
@@ -244,10 +247,10 @@ void show_pegs(void){
     P1OUT |= LE;
     delay(delay10us);
     P1OUT &= ~LE;
-    P2OUT &= ~ LE1;
+    P2OUT = 0;
 
     //Show Player 2 Pegs
-    P2OUT |= LE2;
+    P2OUT = LE2;
     for(i=120; i>0; i--){
         if(i==P2pegA || i==P2pegB){
             P1OUT |= DATA;
@@ -264,7 +267,7 @@ void show_pegs(void){
     P1OUT |= LE;
     delay(delay10us);
     P1OUT &= ~LE;
-    P2OUT &= ~ LE2;
+    P2OUT = 0;
 }
 
 // ******************************************************************************************
@@ -292,11 +295,11 @@ void restart_game(void){
 // saving game to flash not needed for now becuase LPM4 is low enough power
 void restore_game(void){
     //read points and peg values from FLASH information memory section C
-    char  value;                // 8-bit value to write to segment C
+    //char  value;                // 8-bit value to write to segment C
     char *Flash_ptr;            // Flash pointer
 
     FCTL2 = FWKEY + FSSEL0 + FN1;             // MCLK/3 for Flash Timing Generator
-    value = 0;                                // initialize value
+    //value = 0;                                // initialize value
     Flash_ptr = (char *) 0x1040;              // Initialize Flash pointer
 
     // *** ints need to be cast to char ***
@@ -331,6 +334,7 @@ void save_game(void){
     *Flash_ptr++ = P2pegA;
     *Flash_ptr++ = P2pegB;
     *Flash_ptr++ = P2pts;
+    *Flash_ptr++ = playtime1;
 
     FCTL1 = FWKEY;                            // Clear WRT bit
     FCTL3 = FWKEY + LOCK;                     // Set LOCK bit
@@ -378,6 +382,20 @@ void show_win_totals(void){
     unsigned int tempB = P1pegB;
     P1pegA = 121-P1gameswon;
     P2pegA = 121-P2gameswon;
+    show_pegs();
+    //wait for release
+    while (P1FWD & ~P1IN || P1REV & ~P1IN);// _NOP();
+    P1pegA = tempA;
+    P2pegA = tempB;
+    show_pegs();
+}
+
+// ******************************************************************************************
+void show_playtimer(void){
+    unsigned int tempA = P1pegA;
+    unsigned int tempB = P1pegB;
+    P1pegA = 121-playtime1/8;
+    P2pegA = 121-playtime1%8;
     show_pegs();
     //wait for release
     while (P1FWD & ~P1IN || P1REV & ~P1IN);// _NOP();
