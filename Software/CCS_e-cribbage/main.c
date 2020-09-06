@@ -51,10 +51,10 @@
 #include "stdbool.h"
 
 //port1 bits
-#define P1REV   BIT2                // S3
-#define P1FWD   BIT3                // S4
-#define P2REV   BIT0                // S1
-#define P2FWD   BIT1                // S2
+#define P1REV   BIT0                // S3
+#define P1FWD   BIT1                // S4
+#define P2REV   BIT2                // S1
+#define P2FWD   BIT3                // S2
 #define LE      BIT4                // RCLK
 #define CLK     BIT5                // Clock
 #define DATA    BIT6                // Data
@@ -117,7 +117,8 @@ int main(void){
     P1IES |= P1REV + P1FWD + P2REV + P2FWD;
 
     //Enter Sleep
-    P1OUT &= ~VSW;                            //disable VSW
+    P1OUT = 0;
+    P2OUT = 0;
     P1IE |= P1REV + P1FWD + P2REV + P2FWD;    //enable interupts for wake up
     _BIS_SR(LPM4_bits + GIE);                 // Enter LPM4 w/interrupt
 
@@ -155,8 +156,8 @@ void wait_for_input(void){
                 break;
             }
             button_time++;
-            if(P1FWD & ~P1IN && P2FWD & ~P1IN) save_game();
-            if(P1FWD & ~P1IN && P1REV & ~P1IN) show_win_totals();
+            if(P1FWD & ~P1IN && P2FWD & ~P1IN) {save_game(); P1pts--;}
+            if(P1FWD & ~P1IN && P1REV & ~P1IN) {show_win_totals(); P1pts--;}
         }
         while(P2REV & ~P1IN){
             P2button_pressed = true;
@@ -174,8 +175,8 @@ void wait_for_input(void){
                 break;
             }
             button_time++;
-            if(P1FWD & ~P1IN && P2FWD & ~P1IN) { restore_game(); P2pts--;}
-            if(P2FWD & ~P1IN && P2REV & ~P1IN) show_playtimer();
+            if(P1FWD & ~P1IN && P2FWD & ~P1IN) {restore_game(); P2pts--;}
+            if(P2FWD & ~P1IN && P2REV & ~P1IN) {show_playtimer(); P2pts--;}
         }
         //update pegs
         if(P1button_pressed || P2button_pressed){
@@ -216,7 +217,7 @@ void wait_for_input(void){
         //check for winner
         if(P1pts >= 121 || P2pts >= 121) show_winner_pattern();
     }
-    save_game();
+    //save_game();
     P1OUT &= ~VSW;                            //disable VSW
     P1IFG &= ~P1REV & ~P1FWD & ~P2REV & ~P2FWD;
     _BIS_SR(LPM4_bits + GIE);                 // Enter LPM4 w/interrupt
@@ -227,7 +228,7 @@ void show_pegs(void){
     unsigned int i=0;
 
     //Show Player 1 Pegs
-    P2OUT = LE1;
+    P2OUT = LE2;
     for(i=120; i>0; i--){
         if(i==P1pegA || i==P1pegB){
             P1OUT |= DATA;
@@ -247,7 +248,7 @@ void show_pegs(void){
     P2OUT = 0;
 
     //Show Player 2 Pegs
-    P2OUT = LE2;
+    P2OUT = LE1;
     for(i=120; i>0; i--){
         if(i==P2pegA || i==P2pegB){
             P1OUT |= DATA;
@@ -377,7 +378,7 @@ void show_winner_pattern(){
 // ******************************************************************************************
 void show_win_totals(void){
     unsigned int tempA = P1pegA;
-    unsigned int tempB = P1pegB;
+    unsigned int tempB = P2pegA;
     P1pegA = 121-P1gameswon;
     P2pegA = 121-P2gameswon;
     show_pegs();
@@ -413,6 +414,7 @@ void delay(unsigned int dcount){
 #pragma vector=PORT1_VECTOR
 __interrupt void Port_1(void){
     //wait until button is released after wake up
-    while(P1REV & ~P1IN || P1FWD & ~P1IN || P2REV & ~P1IN || P2FWD & ~P1IN);
+    while(P1IN!=0x0f);
+    //while(P1REV & ~P1IN || P1FWD & ~P1IN || P2REV & ~P1IN || P2FWD & ~P1IN);
     wait_for_input();
 }
